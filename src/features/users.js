@@ -26,7 +26,7 @@ const Users = () => {
                 <h2>Time-zone table members</h2>
                 <h3>With info</h3>
 
-                <table>
+                <table className={styles.table}>
                     <thead>
                     <tr>
                         <th>name</th>
@@ -42,8 +42,8 @@ const Users = () => {
                 </table>
 
                 <h3>Without info</h3>
-                <table>
-                    <thead>
+                <table className={styles.table}>
+                    <thead >
                     <tr>
                         <th>name</th>
                         <th>local time</th>

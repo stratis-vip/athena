@@ -58,7 +58,7 @@
     "name": "Team 4692544",
     "country": "-",
     "locale": "en",
-    "zone": "Etc/UTC"
+    "zone": "UTC+8"
   },
   {
     "key": 4668830,
@@ -215,7 +215,7 @@
     "name": "Master",
     "country": "-",
     "locale": "en",
-    "zone": "Etc/UTC"
+    "zone": "UTC+1"
   },
   {
     "key": 4330684,
