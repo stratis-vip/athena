@@ -1,0 +1,240 @@
+[
+  {
+    "key": 4868542,
+    "active": true,
+    "name": "stratis",
+    "country": "Greece",
+    "locale": "el",
+    "zone": "EET",
+    "notes": "Europe/Athens"
+  },
+  {
+    "key": 4848703,
+    "active": true,
+    "name": "Team Mofos 2020",
+    "country": "-",
+    "locale": "en",
+    "zone": "Etc/UTC"
+  },
+  {
+    "key": 4771262,
+    "active": true,
+    "name": "Team 4771262",
+    "country": "-",
+    "locale": "en",
+    "zone": "Etc/UTC"
+  },
+  {
+    "key": 4761947,
+    "active": true,
+    "name": "VegaRev",
+    "country": "-",
+    "locale": "en",
+    "zone": "CET",
+    "notes": "Etc/UTC"
+  },
+  {
+    "key": 4733797,
+    "active": true,
+    "name": "PraiseTheLord",
+    "country": "-",
+    "locale": "en",
+    "zone": "Pacific/Auckland",
+    "notes":  "Pacific/Auckland"
+  }
+
+,
+  {
+    "key": 4703087,
+    "active": true,
+    "name": "beijingduck",
+    "country": "-",
+    "locale": "en",
+    "zone": "UTC+9"
+  },
+  {
+    "key": 4692544,
+    "active": true,
+    "name": "Team 4692544",
+    "country": "-",
+    "locale": "en",
+    "zone": "Etc/UTC"
+  },
+  {
+    "key": 4668830,
+    "active": true,
+    "name": "Fight4Trump",
+    "country": "-",
+    "locale": "en",
+    "zone": "Etc/UTC"
+  },
+  {
+    "key": 4645138,
+    "active": true,
+    "name": "Sam1216",
+    "country": "-",
+    "locale": "en",
+    "zone": "Etc/UTC"
+  },
+  {
+    "key": 4609221,
+    "active": true,
+    "name": "emperor",
+    "country": "-",
+    "locale": "en",
+    "zone": "Asia/Seoul"
+  },
+  {
+    "key": 4598126,
+    "active": true,
+    "name": "Aragorn",
+    "country": "-",
+    "locale": "en",
+    "zone": "PST",
+    "notes": "San Diego CA"
+  },
+  {
+    "key": 4562073,
+    "active": true,
+    "name": "Taurisar",
+    "country": "-",
+    "locale": "ro",
+    "zone": "EET",
+    "notes": "Bucharest"
+  },
+  {
+    "key": 4559615,
+    "active": true,
+    "name": "effecascent oil",
+    "country": "-",
+    "locale": "en",
+    "zone": "Etc/UTC"
+  },
+  {
+    "key": 4491684,
+    "active": true,
+    "name": "Iku",
+    "country": "-",
+    "locale": "en",
+    "zone": "CET",
+    "notes": "Spain "
+  },
+  {
+    "key": 4451506,
+    "active": true,
+    "name": "KinkaHeroes",
+    "country": "-",
+    "locale": "en",
+    "zone": "UTC+1"
+  },
+  {
+    "key": 4364346,
+    "active": true,
+    "name": "Team 563799",
+    "country": "-",
+    "locale": "en",
+    "zone": "UTC+9"
+  },
+  {
+    "key": 4361455,
+    "active": true,
+    "name": "Dragon Blue",
+    "country": "-",
+    "locale": "en",
+    "zone": "MST"
+  },
+  {
+    "key": 4348579,
+    "active": true,
+    "name": "franse",
+    "country": "-",
+    "locale": "en",
+    "zone": "Etc/UTC"
+  },
+  {
+    "key": 4343605,
+    "active": true,
+    "name": "SirHow",
+    "country": "-",
+    "locale": "en",
+    "zone": "CST",
+    "notes": "Springfield Misouri"
+  },
+  {
+    "key": 4299517,
+    "active": true,
+    "name": "white walker",
+    "country": "-",
+    "locale": "en",
+    "zone": "Etc/UTC"
+  },
+  {
+    "key": 4292333,
+    "active": true,
+    "name": "Ghost",
+    "country": "-",
+    "locale": "en",
+    "zone": "Etc/UTC"
+  },
+  {
+    "key": 4266277,
+    "active": true,
+    "name": "Dina",
+    "country": "-",
+    "locale": "en",
+    "zone": "UTC+1"
+  },
+  {
+    "key": 4253738,
+    "active": true,
+    "name": "Kagale",
+    "country": "-",
+    "locale": "en",
+    "zone": "Etc/UTC"
+  },
+  {
+    "key": 4236573,
+    "active": true,
+    "name": "Loom",
+    "country": "-",
+    "locale": "en",
+    "zone": "Etc/UTC"
+  },
+  {
+    "key": 4231757,
+    "active": true,
+    "name": "vulcans",
+    "country": "-",
+    "locale": "en",
+    "zone": "GMT",
+    "notes": "UK"
+  },
+  {
+    "key": 4178114,
+    "active": true,
+    "name": "Master",
+    "country": "-",
+    "locale": "en",
+    "zone": "Etc/UTC"
+  },
+  {
+    "key": 4330684,
+    "active": true,
+    "name": "Moppy Legacy",
+    "country": "-",
+    "locale": "el",
+    "times": {
+      "start": {
+        "hour": 11,
+        "minutes": 43
+      },
+      "end": {
+        "hour": 12,
+        "minutes": 55
+      }
+    },
+    "zone": "EET",
+    "notes": "Athens"
+  }
+]
+

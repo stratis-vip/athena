@@ -1,58 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
+import React, {useEffect} from 'react';
 import './App.css';
+import {useDispatch} from "react-redux";
+import usersFromJson from "./users.json"
+import teamsFromJson from './teams.json'
+import {addAllUsers} from "./features/usersSlice"
+import Users from "./features/users";
+import Teams from "./features/teams"
+import {addAllTeams} from "./features/teamsSlice";
+import {DateTime} from "luxon";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
-  );
+import Title from "./components/title";
+
+
+const App = () => {
+    const dispatch = useDispatch()
+
+    useEffect(() => {
+        function compare(a, b) {
+
+            // Turn your strings into dates, and then subtract them
+            // to get a value that is either negative, positive, or zero.
+            return (a.loc) - (b.loc);
+        }
+
+
+        const usersWithTime = usersFromJson.map(user => {
+            return {...user, loc: DateTime.now().setZone(user.zone).toFormat("yyyyLLddHHmm")}
+        })
+        dispatch(addAllUsers(usersWithTime.sort(compare)))
+    }, [dispatch])
+
+    useEffect(() => {
+        dispatch(addAllTeams(teamsFromJson))
+    }, [dispatch])
+
+    // const loc = DateTime.local()
+    const noc = DateTime.now().setZone("Pacific/Auckland")
+    return (
+        <div className="App">
+           <Title />
+            <Users/>
+            <Teams/>
+        </div>
+    );
+
 }
 
 export default App;
