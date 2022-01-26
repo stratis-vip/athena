@@ -40,7 +40,7 @@ const App = () => {
     return (
         <div className="App">
            <Title />
-            <War />
+            {/*<War />*/}
             <Users/>
             <Teams/>
         </div>
