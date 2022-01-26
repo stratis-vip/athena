@@ -6,7 +6,8 @@ const Program = ({opponents}) => {
 
     if (opponents.length === 0) return null
 
-    return <>
+    return <div className={styles.programContainer}>
+
         <table className={styles.table}>
             <thead>
             <tr>
@@ -19,13 +20,13 @@ const Program = ({opponents}) => {
             </thead>
             <tbody>
             <tr>
-
                 {opponents && opponents.map(index => <td
-                    key={teams[index - 1].position}> {teams[index - 1].name}</td>)}
+                    key={teams[index - 1].position}>{teams[index - 1].position} - {teams[index - 1].name}</td>)}
             </tr>
             </tbody>
         </table>
-    </>
+
+    </div>
 }
 
 export default Program

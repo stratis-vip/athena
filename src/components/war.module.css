@@ -1,0 +1,9 @@
+.bar{
+    width: 10rem;
+    height: 0.2rem;
+    border:black thin solid;
+}
+
+.red{
+    background-color: red;
+}

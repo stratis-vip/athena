@@ -10,6 +10,7 @@ import {addAllTeams} from "./features/teamsSlice";
 import {DateTime} from "luxon";
 
 import Title from "./components/title";
+import War from "./components/war";
 
 
 const App = () => {
@@ -39,6 +40,7 @@ const App = () => {
     return (
         <div className="App">
            <Title />
+            <War />
             <Users/>
             <Teams/>
         </div>

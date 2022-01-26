@@ -14,7 +14,8 @@
     "name": "Team Mofos 2020",
     "country": "-",
     "locale": "en",
-    "zone": "Etc/UTC"
+    "zone": "CET",
+    "notes": "Spain "
   },
   {
     "key": 4771262,
@@ -66,7 +67,7 @@
     "name": "Fight4Trump",
     "country": "-",
     "locale": "en",
-    "zone": "Etc/UTC"
+    "zone": "UTC+8"
   },
   {
     "key": 4645138,
@@ -74,7 +75,7 @@
     "name": "Sam1216",
     "country": "-",
     "locale": "en",
-    "zone": "Etc/UTC"
+    "zone": "UTC+8"
   },
   {
     "key": 4609221,

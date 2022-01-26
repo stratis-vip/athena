@@ -22,39 +22,49 @@ const Users = () => {
         return null
     } else {
         return (
-            <div className={styles.container}>
+            <>
                 <h2>Time-zone table members</h2>
-                <h3>With info</h3>
+                <div className={styles.container}>
 
-                <table className={styles.table}>
-                    <thead>
-                    <tr>
-                        <th>name</th>
-                        <th>local time</th>
-                        <th>war starts</th>
 
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {timeUsers.map((user, index) => <tr className={index % 2 && styles.greyed} key={user.key}><User
-                        user={user}/></tr>)}
-                    </tbody>
-                </table>
+                    <div className={styles.innerContainer}>
+                        <h3>With info</h3>
 
-                <h3>Without info</h3>
-                <table className={styles.table}>
-                    <thead >
-                    <tr>
-                        <th>name</th>
-                        <th>local time</th>
-                        <th>war starts</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    {noTimeUsers.map((user, index) => <tr className={index % 2 && styles.greyed} key={user.key}><User user={user}/></tr>)}
-                    </tbody>
-                </table>
-            </div>
+                        <table className={styles.table}>
+                            <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>local time</th>
+                                <th>war starts</th>
+
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {timeUsers.map((user, index) => <tr className={index % 2 && styles.greyed} key={user.key}>
+                                <User
+                                    user={user}/></tr>)}
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className={styles.innerContainer}>
+                        <h3>Without info</h3>
+                        <table className={styles.table}>
+                            <thead>
+                            <tr>
+                                <th>name</th>
+                                <th>local time</th>
+                                <th>war starts</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {noTimeUsers.map((user, index) => <tr className={index % 2 && styles.greyed} key={user.key}>
+                                <User user={user}/></tr>)}
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </>
         )
     }
 }

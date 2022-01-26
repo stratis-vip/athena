@@ -46,7 +46,7 @@ const Teams = () => {
             }
             setWarOpponents(opponents)
             console.log(opponents)
-        }else {
+        } else {
             setWarOpponents([])
         }
     }, [cTeam])
@@ -54,15 +54,20 @@ const Teams = () => {
         return null
     } else {
         return (
-            <div className={styles.container}>
-                <h3>War program</h3>
-                <select className={styles.select} onChange={(e) => setCTeam(e.target.value)}>
-                    <option value={0} key={0}>Select team</option>
-                    {teams.map(team => <option value={team.position}
-                                               key={team.position}> {team.position} - {team.name} </option>)}
-                </select>
-                {cTeam > 0 && <Program opponents={warOpponents} />}
-            </div>
+            <><h3>War program</h3>
+                <div className={styles.container}>
+                    <div className={styles.programContainer}>
+
+                        <select className={styles.select} onChange={(e) => setCTeam(e.target.value)}>
+                            <option value={0} key={0}>Select team</option>
+                            {teams.map(team => <option value={team.position}
+                                                       key={team.position}> {team.position} - {team.name} </option>)}
+                        </select>
+
+                        {cTeam > 0 && <Program opponents={warOpponents}/>}
+                    </div>
+                </div>
+            </>
         )
     }
 }

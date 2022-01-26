@@ -2,6 +2,7 @@
     color: green;
 }
 
+
 .container{
     display: flex;
     justify-content: center;
@@ -11,6 +12,10 @@
 h2{
     margin-bottom: 0;
 }
+
+h3{
+    margin-bottom: 0.2rem;
+}
 .greyed{
     background-color: lightgray;
 }
@@ -19,6 +24,8 @@ h2{
     margin: 0 auto;
     min-width: 20rem;
 }
+
+
 
 tr{
 
@@ -39,4 +46,20 @@ thead{
     margin: 0 auto;
     margin-bottom: 1rem;
     man-width: 15rem;
+}
+
+.programContainer{
+
+}
+
+@media (min-width: 800px) {
+    .container {
+        flex-direction: row;
+    }
+
+    .innerContainer{
+        display: flex;
+        flex-direction: column;
+        margin-left: 3rem;
+    }
 }

@@ -1,8 +1,35 @@
 .table{
-    min-width: 70%;
+
     margin:0 auto;
 }
 
 .select{
     min-width: 15rem;
+}
+
+.scrollableTable{
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    min-width: 50rem;
+    margin: 0 auto;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.programContainer{
+
+}
+
+.wraper {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+@media (min-width: 800px) {
+ .table{
+     min-width: 50rem;
+ }
 }
