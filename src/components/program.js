@@ -6,25 +6,20 @@ const Program = ({opponents}) => {
 
     if (opponents.length === 0) return null
 
-    return <div className={styles.programContainer}>
+    return <div className={styles.master_container}>
+        <div className={styles.container}>
 
-        <table className={styles.table}>
-            <thead>
-            <tr>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-                {opponents && opponents.map(index => <td
-                    key={teams[index - 1].position}>{teams[index - 1].position} - {teams[index - 1].name}</td>)}
-            </tr>
-            </tbody>
-        </table>
+            {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"].map(
+                (number, ind) => (
+                    <div key={ind} className={`${styles.cell} ${styles.header}`}>
+                        {number}
+                    </div>
+                )
+            )}
+
+            {opponents && opponents.map(index => <div key={teams[index - 1].position}
+                                                      className={styles.cell}>{teams[index - 1].position} - {teams[index - 1].name}</div>)}
+        </div>
 
     </div>
 }

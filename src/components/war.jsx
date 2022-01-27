@@ -3,6 +3,38 @@ import {DateTime} from "luxon";
 import {useEffect, useState} from "react";
 import {Duration} from "luxon/build/cjs-browser/luxon";
 
+const isTimeInWar = (currentDate) => {
+    const hour = currentDate.hour
+    if (hour > 8 && hour < 20) return true
+    return false
+}
+const getWhereWeAre = (currentDate, promotion = false) => {
+    //nextDay is the day of next war
+    let nextDay = null
+
+    //what day of the week it is currentDate
+    const day = currentDate.weekday
+    //if day = 7 (sunday) not in war
+
+    nextDay = currentDate.plus({days: 1}).set({hours: 8, minutes: 0, seconds: 0, milliseconds: 0})
+    if (day === 7) {
+        return [nextDay.toString(), "notInWar"]
+    }
+    //if day = 6 (saturday) then in promotion/demotion war
+    //TODO add rank
+
+    if (day === 6) {
+        nextDay = currentDate.plus({days: 2}).set({hours: 8, minutes: 0, seconds: 0, milliseconds: 0})
+        let state = "notInWar"
+        if (promotion && isTimeInWar(currentDate)){
+            state = "inWar"
+        }
+        return [nextDay.toString(), state]
+    }
+    //else normal war.
+    return [nextDay.toString(), isTimeInWar(currentDate)?"inWar":"notInWar"]
+}
+
 const getCurrentDay = () => {
     const now = DateTime.local()
     return now.weekday
@@ -16,6 +48,13 @@ const War = () => {
 
     useEffect(() => {
         console.log('Day', getCurrentDay())
+        console.log(DateTime.utc(2022, 1, 2, 11, 0, 0).toString(), ' -> ', getWhereWeAre(DateTime.utc(2022, 1, 2, 11, 0, 0)))
+        console.log(DateTime.utc(2022, 1, 1, 11, 0, 0).toString(), ' -> ', getWhereWeAre(DateTime.utc(2022, 1, 1, 11, 0, 0)))
+        console.log(DateTime.utc(2022, 1, 1, 11, 0, 0).toString(), ' -> ', getWhereWeAre(DateTime.utc(2022, 1, 1, 11, 0, 0), true))
+        console.log(DateTime.utc(2022, 1, 1, 7, 0, 0).toString(), ' -> ', getWhereWeAre(DateTime.utc(2022, 1, 1, 7, 0, 0), true))
+        console.log(DateTime.utc(2022, 1, 1, 21, 0, 0).toString(), ' -> ', getWhereWeAre(DateTime.utc(2022, 1, 1, 21, 0, 0), true))
+        console.log(DateTime.utc(2022, 1, 3, 11, 0, 0).toString(), ' -> ', getWhereWeAre(DateTime.utc(2022, 1, 3, 11, 0, 0)))
+
     }, [])
 
     useEffect(() => {
@@ -34,6 +73,7 @@ const War = () => {
                 }
                 // console.log(zita.toString())
                 // console.log(zita.toLocal().toString())
+                console.log(getWhereWeAre(DateTime.utc()))
             }, 1000)
         }
 
