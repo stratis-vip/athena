@@ -46,10 +46,10 @@ const User = ({user}) => {
     return (
         <>
             <td key={user.key}>{user.name}</td>
-            <td>{time.setZone(user.zone).setLocale(user.locale).toFormat("dd, HH:mm")}</td>
+            <td>{time.setZone(user.timeZone).setLocale(user.locale).toFormat("dd, HH:mm")}</td>
             {/*<td>{user.zone}</td>*/}
             {/*{locStart && <>*/}
-                <td>{warStart.setZone(user.zone).toFormat("HH:mm")}</td>
+                <td>{warStart.setZone(user.timeZone).toFormat("HH:mm")}</td>
             {/*    <td>{locEnd.toFormat("HH:mm")}</td>*/}
             {/*    /!*<td>{loc.setZone(user.zone).setLocale(user.locale).toLocaleString(DateTime.TIME_SIMPLE)}</td>*!/*/}
             {/*</>}*/}
