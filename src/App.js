@@ -17,18 +17,18 @@ const App = () => {
     const dispatch = useDispatch()
 
     useEffect(() => {
-        function compare(a, b) {
-
-            // Turn your strings into dates, and then subtract them
-            // to get a value that is either negative, positive, or zero.
-            return (a.loc) - (b.loc);
-        }
-
-
-        const usersWithTime = usersFromJson.map(user => {
-            return {...user, loc: DateTime.now().setZone(user.zone).toFormat("yyyyLLddHHmm")}
-        })
-        dispatch(addAllUsers(usersWithTime.sort(compare)))
+        // function compare(a, b) {
+        //
+        //     // Turn your strings into dates, and then subtract them
+        //     // to get a value that is either negative, positive, or zero.
+        //     return (a.loc) - (b.loc);
+        // }
+        //
+        //
+        // const usersWithTime = usersFromJson.map(user => {
+        //     return {...user, loc: DateTime.now().setZone(user.zone).toFormat("yyyyLLddHHmm")}
+        // })
+        // dispatch(addAllUsers(usersWithTime.sort(compare)))
     }, [dispatch])
 
     useEffect(() => {

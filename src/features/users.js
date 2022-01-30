@@ -1,12 +1,14 @@
 import User from "./user";
 import styles from './users.module.css'
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 import {gql, useQuery} from "@apollo/client";
 import {DateTime} from "luxon";
+import {addAllUsers} from "./usersSlice";
 
 const Users = () => {
     // const users = useSelector(state => state.users.users)
+    const dispatch = useDispatch()
     const [users, setUsers] = useState(null)
     const [timeUsers, setTimeUsers] = useState([])
     const [noTimeUsers, setNoTimeUsers] = useState([])
@@ -28,11 +30,11 @@ const Users = () => {
             if (data.users != null && data.users.length > 0) {
                 const users = data.users
                 const tUsers = users.map(user => {return {...user, dt:DateTime.utc().setZone(user.timeZone)}})
-                const tt = tUsers.sort(sortF)
+                const tt = tUsers.filter(user => user.active && !user.archive).sort(sortF)
                 console.log('USERS',tUsers)
                 setTimeUsers(tt.filter(user => user.timeZone !== "Etc/UTC"))
                 setNoTimeUsers(tt.filter(user => user.timeZone === "Etc/UTC"))
-
+                dispatch(addAllUsers(tt))
             }
         }
     }, [data])
