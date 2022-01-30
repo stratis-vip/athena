@@ -32,7 +32,7 @@ const App = () => {
     }, [dispatch])
 
     useEffect(() => {
-        dispatch(addAllTeams(teamsFromJson))
+        dispatch(addAllTeams(teamsFromJson.filter(team => team.league === "Bronze").sort((a,b)=> a.position - b.position)))
     }, [dispatch])
 
     // const loc = DateTime.local()

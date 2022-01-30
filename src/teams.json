@@ -1,6 +1,6 @@
 [
   {
-    "name": "REX",
+    "name": "First Wave",
     "league": "Bronze",
     "position": 1
   },
@@ -12,141 +12,151 @@
   {
     "name": "Knight of Knights",
     "league": "Bronze",
-    "position": 3
+    "position": 7
   },
   {
     "name": "Lily",
     "league": "Bronze",
-    "position": 4
+    "position": 8
   },
   {
     "name": "CCCP",
     "league": "Bronze",
-    "position": 5
+    "position": 9
   },
   {
     "name": "Belgique",
     "league": "Bronze",
-    "position": 6
+    "position": 5
   },
   {
     "name": "Clan Destino",
     "league": "Bronze",
-    "position": 7
+    "position": 10
   },
   {
     "name": "Heros",
     "league": "Bronze",
-    "position": 8
+    "position": 3
   },
   {
     "name": "athena",
     "league": "Bronze",
-    "position": 9
+    "position": 6
   },
   {
     "name": "Sax Clan",
-    "league": "Bronze",
+    "league": "Silver",
     "position": 10
   },
   {
     "name": "Велес",
     "league": "Bronze",
-    "position": 11
+    "position": 4
   },
   {
     "name": "The Eyrie",
     "league": "Bronze",
-    "position": 12
+    "position": 11
   },
   {
     "name": "The LIONS",
     "league": "Bronze",
-    "position": 13
+    "position": 26
   },
   {
     "name": "NBC",
     "league": "Bronze",
-    "position": 14
+    "position": 12
   },
   {
     "name": "Soul Reapers",
     "league": "Bronze",
-    "position": 15
+    "position": 14
   },
   {
     "name": "himatsubushi",
     "league": "Bronze",
-    "position": 16
+    "position": 13
   },
   {
     "name": "СССР-2",
     "league": "Bronze",
-    "position": 17
+    "position": 15
   },
   {
     "name": "CRYSTAL",
     "league": "Bronze",
-    "position": 18
+    "position": 16
   },
   {
     "name": "Kamigrain",
     "league": "Bronze",
-    "position": 19
+    "position": 20
   },
   {
     "name": "StormCat",
     "league": "Bronze",
-    "position": 20
+    "position": 18
   },
   {
     "name": "pink pirates",
     "league": "Bronze",
-    "position": 21
+    "position": 23
   },
   {
     "name": "ONI SKY",
     "league": "Bronze",
-    "position": 22
+    "position": 27
   },
   {
     "name": "Schriese",
     "league": "Bronze",
-    "position": 23
+    "position": 22
   },
   {
     "name": "MUKAKIN-MUGON",
     "league": "Bronze",
-    "position": 24
+    "position": 19
   },
   {
     "name": "ppmmOmmqq",
     "league": "Bronze",
-    "position": 25
+    "position": 28
   },
   {
     "name": "Bansh",
     "league": "Bronze",
-    "position": 26
+    "position": 17
   },
   {
     "name": "Pif Paf Pouf",
     "league": "Bronze",
-    "position": 27
+    "position": 25
   },
   {
     "name": "КоролеваСемьи",
     "league": "Bronze",
-    "position": 28
+    "position": 24
   },
   {
     "name": "Retweet",
     "league": "Bronze",
+    "position": 21
+  },
+  {
+    "name": "REX",
+    "league": "Bronze",
     "position": 29
   },
   {
-    "name": "РадугаТеней",
+    "name": "тризуб",
     "league": "Bronze",
     "position": 30
+  },
+  {
+    "name": "РадугаТеней",
+    "league": "Qualifying",
+    "position": 1
   }
 ]
