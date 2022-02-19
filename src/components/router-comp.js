@@ -1,4 +1,4 @@
-import {BrowserRouter as Router, Link, Route, Switch} from "react-router-dom";
+import {BrowserRouter as Router, Link, Outlet, Route, Routes, Switch} from "react-router-dom";
 import Template from "./template";
 import Teams from "../features/teams";
 import Users from "../features/users";
@@ -6,6 +6,8 @@ import React from "react";
 import {useDispatch} from "react-redux";
 import {useAuth0} from "@auth0/auth0-react";
 import Admin from "./admin";
+import Spinner from "./spiner";
+import Title from "./title";
 
 const homePage = "http://localhost:3000/"
 const RouterComponent = () => {
@@ -13,8 +15,12 @@ const RouterComponent = () => {
 
     return (
         <Router>
+
             <div className={"navBar"}>
                 <div className={"menu"}>
+                    <div className={"item"}>
+                        <Title />
+                    </div>
                     <div className={"item"}>
                         <Link to="/">Home</Link>
                     </div>
@@ -33,21 +39,20 @@ const RouterComponent = () => {
                 </div>
             </div>
 
-            <Switch>
-                <Route path="/program">
-                    <Template><Teams/></Template>
-                </Route>
-                <Route path="/users">
-                    <Template><Users/></Template>
-                </Route>
-                <Route path="/admin">
-                    <Admin/>
-                </Route>
 
-                <Route path="/">
-                    <Template><Home/></Template>
-                </Route>
-            </Switch>
+            <Routes>
+                <Route path="/" element={<Home/>}/>
+                <Route path="program" element={<Teams/>}/>
+                <Route path="users" element={
+                    <Users/>}/>
+                <Route path="admin" element={<Admin/>}/>
+
+
+            </Routes>
+
+            <Spinner/>
+
+            <Outlet/>
             {/*<div className="App">*/
             }
             {/*    <Title/>*/
@@ -74,7 +79,6 @@ function Home() {
         </div>
     )
 }
-
 
 
 export default RouterComponent

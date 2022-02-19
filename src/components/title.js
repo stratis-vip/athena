@@ -10,12 +10,12 @@ const Title = () => {
 
     return (
         <div className={styles.container}>
-            <img src={logo}/>
+            <img src={logo} width={32}/>
             <div>
 
-                <h1 onMouseOver={() => setVersion(false)} onMouseLeave={()=>setVersion(true)}> Athena </h1>
-                <h4>{users.length} members</h4>
-                <h5 hidden={versionShow}>version: {json.version}</h5>
+                <h3 onMouseOver={() => setVersion(false)} onMouseLeave={()=>setVersion(true)}> Athena <span style={{fontSize: "10px"}} hidden={versionShow}>{json.version}</span></h3>
+                <h5>{users.length} members</h5>
+
 
             </div>
         </div>
