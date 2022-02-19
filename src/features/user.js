@@ -1,7 +1,7 @@
 import {DateTime} from "luxon";
 import {useEffect, useState} from "react";
 
-const User = ({user}) => {
+const User = ({user, showWarTime}) => {
     const [time, setTime] = useState(DateTime.now())
     const [locStart, setLocStart] = useState(null)
     const [locEnd, setLocEnd] = useState(null)
@@ -49,7 +49,8 @@ const User = ({user}) => {
             <td>{time.setZone(user.timeZone).setLocale(user.locale).toFormat("dd, HH:mm")}</td>
             {/*<td>{user.zone}</td>*/}
             {/*{locStart && <>*/}
-                <td>{warStart.setZone(user.timeZone).toFormat("HH:mm")}</td>
+            {showWarTime && <td>{warStart.setZone(user.timeZone).toFormat("HH:mm")}</td>}
+            {showWarTime && <td>{warStart.plus({hours: 11}).setZone(user.timeZone).toFormat("HH:mm")}</td>}
             {/*    <td>{locEnd.toFormat("HH:mm")}</td>*/}
             {/*    /!*<td>{loc.setZone(user.zone).setLocale(user.locale).toLocaleString(DateTime.TIME_SIMPLE)}</td>*!/*/}
             {/*</>}*/}

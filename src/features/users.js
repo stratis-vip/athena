@@ -1,75 +1,70 @@
 import User from "./user";
 import styles from './users.module.css'
-import {useDispatch, useSelector} from "react-redux";
+import { useSelector} from "react-redux";
 import {useEffect, useState} from "react";
-import {gql, useQuery} from "@apollo/client";
 import {DateTime} from "luxon";
-import {addAllUsers} from "./usersSlice";
+
 
 const Users = () => {
-    // const users = useSelector(state => state.users.users)
-    const dispatch = useDispatch()
-    const [users, setUsers] = useState(null)
+    const users = useSelector(state => state.users.users)
     const [timeUsers, setTimeUsers] = useState([])
     const [noTimeUsers, setNoTimeUsers] = useState([])
-    const GET_USERS = gql`
-        query{
-            users {id name timeZone active}
-        }
-    `;
+    const [showWarTime, setShowWarTime] = useState(null)
 
     const sortF = (a,b) => {
         return Number(a.dt.toFormat("yyyymmddHH")) - Number(b.dt.toFormat("yyyymmddHH"));
     }
 
+    const handleCheckChange = (e) => {
+        setShowWarTime(e.target.checked)
+        localStorage.setItem("showWarTime", e.target.checked === true? "true":"false")
+    }
 
-    const {loading, error, data} = useQuery(GET_USERS);
+    useEffect(()=>{
+        if( showWarTime == null){
+            const showWarTimeFromLocalStorage = localStorage.getItem("showWarTime")
+            if (showWarTimeFromLocalStorage != null){
+                console.log('local Store', showWarTimeFromLocalStorage)
+                setShowWarTime(showWarTimeFromLocalStorage === "false" ? false : true)
+            }else{
+                localStorage.setItem("showWarTime", "false")
+                setShowWarTime(false)
+            }
 
+        }
+
+    }, [showWarTime])
     useEffect(() => {
-        if (data) {
-            if (data.users != null && data.users.length > 0) {
-                const users = data.users
+        if (users) {
+            if (users != null && users.length > 0) {
                 const tUsers = users.map(user => {return {...user, dt:DateTime.utc().setZone(user.timeZone)}})
                 const tt = tUsers.filter(user => user.active && !user.archive).sort(sortF)
-                console.log('USERS',tUsers)
                 setTimeUsers(tt.filter(user => user.timeZone !== "Etc/UTC"))
                 setNoTimeUsers(tt.filter(user => user.timeZone === "Etc/UTC"))
-                dispatch(addAllUsers(tt))
             }
         }
-    }, [data])
-
-
-
-    if (loading) return <div>loading...</div>
-    if (error) return <div>Error loading data from server.</div>
-    if (data) {
-        console.log(data.users)
-    }
+    }, [users])
 
 
     return (
-        <>
+        <div className={styles.usersContainer}>
             <h2>Time-zone table members</h2>
+            <label><input type={"checkbox"} checked={showWarTime} onChange={handleCheckChange}/>Show War starting/finishing time </label>
             <div className={styles.container}>
-
-
                 <div className={styles.innerContainer}>
                     <h3>With info</h3>
-
                     <table className={styles.table}>
                         <thead>
                         <tr>
                             <th>name</th>
                             <th>local time</th>
-                            <th>war starts</th>
-
+                            {showWarTime && <th>war starts</th>}
+                            {showWarTime && <th>war ends</th>}
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody className={styles.tbody}>
                         {timeUsers.map((user, index) => <tr className={index % 2 && styles.greyed} key={user.id}>
-                            <User
-                                user={user}/></tr>)}
+                            <User user={user} showWarTime={showWarTime}/></tr>)}
                         </tbody>
                     </table>
                 </div>
@@ -80,18 +75,19 @@ const Users = () => {
                         <tr>
                             <th>name</th>
                             <th>local time</th>
-                            <th>war starts</th>
+                            {showWarTime && <th>war starts</th>}
+                            {showWarTime && <th>war ends</th>}
                         </tr>
                         </thead>
-                        <tbody>
+                        <tbody className={styles.tbody}>
                         {noTimeUsers.map((user, index) => <tr className={index % 2 && styles.greyed} key={user.id}>
-                            <User user={user}/></tr>)}
+                            <User user={user} showWarTime={showWarTime}/></tr>)}
                         </tbody>
                     </table>
                 </div>
 
             </div>
-        </>
+        </div>
     )
 
 }

@@ -2,6 +2,7 @@ import styles from './users.module.css'
 import {useSelector} from "react-redux";
 import {useEffect, useState} from "react";
 import Program from "../components/program";
+import War from "../components/war";
 
 const Teams = () => {
     const teams = useSelector(state => state.teams.teams)
@@ -54,20 +55,26 @@ const Teams = () => {
         return null
     } else {
         return (
-            <><h3>War program</h3>
-                <div className={styles.container}>
-                    <div className={styles.programContainer}>
+            <div className={styles.usersContainer}>
 
-                        <select className={styles.select} onChange={(e) => setCTeam(e.target.value)}>
-                            <option value={0} key={0}>Select team</option>
-                            {teams.map(team => <option value={team.position}
-                                                       key={team.position}> {team.position} - {team.name} </option>)}
-                        </select>
+                <div>
+                    <h3>War program</h3>
+                    <War/>
 
-                        {cTeam > 0 && <Program opponents={warOpponents}/>}
-                    </div>
+                    {/*<div className={styles.container}>*/}
+                    {/*    <div className={styles.programContainer}>*/}
+
+                    {/*        <select className={styles.select} onChange={(e) => setCTeam(e.target.value)}>*/}
+                    {/*            <option value={0} key={0}>Select team</option>*/}
+                    {/*            {teams.map(team => <option value={team.position}*/}
+                    {/*                                       key={team.position}> {team.position} - {team.name} </option>)}*/}
+                    {/*        </select>*/}
+
+                    {/*        {cTeam > 0 && <Program opponents={warOpponents}/>}*/}
+                    {/*    </div>*/}
+                    {/*</div>*/}
                 </div>
-            </>
+            </div>
         )
     }
 }

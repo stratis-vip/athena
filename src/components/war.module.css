@@ -5,5 +5,34 @@
 }
 
 .red{
-    background-color: red;
+    color: red;
+}
+
+.green{
+   color: green;
+}
+
+.blue{
+    color: blue;
+}
+
+.orange{
+    color: orange;
+}
+
+.coral{
+    color: coral;
+}
+
+.red1{
+    color: #ff6d81;
+}
+
+.red2{
+    color: mediumvioletred;
+}
+
+.currentTeam{
+    background-color: coral;
+    color: white;
 }
