@@ -50,14 +50,15 @@ const Users = () => {
         <div className={styles.usersContainer}>
             <h2>Time-zone table members</h2>
             <label><input type={"checkbox"} checked={showWarTime} onChange={handleCheckChange}/>Show War starting/finishing time </label>
+
             <div className={styles.container}>
                 <div className={styles.innerContainer}>
-                    <h3>With info</h3>
                     <table className={styles.table}>
+                        <caption>With info</caption>
                         <thead>
                         <tr>
-                            <th>name</th>
-                            <th>local time</th>
+                            <th scope={"col"}>Name</th>
+                            <th scope={"col"}>Local Time</th>
                             {showWarTime && <th>war starts</th>}
                             {showWarTime && <th>war ends</th>}
                         </tr>
@@ -69,12 +70,12 @@ const Users = () => {
                     </table>
                 </div>
                 <div className={styles.innerContainer}>
-                    <h3>Without info</h3>
                     <table className={styles.table}>
+                        <caption>With info</caption>
                         <thead>
                         <tr>
-                            <th>name</th>
-                            <th>local time</th>
+                            <th scope={"col"}>Name</th>
+                            <th scope={"col"}>Local Time</th>
                             {showWarTime && <th>war starts</th>}
                             {showWarTime && <th>war ends</th>}
                         </tr>

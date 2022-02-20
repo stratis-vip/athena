@@ -1,64 +1,64 @@
 import styles from './users.module.css'
+import commonStyles from '../components/common.module.css'
 import {useSelector} from "react-redux";
-import {useEffect, useState} from "react";
-import Program from "../components/program";
+// import {useEffect, useState} from "react";
+// import Program from "../components/program";
 import War from "../components/war";
 
 const Teams = () => {
     const teams = useSelector(state => state.teams.teams)
-    const [cTeam, setCTeam] = useState(0)
-    const [warOpponents, setWarOpponents] = useState([])
+    // const [cTeam, setCTeam] = useState(0)
+    // const [warOpponents, setWarOpponents] = useState([])
 
 
-    useEffect(() => {
-        if (cTeam > 0) {
-            const team = teams[cTeam - 1]
-            console.log(teams[cTeam - 1])
-            //is even
-            const opponents = []
-            const position = team.position
-            if (cTeam % 2 !== 0) {
-                let next = position + 7;
-                if (next > 30) {
-                    next -= 30;
-                }
-                for (let i = 0; i < 5; ++i) {
-                    opponents.push(next)
-                    next = next + 6;
-                    if (next > 30) {
-                        next -= 30;
-                    }
-
-                }
-
-
-            } else {
-                let next = position - 7;
-                if (next < 0) {
-                    next += 30;
-                }
-                for (let i = 0; i < 5; ++i) {
-                    opponents.push(next)
-                    next = next - 6;
-                    if (next < 0) {
-                        next += 30;
-                    }
-                }
-            }
-            setWarOpponents(opponents)
-            console.log(opponents)
-        } else {
-            setWarOpponents([])
-        }
-    }, [cTeam])
+    // useEffect(() => {
+    //     if (cTeam > 0) {
+    //         const team = teams[cTeam - 1]
+    //         console.log(teams[cTeam - 1])
+    //         //is even
+    //         const opponents = []
+    //         const position = team.position
+    //         if (cTeam % 2 !== 0) {
+    //             let next = position + 7;
+    //             if (next > 30) {
+    //                 next -= 30;
+    //             }
+    //             for (let i = 0; i < 5; ++i) {
+    //                 opponents.push(next)
+    //                 next = next + 6;
+    //                 if (next > 30) {
+    //                     next -= 30;
+    //                 }
+    //
+    //             }
+    //
+    //
+    //         } else {
+    //             let next = position - 7;
+    //             if (next < 0) {
+    //                 next += 30;
+    //             }
+    //             for (let i = 0; i < 5; ++i) {
+    //                 opponents.push(next)
+    //                 next = next - 6;
+    //                 if (next < 0) {
+    //                     next += 30;
+    //                 }
+    //             }
+    //         }
+    //         setWarOpponents(opponents)
+    //         console.log(opponents)
+    //     } else {
+    //         setWarOpponents([])
+    //     }
+    // }, [cTeam])
     if (teams == null) {
         return null
     } else {
         return (
-            <div className={styles.usersContainer}>
 
+            <div className={commonStyles.container}>
                 <div>
-                    <h3>War program</h3>
                     <War/>
 
                     {/*<div className={styles.container}>*/}
@@ -75,6 +75,7 @@ const Teams = () => {
                     {/*</div>*/}
                 </div>
             </div>
+
         )
     }
 }

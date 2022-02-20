@@ -17,3 +17,13 @@ h5{
     margin: 0.1rem;
     font-weight: normal;
 }
+
+.text{
+    display: block;
+}
+
+@media all and (min-width: 430px) {
+    .text {
+        display: block;
+    }
+}

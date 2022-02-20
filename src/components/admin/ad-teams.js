@@ -4,7 +4,7 @@ import {gql, useMutation, useQuery} from "@apollo/client";
 import {useEffect, useState} from "react";
 
 const AdminTeams = () => {
-    const {loading, data, error, refetch} = useQuery(gql`query{team {id name}}`)
+    const { data, refetch} = useQuery(gql`query{team {id name}}`)
     const [teams, setTeams] = useState(null)
     const [currentTeam, setCurrentTeam] = useState(null)
     const [teamToAdd, setTeamToAdd] = useState("")
@@ -32,7 +32,7 @@ const AdminTeams = () => {
         }
     )
 
-    const [deleteTeam, mutationDeleteTeam] = useMutation(
+    const [deleteTeam] = useMutation(
         gql`mutation DeleteTeam( $deleteTeamId: ID!) {deleteTeam(id: $deleteTeamId) {id name}}`,
         {
             variables: {

@@ -1,6 +1,6 @@
-import Title from "./title";
+// import Title from "./title";
 import styles from "./template.module.css"
-import Spinner from "./spiner";
+// import Spinner from "./spiner";
 import React from "react";
 
 const Template = ({children}) => {

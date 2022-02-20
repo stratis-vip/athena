@@ -1,29 +1,29 @@
 import React, {useEffect} from 'react';
 import './App.css';
 import {useDispatch} from "react-redux";
-import usersFromJson from "./users.json"
+// import usersFromJson from "./users.json"
 import teamsFromJson from './teams.json'
 import {addAllUsers} from "./features/usersSlice"
-import Users from "./features/users";
-import Teams from "./features/teams"
+// import Users from "./features/users";
+// import Teams from "./features/teams"
 import {addAllTeams} from "./features/teamsSlice";
 import {DateTime} from "luxon";
 import axios from "axios"
-import Title from "./components/title";
-import War from "./components/war";
-import ImportComponent from "./components/import";
-import {
-    BrowserRouter as Router,
-    Route,
-    Link, Switch
-} from "react-router-dom";
-import Template from "./components/template";
-import Spinner from "./components/spiner";
+// import Title from "./components/title";
+// import War from "./components/war";
+// import ImportComponent from "./components/import";
+// import {
+//     BrowserRouter as Router,
+//     Route,
+//     Link, Switch
+// } from "react-router-dom";
+// import Template from "./components/template";
+// import Spinner from "./components/spiner";
 import {error, loading, ready} from "./features/netState";
 import {Auth0Provider, useAuth0} from "@auth0/auth0-react";
-import {login, loginAuth, logoutAuth} from "./features/logSlice";
+// import {login, loginAuth, logoutAuth} from "./features/logSlice";
 import RouterComponent from "./components/router-comp";
-import { ClerkProvider } from "@clerk/clerk-react";
+// import { ClerkProvider } from "@clerk/clerk-react";
 const sortF = (a, b) => {
     return Number(a.dt.toFormat("yyyymmddHH")) - Number(b.dt.toFormat("yyyymmddHH"));
 }

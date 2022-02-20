@@ -1,4 +1,4 @@
-import {BeatLoader} from 'react-spinners'
+
 const data = `Guild\tPos.\tMonday\tTuesday\tWednesday\tThursday\tFriday
 First Wave\t1\t8-Lily\t14-Soul Reapers\t20-Kamigrain\t26-The LIONS\t2-Mattari
 Mattari\t2\t25-Pif Paf Pouf\t19-MUKAKIN-MUGON\t13-himatsubushi\t7-Knight of Knights\t1-First Wave

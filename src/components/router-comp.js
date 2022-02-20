@@ -1,14 +1,15 @@
-import {BrowserRouter as Router, Link, Outlet, Route, Routes, Switch} from "react-router-dom";
-import Template from "./template";
+import {BrowserRouter as Router, Link, Outlet, Route, Routes} from "react-router-dom";
+// import Template from "./template";
 import Teams from "../features/teams";
 import Users from "../features/users";
 import React from "react";
-import {useDispatch} from "react-redux";
+// import {useDispatch} from "react-redux";
 import {useAuth0} from "@auth0/auth0-react";
 import Admin from "./admin";
 import Spinner from "./spiner";
 import Title from "./title";
 import styles from './router-comp.module.css'
+import commonStyles from './common.module.css'
 
 const homePage = "http://localhost:3000/"
 const RouterComponent = () => {
@@ -78,8 +79,8 @@ const RouterComponent = () => {
 
 function Home() {
     return (
-        <div className="App">
-            <h2>We are currently at bronze (1th place)</h2>
+        <div className={commonStyles.container}>
+            <h3>We are currently at bronze (1th place)</h3>
         </div>
     )
 }

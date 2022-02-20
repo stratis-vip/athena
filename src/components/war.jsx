@@ -1,9 +1,10 @@
 import styles from './war.module.css'
-import {DateTime, Interval} from "luxon";
+import {DateTime} from "luxon";
 import {useEffect, useState} from "react";
 import {Duration} from "luxon/build/cjs-browser/luxon";
-
-const total = 10 * 3600 * 1000
+import commonStyles from './common.module.css'
+import {coreModule} from "@reduxjs/toolkit/query";
+// const total = 10 * 3600 * 1000
 const isTimeInWar = (currentDate) => {
     const hour = currentDate.hour
     if (hour > 8 && hour < 20) return true
@@ -40,10 +41,25 @@ const getWhereWeAre = (currentDate, promotion = false) => {
 const getCurrentDay = () => {
     const now = DateTime.local()
     return now.weekday
+
+
+    //     table {
+    //     border-collapse: collapse;
+    //     border-spacing: 0;
+    //     width: 100%;
+    //     border: 1px solid #ddd;
+    // }
+    //
+    // th, td {
+    //     text-align: left;
+    //     padding: 8px;
+    // }
+    //
+    // }
 }
 
 const War = () => {
-    const [day, setDay] = useState(getCurrentDay())
+    const day = getCurrentDay()
     const [nextWar, setNextWar] = useState(null)
     const [state, setState] = useState("init")
     const [remaining, setRemaining] = useState(null)
@@ -61,12 +77,12 @@ const War = () => {
         console.log('Arxh week', DateTime.utc().startOf('week').toISODate())
     }, [])
 
-    useEffect(()=>{
-        console.log('STATE:', state, 'REMAINING:', remaining)
+    useEffect(() => {
+        console.log('STATE:', state)
     }, [state])
 
-    useEffect(()=>{
-        console.log( 'REMAINING:', remaining)
+    useEffect(() => {
+        console.log('REMAINING:', remaining)
     }, [remaining])
     useEffect(() => {
         let int = null
@@ -86,13 +102,13 @@ const War = () => {
                     setState("notInWar")
                     setRemaining(null)
                 } else {
-                    if (DateTime.utc() < alfa){
+                    if (DateTime.utc() < alfa) {
                         //before war
                         const dur = alfa - DateTime.utc()
                         setRemaining(dur)
                         setNextWar(Duration.fromMillis(alfa - DateTime.utc()).toFormat("hh:mm:ss"))
                         setState("notInWar")
-                    }else {
+                    } else {
                         //in war
                         const dur = zita - DateTime.utc()
                         setRemaining(dur)
@@ -104,7 +120,6 @@ const War = () => {
         }
 
 
-
         return () => {
             if (int !== null) {
                 clearInterval(int)
@@ -114,330 +129,333 @@ const War = () => {
 
     const getColorCode = () => {
 
-        const rem = Duration.fromMillis(remaining).toMillis()/1000/3600
-        if (rem > 8 ){
+        const rem = Duration.fromMillis(remaining).toMillis() / 1000 / 3600
+        if (rem > 8) {
             return styles.green
         }
-        if (rem > 6 ){
+        if (rem > 6) {
             return styles.blue
         }
-        if (rem > 4 ){
+        if (rem > 4) {
             return styles.orange
         }
-        if (rem > 3 ){
+        if (rem > 3) {
             return styles.coral
         }
-        if (rem > 2 ){
+        if (rem > 2) {
             return styles.red1
         }
-        if (rem > 1 ){
+        if (rem > 1) {
             return styles.red2
         }
-        return  styles.red
+        return styles.red
 
     }
     return (
-        <div>
+        <>
             {nextWar && <h1 style={{color: "red"}}>Next war at {nextWar}</h1>}
             <div>
                 {state === "onWar" && remaining != null && (<div>
                     <h1>On war!</h1>
-                    <h2>Time remaining: <span className={getColorCode()}>{Duration.fromMillis(remaining).toFormat("hh:mm:ss")}</span></h2>
+                    <h2>Time remaining: <span
+                        className={getColorCode()}>{Duration.fromMillis(remaining).toFormat("hh:mm:ss")}</span></h2>
 
                 </div>)
                 }
 
-                <div>
-                    <table _ngcontent-vkv-c63="" className="table table-striped table-sm">
-                        <thead _ngcontent-vkv-c63="" className="thead-dark">
-                        <tr _ngcontent-vkv-c63="">
-                            <th _ngcontent-vkv-c63="" scope="col">Guild</th>
-                            <th _ngcontent-vkv-c63="" scope="col">Pos.</th>
-                            <th _ngcontent-vkv-c63="" scope="col"> Monday</th>
-                            <th _ngcontent-vkv-c63="" scope="col"> Tuesday</th>
-                            <th _ngcontent-vkv-c63="" scope="col"> Wednesday</th>
-                            <th _ngcontent-vkv-c63="" scope="col"> Thursday</th>
-                            <th _ngcontent-vkv-c63="" scope="col"> Friday</th>
-                            </tr>
+
+                <div style={{overflow: "auto"}}>
+                    <table className={`${commonStyles.table} ${commonStyles.tableStriped} table-sm`}>
+                        <caption className={commonStyles.caption}>War Program</caption>
+                        <thead className="thead-dark">
+                        <tr>
+                            <th scope="col">Guild</th>
+                            <th scope="col">Pos.</th>
+                            <th scope="col"> Monday</th>
+                            <th scope="col"> Tuesday</th>
+                            <th scope="col"> Wednesday</th>
+                            <th scope="col"> Thursday</th>
+                            <th scope="col"> Friday</th>
+                        </tr>
                         </thead>
-                        <tbody _ngcontent-vkv-c63="">
-                        <tr _ngcontent-vkv-c63="" className={styles.currentTeam}>
-                            <td _ngcontent-vkv-c63="">athena</td>
-                            <td _ngcontent-vkv-c63="">1</td>
-                            <td _ngcontent-vkv-c63=""> 8-Велес</td>
-                            <td _ngcontent-vkv-c63=""> 14-Soul Reapers</td>
-                            <td _ngcontent-vkv-c63=""> 20-ЛЕВ</td>
-                            <td _ngcontent-vkv-c63=""> 26-Pif Paf Pouf</td>
-                            <td _ngcontent-vkv-c63=""> 2-The Eyrie</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">The Eyrie</td>
-                            <td _ngcontent-vkv-c63="">2</td>
-                            <td _ngcontent-vkv-c63=""> 25-The LIONS</td>
-                            <td _ngcontent-vkv-c63=""> 19-Kamigrain</td>
-                            <td _ngcontent-vkv-c63=""> 13-NBC</td>
-                            <td _ngcontent-vkv-c63=""> 7-Heros</td>
-                            <td _ngcontent-vkv-c63=""> 1-athena</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Lily</td>
-                            <td _ngcontent-vkv-c63="">3</td>
-                            <td _ngcontent-vkv-c63=""> 10-CCCP</td>
-                            <td _ngcontent-vkv-c63=""> 16-CRYSTAL</td>
-                            <td _ngcontent-vkv-c63=""> 22-Schriese</td>
-                            <td _ngcontent-vkv-c63=""> 28-Die Hanse</td>
-                            <td _ngcontent-vkv-c63=""> 4-Knight of Knights</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Knight of Knights</td>
-                            <td _ngcontent-vkv-c63="">4</td>
-                            <td _ngcontent-vkv-c63=""> 27-ONI SKY</td>
-                            <td _ngcontent-vkv-c63=""> 21-StormCat</td>
-                            <td _ngcontent-vkv-c63=""> 15-himatsubushi</td>
-                            <td _ngcontent-vkv-c63=""> 9-Belgique</td>
-                            <td _ngcontent-vkv-c63=""> 3-Lily</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Mattari</td>
-                            <td _ngcontent-vkv-c63="">5</td>
-                            <td _ngcontent-vkv-c63=""> 12-СССР-2</td>
-                            <td _ngcontent-vkv-c63=""> 18-Bansh</td>
-                            <td _ngcontent-vkv-c63=""> 24-КоролеваСемьи</td>
-                            <td _ngcontent-vkv-c63=""> 30-Dachschaden</td>
-                            <td _ngcontent-vkv-c63=""> 6-Fighter</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Fighter</td>
-                            <td _ngcontent-vkv-c63="">6</td>
-                            <td _ngcontent-vkv-c63=""> 29-The Demon Vanguard</td>
-                            <td _ngcontent-vkv-c63=""> 23-MUKAKIN-MUGON</td>
-                            <td _ngcontent-vkv-c63=""> 17-Retweet</td>
-                            <td _ngcontent-vkv-c63=""> 11-Clan Destino</td>
-                            <td _ngcontent-vkv-c63=""> 5-Mattari</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Heros</td>
-                            <td _ngcontent-vkv-c63="">7</td>
-                            <td _ngcontent-vkv-c63=""> 14-Soul Reapers</td>
-                            <td _ngcontent-vkv-c63=""> 20-ЛЕВ</td>
-                            <td _ngcontent-vkv-c63=""> 26-Pif Paf Pouf</td>
-                            <td _ngcontent-vkv-c63=""> 2-The Eyrie</td>
-                            <td _ngcontent-vkv-c63=""> 8-Велес</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Велес</td>
-                            <td _ngcontent-vkv-c63="">8</td>
-                            <td _ngcontent-vkv-c63=""> 1-athena</td>
-                            <td _ngcontent-vkv-c63=""> 25-The LIONS</td>
-                            <td _ngcontent-vkv-c63=""> 19-Kamigrain</td>
-                            <td _ngcontent-vkv-c63=""> 13-NBC</td>
-                            <td _ngcontent-vkv-c63=""> 7-Heros</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Belgique</td>
-                            <td _ngcontent-vkv-c63="">9</td>
-                            <td _ngcontent-vkv-c63=""> 16-CRYSTAL</td>
-                            <td _ngcontent-vkv-c63=""> 22-Schriese</td>
-                            <td _ngcontent-vkv-c63=""> 28-Die Hanse</td>
-                            <td _ngcontent-vkv-c63=""> 4-Knight of Knights</td>
-                            <td _ngcontent-vkv-c63=""> 10-CCCP</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">CCCP</td>
-                            <td _ngcontent-vkv-c63="">10</td>
-                            <td _ngcontent-vkv-c63=""> 3-Lily</td>
-                            <td _ngcontent-vkv-c63=""> 27-ONI SKY</td>
-                            <td _ngcontent-vkv-c63=""> 21-StormCat</td>
-                            <td _ngcontent-vkv-c63=""> 15-himatsubushi</td>
-                            <td _ngcontent-vkv-c63=""> 9-Belgique</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Clan Destino</td>
-                            <td _ngcontent-vkv-c63="">11</td>
-                            <td _ngcontent-vkv-c63=""> 18-Bansh</td>
-                            <td _ngcontent-vkv-c63=""> 24-КоролеваСемьи</td>
-                            <td _ngcontent-vkv-c63=""> 30-Dachschaden</td>
-                            <td _ngcontent-vkv-c63=""> 6-Fighter</td>
-                            <td _ngcontent-vkv-c63=""> 12-СССР-2</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">СССР-2</td>
-                            <td _ngcontent-vkv-c63="">12</td>
-                            <td _ngcontent-vkv-c63=""> 5-Mattari</td>
-                            <td _ngcontent-vkv-c63=""> 29-The Demon Vanguard</td>
-                            <td _ngcontent-vkv-c63=""> 23-MUKAKIN-MUGON</td>
-                            <td _ngcontent-vkv-c63=""> 17-Retweet</td>
-                            <td _ngcontent-vkv-c63=""> 11-Clan Destino</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">NBC</td>
-                            <td _ngcontent-vkv-c63="">13</td>
-                            <td _ngcontent-vkv-c63=""> 20-ЛЕВ</td>
-                            <td _ngcontent-vkv-c63=""> 26-Pif Paf Pouf</td>
-                            <td _ngcontent-vkv-c63=""> 2-The Eyrie</td>
-                            <td _ngcontent-vkv-c63=""> 8-Велес</td>
-                            <td _ngcontent-vkv-c63=""> 14-Soul Reapers</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Soul Reapers</td>
-                            <td _ngcontent-vkv-c63="">14</td>
-                            <td _ngcontent-vkv-c63=""> 7-Heros</td>
-                            <td _ngcontent-vkv-c63=""> 1-athena</td>
-                            <td _ngcontent-vkv-c63=""> 25-The LIONS</td>
-                            <td _ngcontent-vkv-c63=""> 19-Kamigrain</td>
-                            <td _ngcontent-vkv-c63=""> 13-NBC</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">himatsubushi</td>
-                            <td _ngcontent-vkv-c63="">15</td>
-                            <td _ngcontent-vkv-c63=""> 22-Schriese</td>
-                            <td _ngcontent-vkv-c63=""> 28-Die Hanse</td>
-                            <td _ngcontent-vkv-c63=""> 4-Knight of Knights</td>
-                            <td _ngcontent-vkv-c63=""> 10-CCCP</td>
-                            <td _ngcontent-vkv-c63=""> 16-CRYSTAL</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">CRYSTAL</td>
-                            <td _ngcontent-vkv-c63="">16</td>
-                            <td _ngcontent-vkv-c63=""> 9-Belgique</td>
-                            <td _ngcontent-vkv-c63=""> 3-Lily</td>
-                            <td _ngcontent-vkv-c63=""> 27-ONI SKY</td>
-                            <td _ngcontent-vkv-c63=""> 21-StormCat</td>
-                            <td _ngcontent-vkv-c63=""> 15-himatsubushi</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Retweet</td>
-                            <td _ngcontent-vkv-c63="">17</td>
-                            <td _ngcontent-vkv-c63=""> 24-КоролеваСемьи</td>
-                            <td _ngcontent-vkv-c63=""> 30-Dachschaden</td>
-                            <td _ngcontent-vkv-c63=""> 6-Fighter</td>
-                            <td _ngcontent-vkv-c63=""> 12-СССР-2</td>
-                            <td _ngcontent-vkv-c63=""> 18-Bansh</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Bansh</td>
-                            <td _ngcontent-vkv-c63="">18</td>
-                            <td _ngcontent-vkv-c63=""> 11-Clan Destino</td>
-                            <td _ngcontent-vkv-c63=""> 5-Mattari</td>
-                            <td _ngcontent-vkv-c63=""> 29-The Demon Vanguard</td>
-                            <td _ngcontent-vkv-c63=""> 23-MUKAKIN-MUGON</td>
-                            <td _ngcontent-vkv-c63=""> 17-Retweet</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Kamigrain</td>
-                            <td _ngcontent-vkv-c63="">19</td>
-                            <td _ngcontent-vkv-c63=""> 26-Pif Paf Pouf</td>
-                            <td _ngcontent-vkv-c63=""> 2-The Eyrie</td>
-                            <td _ngcontent-vkv-c63=""> 8-Велес</td>
-                            <td _ngcontent-vkv-c63=""> 14-Soul Reapers</td>
-                            <td _ngcontent-vkv-c63=""> 20-ЛЕВ</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">ЛЕВ</td>
-                            <td _ngcontent-vkv-c63="">20</td>
-                            <td _ngcontent-vkv-c63=""> 13-NBC</td>
-                            <td _ngcontent-vkv-c63=""> 7-Heros</td>
-                            <td _ngcontent-vkv-c63=""> 1-athena</td>
-                            <td _ngcontent-vkv-c63=""> 25-The LIONS</td>
-                            <td _ngcontent-vkv-c63=""> 19-Kamigrain</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">StormCat</td>
-                            <td _ngcontent-vkv-c63="">21</td>
-                            <td _ngcontent-vkv-c63=""> 28-Die Hanse</td>
-                            <td _ngcontent-vkv-c63=""> 4-Knight of Knights</td>
-                            <td _ngcontent-vkv-c63=""> 10-CCCP</td>
-                            <td _ngcontent-vkv-c63=""> 16-CRYSTAL</td>
-                            <td _ngcontent-vkv-c63=""> 22-Schriese</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Schriese</td>
-                            <td _ngcontent-vkv-c63="">22</td>
-                            <td _ngcontent-vkv-c63=""> 15-himatsubushi</td>
-                            <td _ngcontent-vkv-c63=""> 9-Belgique</td>
-                            <td _ngcontent-vkv-c63=""> 3-Lily</td>
-                            <td _ngcontent-vkv-c63=""> 27-ONI SKY</td>
-                            <td _ngcontent-vkv-c63=""> 21-StormCat</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">MUKAKIN-MUGON</td>
-                            <td _ngcontent-vkv-c63="">23</td>
-                            <td _ngcontent-vkv-c63=""> 30-Dachschaden</td>
-                            <td _ngcontent-vkv-c63=""> 6-Fighter</td>
-                            <td _ngcontent-vkv-c63=""> 12-СССР-2</td>
-                            <td _ngcontent-vkv-c63=""> 18-Bansh</td>
-                            <td _ngcontent-vkv-c63=""> 24-КоролеваСемьи</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">КоролеваСемьи</td>
-                            <td _ngcontent-vkv-c63="">24</td>
-                            <td _ngcontent-vkv-c63=""> 17-Retweet</td>
-                            <td _ngcontent-vkv-c63=""> 11-Clan Destino</td>
-                            <td _ngcontent-vkv-c63=""> 5-Mattari</td>
-                            <td _ngcontent-vkv-c63=""> 29-The Demon Vanguard</td>
-                            <td _ngcontent-vkv-c63=""> 23-MUKAKIN-MUGON</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">The LIONS</td>
-                            <td _ngcontent-vkv-c63="">25</td>
-                            <td _ngcontent-vkv-c63=""> 2-The Eyrie</td>
-                            <td _ngcontent-vkv-c63=""> 8-Велес</td>
-                            <td _ngcontent-vkv-c63=""> 14-Soul Reapers</td>
-                            <td _ngcontent-vkv-c63=""> 20-ЛЕВ</td>
-                            <td _ngcontent-vkv-c63=""> 26-Pif Paf Pouf</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Pif Paf Pouf</td>
-                            <td _ngcontent-vkv-c63="">26</td>
-                            <td _ngcontent-vkv-c63=""> 19-Kamigrain</td>
-                            <td _ngcontent-vkv-c63=""> 13-NBC</td>
-                            <td _ngcontent-vkv-c63=""> 7-Heros</td>
-                            <td _ngcontent-vkv-c63=""> 1-athena</td>
-                            <td _ngcontent-vkv-c63=""> 25-The LIONS</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">ONI SKY</td>
-                            <td _ngcontent-vkv-c63="">27</td>
-                            <td _ngcontent-vkv-c63=""> 4-Knight of Knights</td>
-                            <td _ngcontent-vkv-c63=""> 10-CCCP</td>
-                            <td _ngcontent-vkv-c63=""> 16-CRYSTAL</td>
-                            <td _ngcontent-vkv-c63=""> 22-Schriese</td>
-                            <td _ngcontent-vkv-c63=""> 28-Die Hanse</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Die Hanse</td>
-                            <td _ngcontent-vkv-c63="">28</td>
-                            <td _ngcontent-vkv-c63=""> 21-StormCat</td>
-                            <td _ngcontent-vkv-c63=""> 15-himatsubushi</td>
-                            <td _ngcontent-vkv-c63=""> 9-Belgique</td>
-                            <td _ngcontent-vkv-c63=""> 3-Lily</td>
-                            <td _ngcontent-vkv-c63=""> 27-ONI SKY</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">The Demon Vanguard</td>
-                            <td _ngcontent-vkv-c63="">29</td>
-                            <td _ngcontent-vkv-c63=""> 6-Fighter</td>
-                            <td _ngcontent-vkv-c63=""> 12-СССР-2</td>
-                            <td _ngcontent-vkv-c63=""> 18-Bansh</td>
-                            <td _ngcontent-vkv-c63=""> 24-КоролеваСемьи</td>
-                            <td _ngcontent-vkv-c63=""> 30-Dachschaden</td>
-                            </tr>
-                        <tr _ngcontent-vkv-c63="">
-                            <td _ngcontent-vkv-c63="">Dachschaden</td>
-                            <td _ngcontent-vkv-c63="">30</td>
-                            <td _ngcontent-vkv-c63=""> 23-MUKAKIN-MUGON</td>
-                            <td _ngcontent-vkv-c63=""> 17-Retweet</td>
-                            <td _ngcontent-vkv-c63=""> 11-Clan Destino</td>
-                            <td _ngcontent-vkv-c63=""> 5-Mattari</td>
-                            <td _ngcontent-vkv-c63=""> 29-The Demon Vanguard</td>
-                            </tr>
+                        <tbody>
+                        <tr className={styles.currentTeam}>
+                            <td data-label={"Guild"}>athena</td>
+                            <td data-label={"Pos."}>1</td>
+                            <td data-label={"Monday"}>8-Велес</td>
+                            <td data-label={"Tuesday"}>14-Soul Reapers</td>
+                            <td data-label={"Wednesday"}>20-ЛЕВ</td>
+                            <td data-label={"Thursday"}>26-Pif Paf Pouf</td>
+                            <td data-label={"Friday"}>2-The Eyrie</td>
+                        </tr>
+                        <tr>
+                            <td data-label={"Guild"}>The Eyrie</td>
+                            <td data-label={"Pos."}>2</td>
+                            <td data-label={"Monday"}>25-The LIONS</td>
+                            <td data-label={"Tuesday"}>19-Kamigrain</td>
+                            <td data-label={""}>13-NBC</td>
+                            <td data-label={""}>7-Heros</td>
+                            <td data-label={""}>1-athena</td>
+                        </tr>
+                        <tr>
+                            <td data-label={"Guild"}>Lily</td>
+                            <td>3</td>
+                            <td data-label={""}>10-CCCP</td>
+                            <td data-label={""}>16-CRYSTAL</td>
+                            <td data-label={"Tuesday"}>22-Schriese</td>
+                            <td data-label={""}>28-Die Hanse</td>
+                            <td data-label={""}>4-Knight of Knights</td>
+                        </tr>
+                        <tr>
+                            <td data-label={"Guild"}>Knight of Knights</td>
+                            <td>4</td>
+                            <td data-label={""}>27-ONI SKY</td>
+                            <td data-label={""}>21-StormCat</td>
+                            <td data-label={""}>15-himatsubushi</td>
+                            <td data-label={""}>9-Belgique</td>
+                            <td data-label={""}>3-Lily</td>
+                        </tr>
+                        <tr>
+                            <td data-label={"Guild"}>Mattari</td>
+                            <td>5</td>
+                            <td data-label={""}>12-СССР-2</td>
+                            <td data-label={""}>18-Bansh</td>
+                            <td data-label={""}>24-КоролеваСемьи</td>
+                            <td data-label={""}>30-Dachschaden</td>
+                            <td data-label={""}>6-Fighter</td>
+                        </tr>
+                        <tr>
+                            <td>Fighter</td>
+                            <td>6</td>
+                            <td data-label={""}>29-The Demon Vanguard</td>
+                            <td data-label={""}>23-MUKAKIN-MUGON</td>
+                            <td data-label={""}>17-Retweet</td>
+                            <td data-label={""}>11-Clan Destino</td>
+                            <td data-label={""}>5-Mattari</td>
+                        </tr>
+                        <tr>
+                            <td>Heros</td>
+                            <td>7</td>
+                            <td data-label={""}>14-Soul Reapers</td>
+                            <td data-label={""}>20-ЛЕВ</td>
+                            <td data-label={""}>26-Pif Paf Pouf</td>
+                            <td data-label={""}>2-The Eyrie</td>
+                            <td data-label={""}>8-Велес</td>
+                        </tr>
+                        <tr>
+                            <td>Велес</td>
+                            <td>8</td>
+                            <td data-label={""}>1-athena</td>
+                            <td data-label={""}>25-The LIONS</td>
+                            <td data-label={""}>19-Kamigrain</td>
+                            <td data-label={""}>13-NBC</td>
+                            <td data-label={""}>7-Heros</td>
+                        </tr>
+                        <tr>
+                            <td>Belgique</td>
+                            <td>9</td>
+                            <td data-label={""}>16-CRYSTAL</td>
+                            <td data-label={""}>22-Schriese</td>
+                            <td data-label={""}>28-Die Hanse</td>
+                            <td data-label={""}>4-Knight of Knights</td>
+                            <td data-label={""}>10-CCCP</td>
+                        </tr>
+                        <tr>
+                            <td>CCCP</td>
+                            <td>10</td>
+                            <td data-label={""}>3-Lily</td>
+                            <td data-label={""}>27-ONI SKY</td>
+                            <td data-label={""}>21-StormCat</td>
+                            <td data-label={""}>15-himatsubushi</td>
+                            <td data-label={""}>9-Belgique</td>
+                        </tr>
+                        <tr>
+                            <td>Clan Destino</td>
+                            <td>11</td>
+                            <td data-label={""}>18-Bansh</td>
+                            <td data-label={""}>24-КоролеваСемьи</td>
+                            <td data-label={""}>30-Dachschaden</td>
+                            <td data-label={""}>6-Fighter</td>
+                            <td data-label={""}>12-СССР-2</td>
+                        </tr>
+                        <tr>
+                            <td>СССР-2</td>
+                            <td>12</td>
+                            <td data-label={""}>5-Mattari</td>
+                            <td data-label={""}>29-The Demon Vanguard</td>
+                            <td data-label={""}>23-MUKAKIN-MUGON</td>
+                            <td data-label={""}>17-Retweet</td>
+                            <td data-label={""}>11-Clan Destino</td>
+                        </tr>
+                        <tr>
+                            <td>NBC</td>
+                            <td>13</td>
+                            <td data-label={""}>20-ЛЕВ</td>
+                            <td data-label={""}>26-Pif Paf Pouf</td>
+                            <td data-label={""}>2-The Eyrie</td>
+                            <td data-label={""}>8-Велес</td>
+                            <td data-label={""}>14-Soul Reapers</td>
+                        </tr>
+                        <tr>
+                            <td>Soul Reapers</td>
+                            <td>14</td>
+                            <td data-label={""}>7-Heros</td>
+                            <td data-label={""}>1-athena</td>
+                            <td data-label={""}>25-The LIONS</td>
+                            <td data-label={""}>19-Kamigrain</td>
+                            <td data-label={""}>13-NBC</td>
+                        </tr>
+                        <tr>
+                            <td>himatsubushi</td>
+                            <td>15</td>
+                            <td data-label={""}>22-Schriese</td>
+                            <td data-label={""}>28-Die Hanse</td>
+                            <td data-label={""}>4-Knight of Knights</td>
+                            <td data-label={""}>10-CCCP</td>
+                            <td data-label={""}>16-CRYSTAL</td>
+                        </tr>
+                        <tr>
+                            <td>CRYSTAL</td>
+                            <td>16</td>
+                            <td data-label={""}>9-Belgique</td>
+                            <td data-label={""}>3-Lily</td>
+                            <td data-label={""}>27-ONI SKY</td>
+                            <td data-label={""}>21-StormCat</td>
+                            <td data-label={""}>15-himatsubushi</td>
+                        </tr>
+                        <tr>
+                            <td>Retweet</td>
+                            <td>17</td>
+                            <td data-label={""}>24-КоролеваСемьи</td>
+                            <td data-label={""}>30-Dachschaden</td>
+                            <td data-label={""}>6-Fighter</td>
+                            <td data-label={""}>12-СССР-2</td>
+                            <td data-label={""}>18-Bansh</td>
+                        </tr>
+                        <tr>
+                            <td>Bansh</td>
+                            <td>18</td>
+                            <td data-label={""}>11-Clan Destino</td>
+                            <td data-label={""}>5-Mattari</td>
+                            <td data-label={""}>29-The Demon Vanguard</td>
+                            <td data-label={""}>23-MUKAKIN-MUGON</td>
+                            <td data-label={""}>17-Retweet</td>
+                        </tr>
+                        <tr>
+                            <td>Kamigrain</td>
+                            <td>19</td>
+                            <td data-label={""}>26-Pif Paf Pouf</td>
+                            <td data-label={""}>2-The Eyrie</td>
+                            <td data-label={""}>8-Велес</td>
+                            <td data-label={""}>14-Soul Reapers</td>
+                            <td data-label={""}>20-ЛЕВ</td>
+                        </tr>
+                        <tr>
+                            <td>ЛЕВ</td>
+                            <td>20</td>
+                            <td data-label={""}>13-NBC</td>
+                            <td data-label={""}>7-Heros</td>
+                            <td data-label={""}>1-athena</td>
+                            <td data-label={""}>25-The LIONS</td>
+                            <td data-label={""}>19-Kamigrain</td>
+                        </tr>
+                        <tr>
+                            <td>StormCat</td>
+                            <td>21</td>
+                            <td data-label={""}>28-Die Hanse</td>
+                            <td data-label={""}>4-Knight of Knights</td>
+                            <td data-label={""}>10-CCCP</td>
+                            <td data-label={""}>16-CRYSTAL</td>
+                            <td data-label={""}>22-Schriese</td>
+                        </tr>
+                        <tr>
+                            <td>Schriese</td>
+                            <td>22</td>
+                            <td data-label={""}>15-himatsubushi</td>
+                            <td data-label={""}>9-Belgique</td>
+                            <td data-label={""}>3-Lily</td>
+                            <td data-label={""}>27-ONI SKY</td>
+                            <td data-label={""}>21-StormCat</td>
+                        </tr>
+                        <tr>
+                            <td>MUKAKIN-MUGON</td>
+                            <td>23</td>
+                            <td data-label={""}>30-Dachschaden</td>
+                            <td data-label={""}>6-Fighter</td>
+                            <td data-label={""}>12-СССР-2</td>
+                            <td data-label={""}>18-Bansh</td>
+                            <td data-label={""}>24-КоролеваСемьи</td>
+                        </tr>
+                        <tr>
+                            <td>КоролеваСемьи</td>
+                            <td>24</td>
+                            <td data-label={""}>17-Retweet</td>
+                            <td data-label={""}>11-Clan Destino</td>
+                            <td data-label={""}>5-Mattari</td>
+                            <td data-label={""}>29-The Demon Vanguard</td>
+                            <td data-label={""}>23-MUKAKIN-MUGON</td>
+                        </tr>
+                        <tr>
+                            <td>The LIONS</td>
+                            <td>25</td>
+                            <td data-label={""}>2-The Eyrie</td>
+                            <td data-label={""}>8-Велес</td>
+                            <td data-label={""}>14-Soul Reapers</td>
+                            <td data-label={""}>20-ЛЕВ</td>
+                            <td data-label={""}>26-Pif Paf Pouf</td>
+                        </tr>
+                        <tr>
+                            <td>Pif Paf Pouf</td>
+                            <td>26</td>
+                            <td data-label={""}>19-Kamigrain</td>
+                            <td data-label={""}>13-NBC</td>
+                            <td data-label={""}>7-Heros</td>
+                            <td data-label={""}>1-athena</td>
+                            <td data-label={""}>25-The LIONS</td>
+                        </tr>
+                        <tr>
+                            <td>ONI SKY</td>
+                            <td>27</td>
+                            <td data-label={""}>4-Knight of Knights</td>
+                            <td data-label={""}>10-CCCP</td>
+                            <td data-label={""}>16-CRYSTAL</td>
+                            <td data-label={""}>22-Schriese</td>
+                            <td data-label={""}>28-Die Hanse</td>
+                        </tr>
+                        <tr>
+                            <td>Die Hanse</td>
+                            <td>28</td>
+                            <td data-label={""}>21-StormCat</td>
+                            <td data-label={""}>15-himatsubushi</td>
+                            <td data-label={""}>9-Belgique</td>
+                            <td data-label={""}>3-Lily</td>
+                            <td data-label={""}>27-ONI SKY</td>
+                        </tr>
+                        <tr>
+                            <td>The Demon Vanguard</td>
+                            <td>29</td>
+                            <td data-label={""}>6-Fighter</td>
+                            <td data-label={""}>12-СССР-2</td>
+                            <td data-label={""}>18-Bansh</td>
+                            <td data-label={""}>24-КоролеваСемьи</td>
+                            <td data-label={""}>30-Dachschaden</td>
+                        </tr>
+                        <tr>
+                            <td>Dachschaden</td>
+                            <td>30</td>
+                            <td data-label={""}>23-MUKAKIN-MUGON</td>
+                            <td data-label={""}>17-Retweet</td>
+                            <td data-label={""}>11-Clan Destino</td>
+                            <td data-label={""}>5-Mattari</td>
+                            <td data-label={""}>29-The Demon Vanguard</td>
+                        </tr>
                         </tbody>
                     </table>
 
 
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 
