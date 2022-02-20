@@ -1,8 +1,10 @@
 import {useSelector} from "react-redux";
 import styles from "./program.module.css"
+import {useEffect} from "react";
 
 const Program = ({opponents}) => {
     const teams = useSelector(state => state.teams.teams)
+
 
     if (opponents.length === 0) return null
 

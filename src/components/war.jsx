@@ -3,8 +3,9 @@ import {DateTime} from "luxon";
 import {useEffect, useState} from "react";
 import {Duration} from "luxon/build/cjs-browser/luxon";
 import commonStyles from './common.module.css'
-import {coreModule} from "@reduxjs/toolkit/query";
-// const total = 10 * 3600 * 1000
+import {useSelector} from "react-redux";
+import {getOpponents} from "../features/teams";
+
 const isTimeInWar = (currentDate) => {
     const hour = currentDate.hour
     if (hour > 8 && hour < 20) return true
@@ -63,6 +64,7 @@ const War = () => {
     const [nextWar, setNextWar] = useState(null)
     const [state, setState] = useState("init")
     const [remaining, setRemaining] = useState(null)
+    const teams = useSelector(state=> state.teams.teams)
 
 
     useEffect(() => {
@@ -166,7 +168,7 @@ const War = () => {
 
                 <div style={{overflow: "auto"}}>
                     <table className={`${commonStyles.table} ${commonStyles.tableStriped} table-sm`}>
-                        <caption className={commonStyles.caption}>War Program</caption>
+                        <caption className={commonStyles.caption}>Full War Program</caption>
                         <thead className="thead-dark">
                         <tr>
                             <th scope="col">Guild</th>
@@ -179,276 +181,22 @@ const War = () => {
                         </tr>
                         </thead>
                         <tbody>
-                        <tr className={styles.currentTeam}>
-                            <td data-label={"Guild"}>athena</td>
-                            <td data-label={"Pos."}>1</td>
-                            <td data-label={"Monday"}>8-Велес</td>
-                            <td data-label={"Tuesday"}>14-Soul Reapers</td>
-                            <td data-label={"Wednesday"}>20-ЛЕВ</td>
-                            <td data-label={"Thursday"}>26-Pif Paf Pouf</td>
-                            <td data-label={"Friday"}>2-The Eyrie</td>
-                        </tr>
-                        <tr>
-                            <td data-label={"Guild"}>The Eyrie</td>
-                            <td data-label={"Pos."}>2</td>
-                            <td data-label={"Monday"}>25-The LIONS</td>
-                            <td data-label={"Tuesday"}>19-Kamigrain</td>
-                            <td data-label={""}>13-NBC</td>
-                            <td data-label={""}>7-Heros</td>
-                            <td data-label={""}>1-athena</td>
-                        </tr>
-                        <tr>
-                            <td data-label={"Guild"}>Lily</td>
-                            <td>3</td>
-                            <td data-label={""}>10-CCCP</td>
-                            <td data-label={""}>16-CRYSTAL</td>
-                            <td data-label={"Tuesday"}>22-Schriese</td>
-                            <td data-label={""}>28-Die Hanse</td>
-                            <td data-label={""}>4-Knight of Knights</td>
-                        </tr>
-                        <tr>
-                            <td data-label={"Guild"}>Knight of Knights</td>
-                            <td>4</td>
-                            <td data-label={""}>27-ONI SKY</td>
-                            <td data-label={""}>21-StormCat</td>
-                            <td data-label={""}>15-himatsubushi</td>
-                            <td data-label={""}>9-Belgique</td>
-                            <td data-label={""}>3-Lily</td>
-                        </tr>
-                        <tr>
-                            <td data-label={"Guild"}>Mattari</td>
-                            <td>5</td>
-                            <td data-label={""}>12-СССР-2</td>
-                            <td data-label={""}>18-Bansh</td>
-                            <td data-label={""}>24-КоролеваСемьи</td>
-                            <td data-label={""}>30-Dachschaden</td>
-                            <td data-label={""}>6-Fighter</td>
-                        </tr>
-                        <tr>
-                            <td>Fighter</td>
-                            <td>6</td>
-                            <td data-label={""}>29-The Demon Vanguard</td>
-                            <td data-label={""}>23-MUKAKIN-MUGON</td>
-                            <td data-label={""}>17-Retweet</td>
-                            <td data-label={""}>11-Clan Destino</td>
-                            <td data-label={""}>5-Mattari</td>
-                        </tr>
-                        <tr>
-                            <td>Heros</td>
-                            <td>7</td>
-                            <td data-label={""}>14-Soul Reapers</td>
-                            <td data-label={""}>20-ЛЕВ</td>
-                            <td data-label={""}>26-Pif Paf Pouf</td>
-                            <td data-label={""}>2-The Eyrie</td>
-                            <td data-label={""}>8-Велес</td>
-                        </tr>
-                        <tr>
-                            <td>Велес</td>
-                            <td>8</td>
-                            <td data-label={""}>1-athena</td>
-                            <td data-label={""}>25-The LIONS</td>
-                            <td data-label={""}>19-Kamigrain</td>
-                            <td data-label={""}>13-NBC</td>
-                            <td data-label={""}>7-Heros</td>
-                        </tr>
-                        <tr>
-                            <td>Belgique</td>
-                            <td>9</td>
-                            <td data-label={""}>16-CRYSTAL</td>
-                            <td data-label={""}>22-Schriese</td>
-                            <td data-label={""}>28-Die Hanse</td>
-                            <td data-label={""}>4-Knight of Knights</td>
-                            <td data-label={""}>10-CCCP</td>
-                        </tr>
-                        <tr>
-                            <td>CCCP</td>
-                            <td>10</td>
-                            <td data-label={""}>3-Lily</td>
-                            <td data-label={""}>27-ONI SKY</td>
-                            <td data-label={""}>21-StormCat</td>
-                            <td data-label={""}>15-himatsubushi</td>
-                            <td data-label={""}>9-Belgique</td>
-                        </tr>
-                        <tr>
-                            <td>Clan Destino</td>
-                            <td>11</td>
-                            <td data-label={""}>18-Bansh</td>
-                            <td data-label={""}>24-КоролеваСемьи</td>
-                            <td data-label={""}>30-Dachschaden</td>
-                            <td data-label={""}>6-Fighter</td>
-                            <td data-label={""}>12-СССР-2</td>
-                        </tr>
-                        <tr>
-                            <td>СССР-2</td>
-                            <td>12</td>
-                            <td data-label={""}>5-Mattari</td>
-                            <td data-label={""}>29-The Demon Vanguard</td>
-                            <td data-label={""}>23-MUKAKIN-MUGON</td>
-                            <td data-label={""}>17-Retweet</td>
-                            <td data-label={""}>11-Clan Destino</td>
-                        </tr>
-                        <tr>
-                            <td>NBC</td>
-                            <td>13</td>
-                            <td data-label={""}>20-ЛЕВ</td>
-                            <td data-label={""}>26-Pif Paf Pouf</td>
-                            <td data-label={""}>2-The Eyrie</td>
-                            <td data-label={""}>8-Велес</td>
-                            <td data-label={""}>14-Soul Reapers</td>
-                        </tr>
-                        <tr>
-                            <td>Soul Reapers</td>
-                            <td>14</td>
-                            <td data-label={""}>7-Heros</td>
-                            <td data-label={""}>1-athena</td>
-                            <td data-label={""}>25-The LIONS</td>
-                            <td data-label={""}>19-Kamigrain</td>
-                            <td data-label={""}>13-NBC</td>
-                        </tr>
-                        <tr>
-                            <td>himatsubushi</td>
-                            <td>15</td>
-                            <td data-label={""}>22-Schriese</td>
-                            <td data-label={""}>28-Die Hanse</td>
-                            <td data-label={""}>4-Knight of Knights</td>
-                            <td data-label={""}>10-CCCP</td>
-                            <td data-label={""}>16-CRYSTAL</td>
-                        </tr>
-                        <tr>
-                            <td>CRYSTAL</td>
-                            <td>16</td>
-                            <td data-label={""}>9-Belgique</td>
-                            <td data-label={""}>3-Lily</td>
-                            <td data-label={""}>27-ONI SKY</td>
-                            <td data-label={""}>21-StormCat</td>
-                            <td data-label={""}>15-himatsubushi</td>
-                        </tr>
-                        <tr>
-                            <td>Retweet</td>
-                            <td>17</td>
-                            <td data-label={""}>24-КоролеваСемьи</td>
-                            <td data-label={""}>30-Dachschaden</td>
-                            <td data-label={""}>6-Fighter</td>
-                            <td data-label={""}>12-СССР-2</td>
-                            <td data-label={""}>18-Bansh</td>
-                        </tr>
-                        <tr>
-                            <td>Bansh</td>
-                            <td>18</td>
-                            <td data-label={""}>11-Clan Destino</td>
-                            <td data-label={""}>5-Mattari</td>
-                            <td data-label={""}>29-The Demon Vanguard</td>
-                            <td data-label={""}>23-MUKAKIN-MUGON</td>
-                            <td data-label={""}>17-Retweet</td>
-                        </tr>
-                        <tr>
-                            <td>Kamigrain</td>
-                            <td>19</td>
-                            <td data-label={""}>26-Pif Paf Pouf</td>
-                            <td data-label={""}>2-The Eyrie</td>
-                            <td data-label={""}>8-Велес</td>
-                            <td data-label={""}>14-Soul Reapers</td>
-                            <td data-label={""}>20-ЛЕВ</td>
-                        </tr>
-                        <tr>
-                            <td>ЛЕВ</td>
-                            <td>20</td>
-                            <td data-label={""}>13-NBC</td>
-                            <td data-label={""}>7-Heros</td>
-                            <td data-label={""}>1-athena</td>
-                            <td data-label={""}>25-The LIONS</td>
-                            <td data-label={""}>19-Kamigrain</td>
-                        </tr>
-                        <tr>
-                            <td>StormCat</td>
-                            <td>21</td>
-                            <td data-label={""}>28-Die Hanse</td>
-                            <td data-label={""}>4-Knight of Knights</td>
-                            <td data-label={""}>10-CCCP</td>
-                            <td data-label={""}>16-CRYSTAL</td>
-                            <td data-label={""}>22-Schriese</td>
-                        </tr>
-                        <tr>
-                            <td>Schriese</td>
-                            <td>22</td>
-                            <td data-label={""}>15-himatsubushi</td>
-                            <td data-label={""}>9-Belgique</td>
-                            <td data-label={""}>3-Lily</td>
-                            <td data-label={""}>27-ONI SKY</td>
-                            <td data-label={""}>21-StormCat</td>
-                        </tr>
-                        <tr>
-                            <td>MUKAKIN-MUGON</td>
-                            <td>23</td>
-                            <td data-label={""}>30-Dachschaden</td>
-                            <td data-label={""}>6-Fighter</td>
-                            <td data-label={""}>12-СССР-2</td>
-                            <td data-label={""}>18-Bansh</td>
-                            <td data-label={""}>24-КоролеваСемьи</td>
-                        </tr>
-                        <tr>
-                            <td>КоролеваСемьи</td>
-                            <td>24</td>
-                            <td data-label={""}>17-Retweet</td>
-                            <td data-label={""}>11-Clan Destino</td>
-                            <td data-label={""}>5-Mattari</td>
-                            <td data-label={""}>29-The Demon Vanguard</td>
-                            <td data-label={""}>23-MUKAKIN-MUGON</td>
-                        </tr>
-                        <tr>
-                            <td>The LIONS</td>
-                            <td>25</td>
-                            <td data-label={""}>2-The Eyrie</td>
-                            <td data-label={""}>8-Велес</td>
-                            <td data-label={""}>14-Soul Reapers</td>
-                            <td data-label={""}>20-ЛЕВ</td>
-                            <td data-label={""}>26-Pif Paf Pouf</td>
-                        </tr>
-                        <tr>
-                            <td>Pif Paf Pouf</td>
-                            <td>26</td>
-                            <td data-label={""}>19-Kamigrain</td>
-                            <td data-label={""}>13-NBC</td>
-                            <td data-label={""}>7-Heros</td>
-                            <td data-label={""}>1-athena</td>
-                            <td data-label={""}>25-The LIONS</td>
-                        </tr>
-                        <tr>
-                            <td>ONI SKY</td>
-                            <td>27</td>
-                            <td data-label={""}>4-Knight of Knights</td>
-                            <td data-label={""}>10-CCCP</td>
-                            <td data-label={""}>16-CRYSTAL</td>
-                            <td data-label={""}>22-Schriese</td>
-                            <td data-label={""}>28-Die Hanse</td>
-                        </tr>
-                        <tr>
-                            <td>Die Hanse</td>
-                            <td>28</td>
-                            <td data-label={""}>21-StormCat</td>
-                            <td data-label={""}>15-himatsubushi</td>
-                            <td data-label={""}>9-Belgique</td>
-                            <td data-label={""}>3-Lily</td>
-                            <td data-label={""}>27-ONI SKY</td>
-                        </tr>
-                        <tr>
-                            <td>The Demon Vanguard</td>
-                            <td>29</td>
-                            <td data-label={""}>6-Fighter</td>
-                            <td data-label={""}>12-СССР-2</td>
-                            <td data-label={""}>18-Bansh</td>
-                            <td data-label={""}>24-КоролеваСемьи</td>
-                            <td data-label={""}>30-Dachschaden</td>
-                        </tr>
-                        <tr>
-                            <td>Dachschaden</td>
-                            <td>30</td>
-                            <td data-label={""}>23-MUKAKIN-MUGON</td>
-                            <td data-label={""}>17-Retweet</td>
-                            <td data-label={""}>11-Clan Destino</td>
-                            <td data-label={""}>5-Mattari</td>
-                            <td data-label={""}>29-The Demon Vanguard</td>
-                        </tr>
+                        {teams && teams.map(team => {
+                                const opp = getOpponents(teams, team.position)
+                                console.log('IN TABLE', teams[opp[0]-1].name)
+
+                                return (<tr key={team.position}>
+                                    <td data-label={"Guild"} style={{fontWeight: "bold", fontSize:"large"}}>{team.name}</td>
+                                    <td data-label={"Pos."}>{team.position}</td>
+                                    <td data-label={"Monday"}>{teams[opp[0]-1].position}-{teams[opp[0]-1].name}</td>
+                                    <td data-label={"Tuesday"}>{teams[opp[1]-1].position}-{teams[opp[1]-1].name}</td>
+                                    <td data-label={"Wednesday"}>{teams[opp[2]-1].position}-{teams[opp[2]-1].name}</td>
+                                    <td data-label={"Thursday"}>{teams[opp[3]-1].position}-{teams[opp[3]-1].name}</td>
+                                    <td data-label={"Friday"}>{teams[opp[4]-1].position}-{teams[opp[4]-1].name}</td>
+                                </tr>)
+                            }
+                        )}
+
                         </tbody>
                     </table>
 

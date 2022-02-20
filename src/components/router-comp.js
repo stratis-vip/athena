@@ -19,28 +19,28 @@ const RouterComponent = () => {
         <Router>
 
             <div className={styles.navBar}>
-                    <div className={styles.left}>
-                        <div className={styles.item}>
-                            <Title/>
-                        </div>
+                <div className={styles.left}>
+                    <div className={styles.item}>
+                        <Title/>
                     </div>
-                    <div className={styles.right}>
-                        <div className={styles.item}>
-                            <Link to="/">Home</Link>
-                        </div>
-                        <div className={styles.item}>
-                            <Link to="/program">War Schedule</Link>
-                        </div>
-                        <div className={styles.item}>
-                            <Link to="/users">Time Table</Link>
-                        </div>
-                        <div className={styles.item}>
-                            <Link to="/admin">{isAuthenticated === false
-                                ? "Admin"
-                                : <>Admin: <button onClick={() => logout({returnTo: homePage + "admin"})}>Log
-                                    out</button></>}</Link>
-                        </div>
+                </div>
+                <div className={styles.right}>
+                    <div className={styles.item}>
+                        <Link to="/">Home</Link>
                     </div>
+                    <div className={styles.item}>
+                        <Link to="/program">War Schedule</Link>
+                    </div>
+                    <div className={styles.item}>
+                        <Link to="/users">Time Table</Link>
+                    </div>
+                    <div className={styles.item}>
+                        <Link to="/admin">{isAuthenticated === false
+                            ? "Admin"
+                            : <>Admin: <button onClick={() => logout({returnTo: homePage + "admin"})}>Log
+                                out</button></>}</Link>
+                    </div>
+                </div>
 
             </div>
 
@@ -68,8 +68,7 @@ const RouterComponent = () => {
             }
             {/*    <Users/>*/
             }
-            {/*    <Teams/>*/
-            }
+              {/*<Teams/>*/}
             {/*</div>*/
             }
         </Router>
