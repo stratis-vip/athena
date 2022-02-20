@@ -8,6 +8,7 @@ import {useAuth0} from "@auth0/auth0-react";
 import Admin from "./admin";
 import Spinner from "./spiner";
 import Title from "./title";
+import styles from './router-comp.module.css'
 
 const homePage = "http://localhost:3000/"
 const RouterComponent = () => {
@@ -16,27 +17,30 @@ const RouterComponent = () => {
     return (
         <Router>
 
-            <div className={"navBar"}>
-                <div className={"menu"}>
-                    <div className={"item"}>
-                        <Title />
+            <div className={styles.navBar}>
+                    <div className={styles.left}>
+                        <div className={styles.item}>
+                            <Title/>
+                        </div>
                     </div>
-                    <div className={"item"}>
-                        <Link to="/">Home</Link>
+                    <div className={styles.right}>
+                        <div className={styles.item}>
+                            <Link to="/">Home</Link>
+                        </div>
+                        <div className={styles.item}>
+                            <Link to="/program">War Schedule</Link>
+                        </div>
+                        <div className={styles.item}>
+                            <Link to="/users">Time Table</Link>
+                        </div>
+                        <div className={styles.item}>
+                            <Link to="/admin">{isAuthenticated === false
+                                ? "Admin"
+                                : <>Admin: <button onClick={() => logout({returnTo: homePage + "admin"})}>Log
+                                    out</button></>}</Link>
+                        </div>
                     </div>
-                    <div className={"item"}>
-                        <Link to="/program">War Schedule</Link>
-                    </div>
-                    <div className={"item"}>
-                        <Link to="/users">Time Table</Link>
-                    </div>
-                    <div className={"item"}>
-                        <Link to="/admin">{isAuthenticated === false
-                            ? "Admin"
-                            : <>Admin: <button onClick={() => logout({returnTo: homePage + "admin"})}>Log
-                                out</button></>}</Link>
-                    </div>
-                </div>
+
             </div>
 
 
@@ -75,7 +79,7 @@ const RouterComponent = () => {
 function Home() {
     return (
         <div className="App">
-            <h2>We are currently at bronze (2th place)</h2>
+            <h2>We are currently at bronze (1th place)</h2>
         </div>
     )
 }
