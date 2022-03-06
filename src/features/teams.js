@@ -6,6 +6,7 @@ import Program from "../components/program";
 import War from "../components/war";
 
 export const getOpponents = (teams, teamPosition) => {
+
     const team = teams[teamPosition - 1]
     console.log(teams[teamPosition - 1])
     //is even
