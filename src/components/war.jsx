@@ -182,7 +182,7 @@ const War = () => {
                         </thead>
                         <tbody>
                         {teams != null && teams.map(team => {
-                                debugger
+
                                 const opp = getOpponents(teams, team.position)
                                 console.log('IN TABLE', teams[opp[0]-1].name)
 

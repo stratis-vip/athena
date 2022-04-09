@@ -12,31 +12,63 @@ export const getOpponents = (teams, teamPosition) => {
     //is even
     const opponents = []
     const position = team.position
-    if (teamPosition % 2 !== 0) {
-        let next = position + 7;
-        if (next > 30) {
-            next -= 30;
-        }
-        for (let i = 0; i < 5; ++i) {
-            opponents.push(next)
-            next = next + 6;
+    if (team.league == "Bronze") {
+        if (teamPosition % 2 !== 0) {
+            let next = position + 7;
             if (next > 30) {
                 next -= 30;
             }
+            for (let i = 0; i < 5; ++i) {
+                opponents.push(next)
+                next = next + 6;
+                if (next > 30) {
+                    next -= 30;
+                }
 
-        }
+            }
 
 
-    } else {
-        let next = position - 7;
-        if (next < 0) {
-            next += 30;
-        }
-        for (let i = 0; i < 5; ++i) {
-            opponents.push(next)
-            next = next - 6;
+        } else {
+            let next = position - 7;
             if (next < 0) {
                 next += 30;
+            }
+            for (let i = 0; i < 5; ++i) {
+                opponents.push(next)
+                next = next - 6;
+                if (next < 0) {
+                    next += 30;
+                }
+            }
+        }
+    } else { //Silver
+        debugger
+        if (teamPosition % 2 !== 0) {
+            let next = position + 3;
+            if (next > 10) {
+                next -= 10;
+            }
+            for (let i = 0; i < 5; ++i) {
+                opponents.push(next)
+                next = next + 2;
+                if (next > 10) {
+                    next -= 10;
+                }
+
+            }
+
+
+        } else {
+            let next = position - 3;
+            if (next < 0) {
+                next += 10;
+            }
+            for (let i = 0; i < 5; ++i) {
+                opponents.push(next)
+                next = next - 2;
+                if (next < 0) {
+                    next += 10;
+                }
             }
         }
     }
@@ -79,7 +111,8 @@ const Teams = () => {
                     <div className={styles.container}>
                         <div className={styles.programContainer}>
 
-                            <label className={styles.select}>Guild's: <select className={styles.select} onChange={(e) => setCTeam(e.target.value)}>
+                            <label className={styles.select}>Guild's: <select className={styles.select}
+                                                                              onChange={(e) => setCTeam(e.target.value)}>
                                 <option value={0} key={0}>Select team</option>
                                 {teams.map(team => <option value={team.position}
                                                            key={team.position}> {team.position} - {team.name} </option>)}
