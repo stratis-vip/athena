@@ -79,7 +79,7 @@ const RouterComponent = () => {
 function Home() {
     return (
         <div className={commonStyles.container}>
-            <h3>We are finally at Silver! (10th place)</h3>
+            <h3>We are at Bronze! (1st place)</h3>
         </div>
     )
 }
