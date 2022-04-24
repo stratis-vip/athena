@@ -30,36 +30,36 @@ const sortF = (a, b) => {
 
 
 const data = `Guild\tPos.\tMonday\tTuesday\tWednesday\tThursday\tFriday
-athena\t1\t8-himatsubushi\t14-The LIONS\t20-ONI SKY\t26-I FURIANI\t2-Clan Destino
-Clan Destino\t2\t25-Schriese\t19-Перун\t13-The Eyrie\t7-Lily\t1-athena
-Mattari\t3\t10-CCCP\t16-Bansh\t22-StormCat\t28-Die Hanse\t4-Heros
-Heros\t4\t27-Retweet\t21-Crab Club\t15-Soul Reapers\t9-Death or Glory\t3-Mattari
-Fighter\t5\t12-CRYSTAL\t18-Pif Paf Pouf\t24-КоролеваСемьи\t30-MUKAKIN-MUGON\t6-Велес
-Велес\t6\t29-Kamigrain\t23-ЛЕВ\t17-NBC\t11-Belgique\t5-Fighter
-Lily\t7\t14-The LIONS\t20-ONI SKY\t26-I FURIANI\t2-Clan Destino\t8-himatsubushi
-himatsubushi\t8\t1-athena\t25-Schriese\t19-Перун\t13-The Eyrie\t7-Lily
-Death or Glory\t9\t16-Bansh\t22-StormCat\t28-Die Hanse\t4-Heros\t10-CCCP
-CCCP\t10\t3-Mattari\t27-Retweet\t21-Crab Club\t15-Soul Reapers\t9-Death or Glory
-Belgique\t11\t18-Pif Paf Pouf\t24-КоролеваСемьи\t30-MUKAKIN-MUGON\t6-Велес\t12-CRYSTAL
-CRYSTAL\t12\t5-Fighter\t29-Kamigrain\t23-ЛЕВ\t17-NBC\t11-Belgique
-The Eyrie\t13\t20-ONI SKY\t26-I FURIANI\t2-Clan Destino\t8-himatsubushi\t14-The LIONS
-The LIONS\t14\t7-Lily\t1-athena\t25-Schriese\t19-Перун\t13-The Eyrie
-Soul Reapers\t15\t22-StormCat\t28-Die Hanse\t4-Heros\t10-CCCP\t16-Bansh
-Bansh\t16\t9-Death or Glory\t3-Mattari\t27-Retweet\t21-Crab Club\t15-Soul Reapers
-NBC\t17\t24-КоролеваСемьи\t30-MUKAKIN-MUGON\t6-Велес\t12-CRYSTAL\t18-Pif Paf Pouf
-Pif Paf Pouf\t18\t11-Belgique\t5-Fighter\t29-Kamigrain\t23-ЛЕВ\t17-NBC
-Перун\t19\t26-I FURIANI\t2-Clan Destino\t8-himatsubushi\t14-The LIONS\t20-ONI SKY
-ONI SKY\t20\t13-The Eyrie\t7-Lily\t1-athena\t25-Schriese\t19-Перун
-Crab Club\t21\t28-Die Hanse\t4-Heros\t10-CCCP\t16-Bansh\t22-StormCat
-StormCat\t22\t15-Soul Reapers\t9-Death or Glory\t3-Mattari\t27-Retweet\t21-Crab Club
-ЛЕВ\t23\t30-MUKAKIN-MUGON\t6-Велес\t12-CRYSTAL\t18-Pif Paf Pouf\t24-КоролеваСемьи
-КоролеваСемьи\t24\t17-NBC\t11-Belgique\t5-Fighter\t29-Kamigrain\t23-ЛЕВ
-Schriese\t25\t2-Clan Destino\t8-himatsubushi\t14-The LIONS\t20-ONI SKY\t26-I FURIANI
-I FURIANI\t26\t19-Перун\t13-The Eyrie\t7-Lily\t1-athena\t25-Schriese
-Retweet\t27\t4-Heros\t10-CCCP\t16-Bansh\t22-StormCat\t28-Die Hanse
-Die Hanse\t28\t21-Crab Club\t15-Soul Reapers\t9-Death or Glory\t3-Mattari\t27-Retweet
-Kamigrain\t29\t6-Велес\t12-CRYSTAL\t18-Pif Paf Pouf\t24-КоролеваСемьи\t30-MUKAKIN-MUGON
-MUKAKIN-MUGON\t30\t23-ЛЕВ\t17-NBC\t11-Belgique\t5-Fighter\t29-Kamigrain
+athena\t1\t8-Clan Destino\t14-NBC\t20-StormCat\t26-Die Hanse\t2-Mattari
+Mattari\t2\t25-Retweet\t19-ЛЕВ\t13-CRYSTAL\t7-CCCP\t1-athena
+Fighter\t3\t10-Belgique\t16-Soul Reapers\t22-Перун\t28-Crab Club\t4-Lily
+Lily\t4\t27-ONI SKY\t21-Schriese\t15-Bansh\t9-The Eyrie\t3-Fighter
+Heros\t5\t12-himatsubushi\t18-MUKAKIN-MUGON\t24-Kamigrain\t30-I FURIANI\t6-Велес
+Велес\t6\t29-КоролеваСемьи\t23-Pif Paf Pouf\t17-The LIONS\t11-Death or Glory\t5-Heros
+CCCP\t7\t14-NBC\t20-StormCat\t26-Die Hanse\t2-Mattari\t8-Clan Destino
+Clan Destino\t8\t1-athena\t25-Retweet\t19-ЛЕВ\t13-CRYSTAL\t7-CCCP
+The Eyrie\t9\t16-Soul Reapers\t22-Перун\t28-Crab Club\t4-Lily\t10-Belgique
+Belgique\t10\t3-Fighter\t27-ONI SKY\t21-Schriese\t15-Bansh\t9-The Eyrie
+Death or Glory\t11\t18-MUKAKIN-MUGON\t24-Kamigrain\t30-I FURIANI\t6-Велес\t12-himatsubushi
+himatsubushi\t12\t5-Heros\t29-КоролеваСемьи\t23-Pif Paf Pouf\t17-The LIONS\t11-Death or Glory
+CRYSTAL\t13\t20-StormCat\t26-Die Hanse\t2-Mattari\t8-Clan Destino\t14-NBC
+NBC\t14\t7-CCCP\t1-athena\t25-Retweet\t19-ЛЕВ\t13-CRYSTAL
+Bansh\t15\t22-Перун\t28-Crab Club\t4-Lily\t10-Belgique\t16-Soul Reapers
+Soul Reapers\t16\t9-The Eyrie\t3-Fighter\t27-ONI SKY\t21-Schriese\t15-Bansh
+The LIONS\t17\t24-Kamigrain\t30-I FURIANI\t6-Велес\t12-himatsubushi\t18-MUKAKIN-MUGON
+MUKAKIN-MUGON\t18\t11-Death or Glory\t5-Heros\t29-КоролеваСемьи\t23-Pif Paf Pouf\t17-The LIONS
+ЛЕВ\t19\t26-Die Hanse\t2-Mattari\t8-Clan Destino\t14-NBC\t20-StormCat
+StormCat\t20\t13-CRYSTAL\t7-CCCP\t1-athena\t25-Retweet\t19-ЛЕВ
+Schriese\t21\t28-Crab Club\t4-Lily\t10-Belgique\t16-Soul Reapers\t22-Перун
+Перун\t22\t15-Bansh\t9-The Eyrie\t3-Fighter\t27-ONI SKY\t21-Schriese
+Pif Paf Pouf\t23\t30-I FURIANI\t6-Велес\t12-himatsubushi\t18-MUKAKIN-MUGON\t24-Kamigrain
+Kamigrain\t24\t17-The LIONS\t11-Death or Glory\t5-Heros\t29-КоролеваСемьи\t23-Pif Paf Pouf
+Retweet\t25\t2-Mattari\t8-Clan Destino\t14-NBC\t20-StormCat\t26-Die Hanse
+Die Hanse\t26\t19-ЛЕВ\t13-CRYSTAL\t7-CCCP\t1-athena\t25-Retweet
+ONI SKY\t27\t4-Lily\t10-Belgique\t16-Soul Reapers\t22-Перун\t28-Crab Club
+Crab Club\t28\t21-Schriese\t15-Bansh\t9-The Eyrie\t3-Fighter\t27-ONI SKY
+КоролеваСемьи\t29\t6-Велес\t12-himatsubushi\t18-MUKAKIN-MUGON\t24-Kamigrain\t30-I FURIANI
+I FURIANI\t30\t23-Pif Paf Pouf\t17-The LIONS\t11-Death or Glory\t5-Heros\t29-КоролеваСемьи
 `
 
 const App = () => {
