@@ -71,7 +71,7 @@ const Users = () => {
                 </div>
                 <div className={styles.innerContainer}>
                     <table className={styles.table}>
-                        <caption>With info</caption>
+                        <caption>Without info yet</caption>
                         <thead>
                         <tr>
                             <th scope={"col"}>Name</th>
