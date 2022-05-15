@@ -30,36 +30,36 @@ const sortF = (a, b) => {
 
 
 const data = `Guild\tPos.\tMonday\tTuesday\tWednesday\tThursday\tFriday
-Sax Clan\t1\t8-Lily\t14-NBC\t20-Schriese\t26-ONI SKY\t2-Mattari
-Mattari\t2\t25-Die Hanse\t19-ЛЕВ\t13-Bansh\t7-The LIONS\t1-Sax Clan
-athena\t3\t10-CCCP\t16-CRYSTAL\t22-Pif Paf Pouf\t28-Stoned Dragon\t4-Heros
-Heros\t4\t27-ppmmOmmqq\t21-StormCat\t15-Death or Glory\t9-Belgique\t3-athena
-Clan Destino\t5\t12-The Eyrie\t18-MUKAKIN-MUGON\t24-Kamigrain\t30-Talons of Power\t6-Велес
-Велес\t6\t29-Перун\t23-КоролеваСемьи\t17-Soul Reapers\t11-himatsubushi\t5-Clan Destino
-The LIONS\t7\t14-NBC\t20-Schriese\t26-ONI SKY\t2-Mattari\t8-Lily
-Lily\t8\t1-Sax Clan\t25-Die Hanse\t19-ЛЕВ\t13-Bansh\t7-The LIONS
-Belgique\t9\t16-CRYSTAL\t22-Pif Paf Pouf\t28-Stoned Dragon\t4-Heros\t10-CCCP
-CCCP\t10\t3-athena\t27-ppmmOmmqq\t21-StormCat\t15-Death or Glory\t9-Belgique
-himatsubushi\t11\t18-MUKAKIN-MUGON\t24-Kamigrain\t30-Talons of Power\t6-Велес\t12-The Eyrie
-The Eyrie\t12\t5-Clan Destino\t29-Перун\t23-КоролеваСемьи\t17-Soul Reapers\t11-himatsubushi
-Bansh\t13\t20-Schriese\t26-ONI SKY\t2-Mattari\t8-Lily\t14-NBC
-NBC\t14\t7-The LIONS\t1-Sax Clan\t25-Die Hanse\t19-ЛЕВ\t13-Bansh
-Death or Glory\t15\t22-Pif Paf Pouf\t28-Stoned Dragon\t4-Heros\t10-CCCP\t16-CRYSTAL
-CRYSTAL\t16\t9-Belgique\t3-athena\t27-ppmmOmmqq\t21-StormCat\t15-Death or Glory
-Soul Reapers\t17\t24-Kamigrain\t30-Talons of Power\t6-Велес\t12-The Eyrie\t18-MUKAKIN-MUGON
-MUKAKIN-MUGON\t18\t11-himatsubushi\t5-Clan Destino\t29-Перун\t23-КоролеваСемьи\t17-Soul Reapers
-ЛЕВ\t19\t26-ONI SKY\t2-Mattari\t8-Lily\t14-NBC\t20-Schriese
-Schriese\t20\t13-Bansh\t7-The LIONS\t1-Sax Clan\t25-Die Hanse\t19-ЛЕВ
-StormCat\t21\t28-Stoned Dragon\t4-Heros\t10-CCCP\t16-CRYSTAL\t22-Pif Paf Pouf
-Pif Paf Pouf\t22\t15-Death or Glory\t9-Belgique\t3-athena\t27-ppmmOmmqq\t21-StormCat
-КоролеваСемьи\t23\t30-Talons of Power\t6-Велес\t12-The Eyrie\t18-MUKAKIN-MUGON\t24-Kamigrain
-Kamigrain\t24\t17-Soul Reapers\t11-himatsubushi\t5-Clan Destino\t29-Перун\t23-КоролеваСемьи
-Die Hanse\t25\t2-Mattari\t8-Lily\t14-NBC\t20-Schriese\t26-ONI SKY
-ONI SKY\t26\t19-ЛЕВ\t13-Bansh\t7-The LIONS\t1-Sax Clan\t25-Die Hanse
-ppmmOmmqq\t27\t4-Heros\t10-CCCP\t16-CRYSTAL\t22-Pif Paf Pouf\t28-Stoned Dragon
-Stoned Dragon\t28\t21-StormCat\t15-Death or Glory\t9-Belgique\t3-athena\t27-ppmmOmmqq
-Перун\t29\t6-Велес\t12-The Eyrie\t18-MUKAKIN-MUGON\t24-Kamigrain\t30-Talons of Power
-Talons of Power\t30\t23-КоролеваСемьи\t17-Soul Reapers\t11-himatsubushi\t5-Clan Destino\t29-Перун
+First Wave\t1\t8-CCCP\t14-Stoned Dragon\t20-Kamigrain\t26-Pif Paf Pouf\t2-Mattari
+Mattari\t2\t25-ЛЕВ\t19-Перун\t13-CRYSTAL\t7-Lily\t1-First Wave
+athena\t3\t10-himatsubushi\t16-Death or Glory\t22-StormCat\t28-ppmmOmmqq\t4-Clan Destino
+Clan Destino\t4\t27-Die Hanse\t21-MUKAKIN-MUGON\t15-NBC\t9-Belgique\t3-athena
+Sax Clan\t5\t12-The LIONS\t18-Bansh\t24-КоролеваСемьи\t30-I FURIANI\t6-Heros
+Heros\t6\t29-La 42 eme\t23-Schriese\t17-Soul Reapers\t11-The Eyrie\t5-Sax Clan
+Lily\t7\t14-Stoned Dragon\t20-Kamigrain\t26-Pif Paf Pouf\t2-Mattari\t8-CCCP
+CCCP\t8\t1-First Wave\t25-ЛЕВ\t19-Перун\t13-CRYSTAL\t7-Lily
+Belgique\t9\t16-Death or Glory\t22-StormCat\t28-ppmmOmmqq\t4-Clan Destino\t10-himatsubushi
+himatsubushi\t10\t3-athena\t27-Die Hanse\t21-MUKAKIN-MUGON\t15-NBC\t9-Belgique
+The Eyrie\t11\t18-Bansh\t24-КоролеваСемьи\t30-I FURIANI\t6-Heros\t12-The LIONS
+The LIONS\t12\t5-Sax Clan\t29-La 42 eme\t23-Schriese\t17-Soul Reapers\t11-The Eyrie
+CRYSTAL\t13\t20-Kamigrain\t26-Pif Paf Pouf\t2-Mattari\t8-CCCP\t14-Stoned Dragon
+Stoned Dragon\t14\t7-Lily\t1-First Wave\t25-ЛЕВ\t19-Перун\t13-CRYSTAL
+NBC\t15\t22-StormCat\t28-ppmmOmmqq\t4-Clan Destino\t10-himatsubushi\t16-Death or Glory
+Death or Glory\t16\t9-Belgique\t3-athena\t27-Die Hanse\t21-MUKAKIN-MUGON\t15-NBC
+Soul Reapers\t17\t24-КоролеваСемьи\t30-I FURIANI\t6-Heros\t12-The LIONS\t18-Bansh
+Bansh\t18\t11-The Eyrie\t5-Sax Clan\t29-La 42 eme\t23-Schriese\t17-Soul Reapers
+Перун\t19\t26-Pif Paf Pouf\t2-Mattari\t8-CCCP\t14-Stoned Dragon\t20-Kamigrain
+Kamigrain\t20\t13-CRYSTAL\t7-Lily\t1-First Wave\t25-ЛЕВ\t19-Перун
+MUKAKIN-MUGON\t21\t28-ppmmOmmqq\t4-Clan Destino\t10-himatsubushi\t16-Death or Glory\t22-StormCat
+StormCat\t22\t15-NBC\t9-Belgique\t3-athena\t27-Die Hanse\t21-MUKAKIN-MUGON
+Schriese\t23\t30-I FURIANI\t6-Heros\t12-The LIONS\t18-Bansh\t24-КоролеваСемьи
+КоролеваСемьи\t24\t17-Soul Reapers\t11-The Eyrie\t5-Sax Clan\t29-La 42 eme\t23-Schriese
+ЛЕВ\t25\t2-Mattari\t8-CCCP\t14-Stoned Dragon\t20-Kamigrain\t26-Pif Paf Pouf
+Pif Paf Pouf\t26\t19-Перун\t13-CRYSTAL\t7-Lily\t1-First Wave\t25-ЛЕВ
+Die Hanse\t27\t4-Clan Destino\t10-himatsubushi\t16-Death or Glory\t22-StormCat\t28-ppmmOmmqq
+ppmmOmmqq\t28\t21-MUKAKIN-MUGON\t15-NBC\t9-Belgique\t3-athena\t27-Die Hanse
+La 42 eme\t29\t6-Heros\t12-The LIONS\t18-Bansh\t24-КоролеваСемьи\t30-I FURIANI
+I FURIANI\t30\t23-Schriese\t17-Soul Reapers\t11-The Eyrie\t5-Sax Clan\t29-La 42 eme
 `
 
 const App = () => {
