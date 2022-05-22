@@ -30,36 +30,16 @@ const sortF = (a, b) => {
 
 
 const data = `Guild\tPos.\tMonday\tTuesday\tWednesday\tThursday\tFriday
-First Wave\t1\t8-CCCP\t14-Stoned Dragon\t20-Kamigrain\t26-Pif Paf Pouf\t2-Mattari
-Mattari\t2\t25-ЛЕВ\t19-Перун\t13-CRYSTAL\t7-Lily\t1-First Wave
-athena\t3\t10-himatsubushi\t16-Death or Glory\t22-StormCat\t28-ppmmOmmqq\t4-Clan Destino
-Clan Destino\t4\t27-Die Hanse\t21-MUKAKIN-MUGON\t15-NBC\t9-Belgique\t3-athena
-Sax Clan\t5\t12-The LIONS\t18-Bansh\t24-КоролеваСемьи\t30-I FURIANI\t6-Heros
-Heros\t6\t29-La 42 eme\t23-Schriese\t17-Soul Reapers\t11-The Eyrie\t5-Sax Clan
-Lily\t7\t14-Stoned Dragon\t20-Kamigrain\t26-Pif Paf Pouf\t2-Mattari\t8-CCCP
-CCCP\t8\t1-First Wave\t25-ЛЕВ\t19-Перун\t13-CRYSTAL\t7-Lily
-Belgique\t9\t16-Death or Glory\t22-StormCat\t28-ppmmOmmqq\t4-Clan Destino\t10-himatsubushi
-himatsubushi\t10\t3-athena\t27-Die Hanse\t21-MUKAKIN-MUGON\t15-NBC\t9-Belgique
-The Eyrie\t11\t18-Bansh\t24-КоролеваСемьи\t30-I FURIANI\t6-Heros\t12-The LIONS
-The LIONS\t12\t5-Sax Clan\t29-La 42 eme\t23-Schriese\t17-Soul Reapers\t11-The Eyrie
-CRYSTAL\t13\t20-Kamigrain\t26-Pif Paf Pouf\t2-Mattari\t8-CCCP\t14-Stoned Dragon
-Stoned Dragon\t14\t7-Lily\t1-First Wave\t25-ЛЕВ\t19-Перун\t13-CRYSTAL
-NBC\t15\t22-StormCat\t28-ppmmOmmqq\t4-Clan Destino\t10-himatsubushi\t16-Death or Glory
-Death or Glory\t16\t9-Belgique\t3-athena\t27-Die Hanse\t21-MUKAKIN-MUGON\t15-NBC
-Soul Reapers\t17\t24-КоролеваСемьи\t30-I FURIANI\t6-Heros\t12-The LIONS\t18-Bansh
-Bansh\t18\t11-The Eyrie\t5-Sax Clan\t29-La 42 eme\t23-Schriese\t17-Soul Reapers
-Перун\t19\t26-Pif Paf Pouf\t2-Mattari\t8-CCCP\t14-Stoned Dragon\t20-Kamigrain
-Kamigrain\t20\t13-CRYSTAL\t7-Lily\t1-First Wave\t25-ЛЕВ\t19-Перун
-MUKAKIN-MUGON\t21\t28-ppmmOmmqq\t4-Clan Destino\t10-himatsubushi\t16-Death or Glory\t22-StormCat
-StormCat\t22\t15-NBC\t9-Belgique\t3-athena\t27-Die Hanse\t21-MUKAKIN-MUGON
-Schriese\t23\t30-I FURIANI\t6-Heros\t12-The LIONS\t18-Bansh\t24-КоролеваСемьи
-КоролеваСемьи\t24\t17-Soul Reapers\t11-The Eyrie\t5-Sax Clan\t29-La 42 eme\t23-Schriese
-ЛЕВ\t25\t2-Mattari\t8-CCCP\t14-Stoned Dragon\t20-Kamigrain\t26-Pif Paf Pouf
-Pif Paf Pouf\t26\t19-Перун\t13-CRYSTAL\t7-Lily\t1-First Wave\t25-ЛЕВ
-Die Hanse\t27\t4-Clan Destino\t10-himatsubushi\t16-Death or Glory\t22-StormCat\t28-ppmmOmmqq
-ppmmOmmqq\t28\t21-MUKAKIN-MUGON\t15-NBC\t9-Belgique\t3-athena\t27-Die Hanse
-La 42 eme\t29\t6-Heros\t12-The LIONS\t18-Bansh\t24-КоролеваСемьи\t30-I FURIANI
-I FURIANI\t30\t23-Schriese\t17-Soul Reapers\t11-The Eyrie\t5-Sax Clan\t29-La 42 eme
+The Demon Vanguard\t1\t4-Toms\t6-tigerclaws\t8-Knight of Knights\t10-athena\t2-Фениксы
+Фениксы\t2\t9-Fighter\t7-silelderman\t5-School of Woltan\t3-54 HERO\t1-The Demon Vanguard
+54 HERO\t3\t6-tigerclaws\t8-Knight of Knights\t10-athena\t2-Фениксы\t4-Toms
+Toms\t4\t1-The Demon Vanguard\t9-Fighter\t7-silelderman\t5-School of Woltan\t3-54 HERO
+School of Woltan\t5\t8-Knight of Knights\t10-athena\t2-Фениксы\t4-Toms\t6-tigerclaws
+tigerclaws\t6\t3-54 HERO\t1-The Demon Vanguard\t9-Fighter\t7-silelderman\t5-School of Woltan
+silelderman\t7\t10-athena\t2-Фениксы\t4-Toms\t6-tigerclaws\t8-Knight of Knights
+Knight of Knights\t8\t5-School of Woltan\t3-54 HERO\t1-The Demon Vanguard\t9-Fighter\t7-silelderman
+Fighter\t9\t2-Фениксы\t4-Toms\t6-tigerclaws\t8-Knight of Knights\t10-athena
+athena\t10\t7-silelderman\t5-School of Woltan\t3-54 HERO\t1-The Demon Vanguard\t9-Fighter
 `
 
 const App = () => {
