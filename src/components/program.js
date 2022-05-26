@@ -20,8 +20,12 @@ const Program = ({opponents}) => {
             )}
 
             {opponents && opponents.map(index => <div key={teams[index - 1].position}
-                                                      className={styles.cell}>{teams[index - 1].position} - {teams[index - 1].name}</div>)}
+                                                       className={styles.cell}>{teams[index - 1].position} - {teams[index - 1].name}</div>)}
+
+
         </div>
+
+
 
     </div>
 }
