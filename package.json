@@ -1,6 +1,6 @@
 {
   "name": "athena",
-  "version": "2.0.15",
+  "version": "2.0.16",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.5.8",
