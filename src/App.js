@@ -30,16 +30,16 @@ const sortF = (a, b) => {
 
 
 const data = `Guild\tPos.\tMonday\tTuesday\tWednesday\tThursday\tFriday
-Toms\t1\t4-Stoned Dragon Woltan\t6-tigerclaws\t8-Велес\t10-First Wave\t2-Фениксы
-Фениксы\t2\t9-Knight of Knights\t7-athena\t5-silelderman\t3-54 HERO\t1-Toms
-54 HERO\t3\t6-tigerclaws\t8-Велес\t10-First Wave\t2-Фениксы\t4-Stoned Dragon Woltan
-Stoned Dragon Woltan\t4\t1-Toms\t9-Knight of Knights\t7-athena\t5-silelderman\t3-54 HERO
-silelderman\t5\t8-Велес\t10-First Wave\t2-Фениксы\t4-Stoned Dragon Woltan\t6-tigerclaws
-tigerclaws\t6\t3-54 HERO\t1-Toms\t9-Knight of Knights\t7-athena\t5-silelderman
-athena\t7\t10-First Wave\t2-Фениксы\t4-Stoned Dragon Woltan\t6-tigerclaws\t8-Велес
-Велес\t8\t5-silelderman\t3-54 HERO\t1-Toms\t9-Knight of Knights\t7-athena
-Knight of Knights\t9\t2-Фениксы\t4-Stoned Dragon Woltan\t6-tigerclaws\t8-Велес\t10-First Wave
-First Wave\t10\t7-athena\t5-silelderman\t3-54 HERO\t1-Toms\t9-Knight of Knights
+ohhoo\t1\t4-silelderman\t6-tigerclaws\t8-athena\t10-Велес\t2-Toms
+Toms\t2\t9-First Wave\t7-Knight of Knights\t5-Stoned Dragon Woltan\t3-Фениксы\t1-ohhoo
+Фениксы\t3\t6-tigerclaws\t8-athena\t10-Велес\t2-Toms\t4-silelderman
+silelderman\t4\t1-ohhoo\t9-First Wave\t7-Knight of Knights\t5-Stoned Dragon Woltan\t3-Фениксы
+Stoned Dragon Woltan\t5\t8-athena\t10-Велес\t2-Toms\t4-silelderman\t6-tigerclaws
+tigerclaws\t6\t3-Фениксы\t1-ohhoo\t9-First Wave\t7-Knight of Knights\t5-Stoned Dragon Woltan
+Knight of Knights\t7\t10-Велес\t2-Toms\t4-silelderman\t6-tigerclaws\t8-athena
+athena\t8\t5-Stoned Dragon Woltan\t3-Фениксы\t1-ohhoo\t9-First Wave\t7-Knight of Knights
+First Wave\t9\t2-Toms\t4-silelderman\t6-tigerclaws\t8-athena\t10-Велес
+Велес\t10\t7-Knight of Knights\t5-Stoned Dragon Woltan\t3-Фениксы\t1-ohhoo\t9-First Wave
 `
 
 const App = () => {

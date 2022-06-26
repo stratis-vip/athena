@@ -126,290 +126,290 @@ const Teams = () => {
                 <div style={{marginTop: "5rem"}}>
                     <div className={styles.programContainer}>
                         <div style={{marginBottom: "2rem"}}><h1>Bronze league</h1></div>
-                        <table _ngcontent-kum-c63="" className="table table-striped table-sm">
-                            <thead _ngcontent-kum-c63="" className="thead-dark">
-                            <tr _ngcontent-kum-c63="">
-                                <th _ngcontent-kum-c63="" scope="col">Guild</th>
-                                <th _ngcontent-kum-c63="" scope="col">Pos.</th>
-                                <th _ngcontent-kum-c63="" scope="col"> Monday</th>
-                                <th _ngcontent-kum-c63="" scope="col"> Tuesday</th>
-                                <th _ngcontent-kum-c63="" scope="col"> Wednesday</th>
-                                <th _ngcontent-kum-c63="" scope="col"> Thursday</th>
-                                <th _ngcontent-kum-c63="" scope="col"> Friday</th>
-                               </tr>
+                        <table _ngcontent-jij-c63="" className="table table-striped table-sm">
+                            <thead _ngcontent-jij-c63="" className="thead-dark">
+                            <tr _ngcontent-jij-c63="">
+                                <th _ngcontent-jij-c63="" scope="col">Guild</th>
+                                <th _ngcontent-jij-c63="" scope="col">Pos.</th>
+                                <th _ngcontent-jij-c63="" scope="col"> Monday</th>
+                                <th _ngcontent-jij-c63="" scope="col"> Tuesday</th>
+                                <th _ngcontent-jij-c63="" scope="col"> Wednesday</th>
+                                <th _ngcontent-jij-c63="" scope="col"> Thursday</th>
+                                <th _ngcontent-jij-c63="" scope="col"> Friday</th>
+                                </tr>
                             </thead>
-                            <tbody _ngcontent-kum-c63="">
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Fighter</td>
-                                <td _ngcontent-kum-c63="">1</td>
-                                <td _ngcontent-kum-c63=""> 8-The LIONS</td>
-                                <td _ngcontent-kum-c63=""> 14-ЛЕВ</td>
-                                <td _ngcontent-kum-c63=""> 20-StormCat</td>
-                                <td _ngcontent-kum-c63=""> 26-Schriese</td>
-                                <td _ngcontent-kum-c63=""> 2-Mattari</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Mattari</td>
-                                <td _ngcontent-kum-c63="">2</td>
-                                <td _ngcontent-kum-c63=""> 25-Pif Paf Pouf</td>
-                                <td _ngcontent-kum-c63=""> 19-Kamigrain</td>
-                                <td _ngcontent-kum-c63=""> 13-Tramps and Thieves</td>
-                                <td _ngcontent-kum-c63=""> 7-The Eyrie</td>
-                                <td _ngcontent-kum-c63=""> 1-Fighter</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Clan Destino</td>
-                                <td _ngcontent-kum-c63="">3</td>
-                                <td _ngcontent-kum-c63=""> 10-CRYSTAL</td>
-                                <td _ngcontent-kum-c63=""> 16-Перун</td>
-                                <td _ngcontent-kum-c63=""> 22-Die Hanse</td>
-                                <td _ngcontent-kum-c63=""> 28-1111</td>
-                                <td _ngcontent-kum-c63=""> 4-Lily</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Lily</td>
-                                <td _ngcontent-kum-c63="">4</td>
-                                <td _ngcontent-kum-c63=""> 27-I FURIANI</td>
-                                <td _ngcontent-kum-c63=""> 21-MUKAKIN-MUGON</td>
-                                <td _ngcontent-kum-c63=""> 15-КоролеваСемьи</td>
-                                <td _ngcontent-kum-c63=""> 9-Belgique</td>
-                                <td _ngcontent-kum-c63=""> 3-Clan Destino</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Sax Clan</td>
-                                <td _ngcontent-kum-c63="">5</td>
-                                <td _ngcontent-kum-c63=""> 12-Death or Glory</td>
-                                <td _ngcontent-kum-c63=""> 18-SKY LORDS</td>
-                                <td _ngcontent-kum-c63=""> 24-The Dragon Way</td>
-                                <td _ngcontent-kum-c63=""> 30-Eagle Eye</td>
-                                <td _ngcontent-kum-c63=""> 6-CCCP</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">CCCP</td>
-                                <td _ngcontent-kum-c63="">6</td>
-                                <td _ngcontent-kum-c63=""> 29-Einfach so</td>
-                                <td _ngcontent-kum-c63=""> 23-Bansh</td>
-                                <td _ngcontent-kum-c63=""> 17-Soul Reapers</td>
-                                <td _ngcontent-kum-c63=""> 11-himatsubushi</td>
-                                <td _ngcontent-kum-c63=""> 5-Sax Clan</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">The Eyrie</td>
-                                <td _ngcontent-kum-c63="">7</td>
-                                <td _ngcontent-kum-c63=""> 14-ЛЕВ</td>
-                                <td _ngcontent-kum-c63=""> 20-StormCat</td>
-                                <td _ngcontent-kum-c63=""> 26-Schriese</td>
-                                <td _ngcontent-kum-c63=""> 2-Mattari</td>
-                                <td _ngcontent-kum-c63=""> 8-The LIONS</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">The LIONS</td>
-                                <td _ngcontent-kum-c63="">8</td>
-                                <td _ngcontent-kum-c63=""> 1-Fighter</td>
-                                <td _ngcontent-kum-c63=""> 25-Pif Paf Pouf</td>
-                                <td _ngcontent-kum-c63=""> 19-Kamigrain</td>
-                                <td _ngcontent-kum-c63=""> 13-Tramps and Thieves</td>
-                                <td _ngcontent-kum-c63=""> 7-The Eyrie</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Belgique</td>
-                                <td _ngcontent-kum-c63="">9</td>
-                                <td _ngcontent-kum-c63=""> 16-Перун</td>
-                                <td _ngcontent-kum-c63=""> 22-Die Hanse</td>
-                                <td _ngcontent-kum-c63=""> 28-1111</td>
-                                <td _ngcontent-kum-c63=""> 4-Lily</td>
-                                <td _ngcontent-kum-c63=""> 10-CRYSTAL</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">CRYSTAL</td>
-                                <td _ngcontent-kum-c63="">10</td>
-                                <td _ngcontent-kum-c63=""> 3-Clan Destino</td>
-                                <td _ngcontent-kum-c63=""> 27-I FURIANI</td>
-                                <td _ngcontent-kum-c63=""> 21-MUKAKIN-MUGON</td>
-                                <td _ngcontent-kum-c63=""> 15-КоролеваСемьи</td>
-                                <td _ngcontent-kum-c63=""> 9-Belgique</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">himatsubushi</td>
-                                <td _ngcontent-kum-c63="">11</td>
-                                <td _ngcontent-kum-c63=""> 18-SKY LORDS</td>
-                                <td _ngcontent-kum-c63=""> 24-The Dragon Way</td>
-                                <td _ngcontent-kum-c63=""> 30-Eagle Eye</td>
-                                <td _ngcontent-kum-c63=""> 6-CCCP</td>
-                                <td _ngcontent-kum-c63=""> 12-Death or Glory</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Death or Glory</td>
-                                <td _ngcontent-kum-c63="">12</td>
-                                <td _ngcontent-kum-c63=""> 5-Sax Clan</td>
-                                <td _ngcontent-kum-c63=""> 29-Einfach so</td>
-                                <td _ngcontent-kum-c63=""> 23-Bansh</td>
-                                <td _ngcontent-kum-c63=""> 17-Soul Reapers</td>
-                                <td _ngcontent-kum-c63=""> 11-himatsubushi</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Tramps and Thieves</td>
-                                <td _ngcontent-kum-c63="">13</td>
-                                <td _ngcontent-kum-c63=""> 20-StormCat</td>
-                                <td _ngcontent-kum-c63=""> 26-Schriese</td>
-                                <td _ngcontent-kum-c63=""> 2-Mattari</td>
-                                <td _ngcontent-kum-c63=""> 8-The LIONS</td>
-                                <td _ngcontent-kum-c63=""> 14-ЛЕВ</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">ЛЕВ</td>
-                                <td _ngcontent-kum-c63="">14</td>
-                                <td _ngcontent-kum-c63=""> 7-The Eyrie</td>
-                                <td _ngcontent-kum-c63=""> 1-Fighter</td>
-                                <td _ngcontent-kum-c63=""> 25-Pif Paf Pouf</td>
-                                <td _ngcontent-kum-c63=""> 19-Kamigrain</td>
-                                <td _ngcontent-kum-c63=""> 13-Tramps and Thieves</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">КоролеваСемьи</td>
-                                <td _ngcontent-kum-c63="">15</td>
-                                <td _ngcontent-kum-c63=""> 22-Die Hanse</td>
-                                <td _ngcontent-kum-c63=""> 28-1111</td>
-                                <td _ngcontent-kum-c63=""> 4-Lily</td>
-                                <td _ngcontent-kum-c63=""> 10-CRYSTAL</td>
-                                <td _ngcontent-kum-c63=""> 16-Перун</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Перун</td>
-                                <td _ngcontent-kum-c63="">16</td>
-                                <td _ngcontent-kum-c63=""> 9-Belgique</td>
-                                <td _ngcontent-kum-c63=""> 3-Clan Destino</td>
-                                <td _ngcontent-kum-c63=""> 27-I FURIANI</td>
-                                <td _ngcontent-kum-c63=""> 21-MUKAKIN-MUGON</td>
-                                <td _ngcontent-kum-c63=""> 15-КоролеваСемьи</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Soul Reapers</td>
-                                <td _ngcontent-kum-c63="">17</td>
-                                <td _ngcontent-kum-c63=""> 24-The Dragon Way</td>
-                                <td _ngcontent-kum-c63=""> 30-Eagle Eye</td>
-                                <td _ngcontent-kum-c63=""> 6-CCCP</td>
-                                <td _ngcontent-kum-c63=""> 12-Death or Glory</td>
-                                <td _ngcontent-kum-c63=""> 18-SKY LORDS</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">SKY LORDS</td>
-                                <td _ngcontent-kum-c63="">18</td>
-                                <td _ngcontent-kum-c63=""> 11-himatsubushi</td>
-                                <td _ngcontent-kum-c63=""> 5-Sax Clan</td>
-                                <td _ngcontent-kum-c63=""> 29-Einfach so</td>
-                                <td _ngcontent-kum-c63=""> 23-Bansh</td>
-                                <td _ngcontent-kum-c63=""> 17-Soul Reapers</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Kamigrain</td>
-                                <td _ngcontent-kum-c63="">19</td>
-                                <td _ngcontent-kum-c63=""> 26-Schriese</td>
-                                <td _ngcontent-kum-c63=""> 2-Mattari</td>
-                                <td _ngcontent-kum-c63=""> 8-The LIONS</td>
-                                <td _ngcontent-kum-c63=""> 14-ЛЕВ</td>
-                                <td _ngcontent-kum-c63=""> 20-StormCat</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">StormCat</td>
-                                <td _ngcontent-kum-c63="">20</td>
-                                <td _ngcontent-kum-c63=""> 13-Tramps and Thieves</td>
-                                <td _ngcontent-kum-c63=""> 7-The Eyrie</td>
-                                <td _ngcontent-kum-c63=""> 1-Fighter</td>
-                                <td _ngcontent-kum-c63=""> 25-Pif Paf Pouf</td>
-                                <td _ngcontent-kum-c63=""> 19-Kamigrain</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">MUKAKIN-MUGON</td>
-                                <td _ngcontent-kum-c63="">21</td>
-                                <td _ngcontent-kum-c63=""> 28-1111</td>
-                                <td _ngcontent-kum-c63=""> 4-Lily</td>
-                                <td _ngcontent-kum-c63=""> 10-CRYSTAL</td>
-                                <td _ngcontent-kum-c63=""> 16-Перун</td>
-                                <td _ngcontent-kum-c63=""> 22-Die Hanse</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Die Hanse</td>
-                                <td _ngcontent-kum-c63="">22</td>
-                                <td _ngcontent-kum-c63=""> 15-КоролеваСемьи</td>
-                                <td _ngcontent-kum-c63=""> 9-Belgique</td>
-                                <td _ngcontent-kum-c63=""> 3-Clan Destino</td>
-                                <td _ngcontent-kum-c63=""> 27-I FURIANI</td>
-                                <td _ngcontent-kum-c63=""> 21-MUKAKIN-MUGON</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Bansh</td>
-                                <td _ngcontent-kum-c63="">23</td>
-                                <td _ngcontent-kum-c63=""> 30-Eagle Eye</td>
-                                <td _ngcontent-kum-c63=""> 6-CCCP</td>
-                                <td _ngcontent-kum-c63=""> 12-Death or Glory</td>
-                                <td _ngcontent-kum-c63=""> 18-SKY LORDS</td>
-                                <td _ngcontent-kum-c63=""> 24-The Dragon Way</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">The Dragon Way</td>
-                                <td _ngcontent-kum-c63="">24</td>
-                                <td _ngcontent-kum-c63=""> 17-Soul Reapers</td>
-                                <td _ngcontent-kum-c63=""> 11-himatsubushi</td>
-                                <td _ngcontent-kum-c63=""> 5-Sax Clan</td>
-                                <td _ngcontent-kum-c63=""> 29-Einfach so</td>
-                                <td _ngcontent-kum-c63=""> 23-Bansh</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Pif Paf Pouf</td>
-                                <td _ngcontent-kum-c63="">25</td>
-                                <td _ngcontent-kum-c63=""> 2-Mattari</td>
-                                <td _ngcontent-kum-c63=""> 8-The LIONS</td>
-                                <td _ngcontent-kum-c63=""> 14-ЛЕВ</td>
-                                <td _ngcontent-kum-c63=""> 20-StormCat</td>
-                                <td _ngcontent-kum-c63=""> 26-Schriese</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Schriese</td>
-                                <td _ngcontent-kum-c63="">26</td>
-                                <td _ngcontent-kum-c63=""> 19-Kamigrain</td>
-                                <td _ngcontent-kum-c63=""> 13-Tramps and Thieves</td>
-                                <td _ngcontent-kum-c63=""> 7-The Eyrie</td>
-                                <td _ngcontent-kum-c63=""> 1-Fighter</td>
-                                <td _ngcontent-kum-c63=""> 25-Pif Paf Pouf</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">I FURIANI</td>
-                                <td _ngcontent-kum-c63="">27</td>
-                                <td _ngcontent-kum-c63=""> 4-Lily</td>
-                                <td _ngcontent-kum-c63=""> 10-CRYSTAL</td>
-                                <td _ngcontent-kum-c63=""> 16-Перун</td>
-                                <td _ngcontent-kum-c63=""> 22-Die Hanse</td>
-                                <td _ngcontent-kum-c63=""> 28-1111</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">1111</td>
-                                <td _ngcontent-kum-c63="">28</td>
-                                <td _ngcontent-kum-c63=""> 21-MUKAKIN-MUGON</td>
-                                <td _ngcontent-kum-c63=""> 15-КоролеваСемьи</td>
-                                <td _ngcontent-kum-c63=""> 9-Belgique</td>
-                                <td _ngcontent-kum-c63=""> 3-Clan Destino</td>
-                                <td _ngcontent-kum-c63=""> 27-I FURIANI</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Einfach so</td>
-                                <td _ngcontent-kum-c63="">29</td>
-                                <td _ngcontent-kum-c63=""> 6-CCCP</td>
-                                <td _ngcontent-kum-c63=""> 12-Death or Glory</td>
-                                <td _ngcontent-kum-c63=""> 18-SKY LORDS</td>
-                                <td _ngcontent-kum-c63=""> 24-The Dragon Way</td>
-                                <td _ngcontent-kum-c63=""> 30-Eagle Eye</td>
-                               </tr>
-                            <tr _ngcontent-kum-c63="">
-                                <td _ngcontent-kum-c63="">Eagle Eye</td>
-                                <td _ngcontent-kum-c63="">30</td>
-                                <td _ngcontent-kum-c63=""> 23-Bansh</td>
-                                <td _ngcontent-kum-c63=""> 17-Soul Reapers</td>
-                                <td _ngcontent-kum-c63=""> 11-himatsubushi</td>
-                                <td _ngcontent-kum-c63=""> 5-Sax Clan</td>
-                                <td _ngcontent-kum-c63=""> 29-Einfach so</td>
-                               </tr>
-                           </tbody>
+                            <tbody _ngcontent-jij-c63="">
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Lily</td>
+                                <td _ngcontent-jij-c63="">1</td>
+                                <td _ngcontent-jij-c63=""> 8-The Eyrie</td>
+                                <td _ngcontent-jij-c63=""> 14-Перун</td>
+                                <td _ngcontent-jij-c63=""> 20-Tramps and Thieves</td>
+                                <td _ngcontent-jij-c63=""> 26-SKY LORDS</td>
+                                <td _ngcontent-jij-c63=""> 2-Clan Destino</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Clan Destino</td>
+                                <td _ngcontent-jij-c63="">2</td>
+                                <td _ngcontent-jij-c63=""> 25-Schriese</td>
+                                <td _ngcontent-jij-c63=""> 19-ЛЕВ</td>
+                                <td _ngcontent-jij-c63=""> 13-The LIONS</td>
+                                <td _ngcontent-jij-c63=""> 7-CCCP</td>
+                                <td _ngcontent-jij-c63=""> 1-Lily</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Sax Clan</td>
+                                <td _ngcontent-jij-c63="">3</td>
+                                <td _ngcontent-jij-c63=""> 10-Belgique</td>
+                                <td _ngcontent-jij-c63=""> 16-Die Hanse</td>
+                                <td _ngcontent-jij-c63=""> 22-MUKAKIN-MUGON</td>
+                                <td _ngcontent-jij-c63=""> 28-Eagle Eye</td>
+                                <td _ngcontent-jij-c63=""> 4-Mattari</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Mattari</td>
+                                <td _ngcontent-jij-c63="">4</td>
+                                <td _ngcontent-jij-c63=""> 27-I FURIANI</td>
+                                <td _ngcontent-jij-c63=""> 21-Kamigrain</td>
+                                <td _ngcontent-jij-c63=""> 15-Bansh</td>
+                                <td _ngcontent-jij-c63=""> 9-himatsubushi</td>
+                                <td _ngcontent-jij-c63=""> 3-Sax Clan</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Fighter</td>
+                                <td _ngcontent-jij-c63="">5</td>
+                                <td _ngcontent-jij-c63=""> 12-Death or Glory</td>
+                                <td _ngcontent-jij-c63=""> 18-Einfach so</td>
+                                <td _ngcontent-jij-c63=""> 24-Pif Paf Pouf</td>
+                                <td _ngcontent-jij-c63=""> 30-alone</td>
+                                <td _ngcontent-jij-c63=""> 6-CRYSTAL</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">CRYSTAL</td>
+                                <td _ngcontent-jij-c63="">6</td>
+                                <td _ngcontent-jij-c63=""> 29-Vikings</td>
+                                <td _ngcontent-jij-c63=""> 23-StormCat</td>
+                                <td _ngcontent-jij-c63=""> 17-1111</td>
+                                <td _ngcontent-jij-c63=""> 11-Soul Reapers</td>
+                                <td _ngcontent-jij-c63=""> 5-Fighter</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">CCCP</td>
+                                <td _ngcontent-jij-c63="">7</td>
+                                <td _ngcontent-jij-c63=""> 14-Перун</td>
+                                <td _ngcontent-jij-c63=""> 20-Tramps and Thieves</td>
+                                <td _ngcontent-jij-c63=""> 26-SKY LORDS</td>
+                                <td _ngcontent-jij-c63=""> 2-Clan Destino</td>
+                                <td _ngcontent-jij-c63=""> 8-The Eyrie</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">The Eyrie</td>
+                                <td _ngcontent-jij-c63="">8</td>
+                                <td _ngcontent-jij-c63=""> 1-Lily</td>
+                                <td _ngcontent-jij-c63=""> 25-Schriese</td>
+                                <td _ngcontent-jij-c63=""> 19-ЛЕВ</td>
+                                <td _ngcontent-jij-c63=""> 13-The LIONS</td>
+                                <td _ngcontent-jij-c63=""> 7-CCCP</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">himatsubushi</td>
+                                <td _ngcontent-jij-c63="">9</td>
+                                <td _ngcontent-jij-c63=""> 16-Die Hanse</td>
+                                <td _ngcontent-jij-c63=""> 22-MUKAKIN-MUGON</td>
+                                <td _ngcontent-jij-c63=""> 28-Eagle Eye</td>
+                                <td _ngcontent-jij-c63=""> 4-Mattari</td>
+                                <td _ngcontent-jij-c63=""> 10-Belgique</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Belgique</td>
+                                <td _ngcontent-jij-c63="">10</td>
+                                <td _ngcontent-jij-c63=""> 3-Sax Clan</td>
+                                <td _ngcontent-jij-c63=""> 27-I FURIANI</td>
+                                <td _ngcontent-jij-c63=""> 21-Kamigrain</td>
+                                <td _ngcontent-jij-c63=""> 15-Bansh</td>
+                                <td _ngcontent-jij-c63=""> 9-himatsubushi</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Soul Reapers</td>
+                                <td _ngcontent-jij-c63="">11</td>
+                                <td _ngcontent-jij-c63=""> 18-Einfach so</td>
+                                <td _ngcontent-jij-c63=""> 24-Pif Paf Pouf</td>
+                                <td _ngcontent-jij-c63=""> 30-alone</td>
+                                <td _ngcontent-jij-c63=""> 6-CRYSTAL</td>
+                                <td _ngcontent-jij-c63=""> 12-Death or Glory</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Death or Glory</td>
+                                <td _ngcontent-jij-c63="">12</td>
+                                <td _ngcontent-jij-c63=""> 5-Fighter</td>
+                                <td _ngcontent-jij-c63=""> 29-Vikings</td>
+                                <td _ngcontent-jij-c63=""> 23-StormCat</td>
+                                <td _ngcontent-jij-c63=""> 17-1111</td>
+                                <td _ngcontent-jij-c63=""> 11-Soul Reapers</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">The LIONS</td>
+                                <td _ngcontent-jij-c63="">13</td>
+                                <td _ngcontent-jij-c63=""> 20-Tramps and Thieves</td>
+                                <td _ngcontent-jij-c63=""> 26-SKY LORDS</td>
+                                <td _ngcontent-jij-c63=""> 2-Clan Destino</td>
+                                <td _ngcontent-jij-c63=""> 8-The Eyrie</td>
+                                <td _ngcontent-jij-c63=""> 14-Перун</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Перун</td>
+                                <td _ngcontent-jij-c63="">14</td>
+                                <td _ngcontent-jij-c63=""> 7-CCCP</td>
+                                <td _ngcontent-jij-c63=""> 1-Lily</td>
+                                <td _ngcontent-jij-c63=""> 25-Schriese</td>
+                                <td _ngcontent-jij-c63=""> 19-ЛЕВ</td>
+                                <td _ngcontent-jij-c63=""> 13-The LIONS</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Bansh</td>
+                                <td _ngcontent-jij-c63="">15</td>
+                                <td _ngcontent-jij-c63=""> 22-MUKAKIN-MUGON</td>
+                                <td _ngcontent-jij-c63=""> 28-Eagle Eye</td>
+                                <td _ngcontent-jij-c63=""> 4-Mattari</td>
+                                <td _ngcontent-jij-c63=""> 10-Belgique</td>
+                                <td _ngcontent-jij-c63=""> 16-Die Hanse</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Die Hanse</td>
+                                <td _ngcontent-jij-c63="">16</td>
+                                <td _ngcontent-jij-c63=""> 9-himatsubushi</td>
+                                <td _ngcontent-jij-c63=""> 3-Sax Clan</td>
+                                <td _ngcontent-jij-c63=""> 27-I FURIANI</td>
+                                <td _ngcontent-jij-c63=""> 21-Kamigrain</td>
+                                <td _ngcontent-jij-c63=""> 15-Bansh</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">1111</td>
+                                <td _ngcontent-jij-c63="">17</td>
+                                <td _ngcontent-jij-c63=""> 24-Pif Paf Pouf</td>
+                                <td _ngcontent-jij-c63=""> 30-alone</td>
+                                <td _ngcontent-jij-c63=""> 6-CRYSTAL</td>
+                                <td _ngcontent-jij-c63=""> 12-Death or Glory</td>
+                                <td _ngcontent-jij-c63=""> 18-Einfach so</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Einfach so</td>
+                                <td _ngcontent-jij-c63="">18</td>
+                                <td _ngcontent-jij-c63=""> 11-Soul Reapers</td>
+                                <td _ngcontent-jij-c63=""> 5-Fighter</td>
+                                <td _ngcontent-jij-c63=""> 29-Vikings</td>
+                                <td _ngcontent-jij-c63=""> 23-StormCat</td>
+                                <td _ngcontent-jij-c63=""> 17-1111</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">ЛЕВ</td>
+                                <td _ngcontent-jij-c63="">19</td>
+                                <td _ngcontent-jij-c63=""> 26-SKY LORDS</td>
+                                <td _ngcontent-jij-c63=""> 2-Clan Destino</td>
+                                <td _ngcontent-jij-c63=""> 8-The Eyrie</td>
+                                <td _ngcontent-jij-c63=""> 14-Перун</td>
+                                <td _ngcontent-jij-c63=""> 20-Tramps and Thieves</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Tramps and Thieves</td>
+                                <td _ngcontent-jij-c63="">20</td>
+                                <td _ngcontent-jij-c63=""> 13-The LIONS</td>
+                                <td _ngcontent-jij-c63=""> 7-CCCP</td>
+                                <td _ngcontent-jij-c63=""> 1-Lily</td>
+                                <td _ngcontent-jij-c63=""> 25-Schriese</td>
+                                <td _ngcontent-jij-c63=""> 19-ЛЕВ</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Kamigrain</td>
+                                <td _ngcontent-jij-c63="">21</td>
+                                <td _ngcontent-jij-c63=""> 28-Eagle Eye</td>
+                                <td _ngcontent-jij-c63=""> 4-Mattari</td>
+                                <td _ngcontent-jij-c63=""> 10-Belgique</td>
+                                <td _ngcontent-jij-c63=""> 16-Die Hanse</td>
+                                <td _ngcontent-jij-c63=""> 22-MUKAKIN-MUGON</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">MUKAKIN-MUGON</td>
+                                <td _ngcontent-jij-c63="">22</td>
+                                <td _ngcontent-jij-c63=""> 15-Bansh</td>
+                                <td _ngcontent-jij-c63=""> 9-himatsubushi</td>
+                                <td _ngcontent-jij-c63=""> 3-Sax Clan</td>
+                                <td _ngcontent-jij-c63=""> 27-I FURIANI</td>
+                                <td _ngcontent-jij-c63=""> 21-Kamigrain</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">StormCat</td>
+                                <td _ngcontent-jij-c63="">23</td>
+                                <td _ngcontent-jij-c63=""> 30-alone</td>
+                                <td _ngcontent-jij-c63=""> 6-CRYSTAL</td>
+                                <td _ngcontent-jij-c63=""> 12-Death or Glory</td>
+                                <td _ngcontent-jij-c63=""> 18-Einfach so</td>
+                                <td _ngcontent-jij-c63=""> 24-Pif Paf Pouf</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Pif Paf Pouf</td>
+                                <td _ngcontent-jij-c63="">24</td>
+                                <td _ngcontent-jij-c63=""> 17-1111</td>
+                                <td _ngcontent-jij-c63=""> 11-Soul Reapers</td>
+                                <td _ngcontent-jij-c63=""> 5-Fighter</td>
+                                <td _ngcontent-jij-c63=""> 29-Vikings</td>
+                                <td _ngcontent-jij-c63=""> 23-StormCat</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Schriese</td>
+                                <td _ngcontent-jij-c63="">25</td>
+                                <td _ngcontent-jij-c63=""> 2-Clan Destino</td>
+                                <td _ngcontent-jij-c63=""> 8-The Eyrie</td>
+                                <td _ngcontent-jij-c63=""> 14-Перун</td>
+                                <td _ngcontent-jij-c63=""> 20-Tramps and Thieves</td>
+                                <td _ngcontent-jij-c63=""> 26-SKY LORDS</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">SKY LORDS</td>
+                                <td _ngcontent-jij-c63="">26</td>
+                                <td _ngcontent-jij-c63=""> 19-ЛЕВ</td>
+                                <td _ngcontent-jij-c63=""> 13-The LIONS</td>
+                                <td _ngcontent-jij-c63=""> 7-CCCP</td>
+                                <td _ngcontent-jij-c63=""> 1-Lily</td>
+                                <td _ngcontent-jij-c63=""> 25-Schriese</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">I FURIANI</td>
+                                <td _ngcontent-jij-c63="">27</td>
+                                <td _ngcontent-jij-c63=""> 4-Mattari</td>
+                                <td _ngcontent-jij-c63=""> 10-Belgique</td>
+                                <td _ngcontent-jij-c63=""> 16-Die Hanse</td>
+                                <td _ngcontent-jij-c63=""> 22-MUKAKIN-MUGON</td>
+                                <td _ngcontent-jij-c63=""> 28-Eagle Eye</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Eagle Eye</td>
+                                <td _ngcontent-jij-c63="">28</td>
+                                <td _ngcontent-jij-c63=""> 21-Kamigrain</td>
+                                <td _ngcontent-jij-c63=""> 15-Bansh</td>
+                                <td _ngcontent-jij-c63=""> 9-himatsubushi</td>
+                                <td _ngcontent-jij-c63=""> 3-Sax Clan</td>
+                                <td _ngcontent-jij-c63=""> 27-I FURIANI</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">Vikings</td>
+                                <td _ngcontent-jij-c63="">29</td>
+                                <td _ngcontent-jij-c63=""> 6-CRYSTAL</td>
+                                <td _ngcontent-jij-c63=""> 12-Death or Glory</td>
+                                <td _ngcontent-jij-c63=""> 18-Einfach so</td>
+                                <td _ngcontent-jij-c63=""> 24-Pif Paf Pouf</td>
+                                <td _ngcontent-jij-c63=""> 30-alone</td>
+                                </tr>
+                            <tr _ngcontent-jij-c63="">
+                                <td _ngcontent-jij-c63="">alone</td>
+                                <td _ngcontent-jij-c63="">30</td>
+                                <td _ngcontent-jij-c63=""> 23-StormCat</td>
+                                <td _ngcontent-jij-c63=""> 17-1111</td>
+                                <td _ngcontent-jij-c63=""> 11-Soul Reapers</td>
+                                <td _ngcontent-jij-c63=""> 5-Fighter</td>
+                                <td _ngcontent-jij-c63=""> 29-Vikings</td>
+                                </tr>
+                            </tbody>
                         </table>
                  </div>
                 </div>
