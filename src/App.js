@@ -30,16 +30,36 @@ const sortF = (a, b) => {
 
 
 const data = `Guild\tPos.\tMonday\tTuesday\tWednesday\tThursday\tFriday
-ohhoo\t1\t4-silelderman\t6-tigerclaws\t8-athena\t10-Велес\t2-Toms
-Toms\t2\t9-First Wave\t7-Knight of Knights\t5-Stoned Dragon Woltan\t3-Фениксы\t1-ohhoo
-Фениксы\t3\t6-tigerclaws\t8-athena\t10-Велес\t2-Toms\t4-silelderman
-silelderman\t4\t1-ohhoo\t9-First Wave\t7-Knight of Knights\t5-Stoned Dragon Woltan\t3-Фениксы
-Stoned Dragon Woltan\t5\t8-athena\t10-Велес\t2-Toms\t4-silelderman\t6-tigerclaws
-tigerclaws\t6\t3-Фениксы\t1-ohhoo\t9-First Wave\t7-Knight of Knights\t5-Stoned Dragon Woltan
-Knight of Knights\t7\t10-Велес\t2-Toms\t4-silelderman\t6-tigerclaws\t8-athena
-athena\t8\t5-Stoned Dragon Woltan\t3-Фениксы\t1-ohhoo\t9-First Wave\t7-Knight of Knights
-First Wave\t9\t2-Toms\t4-silelderman\t6-tigerclaws\t8-athena\t10-Велес
-Велес\t10\t7-Knight of Knights\t5-Stoned Dragon Woltan\t3-Фениксы\t1-ohhoo\t9-First Wave
+athena\t1\t8-Soul Reapers\t14-The LIONS\t20-MUKAKIN-MUGON\t26-SKY LORDS\t2-Mattari
+Mattari\t2\t25-1111\t19-Death or Glory\t13-CRYSTAL\t7-Fighter\t1-athena
+Sax Clan\t3\t10-The Eyrie\t16-ЛЕВ\t22-StormCat\t28-Tramps and Thieves\t4-Clan Destino
+Clan Destino\t4\t27-Einfach so\t21-Перун\t15-Kamigrain\t9-himatsubushi\t3-Sax Clan
+Lily\t5\t12-Bansh\t18-Schriese\t24-Die Hanse\t30-Crab Club\t6-CCCP
+CCCP\t6\t29-Eagle Eye\t23-Pif Paf Pouf\t17-I FURIANI\t11-Belgique\t5-Lily
+Fighter\t7\t14-The LIONS\t20-MUKAKIN-MUGON\t26-SKY LORDS\t2-Mattari\t8-Soul Reapers
+Soul Reapers\t8\t1-athena\t25-1111\t19-Death or Glory\t13-CRYSTAL\t7-Fighter
+himatsubushi\t9\t16-ЛЕВ\t22-StormCat\t28-Tramps and Thieves\t4-Clan Destino\t10-The Eyrie
+The Eyrie\t10\t3-Sax Clan\t27-Einfach so\t21-Перун\t15-Kamigrain\t9-himatsubushi
+Belgique\t11\t18-Schriese\t24-Die Hanse\t30-Crab Club\t6-CCCP\t12-Bansh
+Bansh\t12\t5-Lily\t29-Eagle Eye\t23-Pif Paf Pouf\t17-I FURIANI\t11-Belgique
+CRYSTAL\t13\t20-MUKAKIN-MUGON\t26-SKY LORDS\t2-Mattari\t8-Soul Reapers\t14-The LIONS
+The LIONS\t14\t7-Fighter\t1-athena\t25-1111\t19-Death or Glory\t13-CRYSTAL
+Kamigrain\t15\t22-StormCat\t28-Tramps and Thieves\t4-Clan Destino\t10-The Eyrie\t16-ЛЕВ
+ЛЕВ\t16\t9-himatsubushi\t3-Sax Clan\t27-Einfach so\t21-Перун\t15-Kamigrain
+I FURIANI\t17\t24-Die Hanse\t30-Crab Club\t6-CCCP\t12-Bansh\t18-Schriese
+Schriese\t18\t11-Belgique\t5-Lily\t29-Eagle Eye\t23-Pif Paf Pouf\t17-I FURIANI
+Death or Glory\t19\t26-SKY LORDS\t2-Mattari\t8-Soul Reapers\t14-The LIONS\t20-MUKAKIN-MUGON
+MUKAKIN-MUGON\t20\t13-CRYSTAL\t7-Fighter\t1-athena\t25-1111\t19-Death or Glory
+Перун\t21\t28-Tramps and Thieves\t4-Clan Destino\t10-The Eyrie\t16-ЛЕВ\t22-StormCat
+StormCat\t22\t15-Kamigrain\t9-himatsubushi\t3-Sax Clan\t27-Einfach so\t21-Перун
+Pif Paf Pouf\t23\t30-Crab Club\t6-CCCP\t12-Bansh\t18-Schriese\t24-Die Hanse
+Die Hanse\t24\t17-I FURIANI\t11-Belgique\t5-Lily\t29-Eagle Eye\t23-Pif Paf Pouf
+1111\t25\t2-Mattari\t8-Soul Reapers\t14-The LIONS\t20-MUKAKIN-MUGON\t26-SKY LORDS
+SKY LORDS\t26\t19-Death or Glory\t13-CRYSTAL\t7-Fighter\t1-athena\t25-1111
+Einfach so\t27\t4-Clan Destino\t10-The Eyrie\t16-ЛЕВ\t22-StormCat\t28-Tramps and Thieves
+Tramps and Thieves\t28\t21-Перун\t15-Kamigrain\t9-himatsubushi\t3-Sax Clan\t27-Einfach so
+Eagle Eye\t29\t6-CCCP\t12-Bansh\t18-Schriese\t24-Die Hanse\t30-Crab Club
+Crab Club\t30\t23-Pif Paf Pouf\t17-I FURIANI\t11-Belgique\t5-Lily\t29-Eagle Eye
 `
 
 const App = () => {
