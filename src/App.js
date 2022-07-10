@@ -111,8 +111,6 @@ const App = () => {
         }
     }, [dispatch])
 
-    // const loc = DateTime.local()
-    // const noc = DateTime.now().setZone("Pacific/Auckland")
     return (
         <Auth0Provider domain={"dev-vyzmojme.eu.auth0.com"} clientId={"Wo0pmCF8b6mJGXVpwR7Yt6eHcD9dfJ8G"}
                        redirectUri={window.location.origin}>
