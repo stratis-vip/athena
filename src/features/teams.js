@@ -12,7 +12,7 @@ export const getOpponents = (teams, teamPosition) => {
     //is even
     const opponents = []
     const position = team.position
-    if (team.league == "Bronze") {
+    if (team.league === "Bronze") {
         if (teamPosition % 2 !== 0) {
             let next = position + 7;
             if (next > 30) {
@@ -88,7 +88,7 @@ const Teams = () => {
             setWarOpponents([])
 
         }
-    }, [cTeam])
+    }, [cTeam,teams])
     // useEffect(()=>{
     //     if (!teams){
     //         if (warObj.answer){
@@ -126,108 +126,108 @@ const Teams = () => {
                 <div style={{marginTop: "5rem"}}>
                     <div className={styles.programContainer}>
                         <div style={{marginBottom: "2rem"}}><h1>Silver league</h1></div>
-                        <table _ngcontent-dtk-c63="" className="table table-striped table-sm">
-                            <thead _ngcontent-dtk-c63="" className="thead-dark">
-                            <tr _ngcontent-dtk-c63="">
-                                <th _ngcontent-dtk-c63="" scope="col">Guild</th>
-                                <th _ngcontent-dtk-c63="" scope="col">Pos.</th>
-                                <th _ngcontent-dtk-c63="" scope="col"> Monday</th>
-                                <th _ngcontent-dtk-c63="" scope="col"> Tuesday</th>
-                                <th _ngcontent-dtk-c63="" scope="col"> Wednesday</th>
-                                <th _ngcontent-dtk-c63="" scope="col"> Thursday</th>
-                                <th _ngcontent-dtk-c63="" scope="col"> Friday</th>
+                        <table _ngcontent-mom-c63="" className="table table-striped table-sm">
+                            <thead _ngcontent-mom-c63="" className="thead-dark">
+                            <tr _ngcontent-mom-c63="">
+                                <th _ngcontent-mom-c63="" scope="col">Guild</th>
+                                <th _ngcontent-mom-c63="" scope="col">Pos.</th>
+                                <th _ngcontent-mom-c63="" scope="col"> Monday</th>
+                                <th _ngcontent-mom-c63="" scope="col"> Tuesday</th>
+                                <th _ngcontent-mom-c63="" scope="col"> Wednesday</th>
+                                <th _ngcontent-mom-c63="" scope="col"> Thursday</th>
+                                <th _ngcontent-mom-c63="" scope="col"> Friday</th>
                                 </tr>
                             </thead>
-                            <tbody _ngcontent-dtk-c63="">
-                            <tr _ngcontent-dtk-c63="">
-                                <td _ngcontent-dtk-c63="">54 HERO</td>
-                                <td _ngcontent-dtk-c63="">1</td>
-                                <td _ngcontent-dtk-c63=""> 4-Knight of Knights</td>
-                                <td _ngcontent-dtk-c63=""> 6-Stoned Dragon Woltan</td>
-                                <td _ngcontent-dtk-c63=""> 8-First Wave</td>
-                                <td _ngcontent-dtk-c63=""> 10-Vikings</td>
-                                <td _ngcontent-dtk-c63=""> 2-Фениксы</td>
+                            <tbody _ngcontent-mom-c63="">
+                            <tr _ngcontent-mom-c63="">
+                                <td _ngcontent-mom-c63="">54 HERO</td>
+                                <td _ngcontent-mom-c63="">1</td>
+                                <td _ngcontent-mom-c63=""> 4-Toms</td>
+                                <td _ngcontent-mom-c63=""> 6-Vikings</td>
+                                <td _ngcontent-mom-c63=""> 8-Stoned Dragon Woltan</td>
+                                <td _ngcontent-mom-c63=""> 10-Mattari</td>
+                                <td _ngcontent-mom-c63=""> 2-Фениксы</td>
                                 </tr>
-                            <tr _ngcontent-dtk-c63="">
-                                <td _ngcontent-dtk-c63="">Фениксы</td>
-                                <td _ngcontent-dtk-c63="">2</td>
-                                <td _ngcontent-dtk-c63=""> 9-Велес</td>
-                                <td _ngcontent-dtk-c63=""> 7-Toms</td>
-                                <td _ngcontent-dtk-c63=""> 5-tigerclaws</td>
-                                <td _ngcontent-dtk-c63=""> 3-silelderman</td>
-                                <td _ngcontent-dtk-c63=""> 1-54 HERO</td>
+                            <tr _ngcontent-mom-c63="">
+                                <td _ngcontent-mom-c63="">Фениксы</td>
+                                <td _ngcontent-mom-c63="">2</td>
+                                <td _ngcontent-mom-c63=""> 9-First Wave</td>
+                                <td _ngcontent-mom-c63=""> 7-Knight of Knights</td>
+                                <td _ngcontent-mom-c63=""> 5-tigerclaws</td>
+                                <td _ngcontent-mom-c63=""> 3-silelderman</td>
+                                <td _ngcontent-mom-c63=""> 1-54 HERO</td>
                                 </tr>
-                            <tr _ngcontent-dtk-c63="">
-                                <td _ngcontent-dtk-c63="">silelderman</td>
-                                <td _ngcontent-dtk-c63="">3</td>
-                                <td _ngcontent-dtk-c63=""> 6-Stoned Dragon Woltan</td>
-                                <td _ngcontent-dtk-c63=""> 8-First Wave</td>
-                                <td _ngcontent-dtk-c63=""> 10-Vikings</td>
-                                <td _ngcontent-dtk-c63=""> 2-Фениксы</td>
-                                <td _ngcontent-dtk-c63=""> 4-Knight of Knights</td>
+                            <tr _ngcontent-mom-c63="">
+                                <td _ngcontent-mom-c63="">silelderman</td>
+                                <td _ngcontent-mom-c63="">3</td>
+                                <td _ngcontent-mom-c63=""> 6-Vikings</td>
+                                <td _ngcontent-mom-c63=""> 8-Stoned Dragon Woltan</td>
+                                <td _ngcontent-mom-c63=""> 10-Mattari</td>
+                                <td _ngcontent-mom-c63=""> 2-Фениксы</td>
+                                <td _ngcontent-mom-c63=""> 4-Toms</td>
                                 </tr>
-                            <tr _ngcontent-dtk-c63="">
-                                <td _ngcontent-dtk-c63="">Knight of Knights</td>
-                                <td _ngcontent-dtk-c63="">4</td>
-                                <td _ngcontent-dtk-c63=""> 1-54 HERO</td>
-                                <td _ngcontent-dtk-c63=""> 9-Велес</td>
-                                <td _ngcontent-dtk-c63=""> 7-Toms</td>
-                                <td _ngcontent-dtk-c63=""> 5-tigerclaws</td>
-                                <td _ngcontent-dtk-c63=""> 3-silelderman</td>
+                            <tr _ngcontent-mom-c63="">
+                                <td _ngcontent-mom-c63="">Toms</td>
+                                <td _ngcontent-mom-c63="">4</td>
+                                <td _ngcontent-mom-c63=""> 1-54 HERO</td>
+                                <td _ngcontent-mom-c63=""> 9-First Wave</td>
+                                <td _ngcontent-mom-c63=""> 7-Knight of Knights</td>
+                                <td _ngcontent-mom-c63=""> 5-tigerclaws</td>
+                                <td _ngcontent-mom-c63=""> 3-silelderman</td>
                                 </tr>
-                            <tr _ngcontent-dtk-c63="">
-                                <td _ngcontent-dtk-c63="">tigerclaws</td>
-                                <td _ngcontent-dtk-c63="">5</td>
-                                <td _ngcontent-dtk-c63=""> 8-First Wave</td>
-                                <td _ngcontent-dtk-c63=""> 10-Vikings</td>
-                                <td _ngcontent-dtk-c63=""> 2-Фениксы</td>
-                                <td _ngcontent-dtk-c63=""> 4-Knight of Knights</td>
-                                <td _ngcontent-dtk-c63=""> 6-Stoned Dragon Woltan</td>
+                            <tr _ngcontent-mom-c63="">
+                                <td _ngcontent-mom-c63="">tigerclaws</td>
+                                <td _ngcontent-mom-c63="">5</td>
+                                <td _ngcontent-mom-c63=""> 8-Stoned Dragon Woltan</td>
+                                <td _ngcontent-mom-c63=""> 10-Mattari</td>
+                                <td _ngcontent-mom-c63=""> 2-Фениксы</td>
+                                <td _ngcontent-mom-c63=""> 4-Toms</td>
+                                <td _ngcontent-mom-c63=""> 6-Vikings</td>
                                 </tr>
-                            <tr _ngcontent-dtk-c63="">
-                                <td _ngcontent-dtk-c63="">Stoned Dragon Woltan</td>
-                                <td _ngcontent-dtk-c63="">6</td>
-                                <td _ngcontent-dtk-c63=""> 3-silelderman</td>
-                                <td _ngcontent-dtk-c63=""> 1-54 HERO</td>
-                                <td _ngcontent-dtk-c63=""> 9-Велес</td>
-                                <td _ngcontent-dtk-c63=""> 7-Toms</td>
-                                <td _ngcontent-dtk-c63=""> 5-tigerclaws</td>
+                            <tr _ngcontent-mom-c63="">
+                                <td _ngcontent-mom-c63="">Vikings</td>
+                                <td _ngcontent-mom-c63="">6</td>
+                                <td _ngcontent-mom-c63=""> 3-silelderman</td>
+                                <td _ngcontent-mom-c63=""> 1-54 HERO</td>
+                                <td _ngcontent-mom-c63=""> 9-First Wave</td>
+                                <td _ngcontent-mom-c63=""> 7-Knight of Knights</td>
+                                <td _ngcontent-mom-c63=""> 5-tigerclaws</td>
                                 </tr>
-                            <tr _ngcontent-dtk-c63="">
-                                <td _ngcontent-dtk-c63="">Toms</td>
-                                <td _ngcontent-dtk-c63="">7</td>
-                                <td _ngcontent-dtk-c63=""> 10-Vikings</td>
-                                <td _ngcontent-dtk-c63=""> 2-Фениксы</td>
-                                <td _ngcontent-dtk-c63=""> 4-Knight of Knights</td>
-                                <td _ngcontent-dtk-c63=""> 6-Stoned Dragon Woltan</td>
-                                <td _ngcontent-dtk-c63=""> 8-First Wave</td>
+                            <tr _ngcontent-mom-c63="">
+                                <td _ngcontent-mom-c63="">Knight of Knights</td>
+                                <td _ngcontent-mom-c63="">7</td>
+                                <td _ngcontent-mom-c63=""> 10-Mattari</td>
+                                <td _ngcontent-mom-c63=""> 2-Фениксы</td>
+                                <td _ngcontent-mom-c63=""> 4-Toms</td>
+                                <td _ngcontent-mom-c63=""> 6-Vikings</td>
+                                <td _ngcontent-mom-c63=""> 8-Stoned Dragon Woltan</td>
                                 </tr>
-                            <tr _ngcontent-dtk-c63="">
-                                <td _ngcontent-dtk-c63="">First Wave</td>
-                                <td _ngcontent-dtk-c63="">8</td>
-                                <td _ngcontent-dtk-c63=""> 5-tigerclaws</td>
-                                <td _ngcontent-dtk-c63=""> 3-silelderman</td>
-                                <td _ngcontent-dtk-c63=""> 1-54 HERO</td>
-                                <td _ngcontent-dtk-c63=""> 9-Велес</td>
-                                <td _ngcontent-dtk-c63=""> 7-Toms</td>
+                            <tr _ngcontent-mom-c63="">
+                                <td _ngcontent-mom-c63="">Stoned Dragon Woltan</td>
+                                <td _ngcontent-mom-c63="">8</td>
+                                <td _ngcontent-mom-c63=""> 5-tigerclaws</td>
+                                <td _ngcontent-mom-c63=""> 3-silelderman</td>
+                                <td _ngcontent-mom-c63=""> 1-54 HERO</td>
+                                <td _ngcontent-mom-c63=""> 9-First Wave</td>
+                                <td _ngcontent-mom-c63=""> 7-Knight of Knights</td>
                                 </tr>
-                            <tr _ngcontent-dtk-c63="">
-                                <td _ngcontent-dtk-c63="">Велес</td>
-                                <td _ngcontent-dtk-c63="">9</td>
-                                <td _ngcontent-dtk-c63=""> 2-Фениксы</td>
-                                <td _ngcontent-dtk-c63=""> 4-Knight of Knights</td>
-                                <td _ngcontent-dtk-c63=""> 6-Stoned Dragon Woltan</td>
-                                <td _ngcontent-dtk-c63=""> 8-First Wave</td>
-                                <td _ngcontent-dtk-c63=""> 10-Vikings</td>
+                            <tr _ngcontent-mom-c63="">
+                                <td _ngcontent-mom-c63="">First Wave</td>
+                                <td _ngcontent-mom-c63="">9</td>
+                                <td _ngcontent-mom-c63=""> 2-Фениксы</td>
+                                <td _ngcontent-mom-c63=""> 4-Toms</td>
+                                <td _ngcontent-mom-c63=""> 6-Vikings</td>
+                                <td _ngcontent-mom-c63=""> 8-Stoned Dragon Woltan</td>
+                                <td _ngcontent-mom-c63=""> 10-Mattari</td>
                                 </tr>
-                            <tr _ngcontent-dtk-c63="">
-                                <td _ngcontent-dtk-c63="">Vikings</td>
-                                <td _ngcontent-dtk-c63="">10</td>
-                                <td _ngcontent-dtk-c63=""> 7-Toms</td>
-                                <td _ngcontent-dtk-c63=""> 5-tigerclaws</td>
-                                <td _ngcontent-dtk-c63=""> 3-silelderman</td>
-                                <td _ngcontent-dtk-c63=""> 1-54 HERO</td>
-                                <td _ngcontent-dtk-c63=""> 9-Велес</td>
+                            <tr _ngcontent-mom-c63="">
+                                <td _ngcontent-mom-c63="">Mattari</td>
+                                <td _ngcontent-mom-c63="">10</td>
+                                <td _ngcontent-mom-c63=""> 7-Knight of Knights</td>
+                                <td _ngcontent-mom-c63=""> 5-tigerclaws</td>
+                                <td _ngcontent-mom-c63=""> 3-silelderman</td>
+                                <td _ngcontent-mom-c63=""> 1-54 HERO</td>
+                                <td _ngcontent-mom-c63=""> 9-First Wave</td>
                                 </tr>
                             </tbody>
                         </table>

@@ -22,7 +22,7 @@ import axios from "axios"
 import {error, loading, ready} from "./features/netState";
 import {Auth0Provider} from "@auth0/auth0-react";
 import RouterComponent from "./components/router-comp";
-import {analyzeString, warObj} from "./components/import";
+import {analyzeString} from "./components/import";
 // import { ClerkProvider } from "@clerk/clerk-react";
 const sortF = (a, b) => {
     return Number(a.dt.toFormat("yyyymmddHH")) - Number(b.dt.toFormat("yyyymmddHH"));
@@ -30,80 +30,72 @@ const sortF = (a, b) => {
 
 
 const data = `Guild\tPos.\tMonday\tTuesday\tWednesday\tThursday\tFriday
-athena\t1\t8-Soul Reapers\t14-The LIONS\t20-MUKAKIN-MUGON\t26-SKY LORDS\t2-Mattari
-Mattari\t2\t25-1111\t19-Death or Glory\t13-CRYSTAL\t7-Fighter\t1-athena
-Sax Clan\t3\t10-The Eyrie\t16-ЛЕВ\t22-StormCat\t28-Tramps and Thieves\t4-Clan Destino
-Clan Destino\t4\t27-Einfach so\t21-Перун\t15-Kamigrain\t9-himatsubushi\t3-Sax Clan
-Lily\t5\t12-Bansh\t18-Schriese\t24-Die Hanse\t30-Crab Club\t6-CCCP
-CCCP\t6\t29-Eagle Eye\t23-Pif Paf Pouf\t17-I FURIANI\t11-Belgique\t5-Lily
-Fighter\t7\t14-The LIONS\t20-MUKAKIN-MUGON\t26-SKY LORDS\t2-Mattari\t8-Soul Reapers
-Soul Reapers\t8\t1-athena\t25-1111\t19-Death or Glory\t13-CRYSTAL\t7-Fighter
-himatsubushi\t9\t16-ЛЕВ\t22-StormCat\t28-Tramps and Thieves\t4-Clan Destino\t10-The Eyrie
-The Eyrie\t10\t3-Sax Clan\t27-Einfach so\t21-Перун\t15-Kamigrain\t9-himatsubushi
-Belgique\t11\t18-Schriese\t24-Die Hanse\t30-Crab Club\t6-CCCP\t12-Bansh
-Bansh\t12\t5-Lily\t29-Eagle Eye\t23-Pif Paf Pouf\t17-I FURIANI\t11-Belgique
-CRYSTAL\t13\t20-MUKAKIN-MUGON\t26-SKY LORDS\t2-Mattari\t8-Soul Reapers\t14-The LIONS
-The LIONS\t14\t7-Fighter\t1-athena\t25-1111\t19-Death or Glory\t13-CRYSTAL
-Kamigrain\t15\t22-StormCat\t28-Tramps and Thieves\t4-Clan Destino\t10-The Eyrie\t16-ЛЕВ
-ЛЕВ\t16\t9-himatsubushi\t3-Sax Clan\t27-Einfach so\t21-Перун\t15-Kamigrain
-I FURIANI\t17\t24-Die Hanse\t30-Crab Club\t6-CCCP\t12-Bansh\t18-Schriese
-Schriese\t18\t11-Belgique\t5-Lily\t29-Eagle Eye\t23-Pif Paf Pouf\t17-I FURIANI
-Death or Glory\t19\t26-SKY LORDS\t2-Mattari\t8-Soul Reapers\t14-The LIONS\t20-MUKAKIN-MUGON
-MUKAKIN-MUGON\t20\t13-CRYSTAL\t7-Fighter\t1-athena\t25-1111\t19-Death or Glory
-Перун\t21\t28-Tramps and Thieves\t4-Clan Destino\t10-The Eyrie\t16-ЛЕВ\t22-StormCat
-StormCat\t22\t15-Kamigrain\t9-himatsubushi\t3-Sax Clan\t27-Einfach so\t21-Перун
-Pif Paf Pouf\t23\t30-Crab Club\t6-CCCP\t12-Bansh\t18-Schriese\t24-Die Hanse
-Die Hanse\t24\t17-I FURIANI\t11-Belgique\t5-Lily\t29-Eagle Eye\t23-Pif Paf Pouf
-1111\t25\t2-Mattari\t8-Soul Reapers\t14-The LIONS\t20-MUKAKIN-MUGON\t26-SKY LORDS
-SKY LORDS\t26\t19-Death or Glory\t13-CRYSTAL\t7-Fighter\t1-athena\t25-1111
-Einfach so\t27\t4-Clan Destino\t10-The Eyrie\t16-ЛЕВ\t22-StormCat\t28-Tramps and Thieves
-Tramps and Thieves\t28\t21-Перун\t15-Kamigrain\t9-himatsubushi\t3-Sax Clan\t27-Einfach so
-Eagle Eye\t29\t6-CCCP\t12-Bansh\t18-Schriese\t24-Die Hanse\t30-Crab Club
-Crab Club\t30\t23-Pif Paf Pouf\t17-I FURIANI\t11-Belgique\t5-Lily\t29-Eagle Eye
+Велес\t1\t8-himatsubushi\t14-Soul Reapers\t20-Einfach so\t26-SKY LORDS\t2-athena
+athena\t2\t25-StormCat\t19-Kamigrain\t13-Schriese\t7-Fighter\t1-Велес
+Lily\t3\t10-Bansh\t16-Die Hanse\t22-ЛЕВ\t28-Team Heronic\t4-Sax Clan
+Sax Clan\t4\t27-I FURIANI\t21-The LIONS\t15-Crab Club\t9-The Eyrie\t3-Lily
+Clan Destino\t5\t12-CRYSTAL\t18-Перун\t24-MUKAKIN-MUGON\t30-тризуб\t6-CCCP
+CCCP\t6\t29-The Dragon Way\t23-Pif Paf Pouf\t17-Death or Glory\t11-Belgique\t5-Clan Destino
+Fighter\t7\t14-Soul Reapers\t20-Einfach so\t26-SKY LORDS\t2-athena\t8-himatsubushi
+himatsubushi\t8\t1-Велес\t25-StormCat\t19-Kamigrain\t13-Schriese\t7-Fighter
+The Eyrie\t9\t16-Die Hanse\t22-ЛЕВ\t28-Team Heronic\t4-Sax Clan\t10-Bansh
+Bansh\t10\t3-Lily\t27-I FURIANI\t21-The LIONS\t15-Crab Club\t9-The Eyrie
+Belgique\t11\t18-Перун\t24-MUKAKIN-MUGON\t30-тризуб\t6-CCCP\t12-CRYSTAL
+CRYSTAL\t12\t5-Clan Destino\t29-The Dragon Way\t23-Pif Paf Pouf\t17-Death or Glory\t11-Belgique
+Schriese\t13\t20-Einfach so\t26-SKY LORDS\t2-athena\t8-himatsubushi\t14-Soul Reapers
+Soul Reapers\t14\t7-Fighter\t1-Велес\t25-StormCat\t19-Kamigrain\t13-Schriese
+Crab Club\t15\t22-ЛЕВ\t28-Team Heronic\t4-Sax Clan\t10-Bansh\t16-Die Hanse
+Die Hanse\t16\t9-The Eyrie\t3-Lily\t27-I FURIANI\t21-The LIONS\t15-Crab Club
+Death or Glory\t17\t24-MUKAKIN-MUGON\t30-тризуб\t6-CCCP\t12-CRYSTAL\t18-Перун
+Перун\t18\t11-Belgique\t5-Clan Destino\t29-The Dragon Way\t23-Pif Paf Pouf\t17-Death or Glory
+Kamigrain\t19\t26-SKY LORDS\t2-athena\t8-himatsubushi\t14-Soul Reapers\t20-Einfach so
+Einfach so\t20\t13-Schriese\t7-Fighter\t1-Велес\t25-StormCat\t19-Kamigrain
+The LIONS\t21\t28-Team Heronic\t4-Sax Clan\t10-Bansh\t16-Die Hanse\t22-ЛЕВ
+ЛЕВ\t22\t15-Crab Club\t9-The Eyrie\t3-Lily\t27-I FURIANI\t21-The LIONS
+Pif Paf Pouf\t23\t30-тризуб\t6-CCCP\t12-CRYSTAL\t18-Перун\t24-MUKAKIN-MUGON
+MUKAKIN-MUGON\t24\t17-Death or Glory\t11-Belgique\t5-Clan Destino\t29-The Dragon Way\t23-Pif Paf Pouf
+StormCat\t25\t2-athena\t8-himatsubushi\t14-Soul Reapers\t20-Einfach so\t26-SKY LORDS
+SKY LORDS\t26\t19-Kamigrain\t13-Schriese\t7-Fighter\t1-Велес\t25-StormCat
+I FURIANI\t27\t4-Sax Clan\t10-Bansh\t16-Die Hanse\t22-ЛЕВ\t28-Team Heronic
+Team Heronic\t28\t21-The LIONS\t15-Crab Club\t9-The Eyrie\t3-Lily\t27-I FURIANI
+The Dragon Way\t29\t6-CCCP\t12-CRYSTAL\t18-Перун\t24-MUKAKIN-MUGON\t30-тризуб
+тризуб\t30\t23-Pif Paf Pouf\t17-Death or Glory\t11-Belgique\t5-Clan Destino\t29-The Dragon Way
 `
 
 const App = () => {
     const dispatch = useDispatch()
 
-    useEffect(async () => {
-            try {
-                dispatch(loading())
-                const postQueryData = await axios({
-                    url: 'https://herowars-back.texnopraksis.com/graphql',
-                    method: 'post',
-                    data: {
-                        query: `query{users {id name timeZone active}}`
-                    }
-                })
-                console.log(postQueryData.data.data.users)
-                const data = postQueryData.data.data
-                if (data.users != null && data.users.length > 0) {
-                    const users = data.users
-                    const tUsers = users.map(user => {
-                        return {...user, dt: DateTime.utc().setZone(user.timeZone)}
+    useEffect(() => {
+            async function fetchData() {
+                try {
+                    dispatch(loading())
+                    const postQueryData = await axios({
+                        url: 'https://herowars-back.texnopraksis.com/graphql',
+                        method: 'post',
+                        data: {
+                            query: `query{users {id name timeZone active}}`
+                        }
                     })
-                    const tt = tUsers.filter(user => user.active && !user.archive).sort(sortF)
-                    console.log('USERS', tUsers)
-                    dispatch(addAllUsers(tt))
-                    dispatch(ready())
+                    console.log(postQueryData.data.data.users)
+                    const data = postQueryData.data.data
+                    if (data.users != null && data.users.length > 0) {
+                        const users = data.users
+                        const tUsers = users.map(user => {
+                            return {...user, dt: DateTime.utc().setZone(user.timeZone)}
+                        })
+                        const tt = tUsers.filter(user => user.active && !user.archive).sort(sortF)
+                        console.log('USERS', tUsers)
+                        dispatch(addAllUsers(tt))
+                        dispatch(ready())
+                    }
+                } catch
+                    (e) {
+                    dispatch(error())
+                    console.log(e)
                 }
-            } catch
-                (e) {
-                dispatch(error())
-                console.log(e)
             }
-            // function compare(a, b) {
-            //
-            //     // Turn your strings into dates, and then subtract them
-            //     // to get a value that is either negative, positive, or zero.
-            //     return (a.loc) - (b.loc);
-            // }
-            //
-            //
-            // const usersWithTime = usersFromJson.map(user => {
-            //     return {...user, loc: DateTime.now().setZone(user.zone).toFormat("yyyyLLddHHmm")}
-            // })
-            // dispatch(addAllUsers(usersWithTime.sort(compare)))
+
+            fetchData()
         }
         ,
         [dispatch]
@@ -120,7 +112,7 @@ const App = () => {
     }, [dispatch])
 
     // const loc = DateTime.local()
-    const noc = DateTime.now().setZone("Pacific/Auckland")
+    // const noc = DateTime.now().setZone("Pacific/Auckland")
     return (
         <Auth0Provider domain={"dev-vyzmojme.eu.auth0.com"} clientId={"Wo0pmCF8b6mJGXVpwR7Yt6eHcD9dfJ8G"}
                        redirectUri={window.location.origin}>
@@ -128,8 +120,6 @@ const App = () => {
         </Auth0Provider>
 
     )
-        ;
-
 }
 
 

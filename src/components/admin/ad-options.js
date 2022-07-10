@@ -5,7 +5,7 @@ import SelectTeam from "./select-team";
 
 const handleChange = (e) => console.log(e.target.value)
 const AdminOptions = () => {
-    const {loading, data, error} = useQuery(gql`query{team {id name}}`)
+    const { data} = useQuery(gql`query{team {id name}}`)
     const [teams, setTeams] = useState(null)
 
     useEffect(() => {
