@@ -29,37 +29,17 @@ const sortF = (a, b) => {
 }
 
 
-const data = `Guild\tPos.\tMonday\tTuesday\tWednesday\tThursday\tFriday
-Велес\t1\t8-himatsubushi\t14-Soul Reapers\t20-Einfach so\t26-SKY LORDS\t2-athena
-athena\t2\t25-StormCat\t19-Kamigrain\t13-Schriese\t7-Fighter\t1-Велес
-Lily\t3\t10-Bansh\t16-Die Hanse\t22-ЛЕВ\t28-Team Heronic\t4-Sax Clan
-Sax Clan\t4\t27-I FURIANI\t21-The LIONS\t15-Crab Club\t9-The Eyrie\t3-Lily
-Clan Destino\t5\t12-CRYSTAL\t18-Перун\t24-MUKAKIN-MUGON\t30-тризуб\t6-CCCP
-CCCP\t6\t29-The Dragon Way\t23-Pif Paf Pouf\t17-Death or Glory\t11-Belgique\t5-Clan Destino
-Fighter\t7\t14-Soul Reapers\t20-Einfach so\t26-SKY LORDS\t2-athena\t8-himatsubushi
-himatsubushi\t8\t1-Велес\t25-StormCat\t19-Kamigrain\t13-Schriese\t7-Fighter
-The Eyrie\t9\t16-Die Hanse\t22-ЛЕВ\t28-Team Heronic\t4-Sax Clan\t10-Bansh
-Bansh\t10\t3-Lily\t27-I FURIANI\t21-The LIONS\t15-Crab Club\t9-The Eyrie
-Belgique\t11\t18-Перун\t24-MUKAKIN-MUGON\t30-тризуб\t6-CCCP\t12-CRYSTAL
-CRYSTAL\t12\t5-Clan Destino\t29-The Dragon Way\t23-Pif Paf Pouf\t17-Death or Glory\t11-Belgique
-Schriese\t13\t20-Einfach so\t26-SKY LORDS\t2-athena\t8-himatsubushi\t14-Soul Reapers
-Soul Reapers\t14\t7-Fighter\t1-Велес\t25-StormCat\t19-Kamigrain\t13-Schriese
-Crab Club\t15\t22-ЛЕВ\t28-Team Heronic\t4-Sax Clan\t10-Bansh\t16-Die Hanse
-Die Hanse\t16\t9-The Eyrie\t3-Lily\t27-I FURIANI\t21-The LIONS\t15-Crab Club
-Death or Glory\t17\t24-MUKAKIN-MUGON\t30-тризуб\t6-CCCP\t12-CRYSTAL\t18-Перун
-Перун\t18\t11-Belgique\t5-Clan Destino\t29-The Dragon Way\t23-Pif Paf Pouf\t17-Death or Glory
-Kamigrain\t19\t26-SKY LORDS\t2-athena\t8-himatsubushi\t14-Soul Reapers\t20-Einfach so
-Einfach so\t20\t13-Schriese\t7-Fighter\t1-Велес\t25-StormCat\t19-Kamigrain
-The LIONS\t21\t28-Team Heronic\t4-Sax Clan\t10-Bansh\t16-Die Hanse\t22-ЛЕВ
-ЛЕВ\t22\t15-Crab Club\t9-The Eyrie\t3-Lily\t27-I FURIANI\t21-The LIONS
-Pif Paf Pouf\t23\t30-тризуб\t6-CCCP\t12-CRYSTAL\t18-Перун\t24-MUKAKIN-MUGON
-MUKAKIN-MUGON\t24\t17-Death or Glory\t11-Belgique\t5-Clan Destino\t29-The Dragon Way\t23-Pif Paf Pouf
-StormCat\t25\t2-athena\t8-himatsubushi\t14-Soul Reapers\t20-Einfach so\t26-SKY LORDS
-SKY LORDS\t26\t19-Kamigrain\t13-Schriese\t7-Fighter\t1-Велес\t25-StormCat
-I FURIANI\t27\t4-Sax Clan\t10-Bansh\t16-Die Hanse\t22-ЛЕВ\t28-Team Heronic
-Team Heronic\t28\t21-The LIONS\t15-Crab Club\t9-The Eyrie\t3-Lily\t27-I FURIANI
-The Dragon Way\t29\t6-CCCP\t12-CRYSTAL\t18-Перун\t24-MUKAKIN-MUGON\t30-тризуб
-тризуб\t30\t23-Pif Paf Pouf\t17-Death or Glory\t11-Belgique\t5-Clan Destino\t29-The Dragon Way
+const data = `Guild	Pos.	Monday	Tuesday	Wednesday	Thursday	Friday
+54 HERO	1	4-Toms	6-tigerclaws	8-First Wave	10-athena	2-silelderman
+silelderman	2	9-Vikings	7-Stoned Dragon Woltan	5-Фениксы	3-Knight of Knights	1-54 HERO
+Knight of Knights	3	6-tigerclaws	8-First Wave	10-athena	2-silelderman	4-Toms
+Toms	4	1-54 HERO	9-Vikings	7-Stoned Dragon Woltan	5-Фениксы	3-Knight of Knights
+Фениксы	5	8-First Wave	10-athena	2-silelderman	4-Toms	6-tigerclaws
+tigerclaws	6	3-Knight of Knights	1-54 HERO	9-Vikings	7-Stoned Dragon Woltan	5-Фениксы
+Stoned Dragon Woltan	7	10-athena	2-silelderman	4-Toms	6-tigerclaws	8-First Wave
+First Wave	8	5-Фениксы	3-Knight of Knights	1-54 HERO	9-Vikings	7-Stoned Dragon Woltan
+Vikings	9	2-silelderman	4-Toms	6-tigerclaws	8-First Wave	10-athena
+athena	10	7-Stoned Dragon Woltan	5-Фениксы	3-Knight of Knights	1-54 HERO	9-Vikings
 `
 
 const App = () => {
