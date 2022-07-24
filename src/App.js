@@ -30,16 +30,16 @@ const sortF = (a, b) => {
 
 
 const data = `Guild	Pos.	Monday	Tuesday	Wednesday	Thursday	Friday
-54 HERO	1	4-Toms	6-tigerclaws	8-First Wave	10-athena	2-silelderman
-silelderman	2	9-Vikings	7-Stoned Dragon Woltan	5-Фениксы	3-Knight of Knights	1-54 HERO
-Knight of Knights	3	6-tigerclaws	8-First Wave	10-athena	2-silelderman	4-Toms
-Toms	4	1-54 HERO	9-Vikings	7-Stoned Dragon Woltan	5-Фениксы	3-Knight of Knights
-Фениксы	5	8-First Wave	10-athena	2-silelderman	4-Toms	6-tigerclaws
-tigerclaws	6	3-Knight of Knights	1-54 HERO	9-Vikings	7-Stoned Dragon Woltan	5-Фениксы
-Stoned Dragon Woltan	7	10-athena	2-silelderman	4-Toms	6-tigerclaws	8-First Wave
-First Wave	8	5-Фениксы	3-Knight of Knights	1-54 HERO	9-Vikings	7-Stoned Dragon Woltan
-Vikings	9	2-silelderman	4-Toms	6-tigerclaws	8-First Wave	10-athena
-athena	10	7-Stoned Dragon Woltan	5-Фениксы	3-Knight of Knights	1-54 HERO	9-Vikings
+54 HERO	1	4-Stoned Dragon Woltan	6-Toms	8-athena	10-First Wave	2-Фениксы
+Фениксы	2	9-Vikings	7-tigerclaws	5-silelderman	3-Knight of Knights	1-54 HERO
+Knight of Knights	3	6-Toms	8-athena	10-First Wave	2-Фениксы	4-Stoned Dragon Woltan
+Stoned Dragon Woltan	4	1-54 HERO	9-Vikings	7-tigerclaws	5-silelderman	3-Knight of Knights
+silelderman	5	8-athena	10-First Wave	2-Фениксы	4-Stoned Dragon Woltan	6-Toms
+Toms	6	3-Knight of Knights	1-54 HERO	9-Vikings	7-tigerclaws	5-silelderman
+tigerclaws	7	10-First Wave	2-Фениксы	4-Stoned Dragon Woltan	6-Toms	8-athena
+athena	8	5-silelderman	3-Knight of Knights	1-54 HERO	9-Vikings	7-tigerclaws
+Vikings	9	2-Фениксы	4-Stoned Dragon Woltan	6-Toms	8-athena	10-First Wave
+First Wave	10	7-tigerclaws	5-silelderman	3-Knight of Knights	1-54 HERO	9-Vikings
 `
 
 const App = () => {
