@@ -34,12 +34,12 @@ const RouterComponent = () => {
                     <div className={styles.item}>
                         <Link to="/users">Time Table</Link>
                     </div>
-                    <div className={styles.item}>
+                    {/* <div className={styles.item}>
                         <Link to="/admin">{isAuthenticated === false
                             ? "Admin"
                             : <>Admin: <button onClick={() => logout({returnTo: homePage + "admin"})}>Log
                                 out</button></>}</Link>
-                    </div>
+                    </div> */}
                 </div>
 
             </div>
@@ -50,7 +50,7 @@ const RouterComponent = () => {
                 <Route path="program" element={<Teams/>}/>
                 <Route path="users" element={
                     <Users/>}/>
-                <Route path="admin" element={<Admin/>}/>
+                {/* <Route path="admin" element={<Admin/>}/> */}
 
 
             </Routes>
@@ -74,12 +74,36 @@ const RouterComponent = () => {
         </Router>
     )
 }
+const news = [
+    {
+    date: '08 August 2022',
+    text: `We are for 4th week at Silver!`,
+    place: 9,
+    points: 3789
+},   {
+    date: '13 August 2022',
+    text: `Transit team "new athena" created by stratis. 5 members left the team to staff new athena.`
+},  {
+    date: '14 August 2022',
+    text: `We are for 5th week at Silver!`,
+    place: 7,
+    points: 4164
 
+},
+
+].reverse()
 
 function Home() {
     return (
         <div className={commonStyles.container}>
-            <h3>We are for 4th week at Silver! (9th place)</h3>
+            <div className="text-3xl text-center max-w-2xl">News</div>
+            {news.map((neo,index) => <div key={index} 
+            className='mt-3 text-lg text-left'>
+                <span className="font-bold">{neo.date}:</span> {neo.text}
+                {neo.place && <span> ({neo.place}th place</span>}
+                {neo.place & neo.points ? ` with ${neo.points} points)` : ')'} 
+    
+            </div>)}
         </div>
     )
 }
