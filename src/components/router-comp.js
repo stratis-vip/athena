@@ -19,7 +19,6 @@ import Title from "./title";
 import styles from "./router-comp.module.css";
 import commonStyles from "./common.module.css";
 
-
 const homePage = "http://localhost:3000/";
 const RouterComponent = () => {
   const { isAuthenticated, logout } = useAuth0();
@@ -114,11 +113,7 @@ const news = [
   },
   {
     date: "21 August 2022",
-    text: `Paths for adventures added. Check the menu item "Rules"`,
-  },
-  {
-    date: "21 August 2022",
-    text: `Paths for adventures added. Check the menu item "Rules"`,
+    text: `Paths for adventures added. Check the menu item "Adventures"`,
   },
   {
     date: "21 August 2022",
@@ -133,13 +128,12 @@ const news = [
 function Home() {
   return (
     <div className={commonStyles.container}>
-      
       <div className="text-3xl text-center max-w-2xl">News</div>
       {news.map((neo, index) => (
         <div key={index} className="mt-3 text-lg text-left">
           <span className="font-bold">{neo.date}:</span> {neo.text}
           {neo.place && <span> ({neo.place}th place</span>}
-          {neo.place & neo.points ? ` with ${neo.points} points)` : ")"}
+          {neo.place && neo.points ? ` with ${neo.points} points)` : ""}
         </div>
       ))}
     </div>

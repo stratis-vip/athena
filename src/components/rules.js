@@ -63,7 +63,10 @@ const Rules = () => {
       <div className="mx-4">
         <h1 className="mt-2 text-2xl font-bold">
           General rules of our Guild{" "}
-          <span className="text-lg italic font-normal">(press at any rule to see a short explanation)</span>.
+          <span className="text-lg italic font-normal">
+            (press at any rule to see a short explanation)
+          </span>
+          .
         </h1>
         {rules.map((rule) => (
           <Explanation rule={rule} />
@@ -142,15 +145,15 @@ const Rules = () => {
 
               <li className="ml-3 list-decimal list-inside">
                 If you fell that the target assigned is too hard for you or is
-                wrong (mistakes happens too :) ) then say so! it may be a part
-                of the plan or a mistake!
+                wrong (mistakes happens too) then say so! it may be a part of
+                the plan or a mistake!
               </li>
               <li className="ml-3 list-decimal list-inside">
                 If in doubt, do not attack! Do tell-ask!
               </li>
               <li className="ml-3 list-decimal list-inside">
                 We expect to make your tests, when you are not sure about the
-                best line up of your team to the sepcific target.{" "}
+                best line up of your team to the sepcific target.
                 <span className="italic">
                   After a while, we will have a recodrd of your attacks and we
                   can help you too!
@@ -159,7 +162,7 @@ const Rules = () => {
               <li className="ml-3 list-decimal list-inside">
                 Be polite and supportive to other champions. No one wants to
                 loosing at war, but some times it happens! it's better to
-                support our team mates than to blame them! :)
+                support our team mates than to blame them!
               </li>
               <li className="ml-3 list-decimal list-inside">
                 If you think you see an error at the plan, or a better approach
