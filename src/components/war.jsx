@@ -4,7 +4,7 @@ import {useEffect, useState} from "react";
 import {Duration} from "luxon/build/cjs-browser/luxon";
 import commonStyles from './common.module.css'
 import {useSelector} from "react-redux";
-import {getOpponents} from "../features/teams";
+import {getOpponents} from "./teams";
 
 const isTimeInWar = (currentDate) => {
     const hour = currentDate.hour

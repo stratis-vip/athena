@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      gridTemplateColumns: {
+        // Simple 16 column grid
+
+        // Complex site-specific column configuration
+        solution: "minmax(100px, auto)   1fr ",
+      },
+    },
+    plugins: [require("@tailwindcss/forms")],
   },
-  plugins: [require("@tailwindcss/forms")],
 };

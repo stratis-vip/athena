@@ -13,7 +13,7 @@ const Title = () => {
             <img src={logo} width={48} alt={"athena flag"}/>
             <div className={styles.text}>
 
-                <h3 onMouseOver={() => setVersion(false)} onMouseLeave={()=>setVersion(true)}> Athena <span style={{fontSize: "10px"}} hidden={versionShow}>{json.version}</span></h3>
+                <h3 onMouseOver={() => setVersion(false)} onMouseLeave={()=>setVersion(true)}> New Athena <span style={{fontSize: "10px"}} hidden={versionShow}>{json.version}</span></h3>
                 <h5>{users.length} members</h5>
 
 

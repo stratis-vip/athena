@@ -30,16 +30,36 @@ const sortF = (a, b) => {
 
 
 const data = `Guild	Pos.	Monday	Tuesday	Wednesday	Thursday	Friday
-54 HERO	1	4-Фениксы	6-silelderman	8-First Wave	10-Велес	2-Knight of Knights
-Knight of Knights	2	9-Vikings	7-athena	5-tigerclaws	3-Toms	1-54 HERO
-Toms	3	6-silelderman	8-First Wave	10-Велес	2-Knight of Knights	4-Фениксы
-Фениксы	4	1-54 HERO	9-Vikings	7-athena	5-tigerclaws	3-Toms
-tigerclaws	5	8-First Wave	10-Велес	2-Knight of Knights	4-Фениксы	6-silelderman
-silelderman	6	3-Toms	1-54 HERO	9-Vikings	7-athena	5-tigerclaws
-athena	7	10-Велес	2-Knight of Knights	4-Фениксы	6-silelderman	8-First Wave
-First Wave	8	5-tigerclaws	3-Toms	1-54 HERO	9-Vikings	7-athena
-Vikings	9	2-Knight of Knights	4-Фениксы	6-silelderman	8-First Wave	10-Велес
-Велес	10	7-athena	5-tigerclaws	3-Toms	1-54 HERO	9-Vikings
+athena	1	8-himatsubushi	14-The LIONS	20-MUKAKIN-MUGON	26-Die Hanse	2-First Wave
+First Wave	2	25-Einfach so	19-StormCat	13-CRYSTAL	7-CCCP	1-athena
+Sax Clan	3	10-Soul Reapers	16-SKY LORDS	22-Konoha	28-1111	4-The Eyrie
+The Eyrie	4	27-I FURIANI	21-Lost Soul	15-ЛЕВ	9-Belgique	3-Sax Clan
+Fighter	5	12-Bansh	18-Kamigrain	24-Перун	30-Silver Wolf	6-Lily
+Lily	6	29-new athena	23-Pif Paf Pouf	17-Schriese	11-Death or Glory	5-Fighter
+CCCP	7	14-The LIONS	20-MUKAKIN-MUGON	26-Die Hanse	2-First Wave	8-himatsubushi
+himatsubushi	8	1-athena	25-Einfach so	19-StormCat	13-CRYSTAL	7-CCCP
+Belgique	9	16-SKY LORDS	22-Konoha	28-1111	4-The Eyrie	10-Soul Reapers
+Soul Reapers	10	3-Sax Clan	27-I FURIANI	21-Lost Soul	15-ЛЕВ	9-Belgique
+Death or Glory	11	18-Kamigrain	24-Перун	30-Silver Wolf	6-Lily	12-Bansh
+Bansh	12	5-Fighter	29-new athena	23-Pif Paf Pouf	17-Schriese	11-Death or Glory
+CRYSTAL	13	20-MUKAKIN-MUGON	26-Die Hanse	2-First Wave	8-himatsubushi	14-The LIONS
+The LIONS	14	7-CCCP	1-athena	25-Einfach so	19-StormCat	13-CRYSTAL
+ЛЕВ	15	22-Konoha	28-1111	4-The Eyrie	10-Soul Reapers	16-SKY LORDS
+SKY LORDS	16	9-Belgique	3-Sax Clan	27-I FURIANI	21-Lost Soul	15-ЛЕВ
+Schriese	17	24-Перун	30-Silver Wolf	6-Lily	12-Bansh	18-Kamigrain
+Kamigrain	18	11-Death or Glory	5-Fighter	29-new athena	23-Pif Paf Pouf	17-Schriese
+StormCat	19	26-Die Hanse	2-First Wave	8-himatsubushi	14-The LIONS	20-MUKAKIN-MUGON
+MUKAKIN-MUGON	20	13-CRYSTAL	7-CCCP	1-athena	25-Einfach so	19-StormCat
+Lost Soul	21	28-1111	4-The Eyrie	10-Soul Reapers	16-SKY LORDS	22-Konoha
+Konoha	22	15-ЛЕВ	9-Belgique	3-Sax Clan	27-I FURIANI	21-Lost Soul
+Pif Paf Pouf	23	30-Silver Wolf	6-Lily	12-Bansh	18-Kamigrain	24-Перун
+Перун	24	17-Schriese	11-Death or Glory	5-Fighter	29-new athena	23-Pif Paf Pouf
+Einfach so	25	2-First Wave	8-himatsubushi	14-The LIONS	20-MUKAKIN-MUGON	26-Die Hanse
+Die Hanse	26	19-StormCat	13-CRYSTAL	7-CCCP	1-athena	25-Einfach so
+I FURIANI	27	4-The Eyrie	10-Soul Reapers	16-SKY LORDS	22-Konoha	28-1111
+1111	28	21-Lost Soul	15-ЛЕВ	9-Belgique	3-Sax Clan	27-I FURIANI
+new athena	29	6-Lily	12-Bansh	18-Kamigrain	24-Перун	30-Silver Wolf
+Silver Wolf	30	23-Pif Paf Pouf	17-Schriese	11-Death or Glory	5-Fighter	29-new athena
 `
 
 const App = () => {
