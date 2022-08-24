@@ -34,7 +34,7 @@ const RouterComponent = () => {
         <div className={styles.right}>
           <div className={styles.item}>
             <Link className="text-xl" to="/">
-              Home
+              News
             </Link>
           </div>
           <div className={styles.item}>
@@ -127,11 +127,11 @@ const news = [
 
 function Home() {
   return (
-    <div className={commonStyles.container}>
-      <div className="text-3xl text-center max-w-2xl">News</div>
+    <div className="grid grid-cols-news">
+      {/* <div className="text-3xl text-center col-start-2">News</div> */}
       {news.map((neo, index) => (
-        <div key={index} className="mt-3 text-lg text-left">
-          <span className="font-bold">{neo.date}:</span> {neo.text}
+        <div key={index} className="mt-3 text-lg text-left col-start-2">
+          <span className="font-extrabold text-primary">{neo.date}:</span> {neo.text}
           {neo.place && <span> ({neo.place}th place</span>}
           {neo.place && neo.points ? ` with ${neo.points} points)` : ""}
         </div>
@@ -139,5 +139,5 @@ function Home() {
     </div>
   );
 }
-
+// 2321350153
 export default RouterComponent;

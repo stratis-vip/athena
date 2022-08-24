@@ -94,16 +94,16 @@ const adventures = [
     paths: [
       {
         colour: "blue",
-        numbers: "08-11-17-24-23-32-33-25-34-25-26-18-Boss(x3)",
+        numbers: "07-11-17-24-23-33-34-25-32-25-26-18-Boss(x3)",
       },
       {
         colour: "red",
-        numbers: "02-04-07-16-23-24-14-12-15-28-20-19-18-boss(x2)",
+        numbers: "02-04-07-06-16-23-24-14-12-15-28-20-19-18-boss(x2)",
       },
       {
         colour: "yellow",
         numbers:
-          "05-01-09-03-06-10-22-31-36-35-29-[34-29-30-21] or [30-21-13(x2)] ",
+          "08-01-09-03-05-10-22-31-36-35-29-[32-29-30-21] or [30-21-13(x2)] ",
       },
     ],
     notes: [
@@ -123,11 +123,6 @@ const adventures = [
       {
         id: 4,
         description: "Yellow path starts with #5.",
-      },
-      {
-        id: 5,
-        description:
-          "CAUTION: numbers are from adventure 12 map!!! They are updated in the first adventure 13",
       },
     ],
   },
