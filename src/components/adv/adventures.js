@@ -4,8 +4,34 @@ import adv10small from "./Adventure10small.jpg";
 import adv10 from "./Adventure10.jpg";
 import adv12small from "./Adventure12small.jpg";
 import adv12 from "./Adventure12.jpg";
+import adv13small from "./13small.jpg";
+import adv13 from "./13.jpg";
+import adv09small from "./adv09small.jpg";
+import adv09 from "./adv09.jpg";
 
 const adventures = [
+  {
+    id: 9,
+    name: "Adventure 09 - Valley of the Elements",
+    images: {
+      thumb: adv09small,
+      solution: adv09,
+    },
+    paths: [
+      {
+        colour: "blue",
+        numbers: "02-06-10-15-20-14-24-29-25-36-39-42-44-Boss(x2)",
+      },
+      {
+        colour: "orange",
+        numbers: "03-08-12-11-07-16-21-26-30-31-32-35-37-40-Boss",
+      },
+      {
+        colour: "green",
+        numbers: "03-04-13-19-18-23-17-22-38-41-43-46-Boss(x3)",
+      },
+    ],
+  },
   {
     id: 10,
     name: "Adventure 10 - Valley of the Elements",
@@ -122,7 +148,56 @@ const adventures = [
       },
       {
         id: 4,
-        description: "Yellow path starts with #5.",
+        description: "Yellow path starts with #8.",
+      },
+    ],
+  },
+  {
+    id: 14,
+    name: "Adventure 13 on 12 map #2- Fall of the Celestial City",
+    images: {
+      thumb: adv13small,
+      solution: adv13,
+    },
+    paths: [
+      {
+        colour: "red",
+        numbers: "09-03-05-10-22-31-36-35-29-30-21-13(x2)",
+      },
+      {
+        colour: "yellow",
+        numbers: "07-02-04-06-16-23-33-34-25-26-18-26-14-24-17",
+      },
+      {
+        colour: "green",
+        numbers: "08-12-14-12-15-28-29-32-29-28-20-19-20-boss(x2)",
+      },
+    ],
+    notes: [
+      {
+        id: 1,
+        description: "Only map of adventure 12 is recommended!",
+      },
+      {
+        id: 2,
+        description: "Yellow path, is better suited to mage teams.",
+      },
+      {
+        id: 3,
+        description: "yellow must not loose a spot for 4 chests",
+      },
+      {
+        id: 4,
+        description: "green can lost one spot (if he can win boss on one spot)",
+      },
+      {
+        id: 5,
+        description: "red can lost 2 spots (13 is not necessary) ",
+      },
+      {
+        id: 6,
+        description:
+          "if red member clear 13, yellow or green can lost one more spot ",
       },
     ],
   },
@@ -135,7 +210,7 @@ const Adventures = () => {
   return (
     <>
       <div className="mt-2 text-center text-xl text-red-500">
-        Doing adventure lower than level 10{" "}
+        Doing adventure lower than level 9{" "}
         <span className="font-bold">is not </span>recommended by new athena.
         Resource are more limited.
       </div>
@@ -144,7 +219,11 @@ const Adventures = () => {
           className="text-xl p-1 flex flex-col border-spacing-0 border border-black m-4 rounded-xl"
           key={adv.id}
         >
-          <div className="text-center  font-bold">{adv.name}</div>
+          <div className="text-center  font-bold">
+            <a id={adv.id} className="text-primary font-bold">
+              {adv.name}
+            </a>
+          </div>
           <div className="grid grid-cols-solution items-center"></div>
           <div className="grid grid-cols-solution items-center">
             <a href={adv.images.solution} target="_blank">

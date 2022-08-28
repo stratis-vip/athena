@@ -123,6 +123,11 @@ const news = [
     date: "21 August 2022",
     text: `We start from 29th place at Bronze to promote to Silver!`,
   },
+  {
+    date: "28 August 2022",
+    text: `We promote to Silver!`,
+  },
+  
 ].reverse();
 
 function Home() {
