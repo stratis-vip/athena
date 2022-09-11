@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { adventures } from "../../data/adventures";
+import { adventures } from "../data/adventures";
 import { useParams } from "react-router-dom";
 
 const Adventure = () => {
@@ -44,7 +44,7 @@ const Adventure = () => {
       <Section title={"Recommended Solution"} array={adv.paths}>
         <div className="left ">
           <a href={adv?.images?.solution.src} target="_blank" rel="noreferrer">
-            <img src={adv.images.thumb} width={150} height={89} />
+            <img src={adv.images.thumb} width={150} height={89} alt="adventure" />
           </a>
         </div>
         <div className="right ml-10">

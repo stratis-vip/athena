@@ -1,17 +1,11 @@
-import {
-  BrowserRouter,
-  Link,
-} from "react-router-dom";
-import {tips} from '../../data/tips'
-import {adventures} from '../../data/adventures'
+import { tips } from "../data/tips";
+import { adventures } from "../data/adventures";
 import { useEffect } from "react";
 
-
 const Guides = () => {
-
-  useEffect(()=>{
-    console.log('Adventures', adventures)
-  })
+  useEffect(() => {
+    console.log("Adventures", adventures);
+  });
   return (
     <>
       <Section title={"Adventures"}>

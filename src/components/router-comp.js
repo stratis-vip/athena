@@ -4,13 +4,11 @@ import {
   Outlet,
   Route,
   Routes,
-  useParams,
 } from "react-router-dom";
 import Users from "./users";
 import Rules from "./rules";
-import Adventures from "./adv/adventures";
+import Adventures from "./adventures";
 import React from "react";
-// import Spinner from "./spiner";
 import Title from "./title";
 import Guides from "./guides";
 import Program from "./program";
@@ -44,18 +42,12 @@ const RouterComponent = () => {
         {/* <Route path="events/quiz/:eventId" element={<Quiz />} /> */}
       </Routes>
 
-      {/* <Spinner /> */}
       <Outlet />
     </Router>
   );
 };
 
 export default RouterComponent;
-
-const Quiz = () => {
-  const params = useParams();
-  return <h1>Quiz {params.eventId}</h1>;
-};
 
 const ToLink = ({ path, title }) => {
   return (
