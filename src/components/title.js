@@ -1,25 +1,38 @@
 import logo from "../athena.png";
-import React, {useState} from "react";
-import {useSelector} from "react-redux";
-import styles from './title.module.css'
+import React, {useState, useEffect}from "react";
 import json from '../../package.json'
+import { users } from "../data/users";
 
 const Title = () => {
-    const users = useSelector(state => state.users.users)
-    const [versionShow, setVersion] = useState(true)
+    const [versionShow, setVersion] = useState(true);
+    const [activeUsers, setActiveUsers] = useState([]);
+    useEffect(() => {
+      setActiveUsers(users.filter((user) => user.active));
+    }, []);
 
     return (
-        <div className={styles.container}>
-            <img src={logo} width={48} alt={"athena flag"}/>
-            <div className={styles.text}>
-
-                <h3 onMouseOver={() => setVersion(false)} onMouseLeave={()=>setVersion(true)}> New Athena <span style={{fontSize: "10px"}} hidden={versionShow}>{json.version}</span></h3>
-                <h5>{users.length} members</h5>
-
-
-            </div>
+        <div className=" flex justify-center align-center">
+        <img src={logo} width={48} height={48} alt={"athena flag"} />
+        <div className="">
+          <h3
+            className="text-lg"
+            onMouseOver={() => setVersion(false)}
+            onMouseLeave={() => setVersion(true)}
+          >
+            {" "}
+            New Athena{" "}
+            <span style={{ fontSize: "10px" }} hidden={versionShow}>
+              {json.version}
+            </span>
+          </h3>
+          <h5 className={`${!activeUsers ? "hidden" : "block"} font-thin`}>
+            {" "}
+            {activeUsers?.length} members
+          </h5>
         </div>
+      </div> 
     )
 }
+
 
 export default Title

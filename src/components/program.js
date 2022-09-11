@@ -1,32 +1,72 @@
-import {useSelector} from "react-redux";
-import styles from "./program.module.css"
+import { bronze } from "../data/bronze";
+import { silver } from "../data/silver";
+import { getOpponents } from "../lib";
 
-const Program = ({opponents}) => {
-    const teams = useSelector(state => state.teams.teams)
+export default function Rules() {
+  console.log(silver, bronze);
 
+  return (
+    // <Layout>
+      <div className="text-primary font-bold m-10">
+        <div className="flex flex-col items-center mt-10">
+          <h3 className="text-3xl center mb-5"> Silver League</h3>
+          <div className="">
+            {/* <div className="text-primary font-bold m-10"> */}
 
-    if (opponents.length === 0) return null
-
-    return <div className={styles.master_container}>
-        <div className={styles.container}>
-
-            {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"].map(
-                (number, ind) => (
-                    <div key={ind} className={`${styles.cell} ${styles.header}`}>
-                        {number}
-                    </div>
-                )
-            )}
-
-            {opponents && opponents.map(index => <div key={teams[index - 1].position}
-                                                       className={styles.cell}>{teams[index - 1].position} - {teams[index - 1].name}</div>)}
-
-
+            <table className="text-black">
+              <tbody className="font-normal text-xl">
+                {silver.map((team) => (
+                  <tr
+                    key={team.position}
+                    className={`${
+                      team.name === "new athena" ? "bg-orange-300" : "bg-none"
+                    }`}
+                  >
+                    {/* <td>{team.position}</td> */}
+                    <td className="font-bold"> {team.name}</td>
+                    {getOpponents(Number(team.position), team.league).map(
+                      (r) => (
+                        <td key={team.position}>
+                          {r}-{silver[r - 1].name}
+                        </td>
+                      )
+                    )}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         </div>
-
-
-
-    </div>
+        <div className="text-primary font-bold m-10">
+          <div className="flex flex-col items-center mt-10">
+            <h3 className="text-3xl center mb-5"> Bronze League</h3>
+            <div className="">
+              <table className="text-black">
+                <tbody className="font-normal text-xl">
+                  {bronze.map((team) => (
+                    <tr
+                      key={team.position}
+                      className={`${
+                        team.name === "new athena" ? "bg-orange-300" : "bg-none"
+                      } `}
+                    >
+                      {/* <td>{team.position}</td> */}
+                      <td className="font-bold px-2 my-10"> {team.name}</td>
+                      {getOpponents(Number(team.position), team.league).map(
+                        (r) => (
+                          <td className="px-2 my-3" key={team.name}>
+                            {r} -{bronze[r - 1].name}
+                          </td>
+                        )
+                      )}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    // </Layout>
+  );
 }
-
-export default Program

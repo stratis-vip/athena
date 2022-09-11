@@ -1,96 +1,109 @@
 import User from "./user";
-import styles from './users.module.css'
-import { useSelector} from "react-redux";
-import {useEffect, useState} from "react";
-import {DateTime} from "luxon";
 
+import {useEffect, useState} from "react";
+import { timeUsers, noTimeUsers } from "../data/users";
 
 const Users = () => {
-    const users = useSelector(state => state.users.users)
-    const [timeUsers, setTimeUsers] = useState([])
-    const [noTimeUsers, setNoTimeUsers] = useState([])
-    const [showWarTime, setShowWarTime] = useState(null)
-
-    const sortF = (a,b) => {
-        return Number(a.dt.toFormat("yyyymmddHH")) - Number(b.dt.toFormat("yyyymmddHH"));
+    const [showWarTime, setShowWarTime] = useState(null);
+  useEffect(() => {
+    if (showWarTime == null) {
+      const showWarTimeFromLocalStorage = localStorage.getItem("showWarTime");
+      if (showWarTimeFromLocalStorage != null) {
+        console.log("local Store", showWarTimeFromLocalStorage);
+        setShowWarTime(showWarTimeFromLocalStorage === "false" ? false : true);
+      } else {
+        localStorage.setItem("showWarTime", "false");
+        setShowWarTime(false);
+      }
     }
+  }, [showWarTime]);
 
-    const handleCheckChange = (e) => {
-        setShowWarTime(e.target.checked)
-        localStorage.setItem("showWarTime", e.target.checked === true? "true":"false")
-    }
+  const handleCheckChange = (e) => {
+    setShowWarTime(e.target.checked);
+    localStorage.setItem(
+      "showWarTime",
+      e.target.checked === true ? "true" : "false"
+    );
+  };
 
-    useEffect(()=>{
-        if( showWarTime == null){
-            const showWarTimeFromLocalStorage = localStorage.getItem("showWarTime")
-            if (showWarTimeFromLocalStorage != null){
-                console.log('local Store', showWarTimeFromLocalStorage)
-                setShowWarTime(showWarTimeFromLocalStorage === "false" ? false : true)
-            }else{
-                localStorage.setItem("showWarTime", "false")
-                setShowWarTime(false)
-            }
+  return (
+    <>
+    <div className={"flex items-center flex-col"}>
+        <h2 className="text-3xl text-primary m-8">Time-zone table members</h2>
+        <label className="flex items-center">
+          <input
+            type={"checkbox"}
+            checked={showWarTime}
+            onChange={handleCheckChange}
+            className="focus:ring-0 focus:ring-offset-0 mx-1"
+          />
+          Show War starting/finishing time{" "}
+        </label>
 
-        }
-
-    }, [showWarTime])
-    useEffect(() => {
-        if (users) {
-            if (users != null && users.length > 0) {
-                const tUsers = users.map(user => {return {...user, dt:DateTime.utc().setZone(user.timeZone)}})
-                const tt = tUsers.filter(user => user.active && !user.archive).sort(sortF)
-                setTimeUsers(tt.filter(user => user.timeZone !== "Etc/UTC"))
-                setNoTimeUsers(tt.filter(user => user.timeZone === "Etc/UTC"))
-            }
-        }
-    }, [users])
-
-
-    return (
-        <div className={styles.usersContainer}>
-            <h2>Time-zone table members</h2>
-            <label><input type={"checkbox"} checked={showWarTime} onChange={handleCheckChange}/>Show War starting/finishing time </label>
-
-            <div className={styles.container}>
-                <div className={styles.innerContainer}>
-                    <table className={styles.table}>
-                        <caption>With info</caption>
-                        <thead>
-                        <tr>
-                            <th scope={"col"}>Name</th>
-                            <th scope={"col"}>Local Time</th>
-                            {showWarTime && <th>war starts</th>}
-                            {showWarTime && <th>war ends</th>}
-                        </tr>
-                        </thead>
-                        <tbody className={styles.tbody}>
-                        {timeUsers.map((user, index) => <tr className={index % 2 && styles.greyed} key={user.id}>
-                            <User user={user} showWarTime={showWarTime}/></tr>)}
-                        </tbody>
-                    </table>
-                </div>
-                <div className={styles.innerContainer}>
-                    <table className={styles.table}>
-                        <caption>Without info yet</caption>
-                        <thead>
-                        <tr>
-                            <th scope={"col"}>Name</th>
-                            <th scope={"col"}>Local Time</th>
-                            {showWarTime && <th>war starts</th>}
-                            {showWarTime && <th>war ends</th>}
-                        </tr>
-                        </thead>
-                        <tbody className={styles.tbody}>
-                        {noTimeUsers.map((user, index) => <tr className={index % 2 && styles.greyed} key={user.id}>
-                            <User user={user} showWarTime={showWarTime}/></tr>)}
-                        </tbody>
-                    </table>
-                </div>
-
-            </div>
+        <div className={"flex"}>
+          <div className={"ml-10"}>
+            {/* <table className={"w-full shadow-lg bg-white border-separate "}>
+              <caption className="mt-5 text-3xl">With info</caption>
+              <thead className="text-xl">
+                <tr className="bg-black text-white">
+                  <th scope={"col"}>Name</th>
+                  <th scope={"col"}>Local Time</th>
+                  {showWarTime && <th>war starts</th>}
+                  {showWarTime && <th>war ends</th>}
+                </tr>
+              </thead>
+              <tbody className={"text-center"}>
+                {timeUsers.map((user, index) => (
+                  <tr
+                    className={`${
+                      index % 2 ? "bg-gray-600 text-white" : "bg-gray-300"
+                    }`}
+                    key={user.id}
+                  >
+                    <User user={user} showWarTime={showWarTime} />
+                  </tr>
+                ))}
+              </tbody>
+            </table> */}
+            <TableComponent array={timeUsers} title="With info" showTime={showWarTime} />
+          </div>
+          <div className={"ml-10"}>
+          <TableComponent array={noTimeUsers} title="Without info yet" showTime={showWarTime} />
+          </div>
         </div>
+      </div>
+    </>
     )
 
 }
 
 export default Users
+
+const TableComponent = ({ array, title, showTime }) => {
+    console.log('showWarTiem = ', showTime)
+    return (
+      <table className={"w-full shadow-lg bg-white border-separate "}>
+        <caption className="mt-5 text-3xl">{title} {showTime}</caption>
+        <thead className="text-xl">
+          <tr className="bg-black text-white">
+            <th scope={"col"}>Name</th>
+            <th scope={"col"}>Local Time</th>
+            {showTime && <th>war starts</th>}
+            {showTime && <th>war ends</th>}
+          </tr>
+        </thead>
+        <tbody className={"text-center"}>
+          {array.map((user, index) => (
+            <tr
+              className={`${
+                index % 2 ? "bg-gray-600 text-white" : "bg-gray-300"
+              }`}
+              key={user.id}
+            >
+              <User user={user} showWarTime={showTime} />
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    );
+  };
