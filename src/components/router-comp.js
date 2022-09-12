@@ -39,7 +39,6 @@ const RouterComponent = () => {
         <Route path="rules" element={<Rules />} />
         <Route path="adventures/:aid" element={<Adventures />} />
         <Route path="guides" element={<Guides />} />
-        {/* <Route path="events/quiz/:eventId" element={<Quiz />} /> */}
       </Routes>
 
       <Outlet />

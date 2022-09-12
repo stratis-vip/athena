@@ -42,29 +42,6 @@ const Users = () => {
 
         <div className={"flex"}>
           <div className={"ml-10"}>
-            {/* <table className={"w-full shadow-lg bg-white border-separate "}>
-              <caption className="mt-5 text-3xl">With info</caption>
-              <thead className="text-xl">
-                <tr className="bg-black text-white">
-                  <th scope={"col"}>Name</th>
-                  <th scope={"col"}>Local Time</th>
-                  {showWarTime && <th>war starts</th>}
-                  {showWarTime && <th>war ends</th>}
-                </tr>
-              </thead>
-              <tbody className={"text-center"}>
-                {timeUsers.map((user, index) => (
-                  <tr
-                    className={`${
-                      index % 2 ? "bg-gray-600 text-white" : "bg-gray-300"
-                    }`}
-                    key={user.id}
-                  >
-                    <User user={user} showWarTime={showWarTime} />
-                  </tr>
-                ))}
-              </tbody>
-            </table> */}
             <TableComponent array={timeUsers} title="With info" showTime={showWarTime} />
           </div>
           <div className={"ml-10"}>

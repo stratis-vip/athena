@@ -204,7 +204,7 @@ const data = [
   {
     id: 4570992,
     name: "Kris",
-    active: false,
+    active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: null,

@@ -40,24 +40,6 @@ const Guides = () => {
 
 export default Guides;
 
-// const Event = (props) => {
-//   const { event } = props;
-//   console.log("event", event);
-//   return (
-//     <div className="min-w-1/4">
-//       <Link>
-//         <p>{event.id} </p>
-//         {event.name}
-//       </Link>
-//     </div>
-//   );
-// };
-
-// const Quiz = () => {
-//   const params = useParams();
-//   return <h1>Quiz {params.eventId}</h1>;
-// };
-
 const Section = ({ children, title }) => {
   return (
     <div className="flex flex-col ">

@@ -42,21 +42,6 @@ const getWhereWeAre = (currentDate, promotion = false) => {
 const getCurrentDay = () => {
     const now = DateTime.local()
     return now.weekday
-
-
-    //     table {
-    //     border-collapse: collapse;
-    //     border-spacing: 0;
-    //     width: 100%;
-    //     border: 1px solid #ddd;
-    // }
-    //
-    // th, td {
-    //     text-align: left;
-    //     padding: 8px;
-    // }
-    //
-    // }
 }
 
 const War = () => {
@@ -88,7 +73,6 @@ const War = () => {
     }, [remaining])
     useEffect(() => {
         let int = null
-        // const endTime = DateTime.utc().set({hours: 20, minutes: 0, seconds:0, milliseconds: 0})
 
         if (day && day !== 7) {
             int = setInterval(() => {
