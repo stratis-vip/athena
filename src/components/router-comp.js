@@ -13,6 +13,7 @@ import Title from "./title";
 import Guides from "./guides";
 import Program from "./program";
 import Home from "./home";
+import Edit from "./edit";
 
 const RouterComponent = () => {
   return (
@@ -39,6 +40,7 @@ const RouterComponent = () => {
         <Route path="rules" element={<Rules />} />
         <Route path="adventures/:aid" element={<Adventures />} />
         <Route path="guides" element={<Guides />} />
+        <Route path="edit" element={<Edit />} />
       </Routes>
 
       <Outlet />
@@ -57,3 +59,4 @@ const ToLink = ({ path, title }) => {
     </div>
   );
 };
+

@@ -43,7 +43,7 @@ const Adventure = () => {
 
       <Section title={"Recommended Solution"} array={adv.paths}>
         <div className="left ">
-          <a href={adv?.images?.solution.src} target="_blank" rel="noreferrer">
+          <a href={adv?.images?.solution} target="_blank" rel="noreferrer">
             <img src={adv.images.thumb} width={150} height={89} alt="adventure" />
           </a>
         </div>

@@ -1,6 +1,6 @@
 import { DateTime } from "luxon";
 
-const data = [
+export const allUsers = [
   {
     id: 20932801,
     name: "Stormbreaker",
@@ -362,7 +362,7 @@ const data = [
     notes: null,
   },
   {
-    id: 48387543,
+    id: 4305819,
     name: "Victory",
     active: true,
     isArchived: false,
@@ -377,7 +377,7 @@ const sortF = (a, b) => {
   );
 };
 
-export const users = data.filter((user) => user.active && !user.isArchived);
+export const users = allUsers.filter((user) => user.active && !user.isArchived);
 
 const tUsers = users.map((user) => {
   return { ...user, dt: DateTime.utc().setZone(user.timeZone) };
