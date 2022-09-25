@@ -43,14 +43,20 @@ export const news = [
   },
   {
     date: "11 September 2022",
-    text: `We are for 3nd week at Silver!`,
+    text: `We are for 3rd week at Silver!`,
     place: 8,
     points: 3956,
   },
   {
     date: "18 September 2022",
-    text: `We are for 4nd week at Silver!`,
+    text: `We are for 4th week at Silver!`,
     place: 8,
     points: 4415,
+  },
+  {
+    date: "25 September 2022",
+    text: `We are for 5th week at Silver!`,
+    place: 8,
+    points: 3968,
   },
 ].reverse();
