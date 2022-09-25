@@ -44,7 +44,7 @@ export const allUsers = [
   {
     id: 4231757,
     name: "vulcans",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "GMT",
     notes: "UK",
@@ -340,7 +340,7 @@ export const allUsers = [
   {
     id: 4861955,
     name: "Tyrael",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: null,
@@ -356,7 +356,7 @@ export const allUsers = [
   {
     id: 48387543,
     name: "Siarzaste",
-    active: false,
+    active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: null,
