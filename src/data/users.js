@@ -68,7 +68,7 @@ export const allUsers = [
   {
     id: 4259896,
     name: "Smart Death",
-    active: false,
+    active: true,
     isArchived: false,
     timeZone: "UTC+2",
     notes: null,
@@ -174,7 +174,7 @@ export const allUsers = [
     name: "ManNerKill",
     active: true,
     isArchived: false,
-    timeZone: "Etc/UTC",
+    timeZone: "Asia/Seoul",
     notes: null,
   },
   {
@@ -204,7 +204,7 @@ export const allUsers = [
   {
     id: 4570992,
     name: "Kris",
-    active: false,
+    active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: null,
@@ -260,7 +260,7 @@ export const allUsers = [
   {
     id: 4684732,
     name: "Team Diabolic",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: null,
@@ -356,7 +356,7 @@ export const allUsers = [
   {
     id: 48387543,
     name: "Siarzaste",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: null,
@@ -364,6 +364,30 @@ export const allUsers = [
   {
     id: 4305819,
     name: "Victory",
+    active: false,
+    isArchived: false,
+    timeZone: "Etc/UTC",
+    notes: null,
+  },
+  {
+    id: 4536460,
+    name: "ekaptan",
+    active: true,
+    isArchived: false,
+    timeZone: "Etc/UTC",
+    notes: null,
+  },
+  {
+    id: 4699813,
+    name: "FIFA78KJ",
+    active: true,
+    isArchived: false,
+    timeZone: "Etc/UTC",
+    notes: null,
+  },
+  {
+    id: 4562810,
+    name: "aki",
     active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
