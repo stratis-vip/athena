@@ -4,10 +4,10 @@ export const allUsers = [
   {
     id: 20932801,
     name: "Stormbreaker",
-    active: false,
+    active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
-    notes: null,
+    notes: "Vikings origin",
   },
   {
     id: 2426533,
@@ -207,7 +207,7 @@ export const allUsers = [
     active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
-    notes: null,
+    notes: "Vikings origin",
   },
   {
     id: 4587443,
@@ -236,10 +236,10 @@ export const allUsers = [
   {
     id: 4643584,
     name: "Artikon",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
-    notes: null,
+    notes: "Vikings origin",
   },
   {
     id: 4645138,
@@ -263,7 +263,7 @@ export const allUsers = [
     active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
-    notes: null,
+    notes: "Vikings origin",
   },
   {
     id: 4692544,
@@ -300,10 +300,10 @@ export const allUsers = [
   {
     id: 4748294,
     name: "PapaFrankou",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
-    notes: null,
+    notes: "Vikings origin",
   },
   {
     id: 4761947,
@@ -359,15 +359,15 @@ export const allUsers = [
     active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
-    notes: null,
+    notes: "Vikings origin",
   },
   {
     id: 4305819,
     name: "Victory",
-    active: false,
+    active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
-    notes: null,
+    notes: "Vikings origin",
   },
   {
     id: 4536460,
@@ -388,7 +388,15 @@ export const allUsers = [
   {
     id: 4562810,
     name: "aki",
-    active: true,
+    active: false,
+    isArchived: false,
+    timeZone: "Etc/UTC",
+    notes: "Vikings origin",
+  },
+ {
+    id: 4365099,
+    name: "june",
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: null,
