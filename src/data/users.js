@@ -204,7 +204,7 @@ export const allUsers = [
   {
     id: 4570992,
     name: "Kris",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
@@ -412,6 +412,14 @@ export const allUsers = [
   {
     id: 4326464,
     name: "Miquel CAT",
+    active: true,
+    isArchived: false,
+    timeZone: "Etc/UTC",
+    notes: "Vikings origin",
+  },
+  {
+    id: 9838807,
+    name: "The Legend",
     active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
