@@ -228,7 +228,7 @@ export const allUsers = [
   {
     id: 4609221,
     name: "Emperor",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Asia/Seoul",
     notes: "",
@@ -380,7 +380,7 @@ export const allUsers = [
   {
     id: 4699813,
     name: "FIFA78KJ",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: null,
@@ -393,13 +393,29 @@ export const allUsers = [
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
   },
- {
+  {
     id: 4365099,
     name: "june",
-    active: false,
+    active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: null,
+  },
+  {
+    id: 4826641,
+    name: "wilson",
+    active: true,
+    isArchived: false,
+    timeZone: "Etc/UTC",
+    notes: "Vikings origin",
+  },
+  {
+    id: 4326464,
+    name: "Miquel CAT",
+    active: true,
+    isArchived: false,
+    timeZone: "Etc/UTC",
+    notes: "Vikings origin",
   },
 ];
 
