@@ -27,7 +27,7 @@ export const tips = [
   { 
     id: 6, 
     category: "Spooky Festival", 
-    tip: "To get easily 250+ minions at Furnace of souls, attack every time with Albus and any hero. Likewise you will get from 15-40 minions per attack. You can cancel the attack for speed." },
+    tip: "To get easily 250+ minions at Furnace of souls, attack every time with any pet and ONLY one hero. Likewise you will get from 15-50 minions per attack. You can cancel the attack for speed." },
 ].sort(compare);
 
 function compare(a, b) {
