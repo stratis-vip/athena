@@ -3,8 +3,8 @@ import { DateTime } from "luxon";
 export const allUsers = [
   {
     id: 20932801,
-    name: "Stormbreaker",
-    active: true,
+    name: "Stormy",
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
@@ -204,7 +204,7 @@ export const allUsers = [
   {
     id: 4570992,
     name: "Kris",
-    active: false,
+    active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
@@ -260,7 +260,7 @@ export const allUsers = [
   {
     id: 4684732,
     name: "Team Diabolic",
-    active: false,
+    active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
@@ -300,7 +300,7 @@ export const allUsers = [
   {
     id: 4748294,
     name: "PapaFrankou",
-    active: false,
+    active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
@@ -404,7 +404,7 @@ export const allUsers = [
   {
     id: 4826641,
     name: "wilson",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
@@ -420,7 +420,7 @@ export const allUsers = [
   {
     id: 9838807,
     name: "The Legend",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
