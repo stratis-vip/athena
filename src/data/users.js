@@ -300,7 +300,7 @@ export const allUsers = [
   {
     id: 4748294,
     name: "PapaFrankou",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
@@ -420,6 +420,13 @@ export const allUsers = [
   {
     id: 9838807,
     name: "The Legend",
+    active: false,
+    isArchived: false,
+    timeZone: "Etc/UTC",
+    notes: "Vikings origin",
+  },  {
+    id: 4464350,
+    name: "Noobazzo",
     active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
