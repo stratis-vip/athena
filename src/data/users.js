@@ -427,7 +427,7 @@ export const allUsers = [
   },  {
     id: 4464350,
     name: "Noobazzo",
-    active: false,
+    active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
