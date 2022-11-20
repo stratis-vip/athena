@@ -420,14 +420,14 @@ export const allUsers = [
   {
     id: 9838807,
     name: "The Legend",
-    active: false,
+    active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
   },  {
     id: 4464350,
     name: "Noobazzo",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
