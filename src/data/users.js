@@ -382,7 +382,7 @@ export const allUsers = [
     name: "simsim",
     active: true,
     isArchived: false,
-    timeZone: "Etc/UTC",
+    timeZone: "UTC+9",
     notes: null,
   },
   {
