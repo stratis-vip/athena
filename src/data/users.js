@@ -220,7 +220,7 @@ export const allUsers = [
   {
     id: 4598126,
     name: "Aragorn",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "MST",
     notes: "San Diego CA",
@@ -372,6 +372,14 @@ export const allUsers = [
   {
     id: 4536460,
     name: "ekaptan",
+    active: true,
+    isArchived: false,
+    timeZone: "Etc/UTC",
+    notes: null,
+  },
+  {
+    id: 4536460,
+    name: "simsim",
     active: true,
     isArchived: false,
     timeZone: "Etc/UTC",
