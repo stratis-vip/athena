@@ -1,36 +1,36 @@
 import { readData } from "../lib";
 
 const program = `
-Clan Destino	1	8-The Eyrie	14-CRYSTAL	20-тризуб	26-ppmmOmmqq	2-Sax Clan
-Sax Clan	2	25-1111	19-MUKAKIN-MUGON	13-Bansh	7-Belgique	1-Clan Destino
-Lily	3	10-Death or Glory	16-SKY LORDS	22-Fighter	28-ЛЕВ	4-First Wave
-First Wave	4	27-Pif Paf Pouf	21-Kamigrain	15-Die Hanse	9-HERO 45	3-Lily
-Soul Reapers	5	12-Einfach so	18-Перун	24-Team Heronic	30-Welcome to Asteroid	6-himatsubushi
-himatsubushi	6	29-The LIONS	23-StormCat	17-Lost Soul	11-CCCP	5-Soul Reapers
-Belgique	7	14-CRYSTAL	20-тризуб	26-ppmmOmmqq	2-Sax Clan	8-The Eyrie
-The Eyrie	8	1-Clan Destino	25-1111	19-MUKAKIN-MUGON	13-Bansh	7-Belgique
-HERO 45	9	16-SKY LORDS	22-Fighter	28-ЛЕВ	4-First Wave	10-Death or Glory
-Death or Glory	10	3-Lily	27-Pif Paf Pouf	21-Kamigrain	15-Die Hanse	9-HERO 45
-CCCP	11	18-Перун	24-Team Heronic	30-Welcome to Asteroid	6-himatsubushi	12-Einfach so
-Einfach so	12	5-Soul Reapers	29-The LIONS	23-StormCat	17-Lost Soul	11-CCCP
-Bansh	13	20-тризуб	26-ppmmOmmqq	2-Sax Clan	8-The Eyrie	14-CRYSTAL
-CRYSTAL	14	7-Belgique	1-Clan Destino	25-1111	19-MUKAKIN-MUGON	13-Bansh
-Die Hanse	15	22-Fighter	28-ЛЕВ	4-First Wave	10-Death or Glory	16-SKY LORDS
-SKY LORDS	16	9-HERO 45	3-Lily	27-Pif Paf Pouf	21-Kamigrain	15-Die Hanse
-Lost Soul	17	24-Team Heronic	30-Welcome to Asteroid	6-himatsubushi	12-Einfach so	18-Перун
-Перун	18	11-CCCP	5-Soul Reapers	29-The LIONS	23-StormCat	17-Lost Soul
-MUKAKIN-MUGON	19	26-ppmmOmmqq	2-Sax Clan	8-The Eyrie	14-CRYSTAL	20-тризуб
-тризуб	20	13-Bansh	7-Belgique	1-Clan Destino	25-1111	19-MUKAKIN-MUGON
-Kamigrain	21	28-ЛЕВ	4-First Wave	10-Death or Glory	16-SKY LORDS	22-Fighter
-Fighter	22	15-Die Hanse	9-HERO 45	3-Lily	27-Pif Paf Pouf	21-Kamigrain
-StormCat	23	30-Welcome to Asteroid	6-himatsubushi	12-Einfach so	18-Перун	24-Team Heronic
-Team Heronic	24	17-Lost Soul	11-CCCP	5-Soul Reapers	29-The LIONS	23-StormCat
-1111	25	2-Sax Clan	8-The Eyrie	14-CRYSTAL	20-тризуб	26-ppmmOmmqq
-ppmmOmmqq	26	19-MUKAKIN-MUGON	13-Bansh	7-Belgique	1-Clan Destino	25-1111
-Pif Paf Pouf	27	4-First Wave	10-Death or Glory	16-SKY LORDS	22-Fighter	28-ЛЕВ
-ЛЕВ	28	21-Kamigrain	15-Die Hanse	9-HERO 45	3-Lily	27-Pif Paf Pouf
-The LIONS	29	6-himatsubushi	12-Einfach so	18-Перун	24-Team Heronic	30-Welcome to Asteroid
-Welcome to Asteroid	30	23-StormCat	17-Lost Soul	11-CCCP	5-Soul Reapers	29-The LIONS
+First Wave	1	8-Belgique	14-Death or Glory	20-StormCat	26-1111	2-Soul Reapers
+Soul Reapers	2	25-Die Hanse	19-тризуб	13-CRYSTAL	7-himatsubushi	1-First Wave
+Sax Clan	3	10-CCCP	16-MUKAKIN-MUGON	22-Team Heronic	28-Lost Soul	4-Clan Destino
+Clan Destino	4	27-Pif Paf Pouf	21-Kamigrain	15-Einfach so	9-The Eyrie	3-Sax Clan
+HERO 45	5	12-Перун	18-SKY LORDS	24-ЛЕВ	30-UNITED STATES	6-Lily
+Lily	6	29-Welcome to Asteroid	23-Fighter	17-The LIONS	11-Bansh	5-HERO 45
+himatsubushi	7	14-Death or Glory	20-StormCat	26-1111	2-Soul Reapers	8-Belgique
+Belgique	8	1-First Wave	25-Die Hanse	19-тризуб	13-CRYSTAL	7-himatsubushi
+The Eyrie	9	16-MUKAKIN-MUGON	22-Team Heronic	28-Lost Soul	4-Clan Destino	10-CCCP
+CCCP	10	3-Sax Clan	27-Pif Paf Pouf	21-Kamigrain	15-Einfach so	9-The Eyrie
+Bansh	11	18-SKY LORDS	24-ЛЕВ	30-UNITED STATES	6-Lily	12-Перун
+Перун	12	5-HERO 45	29-Welcome to Asteroid	23-Fighter	17-The LIONS	11-Bansh
+CRYSTAL	13	20-StormCat	26-1111	2-Soul Reapers	8-Belgique	14-Death or Glory
+Death or Glory	14	7-himatsubushi	1-First Wave	25-Die Hanse	19-тризуб	13-CRYSTAL
+Einfach so	15	22-Team Heronic	28-Lost Soul	4-Clan Destino	10-CCCP	16-MUKAKIN-MUGON
+MUKAKIN-MUGON	16	9-The Eyrie	3-Sax Clan	27-Pif Paf Pouf	21-Kamigrain	15-Einfach so
+The LIONS	17	24-ЛЕВ	30-UNITED STATES	6-Lily	12-Перун	18-SKY LORDS
+SKY LORDS	18	11-Bansh	5-HERO 45	29-Welcome to Asteroid	23-Fighter	17-The LIONS
+тризуб	19	26-1111	2-Soul Reapers	8-Belgique	14-Death or Glory	20-StormCat
+StormCat	20	13-CRYSTAL	7-himatsubushi	1-First Wave	25-Die Hanse	19-тризуб
+Kamigrain	21	28-Lost Soul	4-Clan Destino	10-CCCP	16-MUKAKIN-MUGON	22-Team Heronic
+Team Heronic	22	15-Einfach so	9-The Eyrie	3-Sax Clan	27-Pif Paf Pouf	21-Kamigrain
+Fighter	23	30-UNITED STATES	6-Lily	12-Перун	18-SKY LORDS	24-ЛЕВ
+ЛЕВ	24	17-The LIONS	11-Bansh	5-HERO 45	29-Welcome to Asteroid	23-Fighter
+Die Hanse	25	2-Soul Reapers	8-Belgique	14-Death or Glory	20-StormCat	26-1111
+1111	26	19-тризуб	13-CRYSTAL	7-himatsubushi	1-First Wave	25-Die Hanse
+Pif Paf Pouf	27	4-Clan Destino	10-CCCP	16-MUKAKIN-MUGON	22-Team Heronic	28-Lost Soul
+Lost Soul	28	21-Kamigrain	15-Einfach so	9-The Eyrie	3-Sax Clan	27-Pif Paf Pouf
+Welcome to Asteroid	29	6-Lily	12-Перун	18-SKY LORDS	24-ЛЕВ	30-UNITED STATES
+UNITED STATES	30	23-Fighter	17-The LIONS	11-Bansh	5-HERO 45	29-Welcome to Asteroid
 `;
 
 export const bronze = readData(program, "bronze");

@@ -150,8 +150,8 @@ export const allUsers = [
     name: "KinkaHeroes",
     active: true,
     isArchived: false,
-    timeZone: "UTC+1",
-    notes: "",
+    timeZone: "EET",
+    notes: "Europe/Athens",
   },
   {
     id: 4491684,
@@ -354,6 +354,14 @@ export const allUsers = [
     notes: "Europe/Athens",
   },
   {
+    id: 4398188,
+    name: "Das",
+    active: true,
+    isArchived: false,
+    timeZone: "EET",
+    notes: "Europe/Athens",
+  },
+  {
     id: 48387543,
     name: "Siarzaste",
     active: false,
@@ -428,7 +436,7 @@ export const allUsers = [
   {
     id: 9838807,
     name: "The Legend",
-    active: true,
+    active: false,
     isArchived: false,
     timeZone: "Etc/UTC",
     notes: "Vikings origin",
