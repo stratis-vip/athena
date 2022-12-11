@@ -452,7 +452,7 @@ export const allUsers = [
 	{
 		id: 436784,
 		name: "JeanCZE",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "Etc/UTC",
 		notes: null,
