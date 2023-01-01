@@ -137,4 +137,10 @@ export const news = [
 		place: 4,
 		points: 4955,
 	},
+	{
+		date: "31 December 2022",
+		text: `Happy new Year!! We are for 19th week at Silver! Even though we get more points from any other time, we ranked 5th!`,
+		place: 5,
+		points: 5113,
+	},
 ].reverse();
