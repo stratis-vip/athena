@@ -470,7 +470,7 @@ export const allUsers = [
 		name: "л л",
 		active: true,
 		isArchived: false,
-		timeZone: "Etc/UTC",
+		timeZone: "UTC+3",
 		notes: null,
 	},
 ];
