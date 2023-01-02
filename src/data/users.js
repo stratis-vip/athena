@@ -462,7 +462,7 @@ export const allUsers = [
 		name: "ahe",
 		active: true,
 		isArchived: false,
-		timeZone: "Etc/UTC",
+		timeZone: "UTC+3",
 		notes: null,
 	},
 	{
