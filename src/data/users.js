@@ -468,9 +468,17 @@ export const allUsers = [
 	{
 		id: 16652971,
 		name: "л л",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "UTC+3",
+		notes: null,
+	},
+	{
+		id: 4320180,
+		name: "THE AVENGER HV",
+		active: true,
+		isArchived: false,
+		timeZone: "UTC+1",
 		notes: null,
 	},
 ];
