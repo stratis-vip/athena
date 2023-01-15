@@ -460,7 +460,7 @@ export const allUsers = [
 	{
 		id: 4172989,
 		name: "ahe",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "UTC+3",
 		notes: null,
