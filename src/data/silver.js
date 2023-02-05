@@ -1,15 +1,15 @@
 import { readData } from "../lib";
 const program = `
-HERO 45	1	4-Фениксы	6-tigerclaws	8-Vikings	10-Велес	2-ohhoo
-ohhoo	2	9-silelderman	7-Toms	5-new athena	3-Knight of Knights	1-HERO 45
-Knight of Knights	3	6-tigerclaws	8-Vikings	10-Велес	2-ohhoo	4-Фениксы
-Фениксы	4	1-HERO 45	9-silelderman	7-Toms	5-new athena	3-Knight of Knights
-new athena	5	8-Vikings	10-Велес	2-ohhoo	4-Фениксы	6-tigerclaws
-tigerclaws	6	3-Knight of Knights	1-HERO 45	9-silelderman	7-Toms	5-new athena
-Toms	7	10-Велес	2-ohhoo	4-Фениксы	6-tigerclaws	8-Vikings
-Vikings	8	5-new athena	3-Knight of Knights	1-HERO 45	9-silelderman	7-Toms
-silelderman	9	2-ohhoo	4-Фениксы	6-tigerclaws	8-Vikings	10-Велес
-Велес	10	7-Toms	5-new athena	3-Knight of Knights	1-HERO 45	9-silelderman
+HERO 45	1	4-ohhoo	6-new athena	8-Toms	10-Vikings	2-Knight of Knights
+Knight of Knights	2	9-Велес	7-silelderman	5-tigerclaws	3-Фениксы	1-HERO 45
+Фениксы	3	6-new athena	8-Toms	10-Vikings	2-Knight of Knights	4-ohhoo
+ohhoo	4	1-HERO 45	9-Велес	7-silelderman	5-tigerclaws	3-Фениксы
+tigerclaws	5	8-Toms	10-Vikings	2-Knight of Knights	4-ohhoo	6-new athena
+new athena	6	3-Фениксы	1-HERO 45	9-Велес	7-silelderman	5-tigerclaws
+silelderman	7	10-Vikings	2-Knight of Knights	4-ohhoo	6-new athena	8-Toms
+Toms	8	5-tigerclaws	3-Фениксы	1-HERO 45	9-Велес	7-silelderman
+Велес	9	2-Knight of Knights	4-ohhoo	6-new athena	8-Toms	10-Vikings
+Vikings	10	7-silelderman	5-tigerclaws	3-Фениксы	1-HERO 45	9-Велес
 `;
 
 export const silver = readData(program, "silver");
