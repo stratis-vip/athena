@@ -168,7 +168,7 @@ export const news = [
 		points: 4957,
 	},
 	{
-		date: "29 January 2023",
+		date: "5 February 2023",
 		text: `We are for 24th week at Silver!`,
 		place: 6,
 		points: 4907,
