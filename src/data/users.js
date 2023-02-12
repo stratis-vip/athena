@@ -428,7 +428,7 @@ export const allUsers = [
 	{
 		id: 4326464,
 		name: "Miquel CAT",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "Etc/UTC",
 		notes: "Vikings origin",
