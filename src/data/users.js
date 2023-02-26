@@ -374,7 +374,7 @@ export const allUsers = [
 		name: "Victory",
 		active: true,
 		isArchived: false,
-		timeZone: "Etc/UTC",
+		timeZone: "EET",
 		notes: "Vikings origin",
 	},
 	{
