@@ -1,15 +1,15 @@
 import { readData } from "../lib";
 const program = `
-Knight of Knights	1	4-tigerclaws	6-Велес	8-Toms	10-Vikings	2-HERO 45
-HERO 45	2	9-silelderman	7-54 HERO	5-new athena	3-Фениксы	1-Knight of Knights
-Фениксы	3	6-Велес	8-Toms	10-Vikings	2-HERO 45	4-tigerclaws
-tigerclaws	4	1-Knight of Knights	9-silelderman	7-54 HERO	5-new athena	3-Фениксы
-new athena	5	8-Toms	10-Vikings	2-HERO 45	4-tigerclaws	6-Велес
-Велес	6	3-Фениксы	1-Knight of Knights	9-silelderman	7-54 HERO	5-new athena
-54 HERO	7	10-Vikings	2-HERO 45	4-tigerclaws	6-Велес	8-Toms
-Toms	8	5-new athena	3-Фениксы	1-Knight of Knights	9-silelderman	7-54 HERO
-silelderman	9	2-HERO 45	4-tigerclaws	6-Велес	8-Toms	10-Vikings
-Vikings	10	7-54 HERO	5-new athena	3-Фениксы	1-Knight of Knights	9-silelderman
+Sakura	1	4-tigerclaws	6-silelderman	8-54 HERO	10-Mattari	2-HERO 45
+HERO 45	2	9-Toms	7-Велес	5-new athena	3-Фениксы	1-Sakura
+Фениксы	3	6-silelderman	8-54 HERO	10-Mattari	2-HERO 45	4-tigerclaws
+tigerclaws	4	1-Sakura	9-Toms	7-Велес	5-new athena	3-Фениксы
+new athena	5	8-54 HERO	10-Mattari	2-HERO 45	4-tigerclaws	6-silelderman
+silelderman	6	3-Фениксы	1-Sakura	9-Toms	7-Велес	5-new athena
+Велес	7	10-Mattari	2-HERO 45	4-tigerclaws	6-silelderman	8-54 HERO
+54 HERO	8	5-new athena	3-Фениксы	1-Sakura	9-Toms	7-Велес
+Toms	9	2-HERO 45	4-tigerclaws	6-silelderman	8-54 HERO	10-Mattari
+Mattari	10	7-Велес	5-new athena	3-Фениксы	1-Sakura	9-Toms
 `;
 
 export const silver = readData(program, "silver");
