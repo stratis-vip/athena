@@ -476,7 +476,7 @@ export const allUsers = [
 	{
 		id: 4320180,
 		name: "THE AVENGER HV",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "UTC+1",
 		notes: null,
@@ -488,6 +488,14 @@ export const allUsers = [
 		isArchived: false,
 		timeZone: "Etc/UTC",
 		notes: null,
+	},
+	{
+		id: 20930624,
+		name: "nefeli",
+		active: true,
+		isArchived: false,
+		timeZone: "EET",
+		notes: "Europe/Athens",
 	},
 ];
 
