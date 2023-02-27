@@ -30,7 +30,7 @@ export const allUsers = [
 		name: "Master",
 		active: true,
 		isArchived: false,
-		timeZone: "UTC+2",
+		timeZone: "UTC+1",
 		notes: "",
 	},
 	{
