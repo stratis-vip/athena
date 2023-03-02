@@ -484,7 +484,7 @@ export const allUsers = [
 	{
 		id: 4181489,
 		name: "Dimuro",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "Etc/UTC",
 		notes: null,
