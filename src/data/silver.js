@@ -1,15 +1,15 @@
 import { readData } from "../lib";
 const program = `
-Sakura	1	4-tigerclaws	6-silelderman	8-54 HERO	10-Mattari	2-HERO 45
-HERO 45	2	9-Toms	7-Велес	5-new athena	3-Фениксы	1-Sakura
-Фениксы	3	6-silelderman	8-54 HERO	10-Mattari	2-HERO 45	4-tigerclaws
-tigerclaws	4	1-Sakura	9-Toms	7-Велес	5-new athena	3-Фениксы
-new athena	5	8-54 HERO	10-Mattari	2-HERO 45	4-tigerclaws	6-silelderman
-silelderman	6	3-Фениксы	1-Sakura	9-Toms	7-Велес	5-new athena
-Велес	7	10-Mattari	2-HERO 45	4-tigerclaws	6-silelderman	8-54 HERO
-54 HERO	8	5-new athena	3-Фениксы	1-Sakura	9-Toms	7-Велес
-Toms	9	2-HERO 45	4-tigerclaws	6-silelderman	8-54 HERO	10-Mattari
-Mattari	10	7-Велес	5-new athena	3-Фениксы	1-Sakura	9-Toms
+Сами по себе!	1	4-silelderman	6-new athena	8-Toms	10-Mattari	2-ohhoo
+ohhoo	2	9-54 HERO	7-Велес	5-Фениксы	3-tigerclaws	1-Сами по себе!
+tigerclaws	3	6-new athena	8-Toms	10-Mattari	2-ohhoo	4-silelderman
+silelderman	4	1-Сами по себе!	9-54 HERO	7-Велес	5-Фениксы	3-tigerclaws
+Фениксы	5	8-Toms	10-Mattari	2-ohhoo	4-silelderman	6-new athena
+new athena	6	3-tigerclaws	1-Сами по себе!	9-54 HERO	7-Велес	5-Фениксы
+Велес	7	10-Mattari	2-ohhoo	4-silelderman	6-new athena	8-Toms
+Toms	8	5-Фениксы	3-tigerclaws	1-Сами по себе!	9-54 HERO	7-Велес
+54 HERO	9	2-ohhoo	4-silelderman	6-new athena	8-Toms	10-Mattari
+Mattari	10	7-Велес	5-Фениксы	3-tigerclaws	1-Сами по себе!	9-54 HERO
 `;
 
 export const silver = readData(program, "silver");
