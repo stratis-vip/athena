@@ -492,6 +492,14 @@ export const allUsers = [
 	{
 		id: 20930624,
 		name: "nefeli",
+		active: false,
+		isArchived: false,
+		timeZone: "EET",
+		notes: "Europe/Athens",
+	},
+	{
+		id: 4542929,
+		name: "Astro",
 		active: true,
 		isArchived: false,
 		timeZone: "EET",
