@@ -203,4 +203,10 @@ export const news = [
 		place: 6,
 		points: 4487,
 	},
+	{
+		date: "19 March 2023",
+		text: `We are for 30th week at Silver!`,
+		place: 8,
+		points: 4367,
+	},
 ].reverse();
