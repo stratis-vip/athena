@@ -68,7 +68,7 @@ export const allUsers = [
 	{
 		id: 4259896,
 		name: "Smart Death",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "UTC+2",
 		notes: null,
