@@ -1,36 +1,36 @@
 import { readData } from "../lib";
 
 const program = `
-Clan Destino	1	8-CCCP	14-Einfach so	20-WelcomeToAsteroid II	26-1111	2-First Wave
-First Wave	2	25-Silver Wolf	19-NBC	13-Перун	7-himatsubushi	1-Clan Destino
-Sax Clan	3	10-Bansh	16-Crab Club	22-SKY LORDS	28-тризуб	4-The Eyrie
-The Eyrie	4	27-athena	21-Die Hanse	15-Fighter	9-Lily	3-Sax Clan
-Belgique	5	12-Kamigrain	18-MUKAKIN-MUGON	24-ЛЕВ	30-Welcome to Asteroid	6-Soul Reapers
-Soul Reapers	6	29-Los conquistadores	23-LonesomeRyders	17-Team Heronic	11-Death or Glory	5-Belgique
-himatsubushi	7	14-Einfach so	20-WelcomeToAsteroid II	26-1111	2-First Wave	8-CCCP
-CCCP	8	1-Clan Destino	25-Silver Wolf	19-NBC	13-Перун	7-himatsubushi
-Lily	9	16-Crab Club	22-SKY LORDS	28-тризуб	4-The Eyrie	10-Bansh
-Bansh	10	3-Sax Clan	27-athena	21-Die Hanse	15-Fighter	9-Lily
-Death or Glory	11	18-MUKAKIN-MUGON	24-ЛЕВ	30-Welcome to Asteroid	6-Soul Reapers	12-Kamigrain
-Kamigrain	12	5-Belgique	29-Los conquistadores	23-LonesomeRyders	17-Team Heronic	11-Death or Glory
-Перун	13	20-WelcomeToAsteroid II	26-1111	2-First Wave	8-CCCP	14-Einfach so
-Einfach so	14	7-himatsubushi	1-Clan Destino	25-Silver Wolf	19-NBC	13-Перун
-Fighter	15	22-SKY LORDS	28-тризуб	4-The Eyrie	10-Bansh	16-Crab Club
-Crab Club	16	9-Lily	3-Sax Clan	27-athena	21-Die Hanse	15-Fighter
-Team Heronic	17	24-ЛЕВ	30-Welcome to Asteroid	6-Soul Reapers	12-Kamigrain	18-MUKAKIN-MUGON
-MUKAKIN-MUGON	18	11-Death or Glory	5-Belgique	29-Los conquistadores	23-LonesomeRyders	17-Team Heronic
-NBC	19	26-1111	2-First Wave	8-CCCP	14-Einfach so	20-WelcomeToAsteroid II
-WelcomeToAsteroid II	20	13-Перун	7-himatsubushi	1-Clan Destino	25-Silver Wolf	19-NBC
-Die Hanse	21	28-тризуб	4-The Eyrie	10-Bansh	16-Crab Club	22-SKY LORDS
-SKY LORDS	22	15-Fighter	9-Lily	3-Sax Clan	27-athena	21-Die Hanse
-LonesomeRyders	23	30-Welcome to Asteroid	6-Soul Reapers	12-Kamigrain	18-MUKAKIN-MUGON	24-ЛЕВ
-ЛЕВ	24	17-Team Heronic	11-Death or Glory	5-Belgique	29-Los conquistadores	23-LonesomeRyders
-Silver Wolf	25	2-First Wave	8-CCCP	14-Einfach so	20-WelcomeToAsteroid II	26-1111
-1111	26	19-NBC	13-Перун	7-himatsubushi	1-Clan Destino	25-Silver Wolf
-athena	27	4-The Eyrie	10-Bansh	16-Crab Club	22-SKY LORDS	28-тризуб
-тризуб	28	21-Die Hanse	15-Fighter	9-Lily	3-Sax Clan	27-athena
-Los conquistadores	29	6-Soul Reapers	12-Kamigrain	18-MUKAKIN-MUGON	24-ЛЕВ	30-Welcome to Asteroid
-Welcome to Asteroid	30	23-LonesomeRyders	17-Team Heronic	11-Death or Glory	5-Belgique	29-Los conquistadores
+First Wave	1	8-himatsubushi	14-Death or Glory	20-Silver Wolf	26-тризуб	2-Sax Clan
+Sax Clan	2	25-athena	19-NBC	13-Перун	7-CCCP	1-First Wave
+The Eyrie	3	10-Lily	16-Crab Club	22-Die Hanse	28-Los conquistadores	4-Belgique
+Belgique	4	27-1111	21-ЛЕВ	15-Einfach so	9-Bansh	3-The Eyrie
+Clan Destino	5	12-MUKAKIN-MUGON	18-Team Heronic	24-SKY LORDS	30-Welcome to Asteroid	6-Soul Reapers
+Soul Reapers	6	29-WelcomeToAsteroid II	23-LonesomeRyders	17-Fighter	11-Kamigrain	5-Clan Destino
+CCCP	7	14-Death or Glory	20-Silver Wolf	26-тризуб	2-Sax Clan	8-himatsubushi
+himatsubushi	8	1-First Wave	25-athena	19-NBC	13-Перун	7-CCCP
+Bansh	9	16-Crab Club	22-Die Hanse	28-Los conquistadores	4-Belgique	10-Lily
+Lily	10	3-The Eyrie	27-1111	21-ЛЕВ	15-Einfach so	9-Bansh
+Kamigrain	11	18-Team Heronic	24-SKY LORDS	30-Welcome to Asteroid	6-Soul Reapers	12-MUKAKIN-MUGON
+MUKAKIN-MUGON	12	5-Clan Destino	29-WelcomeToAsteroid II	23-LonesomeRyders	17-Fighter	11-Kamigrain
+Перун	13	20-Silver Wolf	26-тризуб	2-Sax Clan	8-himatsubushi	14-Death or Glory
+Death or Glory	14	7-CCCP	1-First Wave	25-athena	19-NBC	13-Перун
+Einfach so	15	22-Die Hanse	28-Los conquistadores	4-Belgique	10-Lily	16-Crab Club
+Crab Club	16	9-Bansh	3-The Eyrie	27-1111	21-ЛЕВ	15-Einfach so
+Fighter	17	24-SKY LORDS	30-Welcome to Asteroid	6-Soul Reapers	12-MUKAKIN-MUGON	18-Team Heronic
+Team Heronic	18	11-Kamigrain	5-Clan Destino	29-WelcomeToAsteroid II	23-LonesomeRyders	17-Fighter
+NBC	19	26-тризуб	2-Sax Clan	8-himatsubushi	14-Death or Glory	20-Silver Wolf
+Silver Wolf	20	13-Перун	7-CCCP	1-First Wave	25-athena	19-NBC
+ЛЕВ	21	28-Los conquistadores	4-Belgique	10-Lily	16-Crab Club	22-Die Hanse
+Die Hanse	22	15-Einfach so	9-Bansh	3-The Eyrie	27-1111	21-ЛЕВ
+LonesomeRyders	23	30-Welcome to Asteroid	6-Soul Reapers	12-MUKAKIN-MUGON	18-Team Heronic	24-SKY LORDS
+SKY LORDS	24	17-Fighter	11-Kamigrain	5-Clan Destino	29-WelcomeToAsteroid II	23-LonesomeRyders
+athena	25	2-Sax Clan	8-himatsubushi	14-Death or Glory	20-Silver Wolf	26-тризуб
+тризуб	26	19-NBC	13-Перун	7-CCCP	1-First Wave	25-athena
+1111	27	4-Belgique	10-Lily	16-Crab Club	22-Die Hanse	28-Los conquistadores
+Los conquistadores	28	21-ЛЕВ	15-Einfach so	9-Bansh	3-The Eyrie	27-1111
+WelcomeToAsteroid II	29	6-Soul Reapers	12-MUKAKIN-MUGON	18-Team Heronic	24-SKY LORDS	30-Welcome to Asteroid
+Welcome to Asteroid	30	23-LonesomeRyders	17-Fighter	11-Kamigrain	5-Clan Destino	29-WelcomeToAsteroid II
 `;
 
 export const bronze = readData(program, "bronze");
