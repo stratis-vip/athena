@@ -47,10 +47,6 @@ const InputBox = ({ id, title }) => {
       </label>
     </div>
   );
-};
-{
-  /* <input type="radio" id="html" name="fav_language" value="HTML">
-<label for="html">HTML</label><br></br> */
 }
 
 const RadioBox = ({ id, title }) => {

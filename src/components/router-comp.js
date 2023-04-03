@@ -15,6 +15,7 @@ import Program from "./program";
 import Home from "./home";
 import Edit from "./edit";
 import Gwar from "./g-war";
+import Communication from "./comunication";
 
 const RouterComponent = () => {
 	return (
@@ -34,6 +35,7 @@ const RouterComponent = () => {
 					<ToLink path={"/guides"} title="Guides" />
 					<ToLink path={"/program"} title="War Schedule" />
 					<ToLink path={"/users"} title="Time Table" />
+					<ToLink path={"/communication"} title="Communication" />
 				</div>
 			</div>
 
@@ -46,6 +48,7 @@ const RouterComponent = () => {
 				<Route path="guides" element={<Guides />} />
 				<Route path="edit" element={<Edit />} />
 				<Route path="guild-war" element={<Gwar />} />
+				<Route path="communication" element={<Communication />} />
 			</Routes>
 
 			<Outlet />

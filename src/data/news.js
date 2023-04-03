@@ -221,4 +221,14 @@ export const news = [
 		place: 6,
 		points: 4290,
 	},
+	{
+		date: "3 April 2023",
+		text: `A new section about communication added`,
+	},
 ].reverse();
+
+export const discord  = {
+		link: "https://discord.gg/YJ4U7xF2",
+		start: "3",
+		end: "10 Apr 2023" 
+}
