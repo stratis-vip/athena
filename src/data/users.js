@@ -505,6 +505,14 @@ export const allUsers = [
 		timeZone: "EET",
 		notes: "Europe/Athens",
 	},
+	{
+		id: 8610312,
+		name: "war baby",
+		active: true,
+		isArchived: false,
+		timeZone: "Etc/UTC",
+		notes: null,
+	},
 ];
 
 const sortF = (a, b) => {
