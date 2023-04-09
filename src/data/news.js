@@ -225,10 +225,16 @@ export const news = [
 		date: "3 April 2023",
 		text: `A new section about communication added`,
 	},
+	{
+		date: "9 April 2023",
+		text: `We are for 33th week at Silver! 5090 is the 2nd best performance so far! `,
+		place: 5,
+		points: 5090,
+	},
 ].reverse();
 
-export const discord  = {
-		link: "https://discord.gg/YJ4U7xF2",
-		start: "3",
-		end: "10 Apr 2023" 
-}
+export const discord = {
+	link: "https://discord.gg/YJ4U7xF2",
+	start: "3",
+	end: "10 Apr 2023",
+};
