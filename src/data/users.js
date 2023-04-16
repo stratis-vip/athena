@@ -308,7 +308,7 @@ export const allUsers = [
 	{
 		id: 4761947,
 		name: "VegaRev",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "CET",
 		notes: "",
