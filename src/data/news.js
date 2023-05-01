@@ -243,6 +243,17 @@ export const news = [
 		place: 5,
 		points: 4713,
 	},
+	{
+		date: "30 April 2023",
+		text: `We are for 35th week at Silver! `,
+		place: 2,
+	},
+	{
+		date: "30 April 2023",
+		text: `We are for 36th week at Silver! First time we fight (with ohhoo) for promotion to Gold League `,
+		place: 2,
+		points: 5198,
+	},
 ].reverse();
 
 export const discord = {
