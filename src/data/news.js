@@ -250,7 +250,7 @@ export const news = [
 	},
 	{
 		date: "30 April 2023",
-		text: `We are for 36th week at Silver! First time we fight (with ohhoo) for promotion to Gold League `,
+		text: `We are for 36th week at Silver! First time we fought (with ohhoo) for promotion to Gold League. `,
 		place: 2,
 		points: 5198,
 	},
