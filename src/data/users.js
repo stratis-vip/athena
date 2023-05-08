@@ -508,7 +508,7 @@ export const allUsers = [
 	{
 		id: 8610312,
 		name: "war baby",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "Etc/UTC",
 		notes: null,
