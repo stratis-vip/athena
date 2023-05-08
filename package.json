@@ -1,6 +1,6 @@
 {
   "name": "athena",
-  "version": "2.0.109",
+  "version": "2.0.110",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
