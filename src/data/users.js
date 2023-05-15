@@ -268,7 +268,7 @@ export const allUsers = [
 	{
 		id: 4692544,
 		name: "Team 4692544",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "UTC+8",
 		notes: "",
