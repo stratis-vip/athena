@@ -271,6 +271,11 @@ export const news = [
 		text: `We are for 39th week at Silver! `,
 		place: 5,
 		points: 4942,
+	},{
+		date: "28 May 2023",
+		text: `We are for 40th week at Silver! `,
+		place: 4,
+		points: 5099,
 	},
 ].reverse();
 

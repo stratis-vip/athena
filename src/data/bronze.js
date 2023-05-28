@@ -1,36 +1,36 @@
 import { readData } from "../lib";
 
 const program = `
-Clan Destino	1	8-Bansh	14-Gold ship	20-Death or Glory	26-pink pirates	2-Sax Clan
-Sax Clan	2	25-Korean-House	19-Fighter	13-NBC	7-himatsubushi	1-Clan Destino
-Belgique	3	10-CCCP	16-Team Heronic	22-Crab Club	28-The LIONS	4-First Wave
-First Wave	4	27-SKY LORDS	21-MUKAKIN-MUGON	15-Kamigrain	9-Перун	3-Belgique
-The Eyrie	5	12-Einfach so	18-Silver Wolf	24-athena	30-Los conquistadores	6-Soul Reapers
-Soul Reapers	6	29-ЛЕВ	23-LonesomeRyders	17-Italian Job	11-Die Hanse	5-The Eyrie
-himatsubushi	7	14-Gold ship	20-Death or Glory	26-pink pirates	2-Sax Clan	8-Bansh
-Bansh	8	1-Clan Destino	25-Korean-House	19-Fighter	13-NBC	7-himatsubushi
-Перун	9	16-Team Heronic	22-Crab Club	28-The LIONS	4-First Wave	10-CCCP
-CCCP	10	3-Belgique	27-SKY LORDS	21-MUKAKIN-MUGON	15-Kamigrain	9-Перун
-Die Hanse	11	18-Silver Wolf	24-athena	30-Los conquistadores	6-Soul Reapers	12-Einfach so
-Einfach so	12	5-The Eyrie	29-ЛЕВ	23-LonesomeRyders	17-Italian Job	11-Die Hanse
-NBC	13	20-Death or Glory	26-pink pirates	2-Sax Clan	8-Bansh	14-Gold ship
-Gold ship	14	7-himatsubushi	1-Clan Destino	25-Korean-House	19-Fighter	13-NBC
-Kamigrain	15	22-Crab Club	28-The LIONS	4-First Wave	10-CCCP	16-Team Heronic
-Team Heronic	16	9-Перун	3-Belgique	27-SKY LORDS	21-MUKAKIN-MUGON	15-Kamigrain
-Italian Job	17	24-athena	30-Los conquistadores	6-Soul Reapers	12-Einfach so	18-Silver Wolf
-Silver Wolf	18	11-Die Hanse	5-The Eyrie	29-ЛЕВ	23-LonesomeRyders	17-Italian Job
-Fighter	19	26-pink pirates	2-Sax Clan	8-Bansh	14-Gold ship	20-Death or Glory
-Death or Glory	20	13-NBC	7-himatsubushi	1-Clan Destino	25-Korean-House	19-Fighter
-MUKAKIN-MUGON	21	28-The LIONS	4-First Wave	10-CCCP	16-Team Heronic	22-Crab Club
-Crab Club	22	15-Kamigrain	9-Перун	3-Belgique	27-SKY LORDS	21-MUKAKIN-MUGON
-LonesomeRyders	23	30-Los conquistadores	6-Soul Reapers	12-Einfach so	18-Silver Wolf	24-athena
-athena	24	17-Italian Job	11-Die Hanse	5-The Eyrie	29-ЛЕВ	23-LonesomeRyders
-Korean-House	25	2-Sax Clan	8-Bansh	14-Gold ship	20-Death or Glory	26-pink pirates
-pink pirates	26	19-Fighter	13-NBC	7-himatsubushi	1-Clan Destino	25-Korean-House
-SKY LORDS	27	4-First Wave	10-CCCP	16-Team Heronic	22-Crab Club	28-The LIONS
-The LIONS	28	21-MUKAKIN-MUGON	15-Kamigrain	9-Перун	3-Belgique	27-SKY LORDS
-ЛЕВ	29	6-Soul Reapers	12-Einfach so	18-Silver Wolf	24-athena	30-Los conquistadores
-Los conquistadores	30	23-LonesomeRyders	17-Italian Job	11-Die Hanse	5-The Eyrie	29-ЛЕВ
+Clan Destino	1	8-Bansh	14-MUKAKIN-MUGON	20-Die Hanse	26-ЛЕВ	2-First Wave
+First Wave	2	25-LonesomeRyders	19-Team Heronic	13-Einfach so	7-himatsubushi	1-Clan Destino
+Belgique	3	10-Перун	16-CCCP	22-Crab Club	28-pink pirates	4-Sax Clan
+Sax Clan	4	27-NBC	21-Korean-House	15-SKY LORDS	9-Fighter	3-Belgique
+The Eyrie	5	12-Kamigrain	18-athena	24-Silver Wolf	30-1111	6-Soul Reapers
+Soul Reapers	6	29-Los conquistadores	23-Gold ship	17-Italian Job	11-Death or Glory	5-The Eyrie
+himatsubushi	7	14-MUKAKIN-MUGON	20-Die Hanse	26-ЛЕВ	2-First Wave	8-Bansh
+Bansh	8	1-Clan Destino	25-LonesomeRyders	19-Team Heronic	13-Einfach so	7-himatsubushi
+Fighter	9	16-CCCP	22-Crab Club	28-pink pirates	4-Sax Clan	10-Перун
+Перун	10	3-Belgique	27-NBC	21-Korean-House	15-SKY LORDS	9-Fighter
+Death or Glory	11	18-athena	24-Silver Wolf	30-1111	6-Soul Reapers	12-Kamigrain
+Kamigrain	12	5-The Eyrie	29-Los conquistadores	23-Gold ship	17-Italian Job	11-Death or Glory
+Einfach so	13	20-Die Hanse	26-ЛЕВ	2-First Wave	8-Bansh	14-MUKAKIN-MUGON
+MUKAKIN-MUGON	14	7-himatsubushi	1-Clan Destino	25-LonesomeRyders	19-Team Heronic	13-Einfach so
+SKY LORDS	15	22-Crab Club	28-pink pirates	4-Sax Clan	10-Перун	16-CCCP
+CCCP	16	9-Fighter	3-Belgique	27-NBC	21-Korean-House	15-SKY LORDS
+Italian Job	17	24-Silver Wolf	30-1111	6-Soul Reapers	12-Kamigrain	18-athena
+athena	18	11-Death or Glory	5-The Eyrie	29-Los conquistadores	23-Gold ship	17-Italian Job
+Team Heronic	19	26-ЛЕВ	2-First Wave	8-Bansh	14-MUKAKIN-MUGON	20-Die Hanse
+Die Hanse	20	13-Einfach so	7-himatsubushi	1-Clan Destino	25-LonesomeRyders	19-Team Heronic
+Korean-House	21	28-pink pirates	4-Sax Clan	10-Перун	16-CCCP	22-Crab Club
+Crab Club	22	15-SKY LORDS	9-Fighter	3-Belgique	27-NBC	21-Korean-House
+Gold ship	23	30-1111	6-Soul Reapers	12-Kamigrain	18-athena	24-Silver Wolf
+Silver Wolf	24	17-Italian Job	11-Death or Glory	5-The Eyrie	29-Los conquistadores	23-Gold ship
+LonesomeRyders	25	2-First Wave	8-Bansh	14-MUKAKIN-MUGON	20-Die Hanse	26-ЛЕВ
+ЛЕВ	26	19-Team Heronic	13-Einfach so	7-himatsubushi	1-Clan Destino	25-LonesomeRyders
+NBC	27	4-Sax Clan	10-Перун	16-CCCP	22-Crab Club	28-pink pirates
+pink pirates	28	21-Korean-House	15-SKY LORDS	9-Fighter	3-Belgique	27-NBC
+Los conquistadores	29	6-Soul Reapers	12-Kamigrain	18-athena	24-Silver Wolf	30-1111
+1111	30	23-Gold ship	17-Italian Job	11-Death or Glory	5-The Eyrie	29-Los conquistadores
 `;
 
 export const bronze = readData(program, "bronze");
