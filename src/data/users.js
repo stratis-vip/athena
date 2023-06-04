@@ -60,7 +60,7 @@ export const allUsers = [
 	{
 		id: 4253738,
 		name: "Kagale",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "Etc/UTC",
 		notes: "",
@@ -268,7 +268,7 @@ export const allUsers = [
 	{
 		id: 4692544,
 		name: "Team 4692544",
-		active: false,
+		active: true,
 		isArchived: false,
 		timeZone: "UTC+8",
 		notes: "",
@@ -292,7 +292,7 @@ export const allUsers = [
 	{
 		id: 4733797,
 		name: "MoreFun4Me",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "MST",
 		notes: "old PraiseThelord account, managed by aragorn.",
@@ -524,7 +524,7 @@ export const allUsers = [
 	{
 		id: 8965491,
 		name: "hahaha",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "Etc/UTC",
 		notes: null,
@@ -542,7 +542,23 @@ export const allUsers = [
 		name: "team D",
 		active: true,
 		isArchived: false,
-		timeZone: "UTC",
+		timeZone: "Etc/UTC",
+		notes: null,
+	},
+	{
+		id: 4765154,
+		name: "ASALM",
+		active: true,
+		isArchived: false,
+		timeZone: "Etc/UTC",
+		notes: null,
+	},
+	{
+		id: 4692391,
+		name: "kofirt",
+		active: true,
+		isArchived: false,
+		timeZone: "Etc/UTC",
 		notes: null,
 	},
 ];

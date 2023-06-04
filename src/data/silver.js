@@ -1,15 +1,15 @@
 import { readData } from "../lib";
 const program = `
-HERO 45	1	4-new athena	6-silelderman	8-Mattari	10-Sakura	2-Велес
-Велес	2	9-Фениксы	7-54 HERO	5-Toms	3-tigerclaws	1-HERO 45
-tigerclaws	3	6-silelderman	8-Mattari	10-Sakura	2-Велес	4-new athena
-new athena	4	1-HERO 45	9-Фениксы	7-54 HERO	5-Toms	3-tigerclaws
-Toms	5	8-Mattari	10-Sakura	2-Велес	4-new athena	6-silelderman
-silelderman	6	3-tigerclaws	1-HERO 45	9-Фениксы	7-54 HERO	5-Toms
-54 HERO	7	10-Sakura	2-Велес	4-new athena	6-silelderman	8-Mattari
-Mattari	8	5-Toms	3-tigerclaws	1-HERO 45	9-Фениксы	7-54 HERO
-Фениксы	9	2-Велес	4-new athena	6-silelderman	8-Mattari	10-Sakura
-Sakura	10	7-54 HERO	5-Toms	3-tigerclaws	1-HERO 45	9-Фениксы
+Guardian	1	4-new athena	6-54 HERO	8-silelderman	10-Clan Destino	2-HERO 45
+HERO 45	2	9-Mattari	7-Фениксы	5-Велес	3-Toms	1-Guardian
+Toms	3	6-54 HERO	8-silelderman	10-Clan Destino	2-HERO 45	4-new athena
+new athena	4	1-Guardian	9-Mattari	7-Фениксы	5-Велес	3-Toms
+Велес	5	8-silelderman	10-Clan Destino	2-HERO 45	4-new athena	6-54 HERO
+54 HERO	6	3-Toms	1-Guardian	9-Mattari	7-Фениксы	5-Велес
+Фениксы	7	10-Clan Destino	2-HERO 45	4-new athena	6-54 HERO	8-silelderman
+silelderman	8	5-Велес	3-Toms	1-Guardian	9-Mattari	7-Фениксы
+Mattari	9	2-HERO 45	4-new athena	6-54 HERO	8-silelderman	10-Clan Destino
+Clan Destino	10	7-Фениксы	5-Велес	3-Toms	1-Guardian	9-Mattari
 `;
 
 export const silver = readData(program, "silver");
