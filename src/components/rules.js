@@ -126,7 +126,7 @@ export default function Rules() {
             <div className="text-lg">
               <p>Until 2 June 2023, all presents went to the member with titans less than 120lvl.</p>
               <p>With the appearance of light super titan Solaris, there is again a need for the pressents to everyone.
-                So gifts will be given every friday, like these: </p>
+                So gifts will be given every Saturday, like these: </p>
               <ol>
                 <div>
                   <li className="mt-2 ml-3 list-inside list-decimal inline-block font-bold">
