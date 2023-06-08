@@ -46,6 +46,6 @@ export const  rules = [
       id: 8,
       title: "Get no more than 12M on Friday attacks to Asgard's boss",
       explanation:
-        "This rule is about leave room for all players to get the 10M prize on a weaker boss.",
+        "This rule is about leave room for all players to get the 10M prize on a weaker boss. We choose to start at 140lvl boss, because the rewards from Monday to Friday is way better than to choose 125lvl boss.",
     },
   ];
