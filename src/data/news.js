@@ -290,6 +290,12 @@ export const news = [
 		points: null,
 	},
 	{
+		date: "10 June 2023",
+		text: `GM gifts sent, based on activities! `,
+		place: null,
+		points: null,
+	},
+	{
 		date: "11 June 2023",
 		text: `We are for 42th week at Silver! Promotion war with ohhoo (903 - 1038)`,
 		place: 3,
