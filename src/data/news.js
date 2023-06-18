@@ -300,8 +300,12 @@ export const news = [
 		text: `We are for 42th week at Silver! Promotion war with ohhoo (903 - 1038)`,
 		place: 3,
 		points: 5107,
-	},
-	{
+	}, {
+		date: "17 June 2023",
+		text: `GM gifts sent, based on titanites! `,
+		place: null,
+		points: null,
+	}, {
 		date: "18 June 2023",
 		text: `We are for 43th week at Silver! First time ranked 1st and first win at level 150 boss of Asgard. Promotion war with Сами по себе! (838 - 1137)`,
 		place: 1,
