@@ -311,6 +311,18 @@ export const news = [
 		place: 1,
 		points: 5555,
 	},
+	{
+		date: "24 June 2023",
+		text: `GM gifts sent, based on activities! `,
+		place: null,
+		points: null,
+	},
+	{
+		date: "25 June 2023",
+		text: `We are for 443th week at Silver! Promotion war with Сами по себе! (995 - 1120)`,
+		place: 2,
+		points: 5351,
+	},
 ].reverse();
 
 export const discord = {
