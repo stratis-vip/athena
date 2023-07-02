@@ -1,15 +1,15 @@
 import { readData } from "../lib";
 const program = `
-ohhoo	1	4-Велес	6-silelderman	8-Фениксы	10-First Wave	2-new athena
-new athena	2	9-Clan Destino	7-Guardian	5-Mattari	3-HERO 45	1-ohhoo
-HERO 45	3	6-silelderman	8-Фениксы	10-First Wave	2-new athena	4-Велес
-Велес	4	1-ohhoo	9-Clan Destino	7-Guardian	5-Mattari	3-HERO 45
-Mattari	5	8-Фениксы	10-First Wave	2-new athena	4-Велес	6-silelderman
-silelderman	6	3-HERO 45	1-ohhoo	9-Clan Destino	7-Guardian	5-Mattari
-Guardian	7	10-First Wave	2-new athena	4-Велес	6-silelderman	8-Фениксы
-Фениксы	8	5-Mattari	3-HERO 45	1-ohhoo	9-Clan Destino	7-Guardian
-Clan Destino	9	2-new athena	4-Велес	6-silelderman	8-Фениксы	10-First Wave
-First Wave	10	7-Guardian	5-Mattari	3-HERO 45	1-ohhoo	9-Clan Destino
+Toms	1	4-Guardian	6-Mattari	8-Clan Destino	10-First Wave	2-HERO 45
+HERO 45	2	9-Фениксы	7-silelderman	5-new athena	3-Велес	1-Toms
+Велес	3	6-Mattari	8-Clan Destino	10-First Wave	2-HERO 45	4-Guardian
+Guardian	4	1-Toms	9-Фениксы	7-silelderman	5-new athena	3-Велес
+new athena	5	8-Clan Destino	10-First Wave	2-HERO 45	4-Guardian	6-Mattari
+Mattari	6	3-Велес	1-Toms	9-Фениксы	7-silelderman	5-new athena
+silelderman	7	10-First Wave	2-HERO 45	4-Guardian	6-Mattari	8-Clan Destino
+Clan Destino	8	5-new athena	3-Велес	1-Toms	9-Фениксы	7-silelderman
+Фениксы	9	2-HERO 45	4-Guardian	6-Mattari	8-Clan Destino	10-First Wave
+First Wave	10	7-silelderman	5-new athena	3-Велес	1-Toms	9-Фениксы
 `;
 
 export const silver = readData(program, "silver");

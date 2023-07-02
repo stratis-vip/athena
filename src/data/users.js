@@ -107,8 +107,8 @@ export const allUsers = [
 	},
 	{
 		id: 4330684,
-		name: "Moppy Legacy",
-		active: true,
+		name: "Moppy",
+		active: false,
 		isArchived: false,
 		timeZone: "EET",
 		notes: "Athens",
@@ -148,7 +148,7 @@ export const allUsers = [
 	{
 		id: 4451506,
 		name: "KinkaHeroes",
-		active:false, 
+		active:true, 
 		isArchived: false,
 		timeZone: "EET",
 		notes: "Europe/Athens",
@@ -569,6 +569,15 @@ export const allUsers = [
 		timeZone: "Etc/UTC",
 		notes: null,
 	},
+	{
+		id: 23402789,
+		name: "ragto",
+		active: true,
+		isArchived: false,
+		timeZone: "Etc/UTC",
+		notes: null,
+	},
+	
 ];
 
 const sortF = (a, b) => {

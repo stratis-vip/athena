@@ -319,9 +319,27 @@ export const news = [
 	},
 	{
 		date: "25 June 2023",
-		text: `We are for 443th week at Silver! Promotion war with Сами по себе! (995 - 1120)`,
+		text: `We are for 43th week at Silver! Promotion war with Сами по себе! (995 - 1120)`,
 		place: 2,
 		points: 5351,
+	},
+	{
+		date: "2 July 2023",
+		text: `GM gifts sent, based on titanites! `,
+		place: null,
+		points: null,
+	},
+	{
+		date: "2 July 2023",
+		text: `"Mothership" athena, is again at new athena's competence, as Moppy is the new GM. `,
+		place: null,
+		points: null,
+	},
+	{
+		date: "2 July 2023",
+		text: `We are for 44th week at Silver!`,
+		place: 5,
+		points: 4750,
 	},
 ].reverse();
 
