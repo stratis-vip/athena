@@ -148,7 +148,7 @@ export const allUsers = [
 	{
 		id: 4451506,
 		name: "KinkaHeroes",
-		active:true, 
+		active:false, 
 		isArchived: false,
 		timeZone: "EET",
 		notes: "Europe/Athens",
@@ -577,7 +577,14 @@ export const allUsers = [
 		timeZone: "UTC+9",
 		notes: null,
 	},
-	
+	{
+		id: 4220289,
+		name: "rumo",
+		active: true,
+		isArchived: false,
+		timeZone: "Etc/UTC",
+		notes: null,
+	},
 ];
 
 const sortF = (a, b) => {
