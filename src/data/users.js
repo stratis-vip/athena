@@ -148,7 +148,7 @@ export const allUsers = [
 	{
 		id: 4451506,
 		name: "KinkaHeroes",
-		active:false, 
+		active: false,
 		isArchived: false,
 		timeZone: "EET",
 		notes: "Europe/Athens",
@@ -580,7 +580,7 @@ export const allUsers = [
 	{
 		id: 4220289,
 		name: "rumo",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "Etc/UTC",
 		notes: null,
