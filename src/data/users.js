@@ -585,6 +585,14 @@ export const allUsers = [
 		timeZone: "Etc/UTC",
 		notes: null,
 	},
+	{
+		id: 4571690,
+		name: "Kris",
+		active: true,
+		isArchived: false,
+		timeZone: "Etc/UTC",
+		notes: null,
+	},
 ];
 
 const sortF = (a, b) => {
