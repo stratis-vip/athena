@@ -20,11 +20,12 @@ export default function Rules() {
                   }`}
                 >
                   <td className="font-bold"> {team.name}</td>
-                  {getOpponents(Number(team.position), team.league).map((r) => (
+                  {getOpponents(Number(team.position), team.league).map((r) => {
+                    return (
                     <td key={team.position}>
                       {r}-{silver[r - 1].name}
                     </td>
-                  ))}
+                  )})}
                 </tr>
               ))}
             </tbody>

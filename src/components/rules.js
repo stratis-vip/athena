@@ -16,9 +16,10 @@ export default function Rules() {
           .
         </h1>
         <Text>
-          {rules.map((rule) => (
-            <Explanation key={rule.id} rule={rule} />
-          ))}
+          {rules.map((rule) => {
+            debugger
+            return <Explanation key={rule.id} rule={rule} />
+          })}
         </Text>
       </div>
       <div className="mx-8">
