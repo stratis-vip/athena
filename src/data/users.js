@@ -532,7 +532,7 @@ export const allUsers = [
 	{
 		id: 29528150,
 		name: "zombieblood",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "UTC",
 		notes: null,

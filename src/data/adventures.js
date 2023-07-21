@@ -135,27 +135,22 @@ export const adventures = [
 		paths: [
 			{
 				colour: "blue",
-				numbers: "08-11-17-24-23-32-33-25-34-25-26-18-Boss(x3)",
+				numbers: "05-09-03-06-10-22-31-36-35-29-30-21-13",
 			},
 			{
 				colour: "red",
-				numbers: "02-04-07-16-23-24-14-12-15-28-20-19-18-boss(x2)",
+				numbers: "08-11-17-24-14-12-15-28-20-19-18-BOSS",
 			},
 			{
-				colour: "yellow",
+				colour: "orange",
 				numbers:
-					"05-01-09-03-06-10-22-31-36-35-29-[34-29-30-21] or [30-21-13(x2)] ",
+					"02-04-07-16-23-32-33-25-34-25-26-18-BOSS",
 			},
 		],
 		notes: [
 			{
 				id: 1,
-				description: "Red path, is better suited to mage teams.",
-			},
-			{
-				id: 2,
-				description:
-					"#24 is red path's responsibility but if it create problem blue path can help",
+				description: "Orange path, is better suited to mage teams.",
 			},
 		],
 	},
