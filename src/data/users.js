@@ -500,7 +500,7 @@ export const allUsers = [
 	{
 		id: 4542929,
 		name: "Astro",
-		active: false,
+		active: true,
 		isArchived: false,
 		timeZone: "EET",
 		notes: "Europe/Athens",
