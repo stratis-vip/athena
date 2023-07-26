@@ -542,7 +542,7 @@ export const allUsers = [
 		name: "team D",
 		active: true,
 		isArchived: false,
-		timeZone: "Etc/UTC",
+		timeZone: "Asia/Seoul",
 		notes: null,
 	},
 	{
@@ -593,6 +593,15 @@ export const allUsers = [
 		timeZone: "Etc/UTC",
 		notes: null,
 	},
+	{
+		id: 4586024,
+		name: "Designated",
+		active: true,
+		isArchived: false,
+		timeZone: "Etc/UTC",
+		notes: null,
+	},
+
 ];
 
 const sortF = (a, b) => {
