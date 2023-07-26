@@ -598,7 +598,7 @@ export const allUsers = [
 		name: "Designated",
 		active: true,
 		isArchived: false,
-		timeZone: "Etc/UTC",
+		timeZone: "UTC+2",
 		notes: null,
 	},
 
