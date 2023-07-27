@@ -206,7 +206,7 @@ export const allUsers = [
 		name: "Kris",
 		active: false,
 		isArchived: false,
-		timeZone: "Etc/UTC",
+		timeZone: "UTC+1",
 		notes: "Vikings origin",
 	},
 	{
@@ -558,7 +558,7 @@ export const allUsers = [
 		name: "kofirt",
 		active: true,
 		isArchived: false,
-		timeZone: "Etc/UTC",
+		timeZone: "UTC+9",
 		notes: null,
 	},
 	{
