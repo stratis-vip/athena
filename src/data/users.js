@@ -590,7 +590,7 @@ export const allUsers = [
 		name: "Kris",
 		active: true,
 		isArchived: false,
-		timeZone: "Etc/UTC",
+		timeZone: "UTC+1",
 		notes: null,
 	},
 	{
