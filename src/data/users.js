@@ -518,7 +518,7 @@ export const allUsers = [
 		name: "Moodyjay",
 		active: true,
 		isArchived: false,
-		timeZone: "Etc/UTC",
+		timeZone: "UTC",
 		notes: null,
 	},
 	{
