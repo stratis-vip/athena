@@ -476,7 +476,7 @@ export const allUsers = [
 	{
 		id: 4320180,
 		name: "THE AVENGER HV",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "UTC+1",
 		notes: null,
