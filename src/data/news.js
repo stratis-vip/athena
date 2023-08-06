@@ -387,6 +387,18 @@ export const news = [
 		place: 4,
 		points: 5043,
 	},
+	{
+		date: "05 August 2023",
+		text: `No GM sent, because are not enough! `,
+		place: null,
+		points: null,
+	},
+	{
+		date: "06 August 2023",
+		text: `We are for 49th week at Silver!`,
+		place: 6,
+		points: 4749,
+	},
 ].reverse();
 
 export const discord = {
