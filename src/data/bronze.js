@@ -1,36 +1,37 @@
 import { readData } from "../lib";
 
 const program = `
-The Eyrie	1	8-Einfach so	14-Guardian	20-1111	26-Silver Wolf	2-Sax Clan
-Sax Clan	2	25-alone	19-Gold ship	13-athena	7-CCCP	1-The Eyrie
-Фениксы	3	10-Die Hanse	16-Kamigrain	22-Call Me Daddy	28-The Dragon Way	4-Belgique
-Belgique	4	27-The Red Wolfs	21-Crab Club	15-Death or Glory	9-Bansh	3-Фениксы
-Soul Reapers	5	12-MUKAKIN-MUGON	18-Fighter	24-тризуб	30-Los conquistadores	6-himatsubushi
-himatsubushi	6	29-Welcome To Asteroid	23-NBC	17-SKY LORDS	11-Перун	5-Soul Reapers
-CCCP	7	14-Guardian	20-1111	26-Silver Wolf	2-Sax Clan	8-Einfach so
-Einfach so	8	1-The Eyrie	25-alone	19-Gold ship	13-athena	7-CCCP
-Bansh	9	16-Kamigrain	22-Call Me Daddy	28-The Dragon Way	4-Belgique	10-Die Hanse
-Die Hanse	10	3-Фениксы	27-The Red Wolfs	21-Crab Club	15-Death or Glory	9-Bansh
-Перун	11	18-Fighter	24-тризуб	30-Los conquistadores	6-himatsubushi	12-MUKAKIN-MUGON
-MUKAKIN-MUGON	12	5-Soul Reapers	29-Welcome To Asteroid	23-NBC	17-SKY LORDS	11-Перун
-athena	13	20-1111	26-Silver Wolf	2-Sax Clan	8-Einfach so	14-Guardian
-Guardian	14	7-CCCP	1-The Eyrie	25-alone	19-Gold ship	13-athena
-Death or Glory	15	22-Call Me Daddy	28-The Dragon Way	4-Belgique	10-Die Hanse	16-Kamigrain
-Kamigrain	16	9-Bansh	3-Фениксы	27-The Red Wolfs	21-Crab Club	15-Death or Glory
-SKY LORDS	17	24-тризуб	30-Los conquistadores	6-himatsubushi	12-MUKAKIN-MUGON	18-Fighter
-Fighter	18	11-Перун	5-Soul Reapers	29-Welcome To Asteroid	23-NBC	17-SKY LORDS
-Gold ship	19	26-Silver Wolf	2-Sax Clan	8-Einfach so	14-Guardian	20-1111
-1111	20	13-athena	7-CCCP	1-The Eyrie	25-alone	19-Gold ship
-Crab Club	21	28-The Dragon Way	4-Belgique	10-Die Hanse	16-Kamigrain	22-Call Me Daddy
-Call Me Daddy	22	15-Death or Glory	9-Bansh	3-Фениксы	27-The Red Wolfs	21-Crab Club
-NBC	23	30-Los conquistadores	6-himatsubushi	12-MUKAKIN-MUGON	18-Fighter	24-тризуб
-тризуб	24	17-SKY LORDS	11-Перун	5-Soul Reapers	29-Welcome To Asteroid	23-NBC
-alone	25	2-Sax Clan	8-Einfach so	14-Guardian	20-1111	26-Silver Wolf
-Silver Wolf	26	19-Gold ship	13-athena	7-CCCP	1-The Eyrie	25-alone
-The Red Wolfs	27	4-Belgique	10-Die Hanse	16-Kamigrain	22-Call Me Daddy	28-The Dragon Way
-The Dragon Way	28	21-Crab Club	15-Death or Glory	9-Bansh	3-Фениксы	27-The Red Wolfs
-Welcome To Asteroid	29	6-himatsubushi	12-MUKAKIN-MUGON	18-Fighter	24-тризуб	30-Los conquistadores
-Los conquistadores	30	23-NBC	17-SKY LORDS	11-Перун	5-Soul Reapers	29-Welcome To Asteroid
+Position, Guild ID, "Guild Title", Points
+1, 36571, "Фениксы", 5205
+4, 36637, "himatsubushi", 3818
+5, 36661, "Soul Reapers", 3650
+25, 36820, "тризуб", 428
+16, 36862, "Kamigrain", 1545
+14, 36952, "CCCP", 1885
+17, 37039, "Death or Glory", 1480
+18, 37058, "Call Me Daddy", 833
+23, 37121, "NBC", 475
+3, 37329, "Belgique", 4028
+22, 37413, "Gold ship", 575
+2, 37509, "Sax Clan", 4940
+10, 37604, "Fighter", 2380
+9, 37606, "athena", 2540
+11, 38195, "Перун", 2339
+19, 38230, "1111", 750
+24, 38471, "Silver Wolf", 451
+26, 38503, "Crab Club", 426
+12, 39000, "Einfach so", 2205
+28, 39688, "Los conquistadores", 130
+21, 39786, "alone", 600
+8, 40533, "Die Hanse", 2755
+20, 42044, "SKY  LORDS", 671
+13, 42541, "MUKAKIN-MUGON", 2104
+6, 43002, "Bansh", 2901
+7, 48499, "The Eyrie", 2889
+15, 98688, "Guardian", 1880
+27, 131321, "The Red Wolfs", 196
+29, 149841, "The Dragon Way", 20
+30, 243505, "Welcome To Asteroid", 0
 `;
 
 
