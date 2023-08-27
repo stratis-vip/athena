@@ -10,7 +10,7 @@ export const allUsers = [
 		notes: "Vikings origin",
 	},
 	{
-		id: 2426533,
+		id: 4246533,
 		name: "Leo",
 		active: true,
 		isArchived: false,
@@ -76,7 +76,7 @@ export const allUsers = [
 	{
 		id: 4266277,
 		name: "Dina",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "UTC+1",
 		notes: "",
@@ -200,14 +200,6 @@ export const allUsers = [
 		isArchived: false,
 		timeZone: "EET",
 		notes: "Bucharest",
-	},
-	{
-		id: 4570992,
-		name: "Kris",
-		active: false,
-		isArchived: false,
-		timeZone: "UTC+1",
-		notes: "Vikings origin",
 	},
 	{
 		id: 4587443,
@@ -354,6 +346,14 @@ export const allUsers = [
 		notes: "Europe/Athens",
 	},
 	{
+		id: 20923424,
+		name: "Team.kaisaras",
+		active: true,
+		isArchived: false,
+		timeZone: "EET",
+		notes: "Europe/Athens",
+	},
+	{
 		id: 4398188,
 		name: "Das",
 		active: true,
@@ -386,7 +386,7 @@ export const allUsers = [
 		notes: null,
 	},
 	{
-		id: 4536460,
+		id: 4798940,
 		name: "simsim",
 		active: true,
 		isArchived: false,
@@ -435,8 +435,8 @@ export const allUsers = [
 	},
 	{
 		id: 9838807,
-		name: "The Legend",
-		active: false,
+		name: "T_L Maxi Jazz",
+		active: true,
 		isArchived: false,
 		timeZone: "Etc/UTC",
 		notes: "Vikings origin",
@@ -596,7 +596,7 @@ export const allUsers = [
 	{
 		id: 4586024,
 		name: "Designated",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "UTC+2",
 		notes: null,
@@ -626,37 +626,3 @@ const tUsers = users.map((user) => {
 const tt = tUsers.filter((user) => user.active && !user.archive).sort(sortF);
 export const timeUsers = tt.filter((user) => user.timeZone !== "Etc/UTC");
 export const noTimeUsers = tt.filter((user) => user.timeZone === "Etc/UTC");
-/*
-id, name, Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday
-16652971, "л л", 0, 0, 1800, 1750, 1920, 2432, 2368
-4868542, "stratis", 1822, 2020, 1857, 1815, 1788, 2566, 1865
-4798940, "simsim", 1800, 1580, 2140, 1120, 1600, 2260, 1420
-4761947, "VegaRev", 700, 700, 0, 0, 0, 0, 700
-4733797, "MoreFun4Me", 0, 252, 510, 0, 1428, 1760, 0
-4712527, "HRCAK", 1360, 1710, 1754, 1330, 1856, 1582, 1426
-4703087, "B.D.", 1774, 1726, 2838, 1216, 1937, 4198, 3946
-4692544, "Team 4692544", 1090, 1264, 1100, 1048, 1154, 1756, 1316
-4668830, "Fight4Trump", 0, 0, 0, 0, 0, 0, 160
-4587443, "Momi", 2387, 2959, 1757, 1973, 1452, 6381, 1770
-4529972, "Team ICE", 2290, 1500, 440, 1110, 1390, 460, 1150
-4529620, "ManNerKill", 1762, 1898, 1775, 1018, 1324, 1808, 1508
-4497684, "Happy педик", 1592, 2472, 1468, 1969, 2038, 3530, 2576
-4451506, "KinkaHeroes", 0, 0, 0, 0, 0, 0, 1780
-4398188, "Das", 0, 0, 0, 0, 0, 0, 1050
-4365099, "June", 1184, 1794, 1214, 1244, 1304, 1576, 1246
-4364346, "Team 563799", 1806, 1642, 1178, 1028, 1240, 1886, 1552
-4361455, "Dragon Blue", 1136, 1920, 1056, 1768, 1056, 1810, 1444
-4343605, "SirHow", 5272, 1724, 1214, 1464, 1388, 1594, 1236
-4330684, "Moppy Legacy", 0, 0, 0, 0, 0, 0, 1770
-4326464, "Miquel CAT", 2348, 1808, 1768, 2028, 3768, 1828, 1708
-4305819, "VICTORY", 1290, 2006, 1308, 1394, 1773, 1410, 1526
-4292840, "Mangas", 1300, 2030, 1350, 1336, 1128, 2012, 8002
-4266277, "Dina", 2108, 1808, 1750, 1250, 1300, 2032, 1762
-4259896, "Smart Death", 1750, 1750, 1752, 2220, 1890, 2400, 1930
-4253738, "Kagale", 1100, 1438, 1112, 950, 1140, 1120, 1312
-4246533, "Leo", 1130, 1704, 1020, 1323, 1181, 2088, 970
-4208957, "patlacoche", 1808, 2838, 4588, 3828, 2928, 3220, 2048
-4178114, "Master", 1250, 1750, 1751, 1250, 1752, 1826, 1202
-4172989, "ahe", 0, 0, 0, 0, 0, 140, 1450
-
-*/
