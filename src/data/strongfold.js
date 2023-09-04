@@ -4333,6 +4333,16 @@ export const allQuestions = [
     },
     {
         "question": {
+            "text": "Which hero has their own music theme music in the game?"
+        },
+        "answer": {
+            "text": [
+                "Thea"
+            ]
+        }
+    }, 
+    {
+        "question": {
             "text": "Which hero have a critical hit chance glyph?"
         },
         "answer": {
