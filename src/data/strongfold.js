@@ -3559,8 +3559,7 @@ export const allQuestions = [
         },
         "answer": {
             "text": [
-                "Guild War Trophies",
-                "Emeralds"
+                "Guild War Trophies, Emeralds"
             ]
         }
     },
@@ -4340,7 +4339,7 @@ export const allQuestions = [
                 "Thea"
             ]
         }
-    }, 
+    },
     {
         "question": {
             "text": "Which hero have a critical hit chance glyph?"
