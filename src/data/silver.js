@@ -1,16 +1,16 @@
 import { readData } from "../lib";
 const program = `
 Position, Guild ID, "Guild Title", Points
-2, 36766, "silelderman", 5200
-4, 37030, "Paladins of Dominion", 5160
-10, 37032, "First Wave", 3392
-1, 37610, "Сами по себе!", 5506
-3, 38247, "Велес", 5165
-6, 38806, "Mattari", 4717
-7, 39706, "54 HERO", 4358
-8, 46347, "Clan  Destino", 3963
-5, 183303, "new athena", 4808
-9, 205096, "Italian Job", 3755
+5, 36766, "silelderman", 0
+1, 37030, "Paladins of Dominion", 0
+10, 37032, "First Wave", 0
+2, 37610, "Сами по себе!", 0
+4, 38247, "Велес", 0
+7, 38806, "Mattari", 0
+6, 39706, "54 HERO", 0
+9, 46347, "Clan  Destino", 0
+3, 183303, "new athena", 0
+8, 205096, "Italian Job", 0
 `;
 
 export const silver = readData(program, "silver");
