@@ -2,6 +2,7 @@ import { tips } from "../data/tips";
 import { adventures } from "../data/adventures";
 import { useEffect } from "react";
 import Section from "./section";
+import Strongford from "../data/strongfold";
 
 const Guides = () => {
   useEffect(() => {
@@ -34,6 +35,9 @@ const Guides = () => {
             </div>
           ))}
         </div>
+      </Section>
+      <Section>
+        <Strongford />
       </Section>
     </>
   );
