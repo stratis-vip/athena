@@ -5668,9 +5668,9 @@ export const cleanQuestion = (q, idx) => {
     if (q != null) {
         const text = q?.text
         const textArray = text.split('__IMG__')
-        let finalText = <><td className="py-2 text-center px-2">{idx}</td><td> {text}</td></>
+        let finalText = <><td className="py-2 text-center px-2">{idx}</td><td className="pr-5"> {text}</td></>
         if (textArray.length > 1) {
-            finalText = <><td className="py-5 text-center px-2">{idx}</td><td><div className="flex items-center"> <div>{textArray[0]}</div><div className="px-3"> <img src={q.img} width={'50px'} /> </div> <div>{textArray[1]}</div></div></td></>
+            finalText = <><td className="py-5 text-center px-2">{idx}</td><td className="w-[600px] pr-5"><div className="flex items-center"> <div className="break-words">{textArray[0]}</div><div className="px-3"> <img src={q.img} width={'50px'} /> </div> <div>{textArray[1]}</div></div></td></>
         }
         return finalText
     } else {
@@ -5681,7 +5681,7 @@ export const cleanQuestion = (q, idx) => {
 export const cleanAnswer = (q) => {
     if (q != null) {
         // console.log(q?.text.length, q?.text)
-        const finalText = q?.text ? <td>{q?.text.map(t => <p key={t}>{t}</p>)} </td> : <td className="py-2">{<img src={q.img} width={'70px'} />}</td>
+        const finalText = q?.text ? <td className="py-2">{q?.text.map(t => <div className="w-[300px] " key={t}>{t}</div>)} </td> : <td className="py-2">{<img src={q.img} width={'70px'} />}</td>
         return finalText
     } else {
         return null
@@ -5703,7 +5703,7 @@ const Strongford = () => {
                 <tbody>
                     {allQuestions.length > 1 && allQuestions.map((t, idx) => {
                         // console.log(
-                        return <tr key={idx} className={`${idx % 2 !== 0 ? 'bg-slate-200' : 'bg-white'} text-lg `}>
+                        return <tr key={idx} className={`${idx % 2 !== 0 ? 'bg-slate-200' : 'bg-white'} text-lg`}>
                             {/* <td> */}
                             {cleanQuestion(t.question, idx)}
                             {/* {t.question.img && <img src={t.question?.img} width={'50px'} />} */}
