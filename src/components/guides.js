@@ -36,7 +36,8 @@ const Guides = () => {
           ))}
         </div>
       </Section>
-      <Section>
+      <Section title={"Strongford Quiz"}>
+
         <Strongford />
       </Section>
     </>
