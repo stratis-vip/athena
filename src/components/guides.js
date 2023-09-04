@@ -3,6 +3,7 @@ import { adventures } from "../data/adventures";
 import { useEffect } from "react";
 import Section from "./section";
 import Strongford from "../data/strongfold";
+import json from "../../package.json"
 
 const Guides = () => {
   useEffect(() => {
@@ -37,7 +38,7 @@ const Guides = () => {
         </div>
       </Section>
       <Section title={"Strongford Quiz"}>
-
+        <div className="text-center">(Version {json.version})</div>
         <Strongford />
       </Section>
     </>
