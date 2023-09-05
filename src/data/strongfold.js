@@ -120,7 +120,7 @@ export const generalQuestions = [
             "text": [
                 "Expedition loot"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -231,7 +231,7 @@ export const generalQuestions = [
             "text": [
                 "4"
             ]
-        }
+        }, confirmed: 4
     },
     {
         "question": {
@@ -411,7 +411,7 @@ export const generalQuestions = [
             "text": [
                 "3"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -511,7 +511,7 @@ export const generalQuestions = [
             "text": [
                 "Siungur"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -1404,7 +1404,7 @@ export const generalQuestionsMore = [
             "text": [
                 "Titan Artifact Fragments"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -1474,7 +1474,7 @@ export const generalQuestionsMore = [
             "text": [
                 "Tower Boss"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3023,7 +3023,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Ignores a portion of the armor of enemies she has set on fire"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3163,7 +3163,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Jorgen"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3287,7 +3287,7 @@ const evenMoreGeneralQuestions = [
     },
     {
         "question": {
-            "text": "What is the max level of Guild Raid boss that can be ncountered n the game?"
+            "text": "What is the max level of Guild Raid boss that can be encountered in the game?"
         },
         "answer": {
             "text": [
@@ -3374,7 +3374,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Josephine"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3545,7 +3545,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Zarakkar"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3675,7 +3675,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Expeditions"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3895,7 +3895,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Fafnir"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3925,7 +3925,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Dorian", "Cleaver", "Helios", "Jhu", "Jorgen", "Maya", "Ziri"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3945,7 +3945,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Alvanor"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -4155,7 +4155,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Corneliius"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -4245,7 +4245,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Arena defense team"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -4936,7 +4936,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Sanctity Insignia"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -5026,7 +5026,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Southern Skin"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
