@@ -1,4 +1,4 @@
-
+import { FaCheck } from 'react-icons/fa6'
 export const generalQuestions = [
 
     {
@@ -59,7 +59,8 @@ export const generalQuestions = [
             "text": [
                 "Violet"
             ]
-        }
+        },
+        confirmed: true
     },
     {
         "question": {
@@ -129,7 +130,8 @@ export const generalQuestions = [
             "text": [
                 "In the log"
             ]
-        }
+        },
+        confirmed: true
     },
     {
         "question": {
@@ -319,7 +321,7 @@ export const generalQuestions = [
             "text": [
                 "10"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -583,13 +585,13 @@ export const generalQuestions = [
     },
     {
         "question": {
-            "text": "Titans of which role don't have Champion Skin?"
+            "text": "Titans of which role don't have Champion Skins?"
         },
         "answer": {
             "text": [
                 "Marksmen"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -913,9 +915,10 @@ export const imageQuestions =
         "answer": {
             "text": [
                 "Defender's Covenant",
-                "Ring of Strength"
+                "Ring of Strength", "Bracers of Hunger", "Bottomless Belly", "Fat Layer", "Burp", "Wild Hunger"
             ]
-        }
+        },
+        confirmed: true
     },
     {
         "question": {
@@ -2917,7 +2920,8 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Always different"
             ]
-        }
+        },
+        confirmed: true
     },
     {
         "question": {
@@ -3039,7 +3043,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Siungur"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3343,13 +3347,14 @@ const evenMoreGeneralQuestions = [
     },
     {
         "question": {
-            "text": "What is the maximum number of windows seen on a tower floor?"
+            "text": "What is the max number of windows seen on a tower floor?"
         },
         "answer": {
             "text": [
                 "3"
             ]
-        }
+        },
+        confirmed: true
     },
     {
         "question": {
@@ -3880,7 +3885,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Martha"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -4310,7 +4315,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Health"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -4330,7 +4335,8 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Jhu"
             ]
-        }
+        },
+        confirmed: true
     },
     {
         "question": {
@@ -4380,7 +4386,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Jorgen"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -4624,7 +4630,7 @@ const evenMoreGeneralQuestions = [
     },
     {
         "question": {
-            "text": "Which of these titans has a shield?"
+            "text": "Which Titan has a shield?"
         },
         "answer": {
             "text": [
@@ -5150,7 +5156,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Mort"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -5268,9 +5274,10 @@ const evenMoreGeneralQuestions = [
         },
         "answer": {
             "text": [
-                "Pet Trainer"
+                "A pet trainer"
             ]
-        }
+        },
+        confirmed: true
     },
     {
         "question": {
@@ -5749,9 +5756,9 @@ export const cleanQuestion = (q, idx) => {
     if (q != null) {
         const text = q?.text
         const textArray = text.split('__IMG__')
-        let finalText = <><td className="py-2 text-center px-2">{idx}</td><td className="pr-5"> {text}</td></>
+        let finalText = <><td className="py-2 text-center px-2 border-r-2 border-slate-500">{idx}</td><td className="pr-5 border-r-2 border-slate-500 pl-2"> {text}</td></>
         if (textArray.length > 1) {
-            finalText = <><td className="py-5 text-center px-2">{idx}</td><td className="w-[700px] pr-5"><div className="flex items-center"> <div className="break-words">{textArray[0]}</div><div className="px-3"> <img src={q.img} width={'50px'} /> </div> <div>{textArray[1]}</div></div></td></>
+            finalText = <><td className="py-5 text-center px-2 border-r-2 border-slate-500">{idx}</td><td className="w-[700px] pr-5 pl-2"><div className="flex items-center"> <div className="break-words border-r-2 border-slate-500">{textArray[0]}</div><div className="px-3"> <img src={q.img} width={'50px'} /> </div> <div>{textArray[1]}</div></div></td></>
         }
         return finalText
     } else {
@@ -5762,8 +5769,8 @@ export const cleanQuestion = (q, idx) => {
 export const cleanAnswer = (q) => {
     if (q != null) {
         // console.log(q?.text.length, q?.text)
-        const finalText = q?.text ? <td className="py-2">{q?.text.map(t => <div className="w-[300px] " key={t}>{t}</div>)} </td> : <td className="py-2">{<img src={q.img} width={'70px'} />}</td>
-        return finalText
+        const finalText = q?.text ? <td className="py-2 pl-2">{q?.text.map(t => <div className="w-[300px] " key={t}>{t}</div>)} </td> : <td className="py-2">{<img src={q.img} width={'70px'} />}</td>
+        return <>{finalText}</>
     } else {
         return null
     }
@@ -5775,17 +5782,20 @@ export const cleanAnswer = (q) => {
 const Strongford = () => {
     return (
         <div className="flex justify-center">
-            <table>
-                <thead className="bg-slate-500 text-white">
+            <table className=''>
+                <thead className="bg-slate-500 border-r text-white">
+                    <th className="text-center"></th>
                     <th>QN</th>
                     <th className="text-left">Question</th>
                     <th className="text-left">answer</th>
+
                 </thead>
                 <tbody>
                     {allQuestions.length > 1 && allQuestions.map((t, idx) => {
                         // console.log(
-                        return <tr key={idx} className={`${idx % 2 !== 0 ? 'bg-slate-200' : 'bg-white'} text-lg`}>
+                        return <tr key={idx} className={`${idx % 2 !== 0 ? 'bg-slate-200 border-b-2 border-slate-500 border-t-2' : 'bg-white'} text-lg`}>
                             {/* <td> */}
+                            <td className='border-r-2 border-slate-500'><div className=''>{t.confirmed === undefined || t.confirm === false ? null : <FaCheck />}</div></td>
                             {cleanQuestion(t.question, idx)}
                             {/* {t.question.img && <img src={t.question?.img} width={'50px'} />} */}
                             {/* </td> */}

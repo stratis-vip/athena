@@ -1,5 +1,4 @@
 export const readData = (data, league) => {
-  debugger
   const firstWave = data.split('\n').filter(pro => pro !== '')
   firstWave.shift()
   const secondWave = firstWave.map(f => f.split(','))
