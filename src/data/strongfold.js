@@ -1,5 +1,5 @@
 
-export const allQuestions = [
+export const generalQuestions = [
 
     {
         "question": {
@@ -13,7 +13,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "A total of how many mentors did Osh the Eternal Keeper have? "
+            "text": "A total of how many mentors did Osh the Eternal Keeper have?"
         },
         "answer": {
             "text": [
@@ -143,7 +143,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "How do you unlock a hero sticker? "
+            "text": "How do you unlock a hero sticker?"
         },
         "answer": {
             "text": [
@@ -163,7 +163,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "How long is the expedition to the City of Angels? "
+            "text": "How long is the expedition to the City of Angels?"
         },
         "answer": {
             "text": [
@@ -193,7 +193,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "How many branches does the great tree of wisdom have? "
+            "text": "How many branches does the great tree of wisdom have?"
         },
         "answer": {
             "text": [
@@ -203,7 +203,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "How many buffs of the day can be active at the same time in Adventures? "
+            "text": "How many buffs of the day can be active at the same time in Adventures?"
         },
         "answer": {
             "text": [
@@ -373,7 +373,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "How many times per week can you use the Astral Seer for free? "
+            "text": "How many times per week can you use the Astral Seer for free?"
         },
         "answer": {
             "text": [
@@ -601,771 +601,778 @@ export const allQuestions = [
             ]
         }
     },
-    {
-        "question": {
-            "text": "What artfact belongs to this Hero? __IMG__(Isaac)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/08/52_Isaac_original.png"
-        },
-        "answer": {
-            "text": [
-                "Ll’Tes’Lin"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belong to this hero  __IMG__ (Lars)?",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Lars_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                " Stormy Talisman"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero __IMG__  (Helios)?",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Helios_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                " Wand of the Thousand Suns"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero __IMG__    (Thea)?",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Thea_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero __IMG__(Artemis)?",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Artemis_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Agility"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero __IMG__(Dorian)? ",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Dorian_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Tome of Arcane Knowledge, Bleeding Steel"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__(Phobos)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/0006.png"
-        },
-        "answer": {
-            "text": [
-                "Raven’s Amulet"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__(Morrigan)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/Hero-Wars-Morrigan.png"
-        },
-        "answer": {
-            "text": [
-                "Raven’s Skull"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__(Luther)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/0027.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Strength"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__(Lian)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/0023.png"
-        },
-        "answer": {
-            "text": [
-                "Tome of Arcane Knowledge"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__   (Judge)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Judge_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Chart of Endless Stars"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero? __IMG__   (Mojo)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Mojo_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Manuscript of the Void"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?__IMG__(Luther",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/0027.png"
-        },
-        "answer": {
-            "text": [
-                "Defender’s Covenant"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?__IMG__(Lilith)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/0026.png"
-        },
-        "answer": {
-            "text": [
-                "Devil’s Contract"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?__IMG__(Dredevil)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/0008.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Agility"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?__IMG__(Alvanor)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/hero-wars-alvanor.png"
-        },
-        "answer": {
-            "text": [
-                "Soul of the Forest"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero?__IMG__   (Dorian)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Dorian_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero? __IMG__(Kai)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Mobile_Kai_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__ (Astaroth)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Astaroth_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                " Defender’s Covenant"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero? __IMG__ (Galahad)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Galahad_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                " Defender’s Covenant"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero? __IMG__ (Judge)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Judge_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                " Tome of Arcane Knowledge"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__ (Rufus)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Rufus_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                " Ring of Strength"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero  __IMG__(Markus)?",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Markus_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?  __IMG__  (Lars)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/10/Browser_Lars_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Stormy Talisman"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?  __IMG__ (Artemis)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/5/57/Browser_Artemis_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Evil's Bane",
-                "Alchemist's Folio",
-                "Ring of Agility"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?  __IMG__ (Aurora)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/9/91/Browser_Aurora_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Strength",
-                "Book of Illusions",
-                "Selias' Legacy"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?  __IMG__ (Chabba)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/3/3d/Browser_Chabba_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Defender's Covenant",
-                "Ring of Strength"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?  __IMG__ (Cornelius)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/c/c2/Browser_Cornelius_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Archivist's Staff",
-                "Tome of Arcane Knowledge",
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?  __IMG__ (Dorian)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e0/Browser_Dorian_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Bleeding Steel",
-                "Tome of Arcane Knowledge",
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?  __IMG__ (Elmir)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/3/33/Browser_Elmir_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Blades of Many Truths",
-                "Alchemist's Folio",
-                "Ring of Agility"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero?  __IMG__ (Galahad)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/5/52/Browser_Galahad_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Defender's Covenant",
-                "Ring of Strength"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero?  __IMG__ (Jorgen)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/1f/Browser_Jorgen_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Shavarakk's Blood",
-                "Ring of Strength"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?  __IMG__ (Judge)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/c/cc/Browser_Judge_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Chart of Endless Stars",
-                "Tome of Arcane Knowledge",
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?  __IMG__ (Kai)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/c/c5/Mobile_Kai_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Wanderer’s Mantle",
-                "Ring of Intelligence "
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?  __IMG__ (Maya)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e4/Browser_Maya_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Tome of Arcane Knowledge",
-                "Mother Tree's Branch"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero?  __IMG__ (Mojo)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/4/42/Browser_Mojo_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Mask of Anger",
-                "Manuscript of the Void",
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?  __IMG__ (Morrigan)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/0/08/Browser_Morrigan_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Raven's Skull",
-                "Tome of Arcane Knowledge",
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero?  __IMG__ (Nebula)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/11/Browser_Nebula_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Unborn Stars",
-                "Book of Illusions",
-                "Ring of Agility"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero?  __IMG__ (Peppy)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e7/Browser_Peppy_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ms. Whirligig",
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero?  __IMG__ (Qing Mao)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/4/48/Browser_Qing_Mao_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Agility",
-                "Book of Illusions"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero?  __IMG__ (Thea)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/5/5c/Browser_Thea_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Tome of Arcane Knowledge",
-                "Ring of Intelligence",
-                "Staff of Rebirth"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero?  __IMG__ (Yasmine)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/7/76/Browser_Yasmine_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Concubine's Khanjars",
-                "Warrior's Code"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero?  __IMG__ (Ziri)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/4/45/Browser_Ziri_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Akhreb Ummi's Sting",
-                "Ring of Strength"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__(Tristan)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/Hero-Wars-tristan.png"
-        },
-        "answer": {
-            "text": [
-                "Demonic Reliquary"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Amira)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/d/dd/Mobile_Amira_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero? __IMG__  (Andvari)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/7/7d/Browser_Andvari_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Strength"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Arachne)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/b/ba/Browser_Arachne_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Defender's Covenant"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Astaroth)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/4/46/Browser_Astaroth_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Defender's Covenant"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Corvus)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/6/6a/Browser_Corvus_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Defender's Covenant"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Dark Star)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/16/Mobile_Dark_Star_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Agility"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Faceless)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/2/28/Browser_Faceless_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Hermit's Shroud"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero? __IMG__  (Fafnir)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/0/00/Mobile_Fafnir_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Strength"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Fox)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/6/6a/Browser_Fox_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Alchemist's Folio"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Helios)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/5/50/Browser_Helios_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Wand of the Thousand Suns"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Isaac)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/12/Browser_Isaac_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Agility"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Ishmael)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/7/77/Browser_Ishmael_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Agility"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero? __IMG__  (Jet)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/9/9e/Browser_Jet_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Book of Illusions"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Jhu)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/7/7a/Browser_Jhu_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Zarakkar Bones"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Krista)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/4/4b/Browser_Krista_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Lars)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/10/Browser_Lars_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Manuscript of the Void"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Lian)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/7/70/Browser_Lian_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Tome of Arcane Knowledge"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Lilith)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/c/cb/Browser_Lilith_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Tome of Arcane Knowledge"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Markus)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/c/c5/Browser_Markus_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Rufus)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/7/7a/Browser_Rufus_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Strength"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this hero? __IMG__  (Andvari)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Andvari_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Strength"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero? __IMG__  (Kai)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Mobile_Kai_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Wanderer’s Mantle"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What artifact belongs to this Hero(Maya)? "
-        },
-        "answer": {
-            "text": [
-                "Tome of Arcane Knowledge"
-            ]
-        }
-    },
+]
+
+export const imageQuestions =
+    [
+        {
+            "question": {
+                "text": "What artfact belongs to this Hero __IMG__ (Isaac)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/1/12/Browser_Isaac_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ll’Tes’Lin"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Lars)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Lars_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    " Stormy Talisman"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Helios)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Helios_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    " Wand of the Thousand Suns"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Thea)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Thea_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Artemis)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Artemis_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Agility"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Dorian)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Dorian_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Tome of Arcane Knowledge, Bleeding Steel"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Phobos)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/0006.png"
+            },
+            "answer": {
+                "text": [
+                    "Raven’s Amulet"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Morrigan)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/Hero-Wars-Morrigan.png"
+            },
+            "answer": {
+                "text": [
+                    "Raven’s Skull"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Luther)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/0027.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Strength"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Lian)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/0023.png"
+            },
+            "answer": {
+                "text": [
+                    "Tome of Arcane Knowledge"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Judge)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Judge_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Chart of Endless Stars"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Mojo)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Mojo_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Manuscript of the Void"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Luther)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/0027.png"
+            },
+            "answer": {
+                "text": [
+                    "Defender’s Covenant"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Lilith)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/0026.png"
+            },
+            "answer": {
+                "text": [
+                    "Devil’s Contract"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Dredevil)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/0008.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Agility"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Alvanor)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/hero-wars-alvanor.png"
+            },
+            "answer": {
+                "text": [
+                    "Soul of the Forest"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Dorian)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Dorian_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Kai)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Mobile_Kai_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Astaroth)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Astaroth_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    " Defender’s Covenant"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Galahad)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Galahad_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    " Defender’s Covenant"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Judge)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Judge_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    " Tome of Arcane Knowledge"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Rufus)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Rufus_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    " Ring of Strength"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Markus)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Markus_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Lars)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/1/10/Browser_Lars_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Stormy Talisman"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Artemis)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/5/57/Browser_Artemis_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Evil's Bane",
+                    "Alchemist's Folio",
+                    "Ring of Agility"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Aurora)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/9/91/Browser_Aurora_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Strength",
+                    "Book of Illusions",
+                    "Selias' Legacy"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Chabba)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/3/3d/Browser_Chabba_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Defender's Covenant",
+                    "Ring of Strength"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Cornelius)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/c/c2/Browser_Cornelius_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Archivist's Staff",
+                    "Tome of Arcane Knowledge",
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Dorian)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e0/Browser_Dorian_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Bleeding Steel",
+                    "Tome of Arcane Knowledge",
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Elmir)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/3/33/Browser_Elmir_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Blades of Many Truths",
+                    "Alchemist's Folio",
+                    "Ring of Agility"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Galahad)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/5/52/Browser_Galahad_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Defender's Covenant",
+                    "Ring of Strength"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Jorgen)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/1/1f/Browser_Jorgen_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Shavarakk's Blood",
+                    "Ring of Strength"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Judge)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/c/cc/Browser_Judge_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Chart of Endless Stars",
+                    "Tome of Arcane Knowledge",
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Kai)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/c/c5/Mobile_Kai_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Wanderer’s Mantle",
+                    "Ring of Intelligence "
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Maya)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e4/Browser_Maya_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Tome of Arcane Knowledge",
+                    "Mother Tree's Branch"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Mojo)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/4/42/Browser_Mojo_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Mask of Anger",
+                    "Manuscript of the Void",
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Morrigan)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/0/08/Browser_Morrigan_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Raven's Skull",
+                    "Tome of Arcane Knowledge",
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Nebula)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/1/11/Browser_Nebula_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Unborn Stars",
+                    "Book of Illusions",
+                    "Ring of Agility"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Peppy)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e7/Browser_Peppy_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ms. Whirligig",
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Qing Mao)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/4/48/Browser_Qing_Mao_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Agility",
+                    "Book of Illusions"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Thea)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/5/5c/Browser_Thea_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Tome of Arcane Knowledge",
+                    "Ring of Intelligence",
+                    "Staff of Rebirth"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Yasmine)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/7/76/Browser_Yasmine_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Concubine's Khanjars",
+                    "Warrior's Code"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this hero __IMG__ (Ziri)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/4/45/Browser_Ziri_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Akhreb Ummi's Sting",
+                    "Ring of Strength"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Tristan)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/Hero-Wars-tristan.png"
+            },
+            "answer": {
+                "text": [
+                    "Demonic Reliquary"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Amira)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/d/dd/Mobile_Amira_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Andvari)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/7/7d/Browser_Andvari_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Strength"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Arachne)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/b/ba/Browser_Arachne_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Defender's Covenant"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Astaroth)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/4/46/Browser_Astaroth_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Defender's Covenant"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Corvus)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/6/6a/Browser_Corvus_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Defender's Covenant"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Dark Star)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/1/16/Mobile_Dark_Star_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Agility"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Faceless)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/2/28/Browser_Faceless_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Hermit's Shroud"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Fafnir)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/0/00/Mobile_Fafnir_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Strength"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Fox)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/6/6a/Browser_Fox_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Alchemist's Folio"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Helios)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/5/50/Browser_Helios_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Wand of the Thousand Suns"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Isaac)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/1/12/Browser_Isaac_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Agility"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Ishmael)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/7/77/Browser_Ishmael_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Agility"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Jet)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/9/9e/Browser_Jet_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Book of Illusions"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Jhu)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/7/7a/Browser_Jhu_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Zarakkar Bones"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Krista)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/4/4b/Browser_Krista_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Lars)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/1/10/Browser_Lars_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Manuscript of the Void"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Lian)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/7/70/Browser_Lian_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Tome of Arcane Knowledge"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Lilith)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/c/cb/Browser_Lilith_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Tome of Arcane Knowledge"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Markus)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/c/c5/Browser_Markus_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Intelligence"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Rufus)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/7/7a/Browser_Rufus_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Strength"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Andvari)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Andvari_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Ring of Strength"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Kai)?",
+                "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Mobile_Kai_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Wanderer’s Mantle"
+                ]
+            }
+        },
+        {
+            "question": {
+                "text": "What artifact belongs to this Hero __IMG__ (Maya)?",
+                "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e4/Browser_Maya_Avatar.png"
+            },
+            "answer": {
+                "text": [
+                    "Tome of Arcane Knowledge"
+                ]
+            }
+        },]
+
+export const generalQuestionsMore = [
     {
         "question": {
             "text": "What can be obtained as a reward for Tower Points?"
@@ -1565,7 +1572,9 @@ export const allQuestions = [
                 "Gold"
             ]
         }
-    },
+    },]
+
+const imageAnswers = [
     {
         "question": {
             "text": "What does \"Tower Coin\" look like?"
@@ -1586,26 +1595,6 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does Cain's patronage skill offer?"
-        },
-        "answer": {
-            "text": [
-                "Bonus energy for dodging"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What does Celeste create in her dark form?"
-        },
-        "answer": {
-            "text": [
-                "Cursed Flame"
-            ]
-        }
-    },
-    {
-        "question": {
             "text": "What does Crystallization skill icon look like?"
         },
         "answer": {
@@ -1615,7 +1604,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Altar of Souls skill icon look like? (Corvus)"
+            "text": "What does the Altar of Souls skill icon look like (Corvus)?"
         },
         "answer": {
 
@@ -1624,7 +1613,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Ancestor's Amulet skill icon look like? (Dorian)"
+            "text": "What does the Ancestor's Amulet skill icon look like (Dorian)?"
         },
         "answer": {
 
@@ -1669,7 +1658,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Astral Projection skill icon look like? (Nebula)"
+            "text": "What does the Astral Projection skill icon look like (Nebula)?"
         },
         "answer": {
 
@@ -1678,7 +1667,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Awakening skill icon look like? (Ishmael)"
+            "text": "What does the Awakening skill icon look like (Ishmael)?"
         },
         "answer": {
 
@@ -1687,7 +1676,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Battle Song skill icon look like? (Sebastian)"
+            "text": "What does the Battle Song skill icon look like (Sebastian)?"
         },
         "answer": {
 
@@ -1696,7 +1685,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Big Badda Boom skill icon look like? (Daredevil)"
+            "text": "What does the Big Badda Boom skill icon look like (Daredevil)?"
         },
         "answer": {
 
@@ -1705,7 +1694,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Black Arrow icon look like? (Dark Star)"
+            "text": "What does the Black Arrow skill icon look like (Dark Star)?"
         },
         "answer": {
 
@@ -1714,7 +1703,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Blade Whirlwind skill icon look like? (Keira)"
+            "text": "What does the Blade Whirlwind skill icon look like (Keira)?"
         },
         "answer": {
 
@@ -1723,7 +1712,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Blessed Vanguard skill icon look like? (Tristan)"
+            "text": "What does the Blessed Vanguard skill icon look like (Tristan)?"
         },
         "answer": {
 
@@ -1732,7 +1721,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Boldness skill icon look like? (Peppy)"
+            "text": "What does the Boldness skill icon look like (Peppy)?"
         },
         "answer": {
 
@@ -1741,7 +1730,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Bottomless Belly skill icon look like? (Chabba)"
+            "text": "What does the Bottomless Belly skill icon look like (Chabba)?"
         },
         "answer": {
 
@@ -1759,7 +1748,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "what does the Careless Wish skill icon look like? (Amira)"
+            "text": "what does the Careless Wish skill icon look like (Amira)?"
         },
         "answer": {
 
@@ -1768,7 +1757,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Celestial Guardians skill icon look like? (Helios)"
+            "text": "What does the Celestial Guardians skill icon look like (Helios)?"
         },
         "answer": {
 
@@ -1777,7 +1766,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Chain Lightning skill icon look like? (Lars)"
+            "text": "What does the Chain Lightning skill icon look like (Lars)?"
         },
         "answer": {
 
@@ -1786,7 +1775,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Compassion skill icon look like? (Markus)"
+            "text": "What does the Compassion skill icon look like (Markus)?"
         },
         "answer": {
 
@@ -1795,7 +1784,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Conciliation skill icon look like? (Lian)"
+            "text": "What does the Conciliation skill icon look like (Lian)?"
         },
         "answer": {
 
@@ -1804,7 +1793,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Conductance skill icon look like? (Lars)"
+            "text": "What does the Conductance skill icon look like (Lars)?"
         },
         "answer": {
 
@@ -1813,7 +1802,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Crused Bones skill look like?"
+            "text": "What does the Crused Bones skill icon look like?"
         },
         "answer": {
 
@@ -1822,7 +1811,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Crystal of Selias skill icon look like? (Aurora)"
+            "text": "What does the Crystal of Selias skill icon look like (Aurora)?"
         },
         "answer": {
 
@@ -1831,7 +1820,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Crystalline Onslaught skill icon look like? (Aurora)"
+            "text": "What does the Crystalline Onslaught skill icon look like (Aurora)?"
         },
         "answer": {
 
@@ -1840,7 +1829,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Cursed Bones skill icon look like? (Mojo)"
+            "text": "What does the Cursed Bones skill icon look like (Mojo)?"
         },
         "answer": {
 
@@ -1858,7 +1847,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Dark Deal skill icon look like? (Phobos)"
+            "text": "What does the Dark Deal skill icon look like (Phobos)?"
         },
         "answer": {
 
@@ -1867,7 +1856,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Deathflower skill icon look like? (Heidi)"
+            "text": "What does the Deathflower skill icon look like (Heidi)?"
         },
         "answer": {
 
@@ -1876,7 +1865,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Demolition Robot skill icon look like? (Arachne)"
+            "text": "What does the Demolition Robot skill icon look like (Arachne)?"
         },
         "answer": {
 
@@ -1885,7 +1874,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Demon's Allegiance skill icon look like? (Astaroth)"
+            "text": "What does the Demon's Allegiance skill icon look like (Astaroth)?"
         },
         "answer": {
 
@@ -1894,7 +1883,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Desperate Fury skill icon look like? "
+            "text": "What does the Desperate Fury skill icon look like?"
         },
         "answer": {
 
@@ -1903,7 +1892,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Devourer of Magic skill icon look like? (Rufus)"
+            "text": "What does the Devourer of Magic skill icon look like (Rufus)?"
         },
         "answer": {
 
@@ -1912,7 +1901,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Discharge! skill icon look like? (Daredevil)"
+            "text": "What does the Discharge! skill icon look like (Daredevil)?"
         },
         "answer": {
 
@@ -1921,7 +1910,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Elixir of Vigor skill icon look like? (Jet)"
+            "text": "What does the Elixir of Vigor skill icon look like (Jet)?"
         },
         "answer": {
 
@@ -1930,7 +1919,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Embrace of Pain icon look like? (Yasmine)"
+            "text": "What does the Embrace of Pain skill icon look like (Yasmine)?"
         },
         "answer": {
 
@@ -1939,7 +1928,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Equilibrium skill icon look like? (Nebula)"
+            "text": "What does the Equilibrium skill icon look like (Nebula)?"
         },
         "answer": {
 
@@ -1948,7 +1937,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Eternal Wisdom skill icon look like? (Satori)"
+            "text": "What does the Eternal Wisdom skill icon look like (Satori)?"
         },
         "answer": {
 
@@ -1957,7 +1946,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Explosive Sphere skill icon look like? (Kai)"
+            "text": "What does the Explosive Sphere skill icon look like (Kai)?"
         },
         "answer": {
 
@@ -1966,7 +1955,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Fat Layer skill icon look like? (Chabba)"
+            "text": "What does the Fat Layer skill icon look like (Chabba)?"
         },
         "answer": {
 
@@ -1975,7 +1964,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Fire Breath skill icon look like? (Litith)"
+            "text": "What does the Fire Breath skill icon look like (Litith)?"
         },
         "answer": {
 
@@ -1984,7 +1973,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Flame Veil skill icon look like? (Astaroth)"
+            "text": "What does the Flame Veil skill icon look like (Astaroth)?"
         },
         "answer": {
 
@@ -1993,7 +1982,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Focus of Hatred Skill icon look like? (Ziri)"
+            "text": "What does the Focus of Hatred skill icon look like (Ziri)?"
         },
         "answer": {
 
@@ -2011,7 +2000,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Frolic skill icon look like? (Peppy)"
+            "text": "What does the Frolic skill icon look like (Peppy)?"
         },
         "answer": {
 
@@ -2020,7 +2009,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Gehenna skill icon look like? (Luther)"
+            "text": "What does the Gehenna skill icon look like (Luther)?"
         },
         "answer": {
 
@@ -2029,7 +2018,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Harmony of the Grove skill icon look like? (Alvanor)"
+            "text": "What does the Harmony of the Grove skill icon look like (Alvanor)?"
         },
         "answer": {
 
@@ -2038,7 +2027,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Healing Beam skill icon look like? (Thea)"
+            "text": "What does the Healing Beam skill icon look like (Thea)?"
         },
         "answer": {
 
@@ -2056,7 +2045,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Heavy Wisdom skill icon look like? (Cornelius)"
+            "text": "What does the Heavy Wisdom skill icon look like (Cornelius)?"
         },
         "answer": {
 
@@ -2065,7 +2054,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Hex skill icon look like? (Mojo)"
+            "text": "What does the Hex skill icon look like (Mojo)?"
         },
         "answer": {
 
@@ -2074,7 +2063,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the High-Voltage Module skill icon look like? (Isaac)"
+            "text": "What does the High-Voltage Module skill icon look like (Isaac)?"
         },
         "answer": {
 
@@ -2083,7 +2072,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Hypnotic Ball skill icon look like? (Lian)"
+            "text": "What does the Hypnotic Ball skill icon look like (Lian)?"
         },
         "answer": {
 
@@ -2092,7 +2081,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the I see you skill icon look like? (Jhu)"
+            "text": "What does the I see you skill icon look like (Jhu)?"
         },
         "answer": {
 
@@ -2101,7 +2090,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Icy Vengeance skill icon look like? (Krista)"
+            "text": "What does the Icy Vengeance skill icon look like (Krista)?"
         },
         "answer": {
 
@@ -2110,7 +2099,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Imminent Reckoning skill icon look like? (Satori)"
+            "text": "What does the Imminent Reckoning skill icon look like (Satori)?"
         },
         "answer": {
 
@@ -2119,7 +2108,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Infernal Rift skill icon look like? (Lilith)"
+            "text": "What does the Infernal Rift skill icon look like (Lilith)?"
         },
         "answer": {
 
@@ -2128,7 +2117,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Inordinate Fury skill icon look like? (Jet)"
+            "text": "What does the Inordinate Fury skill icon look like (Jet)?"
         },
         "answer": {
 
@@ -2137,7 +2126,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Ion Cyclon skill icon look like? (Judge)"
+            "text": "What does the Ion Cyclon skill icon look like (Judge)?"
         },
         "answer": {
 
@@ -2146,7 +2135,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Lead Storm skill icon look like? (Ginger)"
+            "text": "What does the Lead Storm skill icon look like (Ginger)?"
         },
         "answer": {
 
@@ -2155,7 +2144,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Leper skill icon look like? (Jorgen)"
+            "text": "What does the Leper skill icon look like (Jorgen)?"
         },
         "answer": {
 
@@ -2164,7 +2153,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Many Truths skill icon look like? (Elmir)"
+            "text": "What does the Many Truths skill icon look like (Elmir)?"
         },
         "answer": {
 
@@ -2173,7 +2162,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Memory Loss skill icon look like? (Cornelius)"
+            "text": "What does the Memory Loss skill icon look like (Cornelius)?"
         },
         "answer": {
 
@@ -2182,7 +2171,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Mirage skill icon look like? (Elmir)"
+            "text": "What does the Mirage skill icon look like (Elmir)?"
         },
         "answer": {
 
@@ -2191,7 +2180,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Nature’s Barrer skill icon look like? "
+            "text": "What does the Nature’s Barrer skill icon look like?"
         },
         "answer": {
 
@@ -2200,7 +2189,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Negator of Laws skill icon look like? (K'arkh)"
+            "text": "What does the Negator of Laws skill icon look like (K'arkh)?"
         },
         "answer": {
 
@@ -2209,7 +2198,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Nexus of Horror skill icon look like? (K'arkh)"
+            "text": "What does the Nexus of Horror skill icon look like (K'arkh)?"
         },
         "answer": {
 
@@ -2218,7 +2207,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Phantom skill icon look like? (Ishmael)"
+            "text": "What does the Phantom skill icon look like (Ishmael)?"
         },
         "answer": {
 
@@ -2227,7 +2216,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Phoenix's Embrace skill icon look like? (Aidan)"
+            "text": "What does the Phoenix's Embrace skill icon look like (Aidan)?"
         },
         "answer": {
 
@@ -2236,7 +2225,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Piecing Light skill icon look like? (Aurora)"
+            "text": "What does the Piecing Light skill icon look like (Aurora)?"
         },
         "answer": {
 
@@ -2245,7 +2234,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Plasma Explosion skill icon look like? (Arachne)"
+            "text": "What does the Plasma Explosion skill icon look like (Arachne)?"
         },
         "answer": {
 
@@ -2254,7 +2243,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Poisonous Bonds skill icon look like? (Maya)"
+            "text": "What does the Poisonous Bonds skill icon look like (Maya)?"
         },
         "answer": {
 
@@ -2263,7 +2252,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Potion of Fatigue skill icon look like? (Jet)"
+            "text": "What does the Potion of Fatigue skill icon look like (Jet)?"
         },
         "answer": {
 
@@ -2272,7 +2261,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Predator's Charge skill icon look like? (Astrid and Lucas)"
+            "text": "What does the Predator's Charge skill icon look like (Astrid and Lucas)?"
         },
         "answer": {
 
@@ -2281,7 +2270,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Protective Dome skill icon look like? (Cornelius)"
+            "text": "What does the Protective Dome skill icon look like (Cornelius)?"
         },
         "answer": {
 
@@ -2290,7 +2279,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Punishing Arrows skill icon look like? (Artemis)"
+            "text": "What does the Punishing Arrows skill icon look like (Artemis)?"
         },
         "answer": {
 
@@ -2299,7 +2288,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Putrefaction skill icon look like? (Cleaver)"
+            "text": "What does the Putrefaction skill icon look like (Cleaver)?"
         },
         "answer": {
 
@@ -2308,7 +2297,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Queen of Flowers skill icon look like? (Maya)"
+            "text": "What does the Queen of Flowers skill icon look like (Maya)?"
         },
         "answer": {
 
@@ -2317,7 +2306,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Rakashi's Oath skill icon lool like? (Rufus)"
+            "text": "What does the Rakashi's Oath skill icon look like (Rufus)?"
         },
         "answer": {
 
@@ -2326,7 +2315,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Rampant Nature skill icon look like? (Astrid and Lucas)"
+            "text": "What does the Rampant Nature skill icon look like (Astrid and Lucas)?"
         },
         "answer": {
 
@@ -2335,7 +2324,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Ranging Shot skill icon look like? (Ginger)"
+            "text": "What does the Ranging Shot skill icon look like (Ginger)?"
         },
         "answer": {
 
@@ -2344,7 +2333,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Retribution skill icon look like? (Dante)"
+            "text": "What does the Retribution skill icon look like (Dante)?"
         },
         "answer": {
 
@@ -2353,7 +2342,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Righteous Light skill icon look like? (Markus)"
+            "text": "What does the Righteous Light skill icon look like (Markus)?"
         },
         "answer": {
 
@@ -2362,7 +2351,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Rusty Hook skill icon look like? (Cleaver)"
+            "text": "What does the Rusty Hook skill icon look like (Cleaver)?"
         },
         "answer": {
 
@@ -2371,7 +2360,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Sacred Rage skill icon look like? (Tristan)"
+            "text": "What does the Sacred Rage skill icon look like (Tristan)?"
         },
         "answer": {
 
@@ -2389,7 +2378,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Second Wind skill icon look like? (Thea)"
+            "text": "What does the Second Wind skill icon look like (Thea)?"
         },
         "answer": {
 
@@ -2398,7 +2387,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Secret of Longevity skill icon look like? (Martha)"
+            "text": "What does the Secret of Longevity skill icon look like (Martha)?"
         },
         "answer": {
 
@@ -2407,7 +2396,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Seed of Destruction skill icon look like? (Iris)"
+            "text": "What does the Seed of Destruction skill icon look like (Iris)?"
         },
         "answer": {
 
@@ -2416,7 +2405,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Shackles of Weakness skill icon look like? (Dante)"
+            "text": "What does the Shackles of Weakness skill icon look like (Dante)?"
         },
         "answer": {
 
@@ -2425,7 +2414,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Shelter of Sands skill icon look like? (Ziri)"
+            "text": "What does the Shelter of Sands skill icon look like (Ziri)?"
         },
         "answer": {
 
@@ -2434,7 +2423,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Solar Sanctuary skill icon look like? (Thea)"
+            "text": "What does the Solar Sanctuary skill icon look like (Thea)?"
         },
         "answer": {
 
@@ -2443,7 +2432,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Solar Wind icon look like? (Helios)"
+            "text": "What does the Solar Wind skill icon look like (Helios)?"
         },
         "answer": {
 
@@ -2452,7 +2441,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Spell Expert skill icon look like? (Faceless)"
+            "text": "What does the Spell Expert skill icon look like (Faceless)?"
         },
         "answer": {
 
@@ -2470,7 +2459,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does The spirits will heal me skill icon look like? (Jhu)"
+            "text": "What does The spirits will heal me skill icon look like (Jhu)?"
         },
         "answer": {
 
@@ -2479,7 +2468,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Star Birth skill icon look like? (Helios)"
+            "text": "What does the Star Birth skill icon look like (Helios)?"
         },
         "answer": {
 
@@ -2488,7 +2477,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Storm Blades skill icon look like? (Ishmael)"
+            "text": "What does the Storm Blades skill icon look like (Ishmael)?"
         },
         "answer": {
 
@@ -2497,7 +2486,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Strike of the Damned skill icon look like? (Corvus)"
+            "text": "What does the Strike of the Damned skill icon look like (Corvus)?"
         },
         "answer": {
 
@@ -2506,7 +2495,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Tea Party skill icon look like? (Martha)"
+            "text": "What does the Tea Party skill icon look like (Martha)?"
         },
         "answer": {
 
@@ -2515,23 +2504,14 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Thirst for Blood skill icon look like? (Daredevil)"
+            "text": "What does the Thirst for Blood skill icon look like (Daredevil)?"
         },
         "answer": {
 
             "img": "https://static.wikia.nocookie.net/hero-wars/images/4/44/Browser_Daredevil_skill_4.png"
         }
     },
-    {
-        "question": {
-            "text": "What does the Thirst for Blood, Daredevil's 4th skill, do?"
-        },
-        "answer": {
-            "text": [
-                "Ignores a portion of the armor of enemies she has set on fire"
-            ]
-        }
-    },
+
     {
         "question": {
             "text": "What does the Titan Angus' portrait look like?"
@@ -2543,7 +2523,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Titan artifact \"Andvari's Arrowslinger\" look like? (Slyvia)"
+            "text": "What does the Titan artifact \"Andvari's Arrowslinger\" look like (Slyvia)?"
         },
         "answer": {
 
@@ -2561,7 +2541,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Toxic Pollen skill icon look like? (Maya)"
+            "text": "What does the Toxic Pollen skill icon look like (Maya)?"
         },
         "answer": {
 
@@ -2570,7 +2550,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Toxic Spit skill icon look like? (Heidi)"
+            "text": "What does the Toxic Spit skill icon look like (Heidi)?"
         },
         "answer": {
 
@@ -2579,7 +2559,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Trembling Hands skill icon look like? (Phobos)"
+            "text": "What does the Trembling Hands skill icon look like (Phobos)?"
         },
         "answer": {
 
@@ -2597,7 +2577,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Under the Forest Canopy skill icon look like? (Alvanor)"
+            "text": "What does the Under the Forest Canopy skill icon look like (Alvanor)?"
         },
         "answer": {
 
@@ -2615,7 +2595,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Vow of Silence skill icon look like? (Thea)"
+            "text": "What does the Vow of Silence skill icon look like (Thea)?"
         },
         "answer": {
 
@@ -2624,7 +2604,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Wandering Lights skill icon look like? (Lian)"
+            "text": "What does the Wandering Lights skill icon look like (Lian)?"
         },
         "answer": {
 
@@ -2633,7 +2613,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Wild Hunger skill icon look like? (Chabba)"
+            "text": "What does the Wild Hunger skill icon look like (Chabba)?"
         },
         "answer": {
 
@@ -2652,7 +2632,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Wings of Night skill icon look like? (Dorian)"
+            "text": "What does the Wings of Night skill icon look like (Dorian)?"
         },
         "answer": {
 
@@ -2661,7 +2641,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Wrath of Nature skill icon look like? (Alvanor)"
+            "text": "What does the Wrath of Nature skill icon look like (Alvanor)?"
         },
         "answer": {
 
@@ -2670,7 +2650,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the You will not stop me skill icon look like? (Jhu)"
+            "text": "What does the You will not stop me skill icon look like (Jhu)?"
         },
         "answer": {
 
@@ -2679,7 +2659,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What does the Zenith skill icon look like? (Celeste)"
+            "text": "What does the Zenith skill icon look like (Celeste)?"
         },
         "answer": {
 
@@ -2688,11 +2668,516 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What Dragon Shield looks like?"
+            "text": "What Dragon Shield look like?"
         },
         "answer": {
 
             "img": "https://static.wikia.nocookie.net/hero-wars/images/2/2d/Violet_Dragon_Shield.png"
+        }
+    },
+
+    {
+        "question": {
+            "text": "What is the name of the item?  __IMG__",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/17/Green_Branch_of_Antiaris.png"
+        },
+        "answer": {
+            "text": [
+                "Branch of Antiaris"
+            ]
+        }
+    },
+
+    {
+        "question": {
+            "text": "What is the name of the skill represented by this icon __IMG__ (Kai)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/6/66/Browser_Kai_skill_3.png"
+        },
+        "answer": {
+            "text": [
+                "Explosive sphere"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "What is the name of the skill represented by this icon __IMG__ (Galahad)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/4/45/Browser_Galahad_skill_2.png"
+        },
+        "answer": {
+            "text": [
+                "Unstoppable charge"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "What is the name of the statue in Campain chapter 2?"
+        },
+        "answer": {
+            "text": [
+                "Monolith of Meron"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "What is the name of this artifact? __IMG__ (Dorian)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/6/62/Bleeding_Steel.png"
+        },
+        "answer": {
+            "text": [
+                "Bleeding Steel"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "What is the name of this artifact? __IMG__ (Astaroth)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/a/a2/Scythe_of_Redemption.png"
+        },
+        "answer": {
+            "text": [
+                "Scythe of Redemption"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "What is the name of this artifact? __IMG__ (Satori)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/8/88/Black_Fox%27s_Fan.png"
+        },
+        "answer": {
+            "text": [
+                "Black Fox's Fan"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "What is the name of this coin? __IMG__",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/5/51/Outland_Coin.png"
+        },
+        "answer": {
+            "text": [
+                "Outland Coin"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "What is the name of this item? __IMG__",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/2/2b/Green_Brothers.png"
+        },
+        "answer": {
+            "text": [
+                "Brothers"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "What is the name of this Titan Artifact __IMG__ (Moloch)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/c/c6/Ragni%27s_Hammer.png"
+        },
+        "answer": {
+            "text": [
+                "Ragni's Hammer"
+            ]
+        }
+    },
+
+    {
+        "question": {
+            "text": "What is this Hero's name __IMG__ (Rufus)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/7/7a/Browser_Rufus_Avatar.png"
+        },
+        "answer": {
+            "text": [
+                "Rufus"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "What is this Titan's name __IMG__ (Vulcan)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/2/2f/Browser_Vulcan_Avatar.png"
+        },
+        "answer": {
+            "text": [
+                "Vulcan"
+            ]
+        }
+    },
+
+    {
+        "question": {
+            "text": "Which artifact belongs to this Hero __IMG__ (Sebastian)?",
+            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Sebastian_Avatar.png"
+        },
+        "answer": {
+            "text": [
+                "Ring of Agility",
+                "Warrior’s Code"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which artifact belongs to this Hero __IMG__ (Ziri)?",
+            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Ziri_Avatar.png"
+        },
+        "answer": {
+            "text": [
+                " Ring of Strength"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which artifact belongs to this Hero __IMG__ (Morrigan)?",
+            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Morrigan_Avatar.png"
+        },
+        "answer": {
+            "text": [
+                " Tome of Arcane Knowledge",
+                "Ring of Intelligence"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which artifact belongs to this Hero __IMG__ (Sebastian)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/5/53/Browser_Sebastian_Avatar.png"
+        },
+        "answer": {
+            "text": [
+                "Warrior's Code",
+                "Ring of Agility"
+            ]
+        }
+    },]
+const evenMoreGeneralQuestions = [
+    {
+        "question": {
+            "text": "What does Cain's patronage skill offer?"
+        },
+        "answer": {
+            "text": [
+                "Bonus energy for dodging"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "What does Celeste create in her dark form?"
+        },
+        "answer": {
+            "text": [
+                "Cursed Flame"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which avatar frame isn't present in the game?"
+        },
+        "answer": {
+            "text": [
+                "Tower Warden Frame"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which bad habit is Rufus notorious for?"
+        },
+        "answer": {
+            "text": [
+                "Drinking"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which boss can you encounter in the Maelstrom of Chaos?"
+        },
+        "answer": {
+            "text": [
+                "Always different"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which boss cannot be encountered in Adventures?"
+        },
+        "answer": {
+            "text": [
+                "Daredevil"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which buff cannot be obtained in tower?"
+        },
+        "answer": {
+            "text": [
+                "Acceleration"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which campaign chapter features a hand protruding from the ground, holding an axe?"
+        },
+        "answer": {
+            "text": [
+                "7"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which chapter is \"Ruled by Fire\"?"
+        },
+        "answer": {
+            "text": [
+                "Chapter 1"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which chest isn't present in the game?"
+        },
+        "answer": {
+            "text": [
+                "Rune Chest"
+            ]
+        }
+    },
+
+    {
+        "question": {
+            "text": "Which control effects grant max charges to Khorus' first skill?"
+        },
+        "answer": {
+            "text": [
+                "Silence"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which currency is required to level up an Elemental Spirit Totem?"
+        },
+        "answer": {
+            "text": [
+                "Guild War Trophies, Emeralds"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which currency is rerquired to level up these Titan Artifacts: Attack Seal, Defense Seal, and Balance Seal?"
+        },
+        "answer": {
+            "text": [
+                "Gold",
+                "Emeralds"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which damage type isn't present in the game?"
+        },
+        "answer": {
+            "text": [
+                "Metaphysical damage"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "What does the Thirst for Blood, Daredevil's 4th skill, do?"
+        },
+        "answer": {
+            "text": [
+                "Ignores a portion of the armor of enemies she has set on fire"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which drommer is the Master of Fire artifacts?"
+        },
+        "answer": {
+            "text": [
+                "Ragni"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which drommer is the Master of Water artifacts?"
+        },
+        "answer": {
+            "text": [
+                "Siungur"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which dungeon level must you complete to receive a Primeval Depths Frame?"
+        },
+        "answer": {
+            "text": [
+                "15000"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which element does Andvari command?"
+        },
+        "answer": {
+            "text": [
+                "The Earth Element"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which event has an Easter Egg with the Sad Nymph?"
+        },
+        "answer": {
+            "text": [
+                "Summer Festival"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which form can't be assumed by Lucas, Astri's pet?"
+        },
+        "answer": {
+            "text": [
+                "Squirrel"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which glyph does Keira not have?"
+        },
+        "answer": {
+            "text": [
+                "Critical Hit"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Goddess does Ziri worship?"
+        },
+        "answer": {
+            "text": [
+                "Akhreb Ummi"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which grand prize can be found in an Artifact Chest?"
+        },
+        "answer": {
+            "text": [
+                "Chaos Cores and Artifact Coins"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Guild War Trophies can be exchanged for a Titan Potion?"
+        },
+        "answer": {
+            "text": [
+                "Bronze Guild War Trophy"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Guild War Trophies can be exchanged for the Champion's Skin for Cleaver?"
+        },
+        "answer": {
+            "text": [
+                "Gold"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero becomes younger in on of their skins?"
+        },
+        "answer": {
+            "text": [
+                "Martha"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero can be found in heroic chest pre- evolved to Absolute star?"
+        },
+        "answer": {
+            "text": [
+                "Cleaver"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero can fight with a balloon in their hand?"
+        },
+        "answer": {
+            "text": [
+                "Jorgen"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero can't choose Khorus as a patron?"
+        },
+        "answer": {
+            "text": [
+                "Dorian"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero can't drain energy from enemies?"
+        },
+        "answer": {
+            "text": [
+                "K'arkh"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero Cannot Stun enemies?"
+        },
+        "answer": {
+            "text": [
+                "Isaac"
+            ]
         }
     },
     {
@@ -2757,7 +3242,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What is the max Ascension rank? "
+            "text": "What is the max Ascension rank?"
         },
         "answer": {
             "text": [
@@ -2777,7 +3262,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What is the max level of Guild Raid boss that can be ncountered n the game? "
+            "text": "What is the max level of Guild Raid boss that can be ncountered n the game?"
         },
         "answer": {
             "text": [
@@ -2897,7 +3382,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "What is the name of the Droemmer princess? "
+            "text": "What is the name of the Droemmer princess?"
         },
         "answer": {
             "text": [
@@ -2915,17 +3400,7 @@ export const allQuestions = [
             ]
         }
     },
-    {
-        "question": {
-            "text": "What is the name of the item?  __IMG__",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/17/Green_Branch_of_Antiaris.png"
-        },
-        "answer": {
-            "text": [
-                "Branch of Antiaris"
-            ]
-        }
-    },
+
     {
         "question": {
             "text": "What is the name of the orc chief in Campaign chapter 3?"
@@ -2933,104 +3408,6 @@ export const allQuestions = [
         "answer": {
             "text": [
                 "Gro Bulgor"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What is the name of the skill represented by this icon? __IMG__  (Kai)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/6/66/Browser_Kai_skill_3.png"
-        },
-        "answer": {
-            "text": [
-                "Explosive sphere"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What is the name of the skill represented by this icon? __IMG__ (Galahad)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/4/45/Browser_Galahad_skill_2.png"
-        },
-        "answer": {
-            "text": [
-                "Unstoppable charge"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What is the name of the statue in Campain chapter 2?"
-        },
-        "answer": {
-            "text": [
-                "Monolith of Meron"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What is the name of this artifact? __IMG__   (Dorian)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/6/62/Bleeding_Steel.png"
-        },
-        "answer": {
-            "text": [
-                "Bleeding Steel"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What is the name of this artifact? __IMG__  (Astaroth)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/a/a2/Scythe_of_Redemption.png"
-        },
-        "answer": {
-            "text": [
-                "Scythe of Redemption"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What is the name of this artifact? __IMG__  (Satori)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/8/88/Black_Fox%27s_Fan.png"
-        },
-        "answer": {
-            "text": [
-                "Black Fox's Fan"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What is the name of this coin? __IMG__",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/5/51/Outland_Coin.png"
-        },
-        "answer": {
-            "text": [
-                "Outland Coin"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What is the name of this item? __IMG__",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/2/2b/Green_Brothers.png"
-        },
-        "answer": {
-            "text": [
-                "Brothers"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What is the name of this Titan Artifact? __IMG__  (Moloch)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/c/c6/Ragni%27s_Hammer.png"
-        },
-        "answer": {
-            "text": [
-                "Ragni's Hammer"
             ]
         }
     },
@@ -3071,28 +3448,6 @@ export const allQuestions = [
         "answer": {
             "text": [
                 "Healer of the Old Grove"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What is this Hero's name? __IMG__  (Rufus)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/7/7a/Browser_Rufus_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Rufus"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "What is this Titan's name? __IMG__",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/2/2f/Browser_Vulcan_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Vulcan"
             ]
         }
     },
@@ -3338,7 +3693,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "Where does the tea brewed by Martha grow? "
+            "text": "Where does the tea brewed by Martha grow?"
         },
         "answer": {
             "text": [
@@ -3413,700 +3768,6 @@ export const allQuestions = [
         "answer": {
             "text": [
                 "Squirrel"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which artifact belongs to this Hero __IMG__  (Sebastian)?",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Sebastian_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Ring of Agility",
-                "Warrior’s Code"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which artifact belongs to this Hero __IMG__  (Ziri)?",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Ziri_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                " Ring of Strength"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which artifact belongs to this Hero  __IMG__ (Morrigan)?",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Browser_Morrigan_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                " Tome of Arcane Knowledge",
-                "Ring of Intelligence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which artifact belongs to this Hero?  __IMG__ (Sebastian)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/5/53/Browser_Sebastian_Avatar.png"
-        },
-        "answer": {
-            "text": [
-                "Warrior's Code",
-                "Ring of Agility"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which avatar frame isn't present in the game?"
-        },
-        "answer": {
-            "text": [
-                "Tower Warden Frame"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which bad habit is Rufus notorious for?"
-        },
-        "answer": {
-            "text": [
-                "Drinking"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which boss can you encounter in the Maelstrom of Chaos?"
-        },
-        "answer": {
-            "text": [
-                "Always different"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which boss cannot be encountered in Adventures?"
-        },
-        "answer": {
-            "text": [
-                "Daredevil"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which buff cannot be obtained in tower? "
-        },
-        "answer": {
-            "text": [
-                "Acceleration"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which campaign chapter features a hand protruding from the ground, holding an axe?"
-        },
-        "answer": {
-            "text": [
-                "7"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which chapter is \"Ruled by Fire\"?"
-        },
-        "answer": {
-            "text": [
-                "Chapter 1"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which chest isn't present in the game?"
-        },
-        "answer": {
-            "text": [
-                "Rune Chest"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which control effects grant max charges to Khorus' first skill?"
-        },
-        "answer": {
-            "text": [
-                "Silence"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which currency is required to level up an Elemental Spirit Totem?"
-        },
-        "answer": {
-            "text": [
-                "Guild War Trophies, Emeralds"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which currency is rerquired to level up these Titan Artifacts: Attack Seal, Defense Seal, and Balance Seal?"
-        },
-        "answer": {
-            "text": [
-                "Gold",
-                "Emeralds"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which damage type isn't present in the game?"
-        },
-        "answer": {
-            "text": [
-                "Metaphysical damage"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which drommer is the Master of Fire artifacts?"
-        },
-        "answer": {
-            "text": [
-                "Ragni"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which drommer is the Master of Water artifacts? "
-        },
-        "answer": {
-            "text": [
-                "Siungur"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which dungeon level must you complete to receive a Primeval Depths Frame?"
-        },
-        "answer": {
-            "text": [
-                "15000"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which element does Andvari command?"
-        },
-        "answer": {
-            "text": [
-                "The Earth Element"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which event has an Easter Egg with the Sad Nymph? "
-        },
-        "answer": {
-            "text": [
-                "Summer Festival"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which form can't be assumed by Lucas, Astri's pet?"
-        },
-        "answer": {
-            "text": [
-                "Squirrel"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which glyph does Keira not have? "
-        },
-        "answer": {
-            "text": [
-                "Critical Hit"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Goddess does Ziri worship?"
-        },
-        "answer": {
-            "text": [
-                "Akhreb Ummi"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which grand prize can be found in an Artifact Chest?"
-        },
-        "answer": {
-            "text": [
-                "Chaos Cores and Artifact Coins"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Guild War Trophies can be exchanged for a Titan Potion?"
-        },
-        "answer": {
-            "text": [
-                "Bronze Guild War Trophy"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Guild War Trophies can be exchanged for the Champion's Skin for Cleaver?"
-        },
-        "answer": {
-            "text": [
-                "Gold"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero becomes younger in on of their skins?"
-        },
-        "answer": {
-            "text": [
-                "Martha"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero can be found in heroic chest pre- evolved to Absolute star?"
-        },
-        "answer": {
-            "text": [
-                "Cleaver"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero can fight with a balloon in their hand? "
-        },
-        "answer": {
-            "text": [
-                "Jorgen"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero can't choose Khorus as a patron?"
-        },
-        "answer": {
-            "text": [
-                "Dorian"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero can't drain energy from enemies?"
-        },
-        "answer": {
-            "text": [
-                "K'arkh"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero Cannot Stun enemies?"
-        },
-        "answer": {
-            "text": [
-                "Isaac"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero does thiis artifact belong to? __IMG__(Bleeding Steel)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/weapon_1029.png"
-        },
-        "answer": {
-            "text": [
-                "Dorian"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero does this artfact belong to? __IMG__(Manuscript of Void)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/book_2003.png"
-        },
-        "answer": {
-            "text": [
-                "Alvanor"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__   (Warrior’s Code)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Warrior27s_Code.png"
-        },
-        "answer": {
-            "text": [
-                "Yasmine",
-                "Sebastian",
-                "Jhu",
-                "Daredevil"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero does this artifact belong to?__IMG__(Sentence)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/weapon_1027.png"
-        },
-        "answer": {
-            "text": [
-                "Luther"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to?  __IMG__  (Devil's Contract)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/16/Devil_s_Contract.png"
-        },
-        "answer": {
-            "text": [
-                "Lilith"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to?  __IMG__  (On and Off)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e6/Item_on_and_off.png"
-        },
-        "answer": {
-            "text": [
-                "Daredevil"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero does this artifact belong to? __IMG__    (Concubine's Khanjars)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/a/ae/Concubine%27s_Khanjars.png"
-        },
-        "answer": {
-            "text": [
-                "Yasmine"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero does this artifact belong to? __IMG__    (Ring of Agility)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/3/30/Ring_of_Agility.png"
-        },
-        "answer": {
-            "text": [
-                "Ginger",
-                "Arachne"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero does this artifact belong to? __IMG__    (Ring of Strength)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/f/f8/Ring_of_Strength.png"
-        },
-        "answer": {
-            "text": [
-                "Corvus"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Archivist's Staff)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/b/b8/Archivist%27s_Staff.png"
-        },
-        "answer": {
-            "text": [
-                "Cornelius"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero does this artifact belong to? __IMG__  (Bleeding Steel)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/6/62/Bleeding_Steel.png"
-        },
-        "answer": {
-            "text": [
-                "Dorian"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Book of Illusions)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/1f/Book_of_Illusions.png"
-        },
-        "answer": {
-            "text": [
-                "Heidi", "Aurora", "Dante", "Jet", "Nebula", "Qing Mao"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Celeste's Crown)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/d/d3/Celeste%27s_Crown.png"
-        },
-        "answer": {
-            "text": [
-                "Celeste"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (DD-901 Arsenal)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/8/8f/DD-901_Arsenal.png"
-        },
-        "answer": {
-            "text": [
-                "Orion"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Defender's Covenant)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/9/92/Defender%27s_Covenant.png"
-        },
-        "answer": {
-            "text": [
-                "Cleaver"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Elven Lute)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/8/8a/Elven_Lute.png"
-        },
-        "answer": {
-            "text": [
-                "Sebastian"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Hidden Demon's Katars)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/b/b2/Hidden_Demon%27s_Katars.png"
-        },
-        "answer": {
-            "text": [
-                "Ishmael"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero does this artifact belong to? __IMG__  (Hyper Booster DS-1)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/9/97/Hyper_Booster_DS-1.png"
-        },
-        "answer": {
-            "text": [
-                "Arachne"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Octaviana's Blades)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/19/Octaviana%27s_Blades.png"
-        },
-        "answer": {
-            "text": [
-                "Keira"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Raven's Skull)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/19/Raven%27s_Skull.png"
-        },
-        "answer": {
-            "text": [
-                "Morrigan"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Shavarakk's Blood)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/2/20/Shavarakk%27s_Blood.png"
-        },
-        "answer": {
-            "text": [
-                "Jorgen"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Shrapnel Cannon)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e0/Shrapnel_Cannon.png"
-        },
-        "answer": {
-            "text": [
-                "Fox"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero does this artifact belong to? __IMG__  (Spear of Fate)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/6/66/Spear_of_Fate.png"
-        },
-        "answer": {
-            "text": [
-                "Dante"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Tome of Arcane Knowledge)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/c/c0/Tome_of_Arcane_Knowledge.png"
-        },
-        "answer": {
-            "text": [
-                "Rufus (and many others)"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Wand of the Thousand Suns)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e7/Wand_of_the_Thousand_Suns.png"
-        },
-        "answer": {
-            "text": [
-                "Helios"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Wanderer's Mantle)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/f/f7/Wanderer%27s_Mantle.png"
-        },
-        "answer": {
-            "text": [
-                "Kai"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Warrior's Code)",
-            "img": "https://static.wikia.nocookie.net/hero-wars/images/b/b3/Warrior%27s_Code.png"
-        },
-        "answer": {
-            "text": [
-                "Yasmine", "Sebastian", "Jhu", "Daredevil"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to? __IMG__  (Hidden Demon’s Katars)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Hidden_Demon27s_Katars.png"
-        },
-        "answer": {
-            "text": [
-                "Ishmael"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero does this artifact belong to?__IMG__(Grimoire of Enslaved Souls)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/iris-artifact.jpg"
-        },
-        "answer": {
-            "text": [
-                "Iris"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which hero does this artifact belong to?__IMG__    (Elven Lute)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Elven_Lute.png"
-        },
-        "answer": {
-            "text": [
-                "Sebastian"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero does this artifact belong to?__IMG__    (Ring of Agility)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Ring_of_Agility.png"
-        },
-        "answer": {
-            "text": [
-                "Ginger"
-            ]
-        }
-    },
-    {
-        "question": {
-            "text": "Which Hero does this artifact belong to? __IMG__    (Concubine’s Khanjars)",
-            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Concubines_Khanjars.png"
-        },
-        "answer": {
-            "text": [
-                "Yasmine"
             ]
         }
     },
@@ -4322,7 +3983,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "Which hero has the Celestial Skin? "
+            "text": "Which hero has the Celestial Skin?"
         },
         "answer": {
             "text": [
@@ -4542,7 +4203,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "Which Heroes should you send into battle alongside Mara the pet? "
+            "text": "Which Heroes should you send into battle alongside Mara the pet?"
         },
         "answer": {
             "text": [
@@ -5172,7 +4833,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "Which pet can Morrigan have as a patron? "
+            "text": "Which pet can Morrigan have as a patron?"
         },
         "answer": {
             "text": [
@@ -5232,7 +4893,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "Which resource cannot be obtained as a Guild Raid reward? "
+            "text": "Which resource cannot be obtained as a Guild Raid reward?"
         },
         "answer": {
             "text": [
@@ -5242,7 +4903,7 @@ export const allQuestions = [
     },
     {
         "question": {
-            "text": "Which resource does not exist in the game? "
+            "text": "Which resource does not exist in the game?"
         },
         "answer": {
             "text": [
@@ -5672,14 +5333,404 @@ export const allQuestions = [
     }
 ]
 
+const moreImageAnswers = [
+    {
+        "question": {
+            "text": "Which Hero does thiis artifact belong to? __IMG__(Bleeding Steel)",
+            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/weapon_1029.png"
+        },
+        "answer": {
+            "text": [
+                "Dorian"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero does this artfact belong to? __IMG__(Manuscript of Void)",
+            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/book_2003.png"
+        },
+        "answer": {
+            "text": [
+                "Alvanor"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Warrior’s Code)?",
+            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Warrior27s_Code.png"
+        },
+        "answer": {
+            "text": [
+                "Yasmine",
+                "Sebastian",
+                "Jhu",
+                "Daredevil"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero does this artifact belong to?__IMG__(Sentence)",
+            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/weapon_1027.png"
+        },
+        "answer": {
+            "text": [
+                "Luther"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to?  __IMG__  (Devil's Contract)",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/16/Devil_s_Contract.png"
+        },
+        "answer": {
+            "text": [
+                "Lilith"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to?  __IMG__  (On and Off)",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e6/Item_on_and_off.png"
+        },
+        "answer": {
+            "text": [
+                "Daredevil"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero does this artifact belong to? __IMG__ (Concubine's Khanjars)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/a/ae/Concubine%27s_Khanjars.png"
+        },
+        "answer": {
+            "text": [
+                "Yasmine"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero does this artifact belong to? __IMG__ (Ring of Agility)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/3/30/Ring_of_Agility.png"
+        },
+        "answer": {
+            "text": [
+                "Ginger",
+                "Arachne"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero does this artifact belong to? __IMG__ (Ring of Strength)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/f/f8/Ring_of_Strength.png"
+        },
+        "answer": {
+            "text": [
+                "Corvus"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Archivist's Staff)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/b/b8/Archivist%27s_Staff.png"
+        },
+        "answer": {
+            "text": [
+                "Cornelius"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero does this artifact belong to? __IMG__ (Bleeding Steel)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/6/62/Bleeding_Steel.png"
+        },
+        "answer": {
+            "text": [
+                "Dorian"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Book of Illusions)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/1f/Book_of_Illusions.png"
+        },
+        "answer": {
+            "text": [
+                "Heidi", "Aurora", "Dante", "Jet", "Nebula", "Qing Mao"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Celeste's Crown)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/d/d3/Celeste%27s_Crown.png"
+        },
+        "answer": {
+            "text": [
+                "Celeste"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (DD-901 Arsenal)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/8/8f/DD-901_Arsenal.png"
+        },
+        "answer": {
+            "text": [
+                "Orion"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Defender's Covenant)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/9/92/Defender%27s_Covenant.png"
+        },
+        "answer": {
+            "text": [
+                "Cleaver"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Elven Lute)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/8/8a/Elven_Lute.png"
+        },
+        "answer": {
+            "text": [
+                "Sebastian"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Hidden Demon's Katars)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/b/b2/Hidden_Demon%27s_Katars.png"
+        },
+        "answer": {
+            "text": [
+                "Ishmael"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero does this artifact belong to? __IMG__ (Hyper Booster DS-1)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/9/97/Hyper_Booster_DS-1.png"
+        },
+        "answer": {
+            "text": [
+                "Arachne"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Octaviana's Blades)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/19/Octaviana%27s_Blades.png"
+        },
+        "answer": {
+            "text": [
+                "Keira"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Raven's Skull)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/1/19/Raven%27s_Skull.png"
+        },
+        "answer": {
+            "text": [
+                "Morrigan"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Shavarakk's Blood)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/2/20/Shavarakk%27s_Blood.png"
+        },
+        "answer": {
+            "text": [
+                "Jorgen"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Shrapnel Cannon)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e0/Shrapnel_Cannon.png"
+        },
+        "answer": {
+            "text": [
+                "Fox"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero does this artifact belong to? __IMG__ (Spear of Fate)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/6/66/Spear_of_Fate.png"
+        },
+        "answer": {
+            "text": [
+                "Dante"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Tome of Arcane Knowledge)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/c/c0/Tome_of_Arcane_Knowledge.png"
+        },
+        "answer": {
+            "text": [
+                "Rufus (and many others)"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Wand of the Thousand Suns)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/e/e7/Wand_of_the_Thousand_Suns.png"
+        },
+        "answer": {
+            "text": [
+                "Helios"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Wanderer's Mantle)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/f/f7/Wanderer%27s_Mantle.png"
+        },
+        "answer": {
+            "text": [
+                "Kai"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Warrior's Code)?",
+            "img": "https://static.wikia.nocookie.net/hero-wars/images/b/b3/Warrior%27s_Code.png"
+        },
+        "answer": {
+            "text": [
+                "Yasmine", "Sebastian", "Jhu", "Daredevil"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to? __IMG__ (Hidden Demon’s Katars)?",
+            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Hidden_Demon27s_Katars.png"
+        },
+        "answer": {
+            "text": [
+                "Ishmael"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero does this artifact belong to?__IMG__(Grimoire of Enslaved Souls)",
+            "img": "https://herowars-olympus.com/wp-content/uploads/2022/09/iris-artifact.jpg"
+        },
+        "answer": {
+            "text": [
+                "Iris"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which hero does this artifact belong to?__IMG__    (Elven Lute)",
+            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Elven_Lute.png"
+        },
+        "answer": {
+            "text": [
+                "Sebastian"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero does this artifact belong to?__IMG__    (Ring of Agility)",
+            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Ring_of_Agility.png"
+        },
+        "answer": {
+            "text": [
+                "Ginger"
+            ]
+        }
+    },
+    {
+        "question": {
+            "text": "Which Hero does this artifact belong to? __IMG__ (Concubine’s Khanjars)?",
+            "img": "https://herowars-olympus.com/wp-content/uploads/2021/09/Concubines_Khanjars.png"
+        },
+        "answer": {
+            "text": [
+                "Yasmine"
+            ]
+        }
+    },
 
+]
+const iq = imageQuestions.sort((a, b) => {
+    const aT = a.question.text.split(' (')
+    const bT = b.question.text.split(' (')
+    const aTC = aT[aT.length - 1].toUpperCase()
+    const bTC = bT[bT.length - 1].toUpperCase()
+
+    return aTC.localeCompare(bTC)
+})
+
+const imi = moreImageAnswers.sort((a, b) => {
+    const aT = a.answer.text[0]
+    const bT = b.answer.text[0]
+
+    return aT.localeCompare(bT)
+})
+
+const lookLike = imageAnswers.filter(a => a.question.text.includes("skill icon look like"))
+const notLookLike = imageAnswers.filter(a => !a.question.text.includes("skill icon look like"))
+
+
+// const allQuestions = [...generalQuestions,  ...generalQuestionsMore, ...iq, ...imageAnswers, ...moreImageAnswers, ...evenMoreGeneralQuestions]
+const allQuestions = [
+    ...generalQuestions,  
+    ...generalQuestionsMore, 
+    ...evenMoreGeneralQuestions,
+    ...iq, 
+    ...lookLike,
+    ...notLookLike,
+    ...imageAnswers,
+    ...imi,
+
+]
 export const cleanQuestion = (q, idx) => {
     if (q != null) {
         const text = q?.text
         const textArray = text.split('__IMG__')
         let finalText = <><td className="py-2 text-center px-2">{idx}</td><td className="pr-5"> {text}</td></>
         if (textArray.length > 1) {
-            finalText = <><td className="py-5 text-center px-2">{idx}</td><td className="w-[600px] pr-5"><div className="flex items-center"> <div className="break-words">{textArray[0]}</div><div className="px-3"> <img src={q.img} width={'50px'} /> </div> <div>{textArray[1]}</div></div></td></>
+            finalText = <><td className="py-5 text-center px-2">{idx}</td><td className="w-[700px] pr-5"><div className="flex items-center"> <div className="break-words">{textArray[0]}</div><div className="px-3"> <img src={q.img} width={'50px'} /> </div> <div>{textArray[1]}</div></div></td></>
         }
         return finalText
     } else {
