@@ -3693,9 +3693,9 @@ const evenMoreGeneralQuestions = [
         },
         "answer": {
             "text": [
-                "Circle of Summoning"
+                "Summoning Circle"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -5730,6 +5730,9 @@ const moreImageAnswers = [
     },
 
 ]
+
+const newQuestions = [{}]
+
 const iq = imageQuestions.sort((a, b) => {
     const aT = a.question.text.split(' (')
     const bT = b.question.text.split(' (')
@@ -5760,6 +5763,7 @@ const allQuestions = [
     ...notLookLike,
     ...imageAnswers,
     ...imi,
+    ...newQuestions
 
 ]
 export const cleanQuestion = (q, idx) => {
