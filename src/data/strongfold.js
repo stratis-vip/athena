@@ -3333,7 +3333,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Violet +3"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
