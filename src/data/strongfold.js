@@ -4716,7 +4716,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Andvari"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
