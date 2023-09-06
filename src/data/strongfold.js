@@ -5040,6 +5040,16 @@ const evenMoreGeneralQuestions = [
     },
     {
         "question": {
+            "text": "Which stat boost do the Earth Titans gain from the Earth Spirit Totem?"
+        },
+        "answer": {
+            "text": [
+                "Health"
+            ]
+        }, confirmed: true
+    },
+    {
+        "question": {
             "text": "Which stat boost do the Fire Titans gain from the Fire Spirit Totem?"
         },
         "answer": {
