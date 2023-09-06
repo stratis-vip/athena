@@ -5056,7 +5056,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Attack"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
