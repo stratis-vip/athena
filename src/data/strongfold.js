@@ -2992,7 +2992,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Guild War Trophies, Emeralds"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3123,7 +3123,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Bronze Guild War Trophy"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -5766,6 +5766,7 @@ const allQuestions = [
     ...newQuestions
 
 ]
+
 export const cleanQuestion = (q, idx) => {
     if (q != null) {
         const text = q?.text
@@ -5795,7 +5796,8 @@ export const cleanAnswer = (q) => {
 
 const Strongford = () => {
     return (
-        <div className="flex justify-center">
+        <div className="flex items-center flex-col">
+            <div className='italic font-extralight text-xl text-slate-500'>{allQuestions.filter(q => q.confirmed === true).length} confirmed out of {allQuestions.length -1} questions</div>
             <table className=''>
                 <thead className="bg-slate-500 border-r text-white">
                     <th className="text-center"></th>
@@ -5810,7 +5812,7 @@ const Strongford = () => {
                         return <tr key={idx} className={`${idx % 2 !== 0 ? 'bg-slate-200 border-b-2 border-slate-500 border-t-2' : 'bg-white'} text-lg`}>
                             {/* <td> */}
                             <td className='border-r-2 border-slate-500'><div className=''>{t.confirmed === undefined || t.confirm === false ? null : <FaCheck />}</div></td>
-                            {cleanQuestion(t.question, idx)}
+                            {cleanQuestion(t.question, idx+1)}
                             {/* {t.question.img && <img src={t.question?.img} width={'50px'} />} */}
                             {/* </td> */}
                             {cleanAnswer(t.answer)}
