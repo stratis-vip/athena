@@ -3569,13 +3569,13 @@ const evenMoreGeneralQuestions = [
     },
     {
         "question": {
-            "text": "What's the mission called where you encounter the Archdemon for the first time?"
+            "text": "What is the name of the mission where you encounter the Archdemon for the first time?"
         },
         "answer": {
             "text": [
                 "Archdemon's Patrimony"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3815,7 +3815,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Isaac"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -4165,7 +4165,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Thea"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -4760,13 +4760,13 @@ const evenMoreGeneralQuestions = [
     },
     {
         "question": {
-            "text": "Which one of these pets boost heroes that deal pure Damage?"
+            "text": "Which pet boost Heroes that deal pure Damage?"
         },
         "answer": {
             "text": [
                 "Albus"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
