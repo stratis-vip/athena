@@ -39,7 +39,7 @@ export const generalQuestions = [
             "text": [
                 "130"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3033,7 +3033,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Ragni"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3183,7 +3183,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "K'arkh"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3193,7 +3193,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Isaac"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3283,7 +3283,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "150"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3394,7 +3394,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Tenebris"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3685,7 +3685,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Artifact Merchant"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3975,7 +3975,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "K'arkh, Dante"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -3995,7 +3995,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Jorgen"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -4065,7 +4065,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Arachne"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -4265,7 +4265,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Judge"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -4295,7 +4295,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Kingdom of Graven"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -4710,7 +4710,7 @@ const evenMoreGeneralQuestions = [
     },
     {
         "question": {
-            "text": "Which one of these Heroes did NOT arrive to Dominion during a New Year Event?"
+            "text": "Which one of these Heroes did NOT arrive to Dominion during a New Year Event? or Which Hero didn't arrive to Dominion during a New Year Event?"
         },
         "answer": {
             "text": [
@@ -4826,7 +4826,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Public Idol"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -5096,7 +5096,7 @@ const evenMoreGeneralQuestions = [
             "text": [
                 "Dodge"
             ]
-        }
+        }, confirmed: true
     },
     {
         "question": {
@@ -5731,7 +5731,16 @@ const moreImageAnswers = [
 
 ]
 
-const newQuestions = [{}]
+const newQuestions = [{
+    "question": {
+        "text": "Which control effects grant max charges to Khorus' first skill?"
+    },
+    "answer": {
+        text: ["Silence"]
+    },
+    confirmed: true
+
+}]
 
 const iq = imageQuestions.sort((a, b) => {
     const aT = a.question.text.split(' (')
@@ -5797,7 +5806,7 @@ export const cleanAnswer = (q) => {
 const Strongford = () => {
     return (
         <div className="flex items-center flex-col">
-            <div className='italic font-extralight text-xl text-slate-500'>{allQuestions.filter(q => q.confirmed === true).length} confirmed out of {allQuestions.length -1} questions</div>
+            <div className='italic font-extralight text-xl text-slate-500'>{allQuestions.filter(q => q.confirmed === true).length} confirmed out of {allQuestions.length - 1} questions</div>
             <table className=''>
                 <thead className="bg-slate-500 border-r text-white">
                     <th className="text-center"></th>
@@ -5812,7 +5821,7 @@ const Strongford = () => {
                         return <tr key={idx} className={`${idx % 2 !== 0 ? 'bg-slate-200 border-b-2 border-slate-500 border-t-2' : 'bg-white'} text-lg`}>
                             {/* <td> */}
                             <td className='border-r-2 border-slate-500'><div className=''>{t.confirmed === undefined || t.confirm === false ? null : <FaCheck />}</div></td>
-                            {cleanQuestion(t.question, idx+1)}
+                            {cleanQuestion(t.question, idx + 1)}
                             {/* {t.question.img && <img src={t.question?.img} width={'50px'} />} */}
                             {/* </td> */}
                             {cleanAnswer(t.answer)}
