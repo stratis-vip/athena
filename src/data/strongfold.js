@@ -2894,6 +2894,15 @@ const evenMoreGeneralQuestions = [
     },
     {
         "question": {
+            "text": "Which control effects grant max charges to Khorus' first skill?"
+        },
+        "answer": {
+            text: ["Silence"]
+        },
+        confirmed: true
+    },
+    {
+        "question": {
             "text": "Which avatar frame isn't present in the game?"
         },
         "answer": {
@@ -5731,16 +5740,7 @@ const moreImageAnswers = [
 
 ]
 
-const newQuestions = [{
-    "question": {
-        "text": "Which control effects grant max charges to Khorus' first skill?"
-    },
-    "answer": {
-        text: ["Silence"]
-    },
-    confirmed: true
-
-}]
+const newQuestions = []
 
 const iq = imageQuestions.sort((a, b) => {
     const aT = a.question.text.split(' (')
