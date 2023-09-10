@@ -42,7 +42,7 @@ export default function Rules() {
                   <tr
                     key={team.position}
                     className={`${
-                      team.name === "new athena" ? "bg-orange-300" : "bg-none"
+                      team.name === "athena" ? "bg-orange-300" : "bg-none"
                     } `}
                   >
                     <td className="font-bold px-2 my-10"> {team.name}</td>
