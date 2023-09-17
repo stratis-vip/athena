@@ -453,6 +453,16 @@ export const news = [
 		text: `We are for 53th week at Silver!`,
 		place: 3,
 		points: 5391,
+	}, {
+		date: "17 September 2023",
+		text: `GM gifts not sent! Next week double gifts!)`,
+		place: null,
+		points: null,
+	}, {
+		date: "17 September 2023",
+		text: `We are for 53th week at Silver!`,
+		place: 4,
+		points: 5110,
 	},].reverse();
 
 export const discord = {
