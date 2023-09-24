@@ -245,41 +245,41 @@ export const news = [
 	},
 	{
 		date: "30 April 2023",
-		text: `We are for 35th week at Silver! `,
+		text: `We are for 36th week at Silver! `,
 		place: 2,
 	},
 	{
 		date: "30 April 2023",
-		text: `We are for 36th week at Silver! First time we fought (with ohhoo) for promotion to Gold League. `,
+		text: `We are for 37th week at Silver! First time we fought (with ohhoo) for promotion to Gold League. `,
 		place: 2,
 		points: 5198,
 	},
 	{
 		date: "7 May 2023",
-		text: `We are for 37th week at Silver! `,
+		text: `We are for 38th week at Silver! `,
 		place: 6,
 		points: 4637,
 	},
 	{
 		date: "14 May 2023",
-		text: `We are for 38th week at Silver! `,
+		text: `We are for 39th week at Silver! `,
 		place: 5,
 		points: 4964,
 	},
 	{
 		date: "21 May 2023",
-		text: `We are for 39th week at Silver! `,
+		text: `We are for 40th week at Silver! `,
 		place: 5,
 		points: 4942,
 	}, {
 		date: "28 May 2023",
-		text: `We are for 40th week at Silver! `,
+		text: `We are for 41th week at Silver! `,
 		place: 4,
 		points: 5099,
 	},
 	{
 		date: "4 June 2023",
-		text: `We are for 41th week at Silver! `,
+		text: `We are for 42th week at Silver! `,
 		place: 4,
 		points: 4749,
 	},
@@ -297,7 +297,7 @@ export const news = [
 	},
 	{
 		date: "11 June 2023",
-		text: `We are for 42th week at Silver! Promotion war with ohhoo (903 - 1038)`,
+		text: `We are for 43th week at Silver! Promotion war with ohhoo (903 - 1038)`,
 		place: 3,
 		points: 5107,
 	}, {
@@ -307,7 +307,7 @@ export const news = [
 		points: null,
 	}, {
 		date: "18 June 2023",
-		text: `We are for 43th week at Silver! First time ranked 1st and first win at level 150 boss of Asgard. Promotion war with Сами по себе! (838 - 1137)`,
+		text: `We are for 44th week at Silver! First time ranked 1st and first win at level 150 boss of Asgard. Promotion war with Сами по себе! (838 - 1137)`,
 		place: 1,
 		points: 5555,
 	},
@@ -319,7 +319,7 @@ export const news = [
 	},
 	{
 		date: "25 June 2023",
-		text: `We are for 43th week at Silver! Promotion war with Сами по себе! (995 - 1120)`,
+		text: `We are for 45th week at Silver! Promotion war with Сами по себе! (995 - 1120)`,
 		place: 2,
 		points: 5351,
 	},
@@ -337,7 +337,7 @@ export const news = [
 	},
 	{
 		date: "2 July 2023",
-		text: `We are for 44th week at Silver!`,
+		text: `We are for 46th week at Silver!`,
 		place: 5,
 		points: 4750,
 	}, {
@@ -347,7 +347,7 @@ export const news = [
 		points: null,
 	}, {
 		date: "8 July 2023",
-		text: `We are for 45th week at Silver!`,
+		text: `We are for 47th week at Silver!`,
 		place: 4,
 		points: 5192,
 	},
@@ -359,7 +359,7 @@ export const news = [
 	},
 	{
 		date: "15 July 2023",
-		text: `We are for 46th week at Silver!`,
+		text: `We are for 48th week at Silver!`,
 		place: 5,
 		points: 4799,
 	},
@@ -371,7 +371,7 @@ export const news = [
 	},
 	{
 		date: "23 July 2023",
-		text: `We are for 47th week at Silver!`,
+		text: `We are for 49th week at Silver!`,
 		place: 5,
 		points: 4824,
 	},
@@ -383,7 +383,7 @@ export const news = [
 	},
 	{
 		date: "30 July 2023",
-		text: `We are for 48th week at Silver!`,
+		text: `We are for 50th week at Silver!`,
 		place: 4,
 		points: 5043,
 	},
@@ -395,7 +395,7 @@ export const news = [
 	},
 	{
 		date: "06 August 2023",
-		text: `We are for 49th week at Silver!`,
+		text: `We are for 51th week at Silver!`,
 		place: 6,
 		points: 4749,
 	}, {
@@ -406,7 +406,7 @@ export const news = [
 	},
 	{
 		date: "13 August 2023",
-		text: `We are for 50th week at Silver!`,
+		text: `We are for 52th week at Silver!`,
 		place: 5,
 		points: 4890,
 	}, {
@@ -417,7 +417,7 @@ export const news = [
 	},
 	{
 		date: "20 August 2023",
-		text: `We are for 51th week at Silver!`,
+		text: `We are for 53th week at Silver!`,
 		place: 4,
 		points: 5185,
 	}, {
@@ -428,7 +428,7 @@ export const news = [
 	},
 	{
 		date: "27 August 2023",
-		text: `We are for 52th week at Silver!`,
+		text: `We are for 54th week at Silver!`,
 		place: 4,
 		points: 4808,
 	},
@@ -440,7 +440,7 @@ export const news = [
 	},
 	{
 		date: "03 September 2023",
-		text: `We are for 53th week at Silver!`,
+		text: `We are for 55th week at Silver!`,
 		place: 3,
 		points: 5425,
 	}, {
@@ -450,7 +450,7 @@ export const news = [
 		points: null,
 	}, {
 		date: "10 September 2023",
-		text: `We are for 54th week at Silver!`,
+		text: `We are for 56th week at Silver!`,
 		place: 3,
 		points: 5391,
 	}, {
@@ -460,7 +460,7 @@ export const news = [
 		points: null,
 	}, {
 		date: "17 September 2023",
-		text: `We are for 55th week at Silver!`,
+		text: `We are for 57th week at Silver!`,
 		place: 4,
 		points: 5110,
 	}, {
@@ -470,7 +470,7 @@ export const news = [
 		points: null,
 	}, {
 		date: "24 September 2023",
-		text: `We are for 56th week at Silver!`,
+		text: `We are for 58th week at Silver!`,
 		place: 4,
 		points: 4345,
 	},].reverse();
