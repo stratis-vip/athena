@@ -5782,7 +5782,7 @@ export const cleanQuestion = (q, idx) => {
         const textArray = text.split('__IMG__')
         let finalText = <><td className="py-2 text-center px-2 border-r-2 border-slate-500">{idx}</td><td className="pr-5 border-r-2 border-slate-500 pl-2"> {text}</td></>
         if (textArray.length > 1) {
-            finalText = <><td className="py-5 text-center px-2 border-r-2 border-slate-500">{idx}</td><td className="w-[700px] pr-5 pl-2"><div className="flex items-center"> <div className="break-words border-r-2 border-slate-500">{textArray[0]}</div><div className="px-3"> <img src={q.img} width={'50px'} /> </div> <div>{textArray[1]}</div></div></td></>
+            finalText = <><td className="py-5 text-center px-2 border-r-2 border-slate-500">{idx}</td><td className="w-[700px] pr-5 pl-2"><div className="flex items-center"> <div className="break-words border-r-2 border-slate-500">{textArray[0]}</div><div className="px-3"> <img src={q.img} alt='g.img' width={'50px'} /> </div> <div>{textArray[1]}</div></div></td></>
         }
         return finalText
     } else {
@@ -5793,7 +5793,7 @@ export const cleanQuestion = (q, idx) => {
 export const cleanAnswer = (q) => {
     if (q != null) {
         // console.log(q?.text.length, q?.text)
-        const finalText = q?.text ? <td className="py-2 pl-2">{q?.text.map(t => <div className="w-[300px] " key={t}>{t}</div>)} </td> : <td className="py-2">{<img src={q.img} width={'70px'} />}</td>
+        const finalText = q?.text ? <td className="py-2 pl-2">{q?.text.map(t => <div className="w-[300px] " key={t}>{t}</div>)} </td> : <td className="py-2">{<img src={q.img} alt='q.img' width={'70px'} />}</td>
         return <>{finalText}</>
     } else {
         return null
