@@ -18,7 +18,7 @@ const Adventure = () => {
   const { buffs } = adv;
   return (
     <>
-      <h1 className="my-5 text-4xl text-center text-primary">{adv?.name}</h1>
+      <h1 className="my-5 text-lg sm:text-4xl text-center text-primary">{adv?.name}</h1>
 
       <Section title={"Buffed Points"} array={buffs}>
         <div className="block">
@@ -42,12 +42,12 @@ const Adventure = () => {
       </Section>
 
       <Section title={"Recommended Solution"} array={adv.paths}>
-        <div className="left ">
+        <div className="left ml-2 ">
           <a href={adv?.images?.solution} target="_blank" rel="noreferrer">
             <img src={adv.images.thumb} width={150} height={89} alt="adventure" />
           </a>
         </div>
-        <div className="right ml-10">
+        <div className="right ml-2 sm:ml-10">
           {adv.paths.map((path, idx) => {
             return (
               <p key={idx}>
@@ -59,7 +59,7 @@ const Adventure = () => {
       </Section>
 
       <Section title={"Notes"} array={adv.notes}>
-        <div className="right ml-10">
+        <div className="right ml-2 sm:ml-10">
           {adv.notes?.map((note) => (
             <p className="mb-1" key={note.id}>
               <span className="text-bold">{note.id}.</span> {note.description}
@@ -76,9 +76,9 @@ export default Adventure;
 const Section = ({ children, title, array }) => {
   return (
     <div className={`${array ? "block" : "hidden"}`}>
-      <h1 className="font-bold text-center text-xl mb-2">{title}</h1>
+      <h1 className="font-bold text-center sm:text-xl mb-2">{title}</h1>
 
-      <div className="flex justify-center text-xl mb-10">{children}</div>
+      <div className="flex justify-center sm:text-xl mb-10">{children}</div>
     </div>
   );
 };

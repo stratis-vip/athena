@@ -4,31 +4,36 @@ import { rules } from "../data/rules";
 export default function Rules() {
   return (
     <>
-      <h1 className="mt-5 text-center text-5xl text-primary">
+      <h1 className={`
+      mt-1 text-center  text-2xl font-semibold
+      sm:mt-5  sm:text-5xl text-primary`}>
         Welcome to New Athena!
       </h1>
-      <div className="mx-8 mt-7">
-        <h1 className="mt-2 text-2xl font-bold text-center">
+      <div className={`
+      sm:mx-8 sm:mt-7`}>
+        <h1 className={`
+        mt-2 sm:text-2xl 
+        text-xl font-bold text-center
+        `}>
           General rules of our Guild <br />
-          <span className="text-lg italic font-normal">
+          <span className="sm:text-lg text-sm italic font-normal">
             (press at any rule to see a short explanation)
           </span>
-          .
         </h1>
         <Text>
           {rules.map((rule) => {
-            debugger
+            // debugger
             return <Explanation key={rule.id} rule={rule} />
           })}
         </Text>
       </div>
-      <div className="mx-8">
+      <div className="sm:mx-8 sm:mt-7">
         <div>
           {/* <h1 className="text-2xl font-bold mt-10">
               
             </h1> */}
           <Text banner={"Instructions to new Members."}>
-            <div className="text-lg">
+            <div className="sm:text-lg">
               <p>We are sure that you enjoy your stay with us!</p>
               <p>Some rules of thumbs to make your life easier!</p>
               <ol>
@@ -81,7 +86,7 @@ export default function Rules() {
         </div>
         <div>
           <Text banner={"Instructions to new Champions."}>
-            <div className="text-lg">
+            <div className="sm:text-lg">
               <p>In war, main planners are Stratis and Team 469.</p>
               <ol>
                 <li className="mt-2 ml-3 list-inside list-decimal">
@@ -124,7 +129,7 @@ export default function Rules() {
         </div>
         <div>
           <Text banner={"Guild Master Presents Rules"}>
-            <div className="text-lg">
+            <div className="sm:text-lg">
               <p>Until 2 June 2023, all presents went to the member with titans less than 120lvl.</p>
               <p>With the appearance of light super titan Solaris, there is again a need for the pressents to everyone.
                 So gifts will be given every Saturday, like these: </p>
@@ -162,7 +167,7 @@ export default function Rules() {
 const Explanation = ({ rule }) => {
   const [hide, setHide] = useState(true);
   return (
-    <div key={rule.id} className="text-xl my-2">
+    <div key={rule.id} className={`sm:text-xl my-2`}>
       <div
         className="cursor-pointer font-bold "
         onClick={() => setHide((h) => !h)}
@@ -181,8 +186,8 @@ const Explanation = ({ rule }) => {
 const Text = ({ children, banner, subBanner }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="w-2/5">
-        <h1 className="mt-8 text-2xl font-bold text-center mb-3">
+      <div className="sm:w-2/5 mx-3">
+        <h1 className="mt-4 sm:mt-8 sm:text-2xl text-xl font-bold text-center mb-3">
           {banner}
           <br className={`${subBanner ? "block" : "hidden"}`} />
           <span

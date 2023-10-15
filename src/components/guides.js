@@ -12,7 +12,7 @@ const Guides = () => {
   return (
     <>
       <Section title={"Adventures"}>
-        <div className=" text-center text-xl text-red-500 italic mb-4">
+        <div className=" text-center sm:text-xl text-red-500 italic mb-4">
           Doing adventure lower than level 9{" "}
           <span className="font-bold">is not </span>recommended by new athena.
           Resource are more limited.
@@ -20,7 +20,7 @@ const Guides = () => {
         <div className="flex  flex-col justify-center items-center">
           <ul>
             {adventures.map((adv) => (
-              <li className="text-lg mt-1" key={adv.id}>
+              <li className="sm:text-lg mt-1 ml-2" key={adv.id}>
                 <a href={`/adventures/${adv.id}`}>{adv.name}</a>
               </li>
             ))}
@@ -28,9 +28,9 @@ const Guides = () => {
         </div>
       </Section>
       <Section title={"Assorted Tips"}>
-        <div className="my-5 flex flex-col text-xl">
+        <div className="my-2 flex flex-col sm:text-xl">
           {tips.map((tip) => (
-            <div className="mx-20 my-1" key={tip.id}>
+            <div className="sm:mx-20 mx-2 my-1 mb-2" key={tip.id}>
               <span className="text-primary">{tip.category}: </span>
               {tip.tip}
             </div>

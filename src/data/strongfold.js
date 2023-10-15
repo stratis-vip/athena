@@ -5806,8 +5806,9 @@ export const cleanAnswer = (q) => {
 const Strongford = () => {
     return (
         <div className="flex items-center flex-col">
-            <div className='italic font-extralight text-xl text-slate-500'>{allQuestions.filter(q => q.confirmed === true).length} confirmed out of {allQuestions.length - 1} questions</div>
-            <table className=''>
+            <div className='italic font-extralight sm:text-xl text-slate-500'>{allQuestions.filter(q => q.confirmed === true).length} confirmed out of {allQuestions.length - 1} questions</div>
+            <div className='mx-2 font-light italic sm:hidden'>Better watch this answers on big screen or at least rotated on mobile</div>
+            <table className='hidden sm:block'>
                 <thead className="bg-slate-500 border-r text-white">
                     <th className="text-center"></th>
                     <th>QN</th>

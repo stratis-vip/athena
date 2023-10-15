@@ -8,7 +8,7 @@ import {
 import Users from "./users";
 import Rules from "./rules";
 import Adventures from "./adventures";
-import React from "react";
+import React, { useState } from "react";
 import Title from "./title";
 import Guides from "./guides";
 import Program from "./program";
@@ -16,19 +16,32 @@ import Home from "./home";
 import Edit from "./edit";
 import Gwar from "./g-war";
 import Communication from "./comunication";
+import { FaBars } from "react-icons/fa6";
 
 const RouterComponent = () => {
+	const [open, setOpen] = useState(true)
 	return (
 		<Router>
 			<div
-				className={"flex bg-primary p-1   my-0 m-auto text-white items-center"}
+				className={`
+				 bg-primary p-1   my-0 text-white 
+				 flex flex-col
+				 sm:flex-row sm:items-center
+				`}
 			>
-				<div className={""}>
+				<div className={"flex justify-between"}>
 					<div className={"py-1"}>
 						<Title />
 					</div>
+					<div className="sm:hidden self-center mr-1"><FaBars size={25} onClick={() => {
+						setOpen(!open)
+					}} /></div>
 				</div>
-				<div className={"flex justify-around flex-1"}>
+				<div className={`${open ? 'hidden' : ''} sm:flex
+				flex flex-col
+				sm:justify-around sm:flex-1 sm:flex-row
+				
+				`}>
 					<ToLink path={"/"} title="News" />
 					<ToLink path={"/rules"} title="Rules" />
 					<ToLink path={"/guild-war"} title="Champions" />

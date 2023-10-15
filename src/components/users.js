@@ -29,7 +29,7 @@ const Users = () => {
   return (
     <>
     <div className={"flex items-center flex-col"}>
-        <h2 className="text-3xl text-primary m-8">Time-zone table members</h2>
+        <h2 className="text-3xl text-primary sm:m-8 mt-3">Time-zone table members</h2>
         <label className="flex items-center">
           <input
             type={"checkbox"}
@@ -40,8 +40,8 @@ const Users = () => {
           Show War starting/finishing time{" "}
         </label>
 
-        <div className={"flex"}>
-          <div className={"ml-10"}>
+        <div className={"flex sm:flex-row flex-col"}>
+          <div className={"sm:ml-10"}>
             <TableComponent array={timeUsers} title="With info" showTime={showWarTime} />
           </div>
           <div className={"ml-10"}>

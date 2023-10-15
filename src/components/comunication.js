@@ -2,8 +2,8 @@ import { discord } from "../data/news";
 
 const Communication = () => {
 	return (
-		<div className="flex flex-col items-center mt-10">
-			<div className="w-8/12">
+		<div className="flex flex-col items-center mt-3 sm:mt-10">
+			<div className="sm:w-8/12 mx-3">
 				<Para>
 					Hero Wars chat isn't the best way to communicate as it's only provide
 					the basics (for example it can't handle images and history).
