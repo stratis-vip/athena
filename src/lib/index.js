@@ -2,9 +2,9 @@ export const readData = (data, league) => {
   const firstWave = data.split('\n').filter(pro => pro !== '')
   firstWave.shift()
   const secondWave = firstWave.map(f => f.split(','))
-  
-  const teams = secondWave.map((team) => { return { name: team[2].trim().slice(1,-1), position: Number(team[0]), league } }).sort((a, b) => a.position - b.position)
 
+  //const teams = secondWave.map((team) => { return { name: team[2].trim().slice(1,-1), position: Number(team[0]), league } }).sort((a, b) => a.position - b.position)
+  const teams = secondWave.map((team) => { return { name: team[2].trim().slice(1, -1), position: Number(team[0]), league } }).sort((a, b) => a.position - b.position)
   return teams
 }
 
