@@ -148,7 +148,7 @@ export const allUsers = [
 	{
 		id: 4451506,
 		name: "KinkaHeroes",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "EET",
 		notes: "Europe/Athens",
@@ -268,7 +268,7 @@ export const allUsers = [
 	{
 		id: 4703087,
 		name: "B.D.",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "UTC+9",
 		notes: "",
@@ -372,7 +372,7 @@ export const allUsers = [
 	{
 		id: 4305819,
 		name: "Victory",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "EET",
 		notes: "Vikings origin",
@@ -564,7 +564,7 @@ export const allUsers = [
 	{
 		id: 4758441,
 		name: "bobo2",
-		active: true,
+		active: false,
 		isArchived: false,
 		timeZone: "Etc/UTC",
 		notes: null,
@@ -609,7 +609,30 @@ export const allUsers = [
 		timeZone: "UTC+2",
 		notes: null,
 	},
-
+	{
+		id: 15095779,
+		name: "Saeftel",
+		active: true,
+		isArchived: false,
+		timeZone: "UTC+2",
+		notes: null,
+	},
+	{
+		id: 4862343,
+		name: "Thor",
+		active: true,
+		isArchived: false,
+		timeZone: "Etc/UTC",
+		notes: null,
+	},
+	{
+		id: 40613737,
+		name: "Hakuri",
+		active: true,
+		isArchived: false,
+		timeZone: "Etc/UTC",
+		notes: null,
+	},
 ];
 
 const sortF = (a, b) => {

@@ -538,6 +538,18 @@ export const news = [
 		place: null,
 		points: null,
 	},
+	{
+		date: "10 December 2023",
+		text: `Server at texnopraksis.com is no more available`,
+		place: null,
+		points: null,
+	},
+	{
+		date: "14 January 2024",
+		text: `A free hosting used to host our site. We are for 73 weeks at Silver`,
+		place: 5,
+		points: 4991,
+	},
 ].reverse();
 
 
