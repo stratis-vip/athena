@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import { adventures } from "../data/adventures";
 import { useParams } from "react-router-dom";
 
-const Adventure = () => {
+
+const Adventure = ({ id }) => {
   const params = useParams();
   const { aid } = params;
   const [adv, setAdventure] = useState(null);
@@ -13,6 +14,11 @@ const Adventure = () => {
     }
   }, [aid]);
 
+  useEffect(() => {
+    if (id) {
+      setAdventure(adventures.filter((a) => a.id === Number(id))[0]);
+    }
+  }, [id]);
   if (adv === null) return null;
 
   const { buffs } = adv;

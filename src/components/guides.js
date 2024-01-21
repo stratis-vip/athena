@@ -5,6 +5,8 @@ import Section from "./section";
 import Strongford from "../data/strongfold";
 import json from "../../package.json"
 
+import Adventure from './adventures'
+
 const Guides = () => {
   useEffect(() => {
     console.log("Adventures", adventures);
@@ -17,7 +19,15 @@ const Guides = () => {
           <span className="font-bold">is not </span>recommended by new athena.
           Resource are more limited.
         </div>
-        <div className="flex  flex-col justify-center items-center">
+
+        <Adventure id={9} />
+        <Adventure id={10} />
+        <Adventure id={11} />
+        <Adventure id={12} />
+        <Adventure id={13} />
+        <Adventure id={14} />
+
+        {/* <div className="flex  flex-col justify-center items-center">
           <ul>
             {adventures.map((adv) => (
               <li className="sm:text-lg mt-1 ml-2" key={adv.id}>
@@ -25,7 +35,7 @@ const Guides = () => {
               </li>
             ))}
           </ul>
-        </div>
+        </div> */}
       </Section>
       <Section title={"Assorted Tips"}>
         <div className="my-2 flex flex-col sm:text-xl">
